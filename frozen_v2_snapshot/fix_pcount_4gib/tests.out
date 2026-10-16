@@ -1,0 +1,33 @@
+== A chunk 294676693 bytes
+old chunk.fq.gz 7.8 s reads 4000000
+fix chunk.fq.gz 5.6 s reads 4000000
+A: old == fix (byte-identical)
+A: gz == scan(zcat)
+== B 12x single member
+B bytes 3536116605
+old mid.fq.gz 50.4 s reads 48000000
+fix mid.fq.gz 44.5 s reads 48000000
+B: old == fix (byte-identical)
+B: fix == 12 x chunk True
+== C 16x single member
+C bytes 4714821949
+old big.fq.gz 10.5 s reads 5700828
+fix big.fq.gz 59.4 s reads 64000000
+C: fix gz == scan(zcat)
+C: fix == 16 x chunk True fix sum 132101200 old sum 11766765 old/fix 0.0891
+== D 16x multi member (cat)
+D bytes 4714827088
+old multi.fq.gz 10.3 s reads 5700899
+fix multi.fq.gz 60.1 s reads 64000000
+D: fix == 16 x chunk True old sum 11766912 fix sum 132101200
+reads 4000000
+reads 48000000
+reads 5700828
+reads 5700899
+reads 4000000
+reads 48000000
+reads 64000000
+reads 64000000
+reads 4000000
+reads 64000000
+ALL_TESTS_DONE
