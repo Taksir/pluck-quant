@@ -163,6 +163,7 @@ _PROBES = {50: ("probes_s26.npz", "f6c171db3987207df6dc543e9ffbf211de4bea22159d2
 def fetch_design(layout, base_url, dest):
     """Download design.npz, gc.npy, genome_count.npy, the gene-probe file and genes.json from BASE_URL/<layout>/ and check them
     against the locked hashes. BASE_URL is where the release assets were put."""
+    import urllib.error
     import urllib.request
     layout = int(layout)
     dest = Path(dest)
@@ -180,7 +181,13 @@ def fetch_design(layout, base_url, dest):
     for n, h in want.items():
         target = dest / n
         if not target.exists():
-            urllib.request.urlretrieve(f"{base_url.rstrip('/')}/{layout}/{n}", target)
+            b = base_url.rstrip("/")
+            try:  # a folder per layout, or one flat folder (GitHub release assets are flat)
+                urllib.request.urlretrieve(f"{b}/{layout}/{n}", target)
+            except urllib.error.HTTPError as e:
+                if e.code != 404:
+                    raise
+                urllib.request.urlretrieve(f"{b}/{n}", target)
         if h and sha256_file(target) != h:
             raise RuntimeError(f"{n}: sha256 does not match the locked value")
     ok, lines = verify_design(layout, dest)

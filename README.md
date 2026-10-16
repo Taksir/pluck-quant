@@ -21,7 +21,7 @@ The design is the set of probes and the EM structure for one read length. It is 
 
 ```
 # 1. download the prebuilt files from the release and check them against the locked hashes
-pluck design fetch --layout 50 --url https://.../releases/download/v0.1.0 --dest design50
+pluck design fetch --layout 50 --url https://github.com/Taksir/pluck-quant/releases/download/design-v1 --dest design50
 # 2. or rebuild from public data (internet; 2 hours in the test container, mostly download time; about 4 GB disk; ran in a 15 GB-RAM container); the locked hashes are checked at the end
 pluck design build --layout 50 --work work50
 ```

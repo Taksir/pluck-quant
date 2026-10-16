@@ -153,7 +153,7 @@ def main(argv=None):
     q.add_argument("-o", "--out", required=True)
     q = ds.add_parser("fetch", help="download a prebuilt design (release assets) and check the locked hashes")
     q.add_argument("--layout", type=int, choices=[50, 101], required=True)
-    q.add_argument("--url", required=True, help="base URL holding <layout>/design.npz, gc.npy, genome_count.npy, probes_*.npz, genes.json")
+    q.add_argument("--url", required=True, help="base URL holding [<layout>/]design.npz, gc.npy, genome_count.npy, probes_*.npz, genes.json")
     q.add_argument("--dest", required=True)
     q = ds.add_parser("build", help="rebuild a design from Ensembl 102 + MGP REL-1505 (internet, hours) and verify the hashes")
     q.add_argument("--layout", type=int, choices=[50, 101], required=True)
