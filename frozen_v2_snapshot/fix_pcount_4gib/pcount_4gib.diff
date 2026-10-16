@@ -1,0 +1,38 @@
+--- pcount_old.c	2026-10-07 22:40:25.314965036 +0000
++++ pcount_fix.c	2026-10-07 22:40:25.332845602 +0000
+@@ -121,17 +121,22 @@
+ }
+ #ifdef WITH_ISAL
+ static struct inflate_state ist; static const uint8_t *gzp, *gze;
++// isa-l's avail_in is 32-bit: hand the mapped file to the inflater in windows of at most 1 GiB, re-armed before every call
++// (the mapping is contiguous, so a window just extends from next_in). Handing over st_size in one go truncated files > 4 GiB.
++#define GZ_WIN (1u << 30)
+ static ssize_t gz_read(char *dst, size_t n) {   // inflate straight into the chunk buffer (handles multi-member gzip)
+     if (!n) return 0;
+     for (;;) {
++        size_t left = gze - ist.next_in; ist.avail_in = left > GZ_WIN ? GZ_WIN : (uint32_t)left;
+         ist.next_out = (uint8_t *)dst; ist.avail_out = n;
+         if (isal_inflate(&ist) != ISAL_DECOMP_OK) { fprintf(stderr, "inflate error\n"); exit(1); }
+         ssize_t got = n - ist.avail_out;
+-        if (ist.block_state == ISAL_BLOCK_FINISH && ist.avail_in > 8) {
+-            const uint8_t *nx = ist.next_in; uint32_t av = ist.avail_in;
+-            isal_inflate_reset(&ist); ist.crc_flag = ISAL_GZIP; ist.next_in = (uint8_t *)nx; ist.avail_in = av;
++        left = gze - ist.next_in;
++        if (ist.block_state == ISAL_BLOCK_FINISH && left > 8) {
++            const uint8_t *nx = ist.next_in;
++            isal_inflate_reset(&ist); ist.crc_flag = ISAL_GZIP; ist.next_in = (uint8_t *)nx;
+         }
+-        if (got || ist.avail_in == 0 || ist.block_state == ISAL_BLOCK_FINISH) return got;
++        if (got || left == 0 || ist.block_state == ISAL_BLOCK_FINISH) return got;
+     }
+ }
+ static int use_gz;
+@@ -266,7 +271,7 @@
+     else if (argc >= 6 && !strcmp(argv[1], "gz")) {
+         int fd = open(argv[5], O_RDONLY); struct stat st; fstat(fd, &st);
+         gzp = mmap(0, st.st_size, PROT_READ, MAP_PRIVATE, fd, 0); gze = gzp + st.st_size;
+-        isal_inflate_init(&ist); ist.crc_flag = ISAL_GZIP; ist.next_in = (uint8_t *)gzp; ist.avail_in = st.st_size; use_gz = 1;
++        isal_inflate_init(&ist); ist.crc_flag = ISAL_GZIP; ist.next_in = (uint8_t *)gzp; use_gz = 1;  // avail_in is set per window in gz_read
+         load_panel(argv[2]); stream(-1, atoi(argv[3]), argv[4]);
+     }
+ #endif

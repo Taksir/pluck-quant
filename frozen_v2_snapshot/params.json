@@ -1,0 +1,12 @@
+{
+ "base": "revision/frozen/ (v1, LOCK.sha256 57173f68a6c9534a6812de74c116e2635d65b86bf81fc9f56c1cf974af966031) for core genes, unchanged",
+ "tiers_file": "gene_tiers.tsv",
+ "core": {"n_genes_50bp": 16885, "estimator": "v1 hybrid (gene probes if observed capture >= 0.6 else emg EM)"},
+ "extended": {"n_genes_50bp": 26258, "probe_set": "probe_broaden/design.npz set_TA_S8_P__vf",
+   "rule": "all annotated transcripts chr1-19/X, any isoform subset, <=8 genes, <=8 genome copies, variant-free at every annotated copy, >=100 nt from ends of some containing transcript, 26 nt spacing (R-k+1), v1 gene probes placed first",
+   "estimator": "ridge-NNLS, E[c_p]=sum_t n_pt lambda_t, ridge 1e-6 x max col norm^2, N_g=sum_t lambda_t*max(L_t-R+1,25)"},
+ "101bp": {"core": "v1 settings", "extended": "s1-s4 rerun with S=77, R=101, baseline probes_s77.npz; s6 R=101; design hash recorded before counting"},
+ "strand": "mRNA-antisense for reverse-stranded R1",
+ "identity_rule": "v1: labelled strain top fit and fit >= 0.90 (dk.py), else exclude, before scoring",
+ "gates": "core genes only; extended reported separately, ungated"
+}

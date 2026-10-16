@@ -1,0 +1,5 @@
+include LICENSE README.md CHANGELOG.md
+recursive-include src/pluck_quant/native *.c
+recursive-include src/pluck_quant/_design *
+prune tests
+prune frozen_v2_snapshot
