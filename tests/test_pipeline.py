@@ -168,3 +168,73 @@ def test_builtin_tables_are_the_locked_ones():
     f = output._read_table("builtin:flags")
     assert (len(t), len(f)) == (43143, 16885)
     assert set(f["ENSMUSG00000000001"]) >= {"unique_frac_50bp", "flag_50bp", "unique_frac_100bp", "flag_100bp"}
+
+
+# ---- choosing between an msBWT and the reads (count.count_sample)
+READS = DATA / "reads" / "CC021_first500k.fastq.gz"
+
+
+def _fake_bwt(tmp_path):
+    d = tmp_path / "fake_bwt"
+    d.mkdir(exist_ok=True)
+    (d / "comp_msbwt.npy").write_bytes(b"x")
+    return d
+
+
+def test_msbwt_directory_is_recognised(tmp_path):
+    assert count.is_msbwt_dir(_fake_bwt(tmp_path))
+    assert not count.is_msbwt_dir(tmp_path)
+    assert not count.is_msbwt_dir(READS)
+    b, r = count.split_inputs([_fake_bwt(tmp_path), READS])
+    assert len(b) == 1 and r == [READS]
+    with pytest.raises(ValueError, match="not an msBWT"):
+        count.split_inputs([tmp_path])
+    with pytest.raises(ValueError, match="does not exist"):
+        count.split_inputs([tmp_path / "nope.fastq.gz"])
+
+
+def test_msbwt_without_pymsbwt_falls_back_to_reads(panel_dir, tmp_path, monkeypatch):
+    monkeypatch.setattr(count, "msbwt_available", lambda: False)
+    msgs = []
+    out = tmp_path / "c.txt"
+    s = count.count_sample(panel_dir / "panel.txt", [_fake_bwt(tmp_path), READS], out, threads=2, warn=msgs.append)
+    assert s["counter"].startswith("pcount") and any("pymsbwt is not installed" in m for m in msgs)
+    assert sha(out) == (EXP / "counts.sha256").read_text().strip()
+
+
+def test_msbwt_without_pymsbwt_and_without_reads_stops(panel_dir, tmp_path, monkeypatch):
+    monkeypatch.setattr(count, "msbwt_available", lambda: False)
+    with pytest.raises(RuntimeError, match="pymsbwt is not installed"):
+        count.count_sample(panel_dir / "panel.txt", [_fake_bwt(tmp_path)], tmp_path / "c.txt")
+
+
+def test_stream_mode_ignores_msbwt_and_bwt_mode_refuses_reads(panel_dir, tmp_path):
+    msgs = []
+    out = tmp_path / "c.txt"
+    count.count_sample(panel_dir / "panel.txt", [_fake_bwt(tmp_path), READS], out, threads=2, mode="stream", warn=msgs.append)
+    assert any("ignoring msBWT" in m for m in msgs)
+    assert sha(out) == (EXP / "counts.sha256").read_text().strip()
+    with pytest.raises(ValueError, match="every input must be an msBWT"):
+        count.count_sample(panel_dir / "panel.txt", [READS], tmp_path / "d.txt", mode="bwt")
+    with pytest.raises(ValueError, match="no read file"):
+        count.count_sample(panel_dir / "panel.txt", [_fake_bwt(tmp_path)], tmp_path / "d.txt", mode="stream")
+
+
+def test_auto_picks_msbwt_when_present_and_counts_agree(panel_dir, counts_file, tmp_path):
+    pytest.importorskip("MUSCython.MultiStringBWTCython")
+    import shutil
+    exe = shutil.which("msbwt") or str(Path(sys.executable).parent / "msbwt")
+    fq = tmp_path / "r.fq"
+    with gzip.open(READS, "rb") as f:
+        fq.write_bytes(f.read())
+    bwt = tmp_path / "bwt"
+    bwt.mkdir()
+    subprocess.run([exe, "cffq", "-p", "2", "-u", "-c", str(bwt), str(fq)], check=True, capture_output=True)
+    want = (EXP / "counts.sha256").read_text().strip()
+    a, b, c = tmp_path / "auto.txt", tmp_path / "bwt.txt", tmp_path / "stream.txt"
+    assert count.count_sample(panel_dir / "panel.txt", [bwt], a)["counter"] == "pymsbwt"
+    assert count.count_sample(panel_dir / "panel.txt", [bwt, READS], b, warn=lambda m: None)["counter"] == "pymsbwt"
+    assert count.count_sample(panel_dir / "panel.txt", [bwt], c, mode="bwt")["counter"] == "pymsbwt"
+    s = count.count_sample(panel_dir / "panel.txt", [READS], tmp_path / "s.txt", threads=2)
+    assert s["counter"].startswith("pcount")
+    assert sha(a) == sha(b) == sha(c) == sha(tmp_path / "s.txt") == want

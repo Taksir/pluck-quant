@@ -50,6 +50,19 @@ pluck design compile --design-dir design50 --probes design50/probes_s26.npz --ge
 
 `--strand reverse`: read 1 is antisense to the mRNA (dUTP libraries; Keele CC, GSE199702). `forward`: read 1 is the mRNA strand. `unstranded`: both orientations are counted and added (Munger). For the 100 bp Munger design use `--read-length 100 --probes design100/probes_s76.npz --strand unstranded`; for GSE199702 use `--read-length 101 --probes design101/probes_s77.npz --strand reverse`.
 
+## Input: reads or an existing msBWT
+
+`--sample NAME=path[,path...]` takes, for each sample, FASTQ files (gzip or plain; several files of one sample add up) or the directory of an existing msBWT (a folder with `msbwt.npy`, `comp_msbwt.npy` or `comp_msbwt.dat`). PLUCK looks at the paths and chooses the counting backend itself:
+
+| the sample has | PLUCK does |
+|---|---|
+| an msBWT | counts from the msBWT (needs pymsbwt, Python >= 3.14); read files given with it are not read |
+| FASTQ files only | streams the FASTQ files once |
+| an msBWT, pymsbwt is not installed, and FASTQ files are also given | warns and streams the FASTQ files |
+| an msBWT, pymsbwt is not installed, no FASTQ files | stops with an error that says how to install pymsbwt or to give the FASTQ files |
+
+`--bwt` forces the msBWT (every path must be an msBWT directory), `--stream` forces streaming (msBWT directories are ignored with a note). Both backends give identical counts; this is tested (`pytest` on Python 3.14 builds an msBWT from the test reads and compares the counts byte for byte).
+
 ## Run
 
 ```
@@ -70,12 +83,12 @@ The EM stops when no gene total above 10 fragments changes by more than 1e-3 bet
 ```
 pluck count --panel panel50 --reads a.fastq.gz -o a.counts.txt        # only the counts
 pluck quant --panel panel50 --counts a.counts.txt b.counts.txt -o genes.tsv
-pluck run --panel panel50 --bwt --sample S1=path/to/msbwt_dir -o genes.tsv   # existing msBWT, needs pymsbwt
+pluck run --panel panel50 --sample S1=path/to/msbwt_dir -o genes.tsv       # existing msBWT (detected), needs pymsbwt
 pluck design verify --layout 50 --design-dir design50
 pluck native                                                           # compile / show the C programs
 ```
 
-Each `pluck run` prints panel hits per read for every sample and warns below 0.001, which usually means wrong strandedness or a truncated file.
+`pluck count --reads X` follows the same rule. Each `pluck run` prints panel hits per read for every sample and warns below 0.001, which usually means wrong strandedness or a truncated file.
 
 ## Not in this release
 

@@ -41,6 +41,17 @@ def _quant(args, names, count_files):
     print(f"[pluck] wrote {args.out}", file=sys.stderr)
 
 
+def _count(pan, paths, out, threads, mode):
+    try:
+        return count_mod.count_sample(pan.panel_txt, paths, out, threads, mode=mode, warn=lambda m: print(m, file=sys.stderr))
+    except (ValueError, RuntimeError) as e:
+        raise SystemExit(f"pluck: {e}")
+
+
+def _mode(args):
+    return "bwt" if args.bwt else "stream" if args.stream else "auto"
+
+
 def cmd_run(args):
     pan = estimate.Panel(args.panel)
     samples = _samples(args.sample)
@@ -49,10 +60,7 @@ def cmd_run(args):
     cfs = []
     for n, reads in samples:
         cf = wd / f"{n}.counts.txt"
-        if args.bwt:
-            s = count_mod.count_msbwt(pan.panel_txt, reads[0], cf)
-        else:
-            s = count_mod.count_stream(pan.panel_txt, reads, cf, args.threads)
+        s = _count(pan, reads, cf, args.threads, _mode(args))
         print(f"[pluck] {n}: {s}", file=sys.stderr)
         if s.get("hits_per_read") is not None and s["hits_per_read"] < args.min_hits_per_read:
             print(f"[pluck] WARNING {n}: only {s['hits_per_read']:.4f} panel hits per read; "
@@ -63,10 +71,11 @@ def cmd_run(args):
 
 def cmd_count(args):
     pan = estimate.Panel(args.panel)
-    if args.bwt:
-        s = count_mod.count_msbwt(pan.panel_txt, args.bwt, args.out)
-    else:
-        s = count_mod.count_stream(pan.panel_txt, args.reads, args.out, args.threads)
+    paths = list(args.reads or []) + ([args.bwt] if args.bwt else [])
+    if not paths:
+        raise SystemExit("give --reads (read files and/or msBWT directories) or --bwt DIR")
+    mode = "bwt" if args.bwt and not args.reads else "stream" if args.stream else "auto"
+    s = _count(pan, paths, args.out, args.threads, mode)
     print(json.dumps(s))
 
 
@@ -118,9 +127,13 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("run", help="count the panel in reads and write the gene table")
-    p.add_argument("--sample", action="append", required=True, metavar="NAME=reads[,reads...]",
-                   help="FASTQ file(s) (gzip or plain) of one sample; repeat for more samples. With --bwt: NAME=msBWT_dir")
-    p.add_argument("--bwt", action="store_true", help="the --sample paths are existing msBWT directories (needs pymsbwt)")
+    p.add_argument("--sample", action="append", required=True, metavar="NAME=path[,path...]",
+                   help="one sample: FASTQ file(s) (gzip or plain) and/or an existing msBWT directory; repeat for more samples. "
+                        "If the sample has an msBWT, PLUCK counts from it (needs pymsbwt, Python >= 3.14); otherwise it streams the "
+                        "FASTQ file(s). An msBWT without pymsbwt falls back to the FASTQ file(s) given with it, with a warning")
+    g = p.add_mutually_exclusive_group()
+    g.add_argument("--bwt", action="store_true", help="force msBWT: every --sample path must be an msBWT directory")
+    g.add_argument("--stream", action="store_true", help="force streaming: ignore msBWT directories, read FASTQ files only")
     p.add_argument("-t", "--threads", type=int, default=4)
     p.add_argument("--counts-dir", help="keep the counts files here (default: temporary)")
     p.add_argument("--min-hits-per-read", type=float, default=0.001)
@@ -129,8 +142,9 @@ def main(argv=None):
 
     p = sub.add_parser("count", help="only count the panel (one sample)")
     p.add_argument("--panel", required=True)
-    p.add_argument("--reads", nargs="+")
-    p.add_argument("--bwt", help="existing msBWT directory instead of reads")
+    p.add_argument("--reads", nargs="+", help="read files and/or msBWT directories (an msBWT is used when present, see 'run')")
+    p.add_argument("--bwt", help="existing msBWT directory (forces msBWT)")
+    p.add_argument("--stream", action="store_true", help="force streaming of the read files")
     p.add_argument("-t", "--threads", type=int, default=4)
     p.add_argument("-o", "--out", required=True)
     p.set_defaults(fn=cmd_count)

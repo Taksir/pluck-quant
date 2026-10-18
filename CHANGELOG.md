@@ -6,6 +6,7 @@
 - Layout 100 (100 bp reads, probe spacing 76, the Munger design): recipe (`pluck design build --layout 100`), locked hashes, tie-order table, fetch, verify. Layout 101 and 50 as before. One `prep` run now writes the probe files of all three layouts.
 - `pluck design fetch` accepts a flat folder of files (GitHub release assets, with `design_<layout>.npz`, `gc_<layout>.npy`, `genome_count_<layout>.npy`).
 - The reliability flag table (`flag_table.tsv`), the gene tiers and `flag_spec.json` ship with the package: `--flags builtin:flags`, `--tiers builtin:tiers`. The flag feature script is in `flag/`.
+- The counting backend is chosen from the input: a sample with an msBWT is counted from it, otherwise the FASTQ files are streamed; without pymsbwt it falls back to the FASTQ files given with the msBWT (with a warning), or stops with a clear error. `--bwt` and `--stream` force one backend.
 - Tests: version B against the stored timed outputs.
 
 ## 0.1.0
