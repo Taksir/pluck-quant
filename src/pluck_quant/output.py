@@ -6,8 +6,17 @@ import numpy as np
 
 
 def _read_table(path, key="gene_id"):
+    """Tab-separated table by gene id. path may be 'builtin:flags' / 'builtin:tiers' (the tables shipped with the package:
+    flag_table.tsv, sha256 fff978bf...d506, and gene_tiers.tsv of the frozen design) or a file (plain or .gz)."""
     import csv
-    with open(path, newline="") as f:
+    from importlib import resources
+    if str(path).startswith("builtin:"):
+        name = {"builtin:flags": "flag_table.tsv.gz", "builtin:tiers": "gene_tiers.tsv.gz"}[str(path)]
+        path = resources.files("pluck_quant") / "_data" / name
+        f = gzip.open(path.open("rb"), "rt", newline="")
+    else:
+        f = gzip.open(path, "rt", newline="") if str(path).endswith(".gz") else open(path, newline="")
+    with f:
         rd = csv.DictReader(f, delimiter="\t")
         return {r[key]: r for r in rd}
 

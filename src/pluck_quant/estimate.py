@@ -89,10 +89,13 @@ def sample_estimates(panel: Panel, c_sel, em_exe=None):
     return {"Sg": Sg, "Ng": Ng, "em": em_est, "mg": mg, "em_iterations": r.stdout.strip()}
 
 
-def hybrid_sample(res, tau=TAU):
-    """Per-sample switch, version A (the released rule): f = S_g / EM_g within the sample; gene-probe estimate if f >= tau."""
+def hybrid_sample(res, tau=TAU, scaled=False):
+    """Per-sample switch. Default (version A, the released rule): f = S_g / EM_g within the sample, gene-probe estimate if f >= tau.
+    scaled=True (version B, the rule of the timed pipeline, run_sample2.py of the frozen runs): f = N_g / EM_g with the
+    length-scaled gene-probe estimate N_g in the numerator."""
+    num = res["Ng"] if scaled else res["Sg"]
     with np.errstate(invalid="ignore", divide="ignore"):
-        f = np.where(res["em"] > 0, res["Sg"] / res["em"], np.nan)
+        f = np.where(res["em"] > 0, num / res["em"], np.nan)
         est = np.where((res["mg"] > 0) & (f >= tau), res["Ng"], res["em"])
     est = np.where(np.isnan(est), res["em"], est)
     probe = (res["mg"] > 0) & (f >= tau) & ~np.isnan(res["Ng"])

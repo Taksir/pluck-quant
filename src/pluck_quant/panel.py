@@ -38,7 +38,7 @@ def sha256_file(p, bufsize=1 << 24):
 
 def verify_design(layout, design_dir):
     """Compare design.npz (array contents), gc.npy and genome_count.npy of DESIGN_DIR with the locked values
-    for layout 50 (50 bp reads, spacing 26) or 101 (101 bp reads, spacing 77). Returns (ok, lines)."""
+    for layout 50 (50 bp reads, spacing 26), 100 (100 bp reads, spacing 76) or 101 (101 bp reads, spacing 77). Returns (ok, lines)."""
     ref = resources.files("pluck_quant") / "_design"
     lines, bad = [], 0
     want = {}
@@ -157,11 +157,14 @@ def compile_panel(design_dir, probes_npz, genes_json, read_length, out_dir, stra
 # ----------------------------------------------------------------------------- download a prebuilt design
 _GENES_SHA = "25e9297094ce681d42405e8d9a108c728a6d830d5f3c21c98b08b95f0b760148"
 _PROBES = {50: ("probes_s26.npz", "f6c171db3987207df6dc543e9ffbf211de4bea22159d2771034e967d7e26df20"),
+           100: ("probes_s76.npz", "533d70b66640ece3616c237e8d1acfebc33bdfd01ac0ff0a1c7960974e993cea"),
            101: ("probes_s77.npz", "053bfc6f3a3ae1b28f8cb460203f559150e95f69b65b7ec2fd163e9886087c94")}
+# layout -> (probe spacing, design folder, gene-probe file); the spacing is the read length minus 24
+_LAYOUTS = {50: (26, "dsn26", "probes_s26.npz"), 100: (76, "dsn76", "probes_s76.npz"), 101: (77, "dsn77", "probes_s77.npz")}
 
 
 def fetch_design(layout, base_url, dest):
-    """Download design.npz, gc.npy, genome_count.npy, the gene-probe file and genes.json from BASE_URL/<layout>/ and check them
+    """Download design.npz, gc.npy, genome_count.npy, the gene-probe file and genes.json from BASE_URL (files in BASE_URL/<layout>/, in BASE_URL, or named design_<layout>.npz, gc_<layout>.npy, genome_count_<layout>.npy) and check them
     against the locked hashes. BASE_URL is where the release assets were put."""
     import urllib.error
     import urllib.request
@@ -182,12 +185,16 @@ def fetch_design(layout, base_url, dest):
         target = dest / n
         if not target.exists():
             b = base_url.rstrip("/")
-            try:  # a folder per layout, or one flat folder (GitHub release assets are flat)
-                urllib.request.urlretrieve(f"{b}/{layout}/{n}", target)
-            except urllib.error.HTTPError as e:
-                if e.code != 404:
-                    raise
-                urllib.request.urlretrieve(f"{b}/{n}", target)
+            stem, dot, ext = n.rpartition(".")
+            # a folder per layout, one flat folder, or a flat folder whose files carry the layout (GitHub release assets are flat)
+            cands = [f"{b}/{layout}/{n}", f"{b}/{n}", f"{b}/{stem}_{layout}{dot}{ext}"]
+            for i, u in enumerate(cands):
+                try:
+                    urllib.request.urlretrieve(u, target)
+                    break
+                except urllib.error.HTTPError as e:
+                    if e.code != 404 or i == len(cands) - 1:
+                        raise
         if h and sha256_file(target) != h:
             raise RuntimeError(f"{n}: sha256 does not match the locked value")
     ok, lines = verify_design(layout, dest)
@@ -203,9 +210,11 @@ _STAGES = ("prep", "design", "gc", "gscan", "gfix", "verify")
 def build_design(layout, work, threads=None, log=print, stages=_STAGES):
     """Rebuild a design from Ensembl 102 and the Mouse Genomes Project REL-1505 (needs internet, ~8 GB disk, a few hours,
     about 15 GB RAM) with the same stages and edits as the Longleaf rebuild, then check the locked hashes.
-    layout 50 -> SP 26 (50 bp reads); 101 -> SP 77 (101 bp reads). Writes WORK/design/dsn{26,77}/{design.npz,gc.npy,genome_count.npy}
-    and WORK/ref/probes_s{26,77}.npz, WORK/ref/genes.json."""
-    sp, dname, pname = {50: (26, "dsn26", "probes_s26.npz"), 101: (77, "dsn77", "probes_s77.npz")}[int(layout)]
+    layout 50 -> SP 26 (50 bp reads); 100 -> SP 76 (100 bp reads); 101 -> SP 77 (101 bp reads). Writes
+    WORK/design/dsn{26,76,77}/{design.npz,gc.npy,genome_count.npy} and WORK/ref/probes_s{26,76,77}.npz, WORK/ref/genes.json.
+    The reference download and the probe selection (stage prep) are shared: running a second layout in the same WORK folder
+    with stages without 'prep' reuses them."""
+    sp, dname, pname = _LAYOUTS[int(layout)]
     w = Path(work).resolve()
     src = Path(__file__).parent
     py = sys.executable
@@ -219,9 +228,14 @@ def build_design(layout, work, threads=None, log=print, stages=_STAGES):
 
     if "prep" in stages:
         shutil.copy(src / "_frozen" / "e9rs.py", w / "e9rs.py")
-        sh([py, "e9rs.py", "prep", "--work", w] + (["--threads", threads] if threads else []), w)
-        if not (w / "ref" / pname).exists() or not (w / "ref" / "genes.json").exists():
-            raise RuntimeError("prep did not write the probe files")
+        # the frozen prep, unchanged, with the list of probe spacings set to the three the paper uses (76 = 100 bp reads);
+        # probes_s26 and probes_s77 come out identical to the files of the default list
+        (w / "prep_run.py").write_text("import sys\nsys.path.insert(0, '.')\nimport e9rs\ne9rs.SPACINGS = [26, 76, 77]\n"
+                                       "sys.argv = ['e9rs.py', 'prep'] + sys.argv[1:]\ne9rs.main()\n")
+        sh([py, "prep_run.py", "--work", w] + (["--threads", threads] if threads else []), w)
+        for need in ("probes_s26.npz", "probes_s76.npz", "probes_s77.npz", "genes.json"):
+            if not (w / "ref" / need).exists():
+                raise RuntimeError(f"prep did not write ref/{need}")
     d = w / "design" / dname
     if "design" in stages:
         (d / "ref").mkdir(parents=True, exist_ok=True)
@@ -250,8 +264,8 @@ def build_design(layout, work, threads=None, log=print, stages=_STAGES):
         sh([py, "gscan.py"], d)
     if "gfix" in stages:
         # gscan sorts with an unstable argsort; gfix puts each tie group's total on the member the locked design recorded
-        (d / "carriers50.b64").write_bytes((src / "_design" / "carriers50.b64").read_bytes())
-        (d / "carriers101.b64").write_bytes((src / "_design" / "carriers101.b64").read_bytes())
+        for lay in (50, 100, 101):
+            (d / f"carriers{lay}.b64").write_bytes((src / "_design" / f"carriers{lay}.b64").read_bytes())
         shutil.copy(src / "_design" / "gfix.py", d / "gfix.py")
         sh([py, "gfix.py", layout, d], d)
     ok = True

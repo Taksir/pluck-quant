@@ -70,18 +70,18 @@ def test_counts_via_stdin_path(panel_dir, tmp_path, monkeypatch):
     assert sha(out) == (EXP / "counts.sha256").read_text().strip()
 
 
-@pytest.mark.parametrize("version", ["A"])
+@pytest.mark.parametrize("version", ["A", "B"])
 def test_estimates_match_frozen(panel_dir, counts_file, tmp_path, version):
     pan = estimate.Panel(panel_dir)
     res = estimate.sample_estimates(pan, estimate.read_counts(pan, counts_file))
-    est, probe = estimate.hybrid_sample(res)
+    est, probe = estimate.hybrid_sample(res, scaled=version == "B")
     out = tmp_path / "t.tsv"
     output.write_table(out, pan, ["CC021"], est[None, :], probe[None, :], branch=True)
     got = {}
     for l in list(open(out))[1:]:
         t = l.rstrip("\n").split("\t")
         got[t[0]] = (None if t[2] == "NA" else float(t[2]), t[3])
-    want = load_tsv(EXP / "estimates_A.tsv")
+    want = load_tsv(EXP / f"estimates_{version}.tsv")
     assert set(want) <= set(got)
     for g, (e, b) in want.items():
         ge, gb = got[g]
@@ -119,14 +119,15 @@ def test_unstranded_panel_counts(panel_dir, tmp_path):
     assert np.array_equal(estimate.read_counts(pan, c), both[:n] + both[n:])
 
 
-def test_cli_run_end_to_end(panel_dir, tmp_path):
+@pytest.mark.parametrize("switch,version", [("sample", "A"), ("sample-scaled", "B")])
+def test_cli_run_end_to_end(panel_dir, tmp_path, switch, version):
     out = tmp_path / "genes.tsv"
-    subprocess.run([sys.executable, "-m", "pluck_quant", "run", "--panel", str(panel_dir), "--sample",
+    subprocess.run([sys.executable, "-m", "pluck_quant", "run", "--panel", str(panel_dir), "--switch", switch, "--sample",
                     f"CC021={DATA / 'reads' / 'CC021_first500k.fastq.gz'}", "--branch", "-o", str(out)], check=True)
     rows = [l.split("\t") for l in out.read_text().splitlines()]
     assert rows[0][:2] == ["gene_id", "gene_name"] and rows[0][-2:] == ["CC021", "CC021.branch"]
     d = {r[0]: r for r in rows[1:]}
-    want = load_tsv(EXP / "estimates_A.tsv")
+    want = load_tsv(EXP / f"estimates_{version}.tsv")
     g = GENES[0]
     assert abs(float(d[g][-2]) - want[g][0]) <= 1e-9 * abs(want[g][0]) + 1e-12
 
@@ -153,3 +154,17 @@ def test_several_files_add_up(panel_dir, tmp_path):
     one = np.loadtxt(DATA.parent.parent / "tests" / "data" / "expected_mini" / "counts.txt.gz", dtype=np.int64)
     assert s["reads"] == 1000000
     assert np.array_equal(np.loadtxt(out, dtype=np.int64), 2 * one)
+
+
+def test_builtin_tables_are_the_locked_ones():
+    import gzip
+    from importlib import resources
+    d = resources.files("pluck_quant") / "_data"
+    assert hashlib.sha256(gzip.open((d / "flag_table.tsv.gz").open("rb")).read()).hexdigest() == \
+        "fff978bf6a1199c85e34bee564d4f5b40d87cb90639d7036cf7c333de757d506"
+    assert hashlib.sha256((d / "flag_spec.json").read_bytes()).hexdigest() == \
+        "ffa185a7f85d3502af157467e45e163f929e96907916d2873d7abc4b0e157e3c"
+    t = output._read_table("builtin:tiers")
+    f = output._read_table("builtin:flags")
+    assert (len(t), len(f)) == (43143, 16885)
+    assert set(f["ENSMUSG00000000001"]) >= {"unique_frac_50bp", "flag_50bp", "unique_frac_100bp", "flag_100bp"}

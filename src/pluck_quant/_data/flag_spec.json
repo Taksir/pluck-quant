@@ -1,0 +1,15 @@
+{
+ "frozen_at": "2026-10-07T04:33Z",
+ "chosen_on": "Keele liver only (cis-eQTL scan genes, 7,810; tail = resvar_hybrid/resvar_salmon_pan > 2, 9.28%). No other cohort's tail was looked at before this file was written.",
+ "primary_flag": {
+  "name": "low unique fraction",
+  "definition": "u_g = frac_emg = (gene's variant-free probe windows that are gene-unique and single-copy in GRCm38, i.e. the frozen emg rule) / (all variant-free probe windows in the gene's annotated transcripts); computed on the layout's own EM design (26 nt for 50 bp; 76 nt for 100/101 bp)",
+  "flag_if": "u_g < 0.6",
+  "liver_fit": {"flag_rate": 0.141, "precision": 0.391, "recall": 0.593, "tail_unflagged": 0.044, "auc_score": 0.838}
+ },
+ "sensitivity_threshold": "u_g < 0.7 (liver flag 21%, recall 0.71)",
+ "secondary_design_model": {"name": "compact logistic", "features": ["frac_emg", "em_capture", "em_var_factor", "frac_shared", "frac_multicopy", "gp_capture", "vf_loss", "m_vf"], "fit": "all Keele liver genes, standardised, C=1", "threshold": "score quantile flagging 15% of liver genes", "liver_cv_auc": 0.850},
+ "secondary_postcount_model": {"name": "compact logistic + log(T) + observed EM branch (truth-free, Salmon-free, known after counting)", "threshold": "15% of liver genes"},
+ "metrics_out_of_sample": ["ROC AUC and PR AUC of the score", "flag rate, precision, recall, tail rate flagged vs unflagged", "median and mean per-gene resvar ratio and per-gene animal factor for unflagged genes", "detection-matched extra-n for unflagged genes where per-sample data allow"],
+ "ceiling_reference": "the observed liver tail itself used as a flag for other cohorts (gene overlap only)"
+}

@@ -33,7 +33,7 @@ def _quant(args, names, count_files):
     if args.switch == "cohort":
         est, probe, f = estimate.hybrid_cohort(res, args.tau)
     else:
-        pr = [estimate.hybrid_sample(r, args.tau) for r in res]
+        pr = [estimate.hybrid_sample(r, args.tau, scaled=args.switch == "sample-scaled") for r in res]
         est = np.stack([p[0] for p in pr])
         probe = np.stack([p[1] for p in pr])
     output.write_table(args.out, pan, names, est, probe, tiers=args.tiers, flags=args.flags,
@@ -100,12 +100,14 @@ def cmd_native(args):
 
 def _add_quant_opts(p):
     p.add_argument("--panel", required=True, help="panel directory made by 'pluck design compile'")
-    p.add_argument("--switch", choices=["sample", "cohort"], default="sample",
-                   help="hybrid switch: 'sample' = per sample (released rule, version A); 'cohort' = summed over all samples given "
-                        "(the rule used for the accuracy results of the paper; give the samples of one tissue and layout)")
+    p.add_argument("--switch", choices=["sample", "cohort", "sample-scaled"], default="sample",
+                   help="hybrid switch: 'sample' = per sample (version A, the released rule); 'cohort' = summed over all samples given "
+                        "(the rule behind the accuracy results of the paper; give the samples of one tissue and layout); "
+                        "'sample-scaled' = per sample with the length-scaled gene-probe estimate in the ratio (version B, the rule of "
+                        "the timed runs)")
     p.add_argument("--tau", type=float, default=estimate.TAU)
-    p.add_argument("--tiers", help="gene_tiers.tsv (adds a tier column)")
-    p.add_argument("--flags", help="flag_table.tsv (adds unique_frac and flag columns)")
+    p.add_argument("--tiers", help="gene_tiers.tsv, or builtin:tiers for the table shipped with the package (adds a tier column)")
+    p.add_argument("--flags", help="flag_table.tsv, or builtin:flags for the table shipped with the package (adds unique_frac and flag columns)")
     p.add_argument("--branch", action="store_true", help="add a column per sample telling which estimate was used")
     p.add_argument("-o", "--out", required=True, help="output table (TSV; .gz allowed)")
 
@@ -142,21 +144,21 @@ def main(argv=None):
     p = sub.add_parser("design", help="design files: verify, compile, build")
     ds = p.add_subparsers(dest="dcmd", required=True)
     q = ds.add_parser("verify", help="check design.npz, gc.npy, genome_count.npy against the locked hashes")
-    q.add_argument("--layout", type=int, choices=[50, 101], required=True)
+    q.add_argument("--layout", type=int, choices=[50, 100, 101], required=True)
     q.add_argument("--design-dir", required=True)
     q = ds.add_parser("compile", help="design -> panel directory")
     q.add_argument("--design-dir", required=True, help="folder with design.npz, gc.npy, genome_count.npy")
-    q.add_argument("--probes", required=True, help="gene-probe file (probes_s26.npz for 50 bp, probes_s77.npz for 101 bp)")
+    q.add_argument("--probes", required=True, help="gene-probe file (probes_s26.npz for 50 bp, probes_s76.npz for 100 bp, probes_s77.npz for 101 bp)")
     q.add_argument("--genes", required=True, help="genes.json")
     q.add_argument("--read-length", type=int, required=True)
     q.add_argument("--strand", choices=list(panel_mod.STRANDS), default="reverse")
     q.add_argument("-o", "--out", required=True)
     q = ds.add_parser("fetch", help="download a prebuilt design (release assets) and check the locked hashes")
-    q.add_argument("--layout", type=int, choices=[50, 101], required=True)
+    q.add_argument("--layout", type=int, choices=[50, 100, 101], required=True)
     q.add_argument("--url", required=True, help="base URL holding [<layout>/]design.npz, gc.npy, genome_count.npy, probes_*.npz, genes.json")
     q.add_argument("--dest", required=True)
     q = ds.add_parser("build", help="rebuild a design from Ensembl 102 + MGP REL-1505 (internet, hours) and verify the hashes")
-    q.add_argument("--layout", type=int, choices=[50, 101], required=True)
+    q.add_argument("--layout", type=int, choices=[50, 100, 101], required=True)
     q.add_argument("--work", required=True)
     q.add_argument("--threads", type=int)
     p.set_defaults(fn=cmd_design)
