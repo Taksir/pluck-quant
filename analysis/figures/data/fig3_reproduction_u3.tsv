@@ -1,0 +1,26 @@
+# file: fig3_reproduction_u3.tsv
+# note: Median of the per-gene values, scoring set A, all genes, recomputed and set next to the values of the scoring script (scorer_*); match says whether they agree.
+# note: Truths are the cohort truths (RSEM on strain genomes), which share reads with full-read methods. hybrid is plotted as PLUCK.
+cohort	tool	n_samples	median_rho	n_rho	scorer_rho	scorer_n_rho	median_sd	n_sd	scorer_sd	scorer_n_sd	match
+keele_kidney	hybrid	47	0.9888	6778	0.9888	6778	0.0739	6780	0.0739	6780	True
+keele_kidney	Salmon-pan	47	0.993	6779	0.993	6779	0.0493	6780	0.0493	6780	True
+keele_kidney	Salmon-ref	47	0.9904	6779	0.9904	6779	0.0617	6780	0.0617	6780	True
+keele_kidney	STAR+fC	47	0.992	6779	0.992	6779	0.0527	6780	0.0527	6780	True
+keele_kidney	kallisto-ref	47	0.9899	6779	0.9899	6779	0.0653	6780	0.0653	6780	True
+keele_kidney	Kmerator+countTags	47	0.9829	6780	0.9829	6780	0.1058	6780	0.1058	6780	True
+keele_kidney	ref-unique probes	47	0.9823	6774	0.9823	6774	0.0925	6780	0.0925	6780	True
+keele_liver	hybrid	47	0.9814	5949	0.9814	5949	0.0786	5951	0.0786	5951	True
+keele_liver	Salmon-pan	47	0.9876	5951	0.9876	5951	0.0511	5951	0.0511	5951	True
+keele_liver	Salmon-ref	47	0.9849	5951	0.9849	5951	0.0639	5951	0.0639	5951	True
+keele_liver	STAR+fC	47	0.9861	5951	0.9861	5951	0.0569	5951	0.0569	5951	True
+keele_liver	kallisto-ref	47	0.9842	5951	0.9842	5951	0.067	5951	0.067	5951	True
+keele_liver	Kmerator+countTags	47	0.9762	5951	0.9762	5951	0.0983	5951	0.0983	5951	True
+keele_liver	ref-unique probes	47	0.975	5946	0.975	5946	0.0949	5951	0.0949	5951	True
+munger	hybrid	47	0.978	8732	0.978	8732	0.0636	8736	0.0636	8736	True
+munger	Salmon-pan	47	0.9884	8736	0.9884	8736	0.0416	8736	0.0416	8736	True
+munger	Salmon-ref	47	0.9886	8736	0.9886	8736	0.0417	8736	0.0417	8736	True
+munger	STAR+fC	47	0.9846	8731	0.9846	8731	0.0504	8736	0.0504	8736	True
+munger	kallisto-pan	47	0.9858	8736	0.9858	8736	0.0476	8736	0.0476	8736	True
+munger	kallisto-ref	47	0.9853	8736	0.9853	8736	0.0486	8736	0.0486	8736	True
+munger	Kmerator+countTags	47	0.9436	8734	0.9436	8734	0.0924	8736	0.0924	8736	True
+munger	ref-unique probes	47	0.9507	8733	0.9507	8733	0.0918	8736	0.0918	8736	True

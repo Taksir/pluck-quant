@@ -1,0 +1,108 @@
+# file: fig6c_timing_ratios.tsv
+# note: One compute node (AMD EPYC 9654, shared with other jobs). Ratio = method wall / PLUCK wall in the same paired block, median over 3 reps (T=1: one rep); T = threads. Layout 50 = Keele liver CC021 and CC001 (50 bp SE); layout 101 = GSE199702 Liver CC001 F (101 bp SE); kind=gbrs rows: one repetition, timing only.
+# note: Timed PLUCK used --switch sample-scaled; the reported accuracy uses --switch cohort.
+kind	layout	sample	T	method	n_reps	wall_median_s	wall_min	wall_max	ratio_median	ratio_min	ratio_max	cpu_ratio_median	rss_mb_median	tool
+gbrs	50	CC021	4	gbrs	1	2585.7	2585.7	2585.7	391.773	391.773	391.773	416.124	11043	GBRS
+gbrs	50	CC021	4	hybrid	1	6.6	6.6	6.6	1	1	1	1	1031	hybrid
+gbrs	50	CC021	4	salmon_pan	1	482.22	482.22	482.22	73.064	73.064	73.064	105.071	2391	Salmon-pan
+gbrs	50	CC021	4	salmon_ref	1	123.22	123.22	123.22	18.67	18.67	18.67	30.359	1039	Salmon-ref
+gbrs	50	CC021	8	gbrs	1	2794.27	2794.27	2794.27	587.032	587.032	587.032	985.331	11031	GBRS
+gbrs	50	CC021	8	hybrid	1	4.76	4.76	4.76	1	1	1	1	1107	hybrid
+gbrs	50	CC021	8	salmon_pan	1	230.98	230.98	230.98	48.525	48.525	48.525	98.118	2425	Salmon-pan
+gbrs	50	CC021	8	salmon_ref	1	46.48	46.48	46.48	9.765	9.765	9.765	24.396	1112	Salmon-ref
+gbrs	101	LiverCC001F	8	gbrs	1	3589.44	3589.44	3589.44	390.157	390.157	390.157	406.088	13963	GBRS
+gbrs	101	LiverCC001F	8	hybrid	1	9.2	9.2	9.2	1	1	1	1	1757	hybrid
+gbrs	101	LiverCC001F	8	salmon_pan	1	368.41	368.41	368.41	40.045	40.045	40.045	70.241	2246	Salmon-pan
+gbrs	101	LiverCC001F	8	salmon_ref	1	99.75	99.75	99.75	10.842	10.842	10.842	22.123	1102	Salmon-ref
+regular	50	CC001	1	hybrid	1	34.42	34.42	34.42	1	1	1	1	1548	hybrid
+regular	50	CC001	1	kallisto_ref	1	510.44	510.44	510.44	14.83	14.83	14.83	15.161	1193	kallisto-ref
+regular	50	CC001	1	kmerator_counttags	1	527.98	527.98	527.98	15.339	15.339	15.339	15.64	9564	Kmerator+countTags
+regular	50	CC001	1	salmon_pan	1	3229.37	3229.37	3229.37	93.822	93.822	93.822	95.769	2424	Salmon-pan
+regular	50	CC001	1	salmon_pan_p10	1	446.1	446.1	446.1	12.96	12.96	12.96	13.204	1991	Salmon-pan 10%
+regular	50	CC001	1	salmon_pan_p25	1	1075.66	1075.66	1075.66	31.251	31.251	31.251	31.88	2163	Salmon-pan 25%
+regular	50	CC001	1	salmon_ref	1	817.25	817.25	817.25	23.743	23.743	23.743	24.171	1027	Salmon-ref
+regular	50	CC001	1	salmon_ref_p10	1	136.01	136.01	136.01	3.951	3.951	3.951	3.996	905	Salmon-ref 10%
+regular	50	CC001	1	salmon_ref_p25	1	311.96	311.96	311.96	9.063	9.063	9.063	9.204	936	Salmon-ref 25%
+regular	50	CC001	1	star_featurecounts	1	1005.76	1005.76	1005.76	29.22	29.22	29.22	29.13	25684	STAR+fC
+regular	50	CC001	4	hybrid	3	9.14	8.36	9.71	1	1	1	1	1539	hybrid
+regular	50	CC001	4	kallisto_ref	3	147.96	145.19	172.46	17.367	16.188	17.761	16.719	1292	kallisto-ref
+regular	50	CC001	4	kmerator_counttags	3	396.07	393.89	407.11	44.542	40.565	47.377	15.89	9564	Kmerator+countTags
+regular	50	CC001	4	salmon_pan	3	616.57	567.42	857.43	73.752	58.437	93.811	68.62	2490	Salmon-pan
+regular	50	CC001	4	salmon_pan_p10	3	149.3	103.72	237.64	17.859	11.348	24.474	11.764	2104	Salmon-pan 10%
+regular	50	CC001	4	salmon_pan_p25	3	273.32	219.56	371.02	28.148	24.022	44.38	25.675	2253	Salmon-pan 25%
+regular	50	CC001	4	salmon_ref	3	163.01	143.83	441.11	17.835	17.205	45.428	20.895	1081	Salmon-ref
+regular	50	CC001	4	salmon_ref_p10	3	44.23	43.21	44.74	4.728	4.555	5.352	3.458	978	Salmon-ref 10%
+regular	50	CC001	4	salmon_ref_p25	3	84.76	81.26	86.01	9.274	8.858	9.72	8.134	998	Salmon-ref 25%
+regular	50	CC001	4	star_featurecounts	3	293.93	291.05	321.01	32.159	29.974	38.398	34.956	26113	STAR+fC
+regular	50	CC001	8	hybrid	3	8.04	7.42	9.88	1	1	1	1	1568	hybrid
+regular	50	CC001	8	kallisto_ref	3	84	83.83	86.14	10.448	8.485	11.609	16.712	1414	kallisto-ref
+regular	50	CC001	8	kmerator_counttags	3	389.82	388.52	396.25	49.285	39.455	52.361	16.55	9564	Kmerator+countTags
+regular	50	CC001	8	salmon_pan	3	380.1	341.97	437.43	51.226	34.612	54.407	77.085	2540	Salmon-pan
+regular	50	CC001	8	salmon_pan_p10	3	76.49	70.36	99.35	10.309	7.121	12.357	11.033	2080	Salmon-pan 10%
+regular	50	CC001	8	salmon_pan_p25	3	200.22	136.39	278.79	26.984	16.964	28.218	34.969	2237	Salmon-pan 25%
+regular	50	CC001	8	salmon_ref	3	72.57	69.26	73.83	8.614	7.345	9.95	18.549	1118	Salmon-ref
+regular	50	CC001	8	salmon_ref_p10	3	33.4	33.06	33.79	4.112	3.42	4.501	3.826	1001	Salmon-ref 10%
+regular	50	CC001	8	salmon_ref_p25	3	103.71	46.8	138.02	12.899	6.307	13.97	7.7	1075	Salmon-ref 25%
+regular	50	CC001	8	star_featurecounts	3	244.43	152.66	492.04	24.74	20.574	61.199	38.553	26718	STAR+fC
+regular	50	CC021	1	hybrid	1	21.64	21.64	21.64	1	1	1	1	1105	hybrid
+regular	50	CC021	1	kallisto_ref	1	274.58	274.58	274.58	12.689	12.689	12.689	13.135	1193	kallisto-ref
+regular	50	CC021	1	kmerator_counttags	1	376.05	376.05	376.05	17.378	17.378	17.378	17.886	9564	Kmerator+countTags
+regular	50	CC021	1	salmon_pan	1	2193.66	2193.66	2193.66	101.371	101.371	101.371	104.741	2340	Salmon-pan
+regular	50	CC021	1	salmon_pan_p10	1	433.67	433.67	433.67	20.04	20.04	20.04	20.664	1969	Salmon-pan 10%
+regular	50	CC021	1	salmon_pan_p25	1	777.03	777.03	777.03	35.907	35.907	35.907	37.1	2096	Salmon-pan 25%
+regular	50	CC021	1	salmon_ref	1	498.27	498.27	498.27	23.025	23.025	23.025	23.688	1014	Salmon-ref
+regular	50	CC021	1	salmon_ref_p10	1	70.71	70.71	70.71	3.268	3.268	3.268	3.337	879	Salmon-ref 10%
+regular	50	CC021	1	salmon_ref_p25	1	138.4	138.4	138.4	6.396	6.396	6.396	6.568	906	Salmon-ref 25%
+regular	50	CC021	1	star_featurecounts	1	441.42	441.42	441.42	20.398	20.398	20.398	20.505	25684	STAR+fC
+regular	50	CC021	4	hybrid	3	6.51	6.09	9.49	1	1	1	1	1042	hybrid
+regular	50	CC021	4	kallisto_ref	3	82.39	81.58	83.48	12.531	8.682	13.708	14.77	1302	kallisto-ref
+regular	50	CC021	4	kmerator_counttags	3	337.82	337.15	354	51.892	35.527	58.128	24.689	9564	Kmerator+countTags
+regular	50	CC021	4	salmon_pan	3	734.03	410.64	768.73	81.004	63.078	120.53	98.673	2419	Salmon-pan
+regular	50	CC021	4	salmon_pan_p10	3	88.87	88.7	238.31	14.593	9.347	36.607	16.001	2088	Salmon-pan 10%
+regular	50	CC021	4	salmon_pan_p25	3	191.89	190.58	230.47	29.476	20.082	37.844	32.303	2159	Salmon-pan 25%
+regular	50	CC021	4	salmon_ref	3	104.99	98.87	209.86	16.235	11.063	32.237	22.192	1088	Salmon-ref
+regular	50	CC021	4	salmon_ref_p10	3	27.08	25.31	28.72	4.156	3.026	4.16	4.057	971	Salmon-ref 10%
+regular	50	CC021	4	salmon_ref_p25	3	48.91	44.21	49.33	7.259	5.198	7.513	8.168	995	Salmon-ref 25%
+regular	50	CC021	4	star_featurecounts	3	141.64	136.73	161.19	21.757	16.985	22.452	29.521	26119	STAR+fC
+regular	50	CC021	8	hybrid	3	4.77	4.76	4.78	1	1	1	1	1091	hybrid
+regular	50	CC021	8	kallisto_ref	3	50.22	49.88	54.81	10.528	10.479	11.467	18.232	1416	kallisto-ref
+regular	50	CC021	8	kmerator_counttags	3	328.67	324.17	338.1	68.904	67.818	71.029	28.995	9564	Kmerator+countTags
+regular	50	CC021	8	salmon_pan	3	263.56	198.13	264.95	55.254	41.45	55.662	110.786	2460	Salmon-pan
+regular	50	CC021	8	salmon_pan_p10	3	84.84	83.02	132.73	17.786	17.441	27.768	24.391	2142	Salmon-pan 10%
+regular	50	CC021	8	salmon_pan_p25	3	121.56	118.01	135.81	25.484	24.792	28.412	39.752	2197	Salmon-pan 25%
+regular	50	CC021	8	salmon_ref	3	47.13	45.78	55.24	9.901	9.577	11.581	24.92	1114	Salmon-ref
+regular	50	CC021	8	salmon_ref_p10	3	19.81	18.82	23.44	4.144	3.954	4.914	5.301	1066	Salmon-ref 10%
+regular	50	CC021	8	salmon_ref_p25	3	28.63	28.45	31.14	6.002	5.977	6.515	8.964	1087	Salmon-ref 25%
+regular	50	CC021	8	star_featurecounts	3	88.49	83.31	136.95	18.59	17.465	28.651	39.097	26715	STAR+fC
+regular	101	LiverCC001F	1	hybrid	1	69.44	69.44	69.44	1	1	1	1	1854	hybrid
+regular	101	LiverCC001F	1	kallisto_ref	1	435.29	435.29	435.29	6.269	6.269	6.269	6.324	1193	kallisto-ref
+regular	101	LiverCC001F	1	kmerator_counttags	1	889.82	889.82	889.82	12.814	12.814	12.814	12.907	9564	Kmerator+countTags
+regular	101	LiverCC001F	1	salmon_pan	1	2504.36	2504.36	2504.36	36.065	36.065	36.065	36.291	2162	Salmon-pan
+regular	101	LiverCC001F	1	salmon_pan_p10	1	576.02	576.02	576.02	8.295	8.295	8.295	8.347	1990	Salmon-pan 10%
+regular	101	LiverCC001F	1	salmon_pan_p25	1	1072.33	1072.33	1072.33	15.443	15.443	15.443	15.538	2060	Salmon-pan 25%
+regular	101	LiverCC001F	1	salmon_ref	1	866.02	866.02	866.02	12.471	12.471	12.471	12.535	925	Salmon-ref
+regular	101	LiverCC001F	1	salmon_ref_p10	1	143.52	143.52	143.52	2.067	2.067	2.067	2.062	898	Salmon-ref 10%
+regular	101	LiverCC001F	1	salmon_ref_p25	1	288.36	288.36	288.36	4.153	4.153	4.153	4.152	912	Salmon-ref 25%
+regular	101	LiverCC001F	1	star_featurecounts	1	1017.43	1017.43	1017.43	14.652	14.652	14.652	14.14	25684	STAR+fC
+regular	101	LiverCC001F	4	hybrid	3	11.43	11.37	14.4	1	1	1	1	1827	hybrid
+regular	101	LiverCC001F	4	kallisto_pan	3	767.82	758.96	1187.79	67.176	66.751	82.485	62.406	3366	kallisto-pan
+regular	101	LiverCC001F	4	kallisto_ref	3	130.86	125.09	146.6	11.002	9.088	12.826	12.007	1277	kallisto-ref
+regular	101	LiverCC001F	4	kmerator_counttags	3	743.71	721.97	871.58	63.498	51.647	76.254	25.707	9564	Kmerator+countTags
+regular	101	LiverCC001F	4	salmon_pan	3	991.7	650.51	1178.79	81.86	57.213	86.763	63.103	2229	Salmon-pan
+regular	101	LiverCC001F	4	salmon_pan_p10	3	187.49	172.92	262.48	15.208	13.02	22.964	13.177	2046	Salmon-pan 10%
+regular	101	LiverCC001F	4	salmon_pan_p25	3	258.01	231.1	479.75	22.573	20.325	33.316	21.55	2150	Salmon-pan 25%
+regular	101	LiverCC001F	4	salmon_ref	3	221.61	188.43	265.2	19.491	13.085	23.202	23.934	1026	Salmon-ref
+regular	101	LiverCC001F	4	salmon_ref_p10	3	54.66	49.86	59.55	4.807	3.462	5.21	3.966	1002	Salmon-ref 10%
+regular	101	LiverCC001F	4	salmon_ref_p25	3	92.91	83	93.65	7.262	6.452	8.237	6.44	1020	Salmon-ref 25%
+regular	101	LiverCC001F	4	star_featurecounts	3	294.87	274.28	509.45	25.934	23.997	35.378	27.103	26199	STAR+fC
+regular	101	LiverCC001F	8	hybrid	3	8.71	8.54	10.1	1	1	1	1	1770	hybrid
+regular	101	LiverCC001F	8	kallisto_pan	3	493.65	486.06	500.31	55.805	49.536	57.804	60.176	3470	kallisto-pan
+regular	101	LiverCC001F	8	kallisto_ref	3	68.99	68.34	72.65	7.846	6.831	8.507	11.395	1390	kallisto-ref
+regular	101	LiverCC001F	8	kmerator_counttags	3	818.06	695.81	860.08	95.792	68.892	98.746	28.43	9564	Kmerator+countTags
+regular	101	LiverCC001F	8	salmon_pan	3	311.35	289.38	318.65	33.885	31.55	35.746	54.444	2232	Salmon-pan
+regular	101	LiverCC001F	8	salmon_pan_p10	3	108.68	107.66	109.74	12.478	10.659	12.85	12.294	2160	Salmon-pan 10%
+regular	101	LiverCC001F	8	salmon_pan_p25	3	151.55	146.11	194.05	17.4	17.109	19.213	20.605	2203	Salmon-pan 25%
+regular	101	LiverCC001F	8	salmon_ref	3	88.77	83.96	101.83	10.082	9.831	10.192	19.889	1152	Salmon-ref
+regular	101	LiverCC001F	8	salmon_ref_p10	3	38.28	38.18	39.81	4.395	3.942	4.471	3.29	1109	Salmon-ref 10%
+regular	101	LiverCC001F	8	salmon_ref_p25	3	55.49	54.77	58.5	6.288	5.494	6.85	6.533	1083	Salmon-ref 25%
+regular	101	LiverCC001F	8	star_featurecounts	3	118.4	114	131.88	13.088	13.057	13.864	24.818	26872	STAR+fC

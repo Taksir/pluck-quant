@@ -1,4 +1,4 @@
-"""End-to-end tests against outputs produced by the frozen v2 code (see tests/data/expected_mini)."""
+"""End-to-end tests against the outputs of the original analysis code (see tests/data/expected_mini)."""
 import gzip
 import hashlib
 import subprocess
@@ -28,21 +28,21 @@ def load_tsv(p):
     return d
 
 
-def test_vendored_sources_are_the_locked_ones():
+def test_vendored_sources_match_the_reference_code():
     lock = {}
-    for l in (Path(__file__).parent.parent / "frozen_v2_snapshot" / "LOCK.sha256").read_text().splitlines():
+    for l in (Path(__file__).parent.parent / "reference_code" / "CHECKSUMS.sha256").read_text().splitlines():
         if l.startswith("#") or not l.strip():
             continue
         h, f = l.split()
         lock[Path(f).name] = h
     here = Path(panel_mod.__file__).parent
-    assert sha(here / "_frozen" / "em.py") == lock["em.py"]
-    assert sha(here / "_frozen" / "e9rs.py") == lock["e9rs.py"]
+    assert sha(here / "_core" / "em.py") == lock["em.py"]
+    assert sha(here / "_core" / "e9rs.py") == lock["e9rs.py"]
     assert sha(here / "native" / "em.c") == lock["em.c"]
     assert sha(here / "native" / "pcount.c") == "a67f0d70f394320843cbbd217f7a89aa838d13cc9e3998a110b39b0bada6c2fb"  # 4 GiB fix
 
 
-def test_compile_matches_frozen(panel_dir):
+def test_compile_matches_reference(panel_dir):
     assert sha(panel_dir / "panel.txt") == (EXP / "panel.sha256").read_text().strip()
     got = panel_mod.array_hashes(panel_dir / "static.npz")
     want = {}
@@ -54,7 +54,7 @@ def test_compile_matches_frozen(panel_dir):
 
 
 @pytest.mark.parametrize("threads", [1, 4])
-def test_counts_identical_to_frozen(panel_dir, tmp_path, threads):
+def test_counts_identical_to_reference(panel_dir, tmp_path, threads):
     out = tmp_path / "c.txt"
     s = count.count_stream(panel_dir / "panel.txt", DATA / "reads" / "CC021_first500k.fastq.gz", out, threads=threads)
     assert sha(out) == (EXP / "counts.sha256").read_text().strip()
@@ -70,18 +70,18 @@ def test_counts_via_stdin_path(panel_dir, tmp_path, monkeypatch):
     assert sha(out) == (EXP / "counts.sha256").read_text().strip()
 
 
-@pytest.mark.parametrize("version", ["A", "B"])
-def test_estimates_match_frozen(panel_dir, counts_file, tmp_path, version):
+@pytest.mark.parametrize("rule", ["sample", "sample-scaled"])
+def test_estimates_match_reference(panel_dir, counts_file, tmp_path, rule):
     pan = estimate.Panel(panel_dir)
     res = estimate.sample_estimates(pan, estimate.read_counts(pan, counts_file))
-    est, probe = estimate.hybrid_sample(res, scaled=version == "B")
+    est, probe = estimate.hybrid_sample(res, scaled=rule == "sample-scaled")
     out = tmp_path / "t.tsv"
     output.write_table(out, pan, ["CC021"], est[None, :], probe[None, :], branch=True)
     got = {}
     for l in list(open(out))[1:]:
         t = l.rstrip("\n").split("\t")
         got[t[0]] = (None if t[2] == "NA" else float(t[2]), t[3])
-    want = load_tsv(EXP / f"estimates_{version}.tsv")
+    want = load_tsv(EXP / f"estimates_{rule.replace('-', '_')}.tsv")
     assert set(want) <= set(got)
     for g, (e, b) in want.items():
         ge, gb = got[g]
@@ -119,15 +119,15 @@ def test_unstranded_panel_counts(panel_dir, tmp_path):
     assert np.array_equal(estimate.read_counts(pan, c), both[:n] + both[n:])
 
 
-@pytest.mark.parametrize("switch,version", [("sample", "A"), ("sample-scaled", "B")])
-def test_cli_run_end_to_end(panel_dir, tmp_path, switch, version):
+@pytest.mark.parametrize("switch", ["sample", "sample-scaled"])
+def test_cli_run_end_to_end(panel_dir, tmp_path, switch):
     out = tmp_path / "genes.tsv"
     subprocess.run([sys.executable, "-m", "pluck_quant", "run", "--panel", str(panel_dir), "--switch", switch, "--sample",
                     f"CC021={DATA / 'reads' / 'CC021_first500k.fastq.gz'}", "--branch", "-o", str(out)], check=True)
     rows = [l.split("\t") for l in out.read_text().splitlines()]
     assert rows[0][:2] == ["gene_id", "gene_name"] and rows[0][-2:] == ["CC021", "CC021.branch"]
     d = {r[0]: r for r in rows[1:]}
-    want = load_tsv(EXP / f"estimates_{version}.tsv")
+    want = load_tsv(EXP / f"estimates_{switch.replace('-', '_')}.tsv")
     g = GENES[0]
     assert abs(float(d[g][-2]) - want[g][0]) <= 1e-9 * abs(want[g][0]) + 1e-12
 
@@ -156,7 +156,7 @@ def test_several_files_add_up(panel_dir, tmp_path):
     assert np.array_equal(np.loadtxt(out, dtype=np.int64), 2 * one)
 
 
-def test_builtin_tables_are_the_locked_ones():
+def test_builtin_tables_match_the_released_tables():
     import gzip
     from importlib import resources
     d = resources.files("pluck_quant") / "_data"

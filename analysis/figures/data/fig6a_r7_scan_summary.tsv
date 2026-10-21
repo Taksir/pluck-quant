@@ -1,0 +1,28 @@
+# file: fig6a_r7_scan_summary.tsv
+# note: Extra-n and strains needed at 47 strains. The hybrid row is PLUCK in the scored data (1.097/1.078 on the extended grid; the power model gives 1.085/1.073).
+# note: Extrapolated columns beyond 47 strains are inference.
+tissue	variant	arm	N	detections_at_N	pan_equiv_n	extra_n_vs_full_salmon_pan	mc_se	ratio_to_hybrid_proportional	strains_needed_to_match_hybrid_extrap_lin	strains_needed_to_match_hybrid_extrap_loglog	ratio_to_hybrid_extrap_range
+keele_liver	asis	hybrid (frozen v2 core)	47	2154	42.84	1.097	0.002	1			
+keele_liver	asis	Salmon-pan, 25% of reads	47	1449	31.36	1.499	0.013	1.366	77.5	69.5	1.48-1.65
+keele_liver	asis	Salmon-pan, 10% of reads	47	823	22.69	2.072	0.011	1.889		140.5	2.99-nan
+keele_liver	asis	Salmon-ref, 25% of reads	47	1621	33.98	1.383	0.008	1.261	67.5	63	1.34-1.44
+keele_liver	asis	Salmon-ref, 10% of reads	47	942	24.33	1.932	0.017	1.761		127.5	2.71-nan
+keele_liver	asis	Salmon-ref, 100%	47	2601							
+keele_liver	rescaled	hybrid (frozen v2 core)	47	2154	42.84	1.097	0.002	1			
+keele_liver	rescaled	Salmon-pan, 25% of reads	47	1412	30.8	1.526	0.013	1.391	89.5	72	1.53-1.90
+keele_liver	rescaled	Salmon-pan, 10% of reads	47	764	21.87	2.149	0.012	1.959		170	3.62-nan
+keele_liver	rescaled	Salmon-ref, 25% of reads	47	1588	33.47	1.404	0.009	1.28	70.5	64.5	1.37-1.50
+keele_liver	rescaled	Salmon-ref, 10% of reads	47	875	23.4	2.008	0.014	1.83		156	3.32-nan
+keele_liver	rescaled	Salmon-ref, 100%	47	2601							
+keele_kidney	asis	hybrid (frozen v2 core)	47	3400	43.6	1.078	0.002	1			
+keele_kidney	asis	Salmon-pan, 25% of reads	47	2645	33.42	1.406	0.005	1.304	68	65	1.38-1.45
+keele_kidney	asis	Salmon-pan, 10% of reads	47	1679	23.93	1.964	0.009	1.822		109	2.32-nan
+keele_kidney	asis	Salmon-ref, 25% of reads	47	2953	37.3	1.26	0.004	1.169	56.5	56	1.19-1.20
+keele_kidney	asis	Salmon-ref, 10% of reads	47	1903	25.88	1.816	0.008	1.685		96	2.04-nan
+keele_kidney	asis	Salmon-ref, 100%	47	4014							
+keele_kidney	rescaled	hybrid (frozen v2 core)	47	3400	43.6	1.078	0.002	1			
+keele_kidney	rescaled	Salmon-pan, 25% of reads	47	2629	33.23	1.414	0.005	1.312	69	65.5	1.39-1.47
+keele_kidney	rescaled	Salmon-pan, 10% of reads	47	1637	23.59	1.993	0.009	1.849		112.5	2.39-nan
+keele_kidney	rescaled	Salmon-ref, 25% of reads	47	2952	37.29	1.261	0.004	1.17	56.5	56	1.19-1.20
+keele_kidney	rescaled	Salmon-ref, 10% of reads	47	1866	25.54	1.84	0.009	1.707		98.5	2.10-nan
+keele_kidney	rescaled	Salmon-ref, 100%	47	4014							

@@ -1,0 +1,10 @@
+# file: fig6c_e3_cloud_paired_speedups.tsv
+# note: Cloud VM (4 vCPU) paired replication. v1 = core tier; v2 = core + coverage tier.
+layout	sample	rep	salmon_ref	salmon_pan	v1	v2	ref_v1	ref_v2	pan_v1	pan_v2
+50	CC021	91	194.21	691.51	18.24	18.37	10.65	10.57	37.91	37.64
+50	CC021	93	157.1		12.08	15.49	13	10.14		
+50	CC021	94	160.01		13.18	16.27	12.14	9.83		
+50	CC001	92	250.32	919.79	18.06	20.93	13.86	11.96	50.93	43.95
+101	liverCC001F	92	288.75	732.21	23.46	30.48	12.31	9.47	31.21	24.02
+101	liverCC001F	93	288.02	809.05	26.23	31.31	10.98	9.2	30.84	25.84
+101	liverCC001F	94	304.21	773.28	27.55	34	11.04	8.95	28.07	22.74

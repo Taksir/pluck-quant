@@ -1,0 +1,6 @@
+# file: fig2c_do_fpr_plain.tsv
+# note: Planted cis-eQTL simulation, DO set: false cis-eQTL calls (BH 5%) on null genes for PLUCK and Salmon-pan; rate = null calls / n_null; ratio = pluck_rate / pan_rate with no floor on the denominator.
+# note: ci_lo/ci_hi = paired gene-bootstrap 95% interval (1,000 resamples, seed 20261009).
+layout	gate	pluck_null_calls	pan_null_calls	n_null	pluck_rate	pan_rate	ratio	ci_lo	ci_hi
+se50	G1a_fpr_do	8	11	3279	0.002440	0.003355	0.727	0.375	1.251
+se101	G1a_fpr_do	8	11	3281	0.002438	0.003353	0.727	0.400	1.200

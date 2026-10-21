@@ -1,0 +1,16 @@
+# file: fig3f_e4b_gates.tsv
+# note: GSE199702 (101 bp SE, GBRS truth): accuracy rules G1-G4 per tissue with gene-bootstrap intervals. Liver G2 = 1.518 against the limit 1.5; its gene-bootstrap interval includes values under the limit.
+# note: Do not quote the sample bootstrap for G2.
+tissue	read_length_bp	n_samples_gate	gate	rule	value	pass	hybrid_rate_G2	salmon_pan_rate_G2	gene_bootstrap_lo	gene_bootstrap_hi	p_pass_gene_bootstrap	tissue_verdict
+liver	101	53	G1	<= 0.02	0.013	True			0.0125	0.0135	1	FAIL
+liver	101	53	G2	<= 1.5	1.518	False	0.0513	0.0338	1.3433	1.6983	0.432	FAIL
+liver	101	53	G3	|.| <= 0.03	0.0041	True			0.0036	0.0046	1	FAIL
+liver	101	53	G4	<= -0.08	-0.1077	True			-0.1109	-0.1043	1	FAIL
+heart	101	30	G1	<= 0.02	0.0144	True			0.0139	0.0149	1	PASS
+heart	101	30	G2	<= 1.5	1.413	True	0.0424	0.03	1.2217	1.6398	0.809	PASS
+heart	101	30	G3	|.| <= 0.03	0.0047	True			0.0038	0.0057	1	PASS
+heart	101	30	G4	<= -0.08	-0.1054	True			-0.1086	-0.1019	1	PASS
+kidney	101	30	G1	<= 0.02	0.0102	True			0.0097	0.0106	1	PASS
+kidney	101	30	G2	<= 1.5	1.401	True	0.0479	0.0342	1.2379	1.5741	0.874	PASS
+kidney	101	30	G3	|.| <= 0.03	0.0051	True			0.0044	0.0059	1	PASS
+kidney	101	30	G4	<= -0.08	-0.1035	True			-0.1059	-0.1004	1	PASS

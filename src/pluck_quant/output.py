@@ -7,7 +7,7 @@ import numpy as np
 
 def _read_table(path, key="gene_id"):
     """Tab-separated table by gene id. path may be 'builtin:flags' / 'builtin:tiers' (the tables shipped with the package:
-    flag_table.tsv, sha256 fff978bf...d506, and gene_tiers.tsv of the frozen design) or a file (plain or .gz)."""
+    flag_table.tsv, sha256 fff978bf...d506, and gene_tiers.tsv of the paper's design) or a file (plain or .gz)."""
     import csv
     from importlib import resources
     if str(path).startswith("builtin:"):

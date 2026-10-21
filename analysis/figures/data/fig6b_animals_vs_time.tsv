@@ -1,0 +1,14 @@
+# file: fig6b_animals_vs_time.tsv
+# note: Keele 50 bp only, one subsample draw per fraction; wall ratios at 4 threads, ranges over the two 50 bp timing samples. Strain counts for the reduced-read arms beyond 47 are extrapolations (inference).
+# note: Salmon-ref rows are inflated by reference bias at 50 bp.
+tissue	tool	n_strains	detections	full_salmon_pan_equivalent_strains	extra_n_vs_full_salmon_pan	strains_ratio_to_hybrid_proportional	wall_ratio_to_hybrid_4thr_median_min_over_samples	wall_ratio_to_hybrid_4thr_median_max_over_samples	wall_ratio_rep_min	wall_ratio_rep_max
+keele_liver	hybrid	47	2154	42.84	1.097	1	1	1	1	1
+keele_liver	Salmon-pan 25%	47	1449	31.36	1.499	1.366	28.148	29.476	20.082	44.38
+keele_liver	Salmon-pan 10%	47	823	22.69	2.072	1.889	14.593	17.859	9.347	36.607
+keele_liver	Salmon-ref 25%	47	1621	33.98	1.383	1.261	7.259	9.274	5.198	9.72
+keele_liver	Salmon-ref 10%	47	942	24.33	1.932	1.761	4.156	4.728	3.026	5.352
+keele_kidney	hybrid	47	3400	43.6	1.078	1	1	1	1	1
+keele_kidney	Salmon-pan 25%	47	2645	33.42	1.406	1.304	28.148	29.476	20.082	44.38
+keele_kidney	Salmon-pan 10%	47	1679	23.93	1.964	1.822	14.593	17.859	9.347	36.607
+keele_kidney	Salmon-ref 25%	47	2953	37.3	1.26	1.169	7.259	9.274	5.198	9.72
+keele_kidney	Salmon-ref 10%	47	1903	25.88	1.816	1.685	4.156	4.728	3.026	5.352

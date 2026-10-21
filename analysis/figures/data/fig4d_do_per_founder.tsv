@@ -1,0 +1,38 @@
+# file: fig4d_do_per_founder.tsv
+# note: Real DO animals, per single founder (carrier p >= 0.35 with a hit, against D0 genes). Founders A C D E F G H = A/J 129S1 NOD NZO CAST PWK WSB.
+founder	method	tool	median_delta	n_genes	spurious_rate
+A	ref	ref-unique probes	0.0269	1565	0.1399
+A	hybrid	hybrid	0.0895	1565	0.3125
+A	salmon_ref	Salmon-ref	0.081	1565	0.2946
+A	salmon_pan	Salmon-pan	0.0858	1565	0.308
+A	rsem_ref	GEO reference RSEM	0.0622	1565	0.1911
+C	ref	ref-unique probes	0.0307	1499	0.1214
+C	hybrid	hybrid	0.095	1499	0.2969
+C	salmon_ref	Salmon-ref	0.0903	1499	0.2922
+C	salmon_pan	Salmon-pan	0.0935	1499	0.3149
+C	rsem_ref	GEO reference RSEM	0.0623	1499	0.1815
+D	ref	ref-unique probes	0.0332	1576	0.151
+D	hybrid	hybrid	0.1023	1576	0.3154
+D	salmon_ref	Salmon-ref	0.0937	1576	0.3014
+D	salmon_pan	Salmon-pan	0.099	1576	0.323
+D	rsem_ref	GEO reference RSEM	0.0691	1576	0.1777
+E	ref	ref-unique probes	0.0292	1517	0.1345
+E	hybrid	hybrid	0.0992	1517	0.3256
+E	salmon_ref	Salmon-ref	0.0906	1517	0.3065
+E	salmon_pan	Salmon-pan	0.0948	1517	0.3276
+E	rsem_ref	GEO reference RSEM	0.0653	1517	0.1905
+F	ref	ref-unique probes	0.1018	5467	0.3552
+F	hybrid	hybrid	0.2007	5467	0.6903
+F	salmon_ref	Salmon-ref	0.1908	5467	0.6821
+F	salmon_pan	Salmon-pan	0.1984	5467	0.7002
+F	rsem_ref	GEO reference RSEM	0.1701	5467	0.559
+G	ref	ref-unique probes	0.1022	5230	0.356
+G	hybrid	hybrid	0.2046	5230	0.6992
+G	salmon_ref	Salmon-ref	0.1976	5230	0.6859
+G	salmon_pan	Salmon-pan	0.2055	5230	0.7124
+G	rsem_ref	GEO reference RSEM	0.1742	5230	0.5656
+H	ref	ref-unique probes	0.0485	2918	0.2008
+H	hybrid	hybrid	0.1052	2918	0.3972
+H	salmon_ref	Salmon-ref	0.0986	2918	0.3876
+H	salmon_pan	Salmon-pan	0.1024	2918	0.4075
+H	rsem_ref	GEO reference RSEM	0.0818	2918	0.2851

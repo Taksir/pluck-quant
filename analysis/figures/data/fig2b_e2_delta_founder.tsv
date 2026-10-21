@@ -1,0 +1,340 @@
+# file: fig2b_e2_delta_founder.tsv
+# note: Read simulation: median founder-haplotype shift (log2) on hit genes per founder, condition, layout and method. Founders A C D E F G H = A/J 129S1 NOD NZO CAST PWK WSB.
+# note: Codes: vf = gene probes alone, emg = EM alone, ref = ref-unique probes, hybrid = PLUCK.
+cond	layout	method	tool	founder	median_delta	n_genes
+clean	se50	hybrid	hybrid	A	0.0021	1135
+clean	se50	hybrid	hybrid	C	0.0031	1115
+clean	se50	hybrid	hybrid	D	0.0019	1171
+clean	se50	hybrid	hybrid	E	0.0072	1098
+clean	se50	hybrid	hybrid	F	0.0031	2291
+clean	se50	hybrid	hybrid	G	0.0024	2178
+clean	se50	hybrid	hybrid	H	-0.0039	1667
+clean	se50	vf	gene probes alone	A	0.0031	1132
+clean	se50	vf	gene probes alone	C	0.0024	1110
+clean	se50	vf	gene probes alone	D	0.0017	1167
+clean	se50	vf	gene probes alone	E	0.0094	1093
+clean	se50	vf	gene probes alone	F	0.0034	2281
+clean	se50	vf	gene probes alone	G	0.0037	2170
+clean	se50	vf	gene probes alone	H	-0.0029	1664
+clean	se50	emg	EM alone	A	0.0044	1135
+clean	se50	emg	EM alone	C	0.0021	1115
+clean	se50	emg	EM alone	D	0.0019	1171
+clean	se50	emg	EM alone	E	0.0066	1098
+clean	se50	emg	EM alone	F	0.0036	2291
+clean	se50	emg	EM alone	G	0.0012	2178
+clean	se50	emg	EM alone	H	-0.0023	1667
+clean	se50	ref	ref-unique probes	A	-0.0731	1135
+clean	se50	ref	ref-unique probes	C	-0.0787	1115
+clean	se50	ref	ref-unique probes	D	-0.0773	1171
+clean	se50	ref	ref-unique probes	E	-0.0752	1098
+clean	se50	ref	ref-unique probes	F	-0.1687	2291
+clean	se50	ref	ref-unique probes	G	-0.174	2178
+clean	se50	ref	ref-unique probes	H	-0.082	1667
+clean	se50	salmon_ref	Salmon-ref	A	-0.0452	1135
+clean	se50	salmon_ref	Salmon-ref	C	-0.0468	1115
+clean	se50	salmon_ref	Salmon-ref	D	-0.045	1171
+clean	se50	salmon_ref	Salmon-ref	E	-0.046	1098
+clean	se50	salmon_ref	Salmon-ref	F	-0.1021	2291
+clean	se50	salmon_ref	Salmon-ref	G	-0.1051	2178
+clean	se50	salmon_ref	Salmon-ref	H	-0.0483	1667
+clean	se50	salmon_pan	Salmon-pan	A	0.0012	1135
+clean	se50	salmon_pan	Salmon-pan	C	-0	1115
+clean	se50	salmon_pan	Salmon-pan	D	0.0031	1171
+clean	se50	salmon_pan	Salmon-pan	E	0.0044	1098
+clean	se50	salmon_pan	Salmon-pan	F	0.0029	2291
+clean	se50	salmon_pan	Salmon-pan	G	0.0025	2178
+clean	se50	salmon_pan	Salmon-pan	H	-0.0027	1667
+clean	se101	hybrid	hybrid	A	0.0019	837
+clean	se101	hybrid	hybrid	C	-0.0015	838
+clean	se101	hybrid	hybrid	D	-0.0006	838
+clean	se101	hybrid	hybrid	E	0.0051	807
+clean	se101	hybrid	hybrid	F	0.0022	2008
+clean	se101	hybrid	hybrid	G	0.0027	1949
+clean	se101	hybrid	hybrid	H	-0.0063	1224
+clean	se101	vf	gene probes alone	A	0.0021	834
+clean	se101	vf	gene probes alone	C	-0.002	833
+clean	se101	vf	gene probes alone	D	0.0006	834
+clean	se101	vf	gene probes alone	E	0.0068	802
+clean	se101	vf	gene probes alone	F	0.003	1999
+clean	se101	vf	gene probes alone	G	0.0033	1941
+clean	se101	vf	gene probes alone	H	-0.0077	1221
+clean	se101	emg	EM alone	A	0.0028	837
+clean	se101	emg	EM alone	C	-0.0025	838
+clean	se101	emg	EM alone	D	0.0002	838
+clean	se101	emg	EM alone	E	0.0024	807
+clean	se101	emg	EM alone	F	0.0021	2008
+clean	se101	emg	EM alone	G	0.0012	1949
+clean	se101	emg	EM alone	H	-0.0044	1224
+clean	se101	ref	ref-unique probes	A	-0.1038	837
+clean	se101	ref	ref-unique probes	C	-0.1098	838
+clean	se101	ref	ref-unique probes	D	-0.0994	838
+clean	se101	ref	ref-unique probes	E	-0.0991	807
+clean	se101	ref	ref-unique probes	F	-0.1868	2008
+clean	se101	ref	ref-unique probes	G	-0.1959	1949
+clean	se101	ref	ref-unique probes	H	-0.1059	1224
+clean	se101	salmon_ref	Salmon-ref	A	-0.0049	837
+clean	se101	salmon_ref	Salmon-ref	C	-0.0072	838
+clean	se101	salmon_ref	Salmon-ref	D	-0.0057	838
+clean	se101	salmon_ref	Salmon-ref	E	-0.0014	807
+clean	se101	salmon_ref	Salmon-ref	F	-0.0055	2008
+clean	se101	salmon_ref	Salmon-ref	G	-0.0082	1949
+clean	se101	salmon_ref	Salmon-ref	H	-0.0101	1224
+clean	se101	salmon_pan	Salmon-pan	A	0.0008	837
+clean	se101	salmon_pan	Salmon-pan	C	-0.0018	838
+clean	se101	salmon_pan	Salmon-pan	D	0.0009	838
+clean	se101	salmon_pan	Salmon-pan	E	0.0033	807
+clean	se101	salmon_pan	Salmon-pan	F	0.0018	2008
+clean	se101	salmon_pan	Salmon-pan	G	0.0025	1949
+clean	se101	salmon_pan	Salmon-pan	H	-0.003	1224
+clean	pe	hybrid	hybrid	A	0.0021	837
+clean	pe	hybrid	hybrid	C	-0.0033	838
+clean	pe	hybrid	hybrid	D	0.0003	838
+clean	pe	hybrid	hybrid	E	0.0062	807
+clean	pe	hybrid	hybrid	F	0.0023	2008
+clean	pe	hybrid	hybrid	G	0.0018	1949
+clean	pe	hybrid	hybrid	H	-0.0028	1224
+clean	pe	vf	gene probes alone	A	0.0016	834
+clean	pe	vf	gene probes alone	C	-0.0038	833
+clean	pe	vf	gene probes alone	D	0.0013	834
+clean	pe	vf	gene probes alone	E	0.006	802
+clean	pe	vf	gene probes alone	F	0.0027	1999
+clean	pe	vf	gene probes alone	G	0.002	1941
+clean	pe	vf	gene probes alone	H	-0.0039	1221
+clean	pe	emg	EM alone	A	0.0014	837
+clean	pe	emg	EM alone	C	-0.0038	838
+clean	pe	emg	EM alone	D	-0.002	838
+clean	pe	emg	EM alone	E	0.0042	807
+clean	pe	emg	EM alone	F	0.001	2008
+clean	pe	emg	EM alone	G	0.0002	1949
+clean	pe	emg	EM alone	H	-0.0044	1224
+clean	pe	ref	ref-unique probes	A	-0.1044	837
+clean	pe	ref	ref-unique probes	C	-0.1127	838
+clean	pe	ref	ref-unique probes	D	-0.0998	838
+clean	pe	ref	ref-unique probes	E	-0.1035	807
+clean	pe	ref	ref-unique probes	F	-0.1849	2008
+clean	pe	ref	ref-unique probes	G	-0.1944	1949
+clean	pe	ref	ref-unique probes	H	-0.1064	1224
+clean	pe	salmon_ref	Salmon-ref	A	-0.0032	837
+clean	pe	salmon_ref	Salmon-ref	C	-0.0059	838
+clean	pe	salmon_ref	Salmon-ref	D	-0.0045	838
+clean	pe	salmon_ref	Salmon-ref	E	0.0015	807
+clean	pe	salmon_ref	Salmon-ref	F	-0.0025	2008
+clean	pe	salmon_ref	Salmon-ref	G	-0.0034	1949
+clean	pe	salmon_ref	Salmon-ref	H	-0.007	1224
+clean	pe	salmon_pan	Salmon-pan	A	0.0009	837
+clean	pe	salmon_pan	Salmon-pan	C	-0.0022	838
+clean	pe	salmon_pan	Salmon-pan	D	0.0007	838
+clean	pe	salmon_pan	Salmon-pan	E	0.0036	807
+clean	pe	salmon_pan	Salmon-pan	F	0.0017	2008
+clean	pe	salmon_pan	Salmon-pan	G	0.0029	1949
+clean	pe	salmon_pan	Salmon-pan	H	-0.0033	1224
+premrna	pe	hybrid	hybrid	A	0.0029	809
+premrna	pe	hybrid	hybrid	C	0.0033	815
+premrna	pe	hybrid	hybrid	D	0.0055	803
+premrna	pe	hybrid	hybrid	E	0.0054	775
+premrna	pe	hybrid	hybrid	F	0.003	1930
+premrna	pe	hybrid	hybrid	G	0.0022	1860
+premrna	pe	hybrid	hybrid	H	0.0013	1188
+premrna	pe	vf	gene probes alone	A	0.0025	806
+premrna	pe	vf	gene probes alone	C	0.0035	810
+premrna	pe	vf	gene probes alone	D	0.0056	799
+premrna	pe	vf	gene probes alone	E	0.0053	770
+premrna	pe	vf	gene probes alone	F	0.004	1921
+premrna	pe	vf	gene probes alone	G	0.0015	1852
+premrna	pe	vf	gene probes alone	H	-0.0005	1185
+premrna	pe	emg	EM alone	A	-0.0008	809
+premrna	pe	emg	EM alone	C	0.0043	815
+premrna	pe	emg	EM alone	D	0.0058	803
+premrna	pe	emg	EM alone	E	0.0041	775
+premrna	pe	emg	EM alone	F	0.0022	1930
+premrna	pe	emg	EM alone	G	0.0026	1860
+premrna	pe	emg	EM alone	H	-0.0009	1188
+premrna	pe	ref	ref-unique probes	A	-0.1142	809
+premrna	pe	ref	ref-unique probes	C	-0.109	815
+premrna	pe	ref	ref-unique probes	D	-0.1069	803
+premrna	pe	ref	ref-unique probes	E	-0.1072	775
+premrna	pe	ref	ref-unique probes	F	-0.1894	1930
+premrna	pe	ref	ref-unique probes	G	-0.1943	1860
+premrna	pe	ref	ref-unique probes	H	-0.1009	1188
+premrna	pe	salmon_ref	Salmon-ref	A	-0.0067	809
+premrna	pe	salmon_ref	Salmon-ref	C	-0.0024	815
+premrna	pe	salmon_ref	Salmon-ref	D	0.0013	803
+premrna	pe	salmon_ref	Salmon-ref	E	0.0023	775
+premrna	pe	salmon_ref	Salmon-ref	F	-0.0023	1930
+premrna	pe	salmon_ref	Salmon-ref	G	-0.0054	1860
+premrna	pe	salmon_ref	Salmon-ref	H	-0.0027	1188
+premrna	pe	salmon_pan	Salmon-pan	A	-0	809
+premrna	pe	salmon_pan	Salmon-pan	C	0.0012	815
+premrna	pe	salmon_pan	Salmon-pan	D	0.0049	803
+premrna	pe	salmon_pan	Salmon-pan	E	0.0059	775
+premrna	pe	salmon_pan	Salmon-pan	F	0.0026	1930
+premrna	pe	salmon_pan	Salmon-pan	G	-0.0007	1860
+premrna	pe	salmon_pan	Salmon-pan	H	-0.0001	1188
+gc	pe	hybrid	hybrid	A	0.001	837
+gc	pe	hybrid	hybrid	C	-0.0026	838
+gc	pe	hybrid	hybrid	D	0.0013	838
+gc	pe	hybrid	hybrid	E	0.0078	807
+gc	pe	hybrid	hybrid	F	-0.0011	2008
+gc	pe	hybrid	hybrid	G	0.0057	1949
+gc	pe	hybrid	hybrid	H	0.0028	1224
+gc	pe	vf	gene probes alone	A	0.0043	834
+gc	pe	vf	gene probes alone	C	-0.0023	833
+gc	pe	vf	gene probes alone	D	0.0015	834
+gc	pe	vf	gene probes alone	E	0.0078	802
+gc	pe	vf	gene probes alone	F	-0.0012	1999
+gc	pe	vf	gene probes alone	G	0.0069	1941
+gc	pe	vf	gene probes alone	H	0.0006	1221
+gc	pe	emg	EM alone	A	0.0014	837
+gc	pe	emg	EM alone	C	-0.0034	838
+gc	pe	emg	EM alone	D	0.0008	838
+gc	pe	emg	EM alone	E	0.0117	807
+gc	pe	emg	EM alone	F	0.0017	2008
+gc	pe	emg	EM alone	G	0.0034	1949
+gc	pe	emg	EM alone	H	-0.0003	1224
+gc	pe	ref	ref-unique probes	A	-0.1141	837
+gc	pe	ref	ref-unique probes	C	-0.1224	838
+gc	pe	ref	ref-unique probes	D	-0.1182	838
+gc	pe	ref	ref-unique probes	E	-0.1131	807
+gc	pe	ref	ref-unique probes	F	-0.1993	2008
+gc	pe	ref	ref-unique probes	G	-0.1939	1949
+gc	pe	ref	ref-unique probes	H	-0.1006	1224
+gc	pe	salmon_pan	Salmon-pan	A	-0.0001	837
+gc	pe	salmon_pan	Salmon-pan	C	-0.0019	838
+gc	pe	salmon_pan	Salmon-pan	D	-0.0031	838
+gc	pe	salmon_pan	Salmon-pan	E	0.006	807
+gc	pe	salmon_pan	Salmon-pan	F	-0.0001	2008
+gc	pe	salmon_pan	Salmon-pan	G	0.004	1949
+gc	pe	salmon_pan	Salmon-pan	H	0.0018	1224
+gc	pe	salmon_pan_flags		A	-0.0001	837
+gc	pe	salmon_pan_flags		C	-0.002	838
+gc	pe	salmon_pan_flags		D	-0.0032	838
+gc	pe	salmon_pan_flags		E	0.0059	807
+gc	pe	salmon_pan_flags		F	-0.0004	2008
+gc	pe	salmon_pan_flags		G	0.0039	1949
+gc	pe	salmon_pan_flags		H	0.0021	1224
+gc	pe	salmon_pan_tpm		A	-0.0001	837
+gc	pe	salmon_pan_tpm		C	-0.0019	838
+gc	pe	salmon_pan_tpm		D	-0.0031	838
+gc	pe	salmon_pan_tpm		E	0.006	807
+gc	pe	salmon_pan_tpm		F	-0.0001	2008
+gc	pe	salmon_pan_tpm		G	0.004	1949
+gc	pe	salmon_pan_tpm		H	0.0018	1224
+gc	pe	salmon_pan_flags_tpm		A	0.0018	837
+gc	pe	salmon_pan_flags_tpm		C	-0.0035	838
+gc	pe	salmon_pan_flags_tpm		D	-0.0004	838
+gc	pe	salmon_pan_flags_tpm		E	0.0019	807
+gc	pe	salmon_pan_flags_tpm		F	-0.0009	2008
+gc	pe	salmon_pan_flags_tpm		G	0.0003	1949
+gc	pe	salmon_pan_flags_tpm		H	-0.0018	1224
+pos3	pe	hybrid	hybrid	A	0.0045	837
+pos3	pe	hybrid	hybrid	C	0.0035	838
+pos3	pe	hybrid	hybrid	D	0.002	838
+pos3	pe	hybrid	hybrid	E	0.0041	807
+pos3	pe	hybrid	hybrid	F	0.0064	2008
+pos3	pe	hybrid	hybrid	G	0.0026	1949
+pos3	pe	hybrid	hybrid	H	0.0106	1224
+pos3	pe	vf	gene probes alone	A	0.0063	834
+pos3	pe	vf	gene probes alone	C	0.008	833
+pos3	pe	vf	gene probes alone	D	0.0027	834
+pos3	pe	vf	gene probes alone	E	0.0036	802
+pos3	pe	vf	gene probes alone	F	0.0076	1999
+pos3	pe	vf	gene probes alone	G	0.0021	1941
+pos3	pe	vf	gene probes alone	H	0.0069	1221
+pos3	pe	emg	EM alone	A	0.0053	837
+pos3	pe	emg	EM alone	C	0.0111	838
+pos3	pe	emg	EM alone	D	0.0018	838
+pos3	pe	emg	EM alone	E	0.0117	807
+pos3	pe	emg	EM alone	F	0.006	2008
+pos3	pe	emg	EM alone	G	0.0063	1949
+pos3	pe	emg	EM alone	H	0.0095	1224
+pos3	pe	ref	ref-unique probes	A	-0.119	837
+pos3	pe	ref	ref-unique probes	C	-0.1335	838
+pos3	pe	ref	ref-unique probes	D	-0.1178	838
+pos3	pe	ref	ref-unique probes	E	-0.1261	807
+pos3	pe	ref	ref-unique probes	F	-0.1938	2008
+pos3	pe	ref	ref-unique probes	G	-0.2042	1949
+pos3	pe	ref	ref-unique probes	H	-0.1066	1224
+pos3	pe	salmon_pan	Salmon-pan	A	0.007	837
+pos3	pe	salmon_pan	Salmon-pan	C	0.0101	838
+pos3	pe	salmon_pan	Salmon-pan	D	-0.0021	838
+pos3	pe	salmon_pan	Salmon-pan	E	0.0075	807
+pos3	pe	salmon_pan	Salmon-pan	F	0.0064	2008
+pos3	pe	salmon_pan	Salmon-pan	G	0.0045	1949
+pos3	pe	salmon_pan	Salmon-pan	H	0.0075	1224
+pos3	pe	salmon_pan_flags		A	0.0069	837
+pos3	pe	salmon_pan_flags		C	0.0101	838
+pos3	pe	salmon_pan_flags		D	-0.002	838
+pos3	pe	salmon_pan_flags		E	0.0075	807
+pos3	pe	salmon_pan_flags		F	0.0065	2008
+pos3	pe	salmon_pan_flags		G	0.0045	1949
+pos3	pe	salmon_pan_flags		H	0.0074	1224
+pos3	pe	salmon_pan_tpm		A	0.007	837
+pos3	pe	salmon_pan_tpm		C	0.0101	838
+pos3	pe	salmon_pan_tpm		D	-0.0021	838
+pos3	pe	salmon_pan_tpm		E	0.0075	807
+pos3	pe	salmon_pan_tpm		F	0.0064	2008
+pos3	pe	salmon_pan_tpm		G	0.0045	1949
+pos3	pe	salmon_pan_tpm		H	0.0075	1224
+pos3	pe	salmon_pan_flags_tpm		A	0.0048	837
+pos3	pe	salmon_pan_flags_tpm		C	0.0151	838
+pos3	pe	salmon_pan_flags_tpm		D	0.0002	838
+pos3	pe	salmon_pan_flags_tpm		E	0.0067	807
+pos3	pe	salmon_pan_flags_tpm		F	0.007	2008
+pos3	pe	salmon_pan_flags_tpm		G	0.0088	1949
+pos3	pe	salmon_pan_flags_tpm		H	0.0101	1224
+hex	pe	hybrid	hybrid	A	0.0035	837
+hex	pe	hybrid	hybrid	C	0.0031	838
+hex	pe	hybrid	hybrid	D	0.0017	838
+hex	pe	hybrid	hybrid	E	0.0037	807
+hex	pe	hybrid	hybrid	F	0.0021	2008
+hex	pe	hybrid	hybrid	G	0.001	1949
+hex	pe	hybrid	hybrid	H	-0.0002	1224
+hex	pe	vf	gene probes alone	A	0.0049	834
+hex	pe	vf	gene probes alone	C	0.0052	833
+hex	pe	vf	gene probes alone	D	0.0015	834
+hex	pe	vf	gene probes alone	E	0.0032	802
+hex	pe	vf	gene probes alone	F	0.0022	1999
+hex	pe	vf	gene probes alone	G	0.0019	1941
+hex	pe	vf	gene probes alone	H	0.001	1221
+hex	pe	emg	EM alone	A	0.0057	837
+hex	pe	emg	EM alone	C	0.0014	838
+hex	pe	emg	EM alone	D	0.0011	838
+hex	pe	emg	EM alone	E	0.0011	807
+hex	pe	emg	EM alone	F	0.0048	2008
+hex	pe	emg	EM alone	G	-0.0006	1949
+hex	pe	emg	EM alone	H	-0.0016	1224
+hex	pe	ref	ref-unique probes	A	-0.1055	837
+hex	pe	ref	ref-unique probes	C	-0.1047	838
+hex	pe	ref	ref-unique probes	D	-0.1083	838
+hex	pe	ref	ref-unique probes	E	-0.1158	807
+hex	pe	ref	ref-unique probes	F	-0.1868	2008
+hex	pe	ref	ref-unique probes	G	-0.1899	1949
+hex	pe	ref	ref-unique probes	H	-0.104	1224
+hex	pe	salmon_pan	Salmon-pan	A	0.003	837
+hex	pe	salmon_pan	Salmon-pan	C	0.0023	838
+hex	pe	salmon_pan	Salmon-pan	D	0.0022	838
+hex	pe	salmon_pan	Salmon-pan	E	0.0005	807
+hex	pe	salmon_pan	Salmon-pan	F	0.0018	2008
+hex	pe	salmon_pan	Salmon-pan	G	0.0014	1949
+hex	pe	salmon_pan	Salmon-pan	H	-0.003	1224
+hex	pe	salmon_pan_flags		A	0.0032	837
+hex	pe	salmon_pan_flags		C	0.0022	838
+hex	pe	salmon_pan_flags		D	0.0025	838
+hex	pe	salmon_pan_flags		E	0.0006	807
+hex	pe	salmon_pan_flags		F	0.0018	2008
+hex	pe	salmon_pan_flags		G	0.0013	1949
+hex	pe	salmon_pan_flags		H	-0.0028	1224
+hex	pe	salmon_pan_tpm		A	0.003	837
+hex	pe	salmon_pan_tpm		C	0.0023	838
+hex	pe	salmon_pan_tpm		D	0.0022	838
+hex	pe	salmon_pan_tpm		E	0.0005	807
+hex	pe	salmon_pan_tpm		F	0.0018	2008
+hex	pe	salmon_pan_tpm		G	0.0014	1949
+hex	pe	salmon_pan_tpm		H	-0.003	1224
+hex	pe	salmon_pan_flags_tpm		A	-0.0002	837
+hex	pe	salmon_pan_flags_tpm		C	0.0009	838
+hex	pe	salmon_pan_flags_tpm		D	0.0006	838
+hex	pe	salmon_pan_flags_tpm		E	-0.0038	807
+hex	pe	salmon_pan_flags_tpm		F	0.0021	2008
+hex	pe	salmon_pan_flags_tpm		G	0.0046	1949
+hex	pe	salmon_pan_flags_tpm		H	-0.0036	1224

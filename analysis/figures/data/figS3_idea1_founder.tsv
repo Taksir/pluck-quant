@@ -1,0 +1,228 @@
+# file: figS3_idea1_founder.tsv
+# note: Planted cis-eQTL simulation, one seed (20261008). Codes: hybrid = PLUCK, vf = gene probes alone, emg = EM alone, ref = ref-unique probes.
+# note: CC set, hit genes per founder; frac_beyond_bound = share of genes beyond 0.05 log2 by the noise-aware test (rule G4b, limit 0.10); source names the calibration: the original one, or the recalibration added after the main analysis.
+layout	method	tool	founder	median_delta	n	frac_beyond_bound	q90_abs_delta	source	frac_beyond_bound_B6split_null	excess	excess_se
+se50	hybrid	hybrid	A	0.0026	1454	0.0193	0.1171	locked			
+se50	hybrid	hybrid	C	-0.0006	1457	0.013	0.1175	locked			
+se50	hybrid	hybrid	D	0.0006	1474	0.0149	0.1155	locked			
+se50	hybrid	hybrid	E	0.002	1419	0.019	0.1206	locked			
+se50	hybrid	hybrid	F	0.0016	2947	0.0156	0.1162	locked			
+se50	hybrid	hybrid	G	0.0	2865	0.0199	0.1166	locked			
+se50	hybrid	hybrid	H	0.0001	2141	0.0173	0.1223	locked			
+se50	vf	gene probes alone	A	0.0017	1447	0.0228	0.1337	locked			
+se50	vf	gene probes alone	C	-0.0022	1451	0.0207	0.129	locked			
+se50	vf	gene probes alone	D	0.0009	1466	0.0205	0.1307	locked			
+se50	vf	gene probes alone	E	0.003	1411	0.0291	0.1475	locked			
+se50	vf	gene probes alone	F	0.0012	2936	0.0225	0.1331	locked			
+se50	vf	gene probes alone	G	-0.0001	2851	0.0228	0.1364	locked			
+se50	vf	gene probes alone	H	0.0014	2129	0.0221	0.1373	locked			
+se50	emg	EM alone	A	0.0024	1454	0.0158	0.1184	locked			
+se50	emg	EM alone	C	-0.0001	1457	0.013	0.1188	locked			
+se50	emg	EM alone	D	-0.0011	1474	0.0122	0.1156	locked			
+se50	emg	EM alone	E	0.0014	1419	0.0183	0.1225	locked			
+se50	emg	EM alone	F	0.0019	2947	0.0132	0.1191	locked			
+se50	emg	EM alone	G	-0.0016	2865	0.022	0.1165	locked			
+se50	emg	EM alone	H	-0.0004	2141	0.0206	0.1216	locked			
+se50	ref	ref-unique probes	A	-0.0659	1454	0.2098	0.2804	locked			
+se50	ref	ref-unique probes	C	-0.0756	1457	0.2443	0.3069	locked			
+se50	ref	ref-unique probes	D	-0.0741	1474	0.2463	0.3097	locked			
+se50	ref	ref-unique probes	E	-0.0743	1419	0.2593	0.3192	locked			
+se50	ref	ref-unique probes	F	-0.1652	2947	0.492	0.4036	locked			
+se50	ref	ref-unique probes	G	-0.1702	2865	0.5044	0.422	locked			
+se50	ref	ref-unique probes	H	-0.0684	2141	0.2153	0.269	locked			
+se50	salmon_ref	Salmon-ref	A	-0.0387	1454	0.1465	0.1756	locked			
+se50	salmon_ref	Salmon-ref	C	-0.0451	1457	0.1682	0.1859	locked			
+se50	salmon_ref	Salmon-ref	D	-0.0445	1474	0.1737	0.185	locked			
+se50	salmon_ref	Salmon-ref	E	-0.0429	1419	0.1755	0.1885	locked			
+se50	salmon_ref	Salmon-ref	F	-0.0975	2947	0.36	0.2405	locked			
+se50	salmon_ref	Salmon-ref	G	-0.1012	2865	0.3724	0.2513	locked			
+se50	salmon_ref	Salmon-ref	H	-0.0407	2141	0.1397	0.1709	locked			
+se50	salmon_pan	Salmon-pan	A	0.0016	1454	0.011	0.0931	locked			
+se50	salmon_pan	Salmon-pan	C	-0.0016	1457	0.0103	0.0931	locked			
+se50	salmon_pan	Salmon-pan	D	0.0006	1474	0.0095	0.0937	locked			
+se50	salmon_pan	Salmon-pan	E	0.0004	1419	0.0148	0.097	locked			
+se50	salmon_pan	Salmon-pan	F	0.0002	2947	0.0102	0.0909	locked			
+se50	salmon_pan	Salmon-pan	G	-0.0007	2865	0.0094	0.0937	locked			
+se50	salmon_pan	Salmon-pan	H	-0.0003	2141	0.0154	0.0946	locked			
+se50	hybrid	hybrid	A		1178	0.0178		null-relative check (reported only)	0.0184	-0.0006	0.0039
+se50	hybrid	hybrid	C		1188	0.0126		null-relative check (reported only)	0.0178	-0.0052	0.0032
+se50	hybrid	hybrid	D		1178	0.0144		null-relative check (reported only)	0.0194	-0.005	0.0035
+se50	hybrid	hybrid	E		1148	0.0183		null-relative check (reported only)	0.0174	0.0009	0.004
+se50	hybrid	hybrid	F		2362	0.0148		null-relative check (reported only)	0.0186	-0.0038	0.0025
+se50	hybrid	hybrid	G		2285	0.0175		null-relative check (reported only)	0.0185	-0.001	0.0027
+se50	hybrid	hybrid	H		1735	0.015		null-relative check (reported only)	0.0186	-0.0037	0.0029
+se50	salmon_pan	Salmon-pan	A		1178	0.0085		null-relative check (reported only)	0.0154	-0.007	0.0027
+se50	salmon_pan	Salmon-pan	C		1188	0.0109		null-relative check (reported only)	0.0144	-0.0034	0.003
+se50	salmon_pan	Salmon-pan	D		1178	0.0102		null-relative check (reported only)	0.0158	-0.0056	0.0029
+se50	salmon_pan	Salmon-pan	E		1148	0.0122		null-relative check (reported only)	0.0163	-0.0041	0.0032
+se50	salmon_pan	Salmon-pan	F		2362	0.0102		null-relative check (reported only)	0.0148	-0.0046	0.0021
+se50	salmon_pan	Salmon-pan	G		2285	0.0061		null-relative check (reported only)	0.0161	-0.01	0.0016
+se50	salmon_pan	Salmon-pan	H		1735	0.0138		null-relative check (reported only)	0.0152	-0.0014	0.0028
+se50	salmon_ref	Salmon-ref	A		1178	0.1426		null-relative check (reported only)	0.0143	0.1283	0.0102
+se50	salmon_ref	Salmon-ref	C		1188	0.1675		null-relative check (reported only)	0.0157	0.1518	0.0108
+se50	salmon_ref	Salmon-ref	D		1178	0.1749		null-relative check (reported only)	0.0152	0.1597	0.0111
+se50	salmon_ref	Salmon-ref	E		1148	0.1725		null-relative check (reported only)	0.0143	0.1581	0.0112
+se50	salmon_ref	Salmon-ref	F		2362	0.373		null-relative check (reported only)	0.0149	0.3581	0.01
+se50	salmon_ref	Salmon-ref	G		2285	0.3877		null-relative check (reported only)	0.0161	0.3716	0.0102
+se50	salmon_ref	Salmon-ref	H		1735	0.1412		null-relative check (reported only)	0.015	0.1263	0.0084
+se50	ref	ref-unique probes	A		1178	0.2105		null-relative check (reported only)	0.0236	0.1869	0.0119
+se50	ref	ref-unique probes	C		1188	0.2483		null-relative check (reported only)	0.0235	0.2248	0.0125
+se50	ref	ref-unique probes	D		1178	0.2496		null-relative check (reported only)	0.0224	0.2272	0.0126
+se50	ref	ref-unique probes	E		1148	0.2674		null-relative check (reported only)	0.0227	0.2447	0.0131
+se50	ref	ref-unique probes	F		2362	0.511		null-relative check (reported only)	0.0239	0.4871	0.0103
+se50	ref	ref-unique probes	G		2285	0.5243		null-relative check (reported only)	0.0236	0.5007	0.0104
+se50	ref	ref-unique probes	H		1735	0.2207		null-relative check (reported only)	0.0231	0.1977	0.01
+se50	hybrid	hybrid	A	0.0022	1454	0.0186	0.116	post hoc recalibration on all null core genes			
+se50	hybrid	hybrid	C	-0.0007	1457	0.0137	0.117	post hoc recalibration on all null core genes			
+se50	hybrid	hybrid	D	0.0005	1474	0.0149	0.1178	post hoc recalibration on all null core genes			
+se50	hybrid	hybrid	E	0.0019	1419	0.0197	0.1193	post hoc recalibration on all null core genes			
+se50	hybrid	hybrid	F	0.0015	2947	0.0166	0.1159	post hoc recalibration on all null core genes			
+se50	hybrid	hybrid	G	-0.0007	2865	0.0202	0.1161	post hoc recalibration on all null core genes			
+se50	hybrid	hybrid	H	0.0004	2141	0.0177	0.122	post hoc recalibration on all null core genes			
+se50	vf	gene probes alone	A	0.0008	1447	0.0166	0.1219	post hoc recalibration on all null core genes			
+se50	vf	gene probes alone	C	-0.0009	1451	0.0172	0.1236	post hoc recalibration on all null core genes			
+se50	vf	gene probes alone	D	-0.0005	1466	0.0205	0.127	post hoc recalibration on all null core genes			
+se50	vf	gene probes alone	E	0.0021	1411	0.0227	0.1285	post hoc recalibration on all null core genes			
+se50	vf	gene probes alone	F	0.0006	2936	0.0187	0.1254	post hoc recalibration on all null core genes			
+se50	vf	gene probes alone	G	-0.0011	2851	0.0203	0.1251	post hoc recalibration on all null core genes			
+se50	vf	gene probes alone	H	0.0005	2129	0.0193	0.1292	post hoc recalibration on all null core genes			
+se50	emg	EM alone	A	0.0016	1454	0.0131	0.1192	post hoc recalibration on all null core genes			
+se50	emg	EM alone	C	-0.0	1457	0.0151	0.1198	post hoc recalibration on all null core genes			
+se50	emg	EM alone	D	-0.0012	1474	0.0129	0.1179	post hoc recalibration on all null core genes			
+se50	emg	EM alone	E	0.0017	1419	0.0183	0.1229	post hoc recalibration on all null core genes			
+se50	emg	EM alone	F	0.0011	2947	0.0143	0.1198	post hoc recalibration on all null core genes			
+se50	emg	EM alone	G	-0.0013	2865	0.0206	0.1161	post hoc recalibration on all null core genes			
+se50	emg	EM alone	H	0.0004	2141	0.021	0.1205	post hoc recalibration on all null core genes			
+se50	ref	ref-unique probes	A	-0.0634	1454	0.2421	0.2851	post hoc recalibration on all null core genes			
+se50	ref	ref-unique probes	C	-0.0744	1457	0.2793	0.3088	post hoc recalibration on all null core genes			
+se50	ref	ref-unique probes	D	-0.072	1474	0.272	0.3054	post hoc recalibration on all null core genes			
+se50	ref	ref-unique probes	E	-0.0743	1419	0.2889	0.3133	post hoc recalibration on all null core genes			
+se50	ref	ref-unique probes	F	-0.1633	2947	0.5395	0.3945	post hoc recalibration on all null core genes			
+se50	ref	ref-unique probes	G	-0.1706	2865	0.556	0.4165	post hoc recalibration on all null core genes			
+se50	ref	ref-unique probes	H	-0.0666	2141	0.241	0.2713	post hoc recalibration on all null core genes			
+se50	salmon_ref	Salmon-ref	A	-0.0379	1454	0.1492	0.1766	post hoc recalibration on all null core genes			
+se50	salmon_ref	Salmon-ref	C	-0.0451	1457	0.1675	0.1855	post hoc recalibration on all null core genes			
+se50	salmon_ref	Salmon-ref	D	-0.0436	1474	0.1737	0.1844	post hoc recalibration on all null core genes			
+se50	salmon_ref	Salmon-ref	E	-0.0433	1419	0.1776	0.1881	post hoc recalibration on all null core genes			
+se50	salmon_ref	Salmon-ref	F	-0.0978	2947	0.3624	0.2406	post hoc recalibration on all null core genes			
+se50	salmon_ref	Salmon-ref	G	-0.101	2865	0.3749	0.2542	post hoc recalibration on all null core genes			
+se50	salmon_ref	Salmon-ref	H	-0.0395	2141	0.142	0.1702	post hoc recalibration on all null core genes			
+se50	salmon_pan	Salmon-pan	A	0.0015	1454	0.011	0.0922	post hoc recalibration on all null core genes			
+se50	salmon_pan	Salmon-pan	C	-0.0021	1457	0.011	0.0931	post hoc recalibration on all null core genes			
+se50	salmon_pan	Salmon-pan	D	0.0001	1474	0.0088	0.0945	post hoc recalibration on all null core genes			
+se50	salmon_pan	Salmon-pan	E	0.0008	1419	0.0162	0.0982	post hoc recalibration on all null core genes			
+se50	salmon_pan	Salmon-pan	F	0.0	2947	0.0102	0.0911	post hoc recalibration on all null core genes			
+se50	salmon_pan	Salmon-pan	G	-0.0011	2865	0.0087	0.0938	post hoc recalibration on all null core genes			
+se50	salmon_pan	Salmon-pan	H	-0.0005	2141	0.0149	0.0945	post hoc recalibration on all null core genes			
+se101	hybrid	hybrid	A	0.003	1032	0.0165	0.1135	locked			
+se101	hybrid	hybrid	C	-0.0005	1057	0.0161	0.1032	locked			
+se101	hybrid	hybrid	D	0.0012	1049	0.0143	0.1128	locked			
+se101	hybrid	hybrid	E	0.0017	1044	0.0144	0.1121	locked			
+se101	hybrid	hybrid	F	0.0017	2610	0.0111	0.1059	locked			
+se101	hybrid	hybrid	G	-0.0002	2558	0.0203	0.1097	locked			
+se101	hybrid	hybrid	H	0.0011	1565	0.0198	0.1107	locked			
+se101	vf	gene probes alone	A	0.0026	1025	0.0156	0.1183	locked			
+se101	vf	gene probes alone	C	-0.0007	1051	0.0181	0.1112	locked			
+se101	vf	gene probes alone	D	0.0011	1041	0.0144	0.1148	locked			
+se101	vf	gene probes alone	E	-0.0	1036	0.0174	0.1163	locked			
+se101	vf	gene probes alone	F	0.0013	2599	0.0131	0.1121	locked			
+se101	vf	gene probes alone	G	-0.0001	2544	0.0181	0.1152	locked			
+se101	vf	gene probes alone	H	0.0009	1553	0.018	0.1194	locked			
+se101	emg	EM alone	A	0.0018	1032	0.0145	0.1072	locked			
+se101	emg	EM alone	C	-0.0007	1057	0.0104	0.1096	locked			
+se101	emg	EM alone	D	0.0011	1049	0.0162	0.1152	locked			
+se101	emg	EM alone	E	0.0008	1044	0.0239	0.1162	locked			
+se101	emg	EM alone	F	0.0007	2610	0.013	0.1058	locked			
+se101	emg	EM alone	G	-0.0003	2558	0.0195	0.1145	locked			
+se101	emg	EM alone	H	0.0012	1565	0.0166	0.119	locked			
+se101	ref	ref-unique probes	A	-0.0943	1032	0.3508	0.3616	locked			
+se101	ref	ref-unique probes	C	-0.1011	1057	0.3671	0.3684	locked			
+se101	ref	ref-unique probes	D	-0.1001	1049	0.3727	0.369	locked			
+se101	ref	ref-unique probes	E	-0.1056	1044	0.4128	0.3929	locked			
+se101	ref	ref-unique probes	F	-0.1787	2610	0.5939	0.4685	locked			
+se101	ref	ref-unique probes	G	-0.1839	2558	0.6032	0.4772	locked			
+se101	ref	ref-unique probes	H	-0.0962	1565	0.3438	0.3281	locked			
+se101	salmon_ref	Salmon-ref	A	-0.0027	1032	0.0388	0.1018	locked			
+se101	salmon_ref	Salmon-ref	C	-0.0064	1057	0.035	0.1048	locked			
+se101	salmon_ref	Salmon-ref	D	-0.0032	1049	0.0343	0.1048	locked			
+se101	salmon_ref	Salmon-ref	E	-0.0036	1044	0.0393	0.1095	locked			
+se101	salmon_ref	Salmon-ref	F	-0.0071	2610	0.0421	0.1082	locked			
+se101	salmon_ref	Salmon-ref	G	-0.0082	2558	0.0438	0.1124	locked			
+se101	salmon_ref	Salmon-ref	H	-0.003	1565	0.0409	0.1074	locked			
+se101	salmon_pan	Salmon-pan	A	0.0013	1032	0.0107	0.0862	locked			
+se101	salmon_pan	Salmon-pan	C	-0.0024	1057	0.0085	0.0857	locked			
+se101	salmon_pan	Salmon-pan	D	0.0015	1049	0.0095	0.0917	locked			
+se101	salmon_pan	Salmon-pan	E	0.0005	1044	0.0144	0.0923	locked			
+se101	salmon_pan	Salmon-pan	F	0.0006	2610	0.0103	0.0887	locked			
+se101	salmon_pan	Salmon-pan	G	-0.0006	2558	0.009	0.091	locked			
+se101	salmon_pan	Salmon-pan	H	0.0006	1565	0.0153	0.092	locked			
+se101	hybrid	hybrid	A		840	0.0143		null-relative check (reported only)	0.0199	-0.0057	0.0041
+se101	hybrid	hybrid	C		871	0.0161		null-relative check (reported only)	0.0191	-0.003	0.0043
+se101	hybrid	hybrid	D		837	0.0155		null-relative check (reported only)	0.0181	-0.0026	0.0043
+se101	hybrid	hybrid	E		858	0.0128		null-relative check (reported only)	0.0192	-0.0064	0.0038
+se101	hybrid	hybrid	F		2091	0.012		null-relative check (reported only)	0.0182	-0.0062	0.0024
+se101	hybrid	hybrid	G		2036	0.0177		null-relative check (reported only)	0.0194	-0.0017	0.0029
+se101	hybrid	hybrid	H		1263	0.0206		null-relative check (reported only)	0.0195	0.0011	0.004
+se101	salmon_pan	Salmon-pan	A		840	0.0107		null-relative check (reported only)	0.0135	-0.0027	0.0036
+se101	salmon_pan	Salmon-pan	C		871	0.0057		null-relative check (reported only)	0.0142	-0.0084	0.0026
+se101	salmon_pan	Salmon-pan	D		837	0.0084		null-relative check (reported only)	0.014	-0.0056	0.0031
+se101	salmon_pan	Salmon-pan	E		858	0.0117		null-relative check (reported only)	0.0139	-0.0022	0.0037
+se101	salmon_pan	Salmon-pan	F		2091	0.0105		null-relative check (reported only)	0.0155	-0.005	0.0022
+se101	salmon_pan	Salmon-pan	G		2036	0.0074		null-relative check (reported only)	0.0156	-0.0083	0.0019
+se101	salmon_pan	Salmon-pan	H		1263	0.0127		null-relative check (reported only)	0.0142	-0.0015	0.0031
+se101	salmon_ref	Salmon-ref	A		840	0.0357		null-relative check (reported only)	0.0126	0.0231	0.0064
+se101	salmon_ref	Salmon-ref	C		871	0.0321		null-relative check (reported only)	0.0147	0.0175	0.006
+se101	salmon_ref	Salmon-ref	D		837	0.0311		null-relative check (reported only)	0.0153	0.0158	0.006
+se101	salmon_ref	Salmon-ref	E		858	0.035		null-relative check (reported only)	0.014	0.021	0.0063
+se101	salmon_ref	Salmon-ref	F		2091	0.0445		null-relative check (reported only)	0.0148	0.0297	0.0045
+se101	salmon_ref	Salmon-ref	G		2036	0.0422		null-relative check (reported only)	0.0153	0.027	0.0045
+se101	salmon_ref	Salmon-ref	H		1263	0.0364		null-relative check (reported only)	0.0135	0.0229	0.0053
+se101	ref	ref-unique probes	A		840	0.3452		null-relative check (reported only)	0.0177	0.3276	0.0164
+se101	ref	ref-unique probes	C		871	0.372		null-relative check (reported only)	0.0201	0.3518	0.0164
+se101	ref	ref-unique probes	D		837	0.3859		null-relative check (reported only)	0.0189	0.367	0.0168
+se101	ref	ref-unique probes	E		858	0.4172		null-relative check (reported only)	0.0187	0.3985	0.0168
+se101	ref	ref-unique probes	F		2091	0.6055		null-relative check (reported only)	0.0181	0.5873	0.0107
+se101	ref	ref-unique probes	G		2036	0.6248		null-relative check (reported only)	0.019	0.6057	0.0107
+se101	ref	ref-unique probes	H		1263	0.3468		null-relative check (reported only)	0.02	0.3268	0.0134
+se101	hybrid	hybrid	A	0.0017	1032	0.0165	0.1123	post hoc recalibration on all null core genes			
+se101	hybrid	hybrid	C	-0.0012	1057	0.0151	0.1036	post hoc recalibration on all null core genes			
+se101	hybrid	hybrid	D	0.0007	1049	0.0133	0.1136	post hoc recalibration on all null core genes			
+se101	hybrid	hybrid	E	0.0016	1044	0.0163	0.1135	post hoc recalibration on all null core genes			
+se101	hybrid	hybrid	F	0.0007	2610	0.0111	0.1056	post hoc recalibration on all null core genes			
+se101	hybrid	hybrid	G	-0.0004	2558	0.0195	0.1091	post hoc recalibration on all null core genes			
+se101	hybrid	hybrid	H	0.0006	1565	0.0198	0.1102	post hoc recalibration on all null core genes			
+se101	vf	gene probes alone	A	0.0011	1025	0.0156	0.1173	post hoc recalibration on all null core genes			
+se101	vf	gene probes alone	C	-0.001	1051	0.0162	0.1095	post hoc recalibration on all null core genes			
+se101	vf	gene probes alone	D	0.0005	1041	0.0115	0.1147	post hoc recalibration on all null core genes			
+se101	vf	gene probes alone	E	0.0007	1036	0.0174	0.1183	post hoc recalibration on all null core genes			
+se101	vf	gene probes alone	F	0.0004	2599	0.0127	0.1132	post hoc recalibration on all null core genes			
+se101	vf	gene probes alone	G	-0.0001	2544	0.0177	0.1131	post hoc recalibration on all null core genes			
+se101	vf	gene probes alone	H	0.0004	1553	0.0193	0.1203	post hoc recalibration on all null core genes			
+se101	emg	EM alone	A	0.0003	1032	0.0116	0.1085	post hoc recalibration on all null core genes			
+se101	emg	EM alone	C	-0.0009	1057	0.0104	0.1087	post hoc recalibration on all null core genes			
+se101	emg	EM alone	D	0.0005	1049	0.0181	0.1141	post hoc recalibration on all null core genes			
+se101	emg	EM alone	E	0.0012	1044	0.022	0.1171	post hoc recalibration on all null core genes			
+se101	emg	EM alone	F	0.0007	2610	0.013	0.1057	post hoc recalibration on all null core genes			
+se101	emg	EM alone	G	0.0002	2558	0.0192	0.1156	post hoc recalibration on all null core genes			
+se101	emg	EM alone	H	0.0006	1565	0.016	0.1184	post hoc recalibration on all null core genes			
+se101	ref	ref-unique probes	A	-0.0957	1032	0.3576	0.3635	post hoc recalibration on all null core genes			
+se101	ref	ref-unique probes	C	-0.0999	1057	0.3775	0.364	post hoc recalibration on all null core genes			
+se101	ref	ref-unique probes	D	-0.1021	1049	0.3727	0.3685	post hoc recalibration on all null core genes			
+se101	ref	ref-unique probes	E	-0.1048	1044	0.4186	0.3919	post hoc recalibration on all null core genes			
+se101	ref	ref-unique probes	F	-0.1784	2610	0.595	0.4652	post hoc recalibration on all null core genes			
+se101	ref	ref-unique probes	G	-0.1855	2558	0.6106	0.4765	post hoc recalibration on all null core genes			
+se101	ref	ref-unique probes	H	-0.0957	1565	0.347	0.3318	post hoc recalibration on all null core genes			
+se101	salmon_ref	Salmon-ref	A	-0.0024	1032	0.0397	0.1018	post hoc recalibration on all null core genes			
+se101	salmon_ref	Salmon-ref	C	-0.0067	1057	0.036	0.1044	post hoc recalibration on all null core genes			
+se101	salmon_ref	Salmon-ref	D	-0.0038	1049	0.0343	0.1044	post hoc recalibration on all null core genes			
+se101	salmon_ref	Salmon-ref	E	-0.0032	1044	0.0383	0.1089	post hoc recalibration on all null core genes			
+se101	salmon_ref	Salmon-ref	F	-0.0074	2610	0.0421	0.1079	post hoc recalibration on all null core genes			
+se101	salmon_ref	Salmon-ref	G	-0.0086	2558	0.0438	0.112	post hoc recalibration on all null core genes			
+se101	salmon_ref	Salmon-ref	H	-0.0029	1565	0.0422	0.1063	post hoc recalibration on all null core genes			
+se101	salmon_pan	Salmon-pan	A	0.0008	1032	0.0116	0.0856	post hoc recalibration on all null core genes			
+se101	salmon_pan	Salmon-pan	C	-0.0016	1057	0.0095	0.0859	post hoc recalibration on all null core genes			
+se101	salmon_pan	Salmon-pan	D	0.0012	1049	0.0105	0.0911	post hoc recalibration on all null core genes			
+se101	salmon_pan	Salmon-pan	E	0.0009	1044	0.0153	0.0921	post hoc recalibration on all null core genes			
+se101	salmon_pan	Salmon-pan	F	-0.0002	2610	0.0107	0.0884	post hoc recalibration on all null core genes			
+se101	salmon_pan	Salmon-pan	G	-0.0006	2558	0.009	0.092	post hoc recalibration on all null core genes			
+se101	salmon_pan	Salmon-pan	H	0.0006	1565	0.0153	0.0919	post hoc recalibration on all null core genes			

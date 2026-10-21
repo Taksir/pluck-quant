@@ -99,7 +99,7 @@ def cmd_design(args):
         print("design verified in", d)
     if args.dcmd == "build":
         ok, d = panel_mod.build_design(args.layout, args.work, threads=args.threads)
-        print("design dir:", d, "| locked hashes:", "PASS" if ok else "FAIL")
+        print("design dir:", d, "| reference hashes:", "all match" if ok else "DIFFER")
         sys.exit(0 if ok else 1)
 
 
@@ -110,9 +110,9 @@ def cmd_native(args):
 def _add_quant_opts(p):
     p.add_argument("--panel", required=True, help="panel directory made by 'pluck design compile'")
     p.add_argument("--switch", choices=["sample", "cohort", "sample-scaled"], default="sample",
-                   help="hybrid switch: 'sample' = per sample (version A, the released rule); 'cohort' = summed over all samples given "
+                   help="hybrid switch: 'sample' = per sample (the default); 'cohort' = summed over all samples given "
                         "(the rule behind the accuracy results of the paper; give the samples of one tissue and layout); "
-                        "'sample-scaled' = per sample with the length-scaled gene-probe estimate in the ratio (version B, the rule of "
+                        "'sample-scaled' = per sample with the length-scaled gene-probe estimate in the ratio (the rule of "
                         "the timed runs)")
     p.add_argument("--tau", type=float, default=estimate.TAU)
     p.add_argument("--tiers", help="gene_tiers.tsv, or builtin:tiers for the table shipped with the package (adds a tier column)")
@@ -157,7 +157,7 @@ def main(argv=None):
 
     p = sub.add_parser("design", help="design files: verify, compile, build")
     ds = p.add_subparsers(dest="dcmd", required=True)
-    q = ds.add_parser("verify", help="check design.npz, gc.npy, genome_count.npy against the locked hashes")
+    q = ds.add_parser("verify", help="check design.npz, gc.npy, genome_count.npy against the reference hashes")
     q.add_argument("--layout", type=int, choices=[50, 100, 101], required=True)
     q.add_argument("--design-dir", required=True)
     q = ds.add_parser("compile", help="design -> panel directory")
@@ -167,7 +167,7 @@ def main(argv=None):
     q.add_argument("--read-length", type=int, required=True)
     q.add_argument("--strand", choices=list(panel_mod.STRANDS), default="reverse")
     q.add_argument("-o", "--out", required=True)
-    q = ds.add_parser("fetch", help="download a prebuilt design (release assets) and check the locked hashes")
+    q = ds.add_parser("fetch", help="download a prebuilt design (release assets) and check the reference hashes")
     q.add_argument("--layout", type=int, choices=[50, 100, 101], required=True)
     q.add_argument("--url", required=True, help="base URL holding [<layout>/]design.npz, gc.npy, genome_count.npy, probes_*.npz, genes.json")
     q.add_argument("--dest", required=True)

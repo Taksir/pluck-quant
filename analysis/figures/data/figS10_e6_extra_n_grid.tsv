@@ -1,0 +1,39 @@
+# file: figS10_e6_extra_n_grid.tsv
+# note: k = animals PLUCK needs relative to Salmon-pan for one gene with T reads per sample and residual SD resid_sd (log2); extra_n_sim uses the read-simulation alpha, extra_n_real_median_gene the real fit named in real_fit_source.
+layout	resid_sd	T	extra_n_sim	real_fit_source	extra_n_real_median_gene	depth_factor_real
+50 SE	0.15	50	1.338	keele_liver	1.536	1.83
+50 SE	0.15	100	1.252	keele_liver	1.411	1.88
+50 SE	0.15	300	1.125	keele_liver	1.225	2.07
+50 SE	0.15	1000	1.045	keele_liver	1.109	3.27
+50 SE	0.25	50	1.21	keele_liver	1.333	1.83
+50 SE	0.25	100	1.132	keele_liver	1.215	1.88
+50 SE	0.25	300	1.053	keele_liver	1.096	2.07
+50 SE	0.25	1000	1.017	keele_liver	1.042	3.27
+50 SE	0.35	50	1.134	keele_liver	1.213	1.83
+50 SE	0.35	100	1.077	keele_liver	1.126	1.88
+50 SE	0.35	300	1.029	keele_liver	1.052	2.07
+50 SE	0.35	1000	1.009	keele_liver	1.022	3.27
+101 SE	0.15	50	1.249	munger	1.246	1.38
+101 SE	0.15	100	1.185	munger	1.184	1.38
+101 SE	0.15	300	1.091	munger	1.093	1.4
+101 SE	0.15	1000	1.033	munger	1.036	1.45
+101 SE	0.25	50	1.154	munger	1.152	1.38
+101 SE	0.25	100	1.096	munger	1.096	1.38
+101 SE	0.25	300	1.038	munger	1.039	1.4
+101 SE	0.25	1000	1.012	munger	1.014	1.45
+101 SE	0.35	50	1.098	munger	1.096	1.38
+101 SE	0.35	100	1.056	munger	1.056	1.38
+101 SE	0.35	300	1.021	munger	1.021	1.4
+101 SE	0.35	1000	1.006	munger	1.007	1.45
+101 PE	0.15	50	1.178			
+101 PE	0.15	100	1.132			
+101 PE	0.15	300	1.064			
+101 PE	0.15	1000	1.023			
+101 PE	0.25	50	1.109			
+101 PE	0.25	100	1.068			
+101 PE	0.25	300	1.027			
+101 PE	0.25	1000	1.009			
+101 PE	0.35	50	1.069			
+101 PE	0.35	100	1.04			
+101 PE	0.35	300	1.015			
+101 PE	0.35	1000	1.005			

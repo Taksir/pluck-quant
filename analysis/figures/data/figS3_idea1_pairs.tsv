@@ -1,0 +1,116 @@
+# file: figS3_idea1_pairs.tsv
+# note: Planted cis-eQTL simulation, one seed (20261008). DO set: median shift of PLUCK for each of the 28 heterozygous founder pairs (rule G4c, limit 0.02).
+# note: Source names the calibration: the original one, or the recalibration added after the main analysis.
+layout	pair	median_delta	n	source
+se50	B6xA	-0.0043	1440	locked
+se50	B6xC	-0.0021	1358	locked
+se50	B6xD	-0.0018	1509	locked
+se50	B6xE	-0.004	1357	locked
+se50	B6xF	-0.0008	2946	locked
+se50	B6xG	-0.0033	2839	locked
+se50	B6xH	-0.004	2032	locked
+se50	AxC	0.0027	1973	locked
+se50	AxD	-0.0039	1808	locked
+se50	AxE	-0.0004	1891	locked
+se50	AxF	-0.0056	2990	locked
+se50	AxG	-0.001	2943	locked
+se50	AxH	-0.0028	2392	locked
+se50	CxD	-0.0027	1898	locked
+se50	CxE	-0.0011	1893	locked
+se50	CxF	-0.0004	2970	locked
+se50	CxG	-0.0011	2929	locked
+se50	CxH	-0.0021	2312	locked
+se50	DxE	0.0002	1857	locked
+se50	DxF	-0.0024	2908	locked
+se50	DxG	-0.0006	2906	locked
+se50	DxH	0.0004	2343	locked
+se50	ExF	-0.0027	2892	locked
+se50	ExG	-0.0028	2923	locked
+se50	ExH	-0.0031	2370	locked
+se50	FxG	-0.0014	2949	locked
+se50	FxH	0.0021	2939	locked
+se50	GxH	0.0001	2835	locked
+se50	B6xA	0.0011	1440	post hoc recalibration
+se50	B6xC	0.0003	1358	post hoc recalibration
+se50	B6xD	0.0038	1509	post hoc recalibration
+se50	B6xE	0.0001	1357	post hoc recalibration
+se50	B6xF	0.0027	2946	post hoc recalibration
+se50	B6xG	0.0004	2839	post hoc recalibration
+se50	B6xH	0.0008	2032	post hoc recalibration
+se50	AxC	0.0049	1973	post hoc recalibration
+se50	AxD	0.0015	1808	post hoc recalibration
+se50	AxE	0.0031	1891	post hoc recalibration
+se50	AxF	-0.0001	2990	post hoc recalibration
+se50	AxG	-0.0	2943	post hoc recalibration
+se50	AxH	0.0007	2392	post hoc recalibration
+se50	CxD	0.0012	1898	post hoc recalibration
+se50	CxE	0.0009	1893	post hoc recalibration
+se50	CxF	0.0027	2970	post hoc recalibration
+se50	CxG	0.0009	2929	post hoc recalibration
+se50	CxH	0.0007	2312	post hoc recalibration
+se50	DxE	0.0032	1857	post hoc recalibration
+se50	DxF	0.0015	2908	post hoc recalibration
+se50	DxG	0.005	2906	post hoc recalibration
+se50	DxH	0.0034	2343	post hoc recalibration
+se50	ExF	0.0012	2892	post hoc recalibration
+se50	ExG	-0.0004	2923	post hoc recalibration
+se50	ExH	0.0017	2370	post hoc recalibration
+se50	FxG	0.0024	2949	post hoc recalibration
+se50	FxH	0.0055	2939	post hoc recalibration
+se50	GxH	0.0035	2835	post hoc recalibration
+se101	B6xA	0.0023	1030	locked
+se101	B6xC	0.0048	1011	locked
+se101	B6xD	0.0041	1068	locked
+se101	B6xE	0.0016	1029	locked
+se101	B6xF	0.0028	2593	locked
+se101	B6xG	0.0002	2502	locked
+se101	B6xH	0.0002	1500	locked
+se101	AxC	0.002	1461	locked
+se101	AxD	0.0021	1339	locked
+se101	AxE	0.0016	1422	locked
+se101	AxF	-0.0028	2654	locked
+se101	AxG	0.0031	2625	locked
+se101	AxH	0.0021	1820	locked
+se101	CxD	0.0	1438	locked
+se101	CxE	0.0045	1424	locked
+se101	CxF	0.0015	2673	locked
+se101	CxG	0.0022	2660	locked
+se101	CxH	-0.001	1770	locked
+se101	DxE	0.003	1414	locked
+se101	DxF	0.0014	2614	locked
+se101	DxG	0.0038	2663	locked
+se101	DxH	0.0041	1791	locked
+se101	ExF	0.0002	2625	locked
+se101	ExG	0.0003	2641	locked
+se101	ExH	0.0002	1849	locked
+se101	FxG	0.0012	2736	locked
+se101	FxH	0.0035	2647	locked
+se101	GxH	0.002	2607	locked
+se101	B6xA	0.0026	1030	post hoc recalibration
+se101	B6xC	0.0058	1011	post hoc recalibration
+se101	B6xD	0.0046	1068	post hoc recalibration
+se101	B6xE	0.0021	1029	post hoc recalibration
+se101	B6xF	0.0023	2593	post hoc recalibration
+se101	B6xG	0.0015	2502	post hoc recalibration
+se101	B6xH	0.0007	1500	post hoc recalibration
+se101	AxC	0.0017	1461	post hoc recalibration
+se101	AxD	0.002	1339	post hoc recalibration
+se101	AxE	0.0024	1422	post hoc recalibration
+se101	AxF	-0.0024	2654	post hoc recalibration
+se101	AxG	0.0024	2625	post hoc recalibration
+se101	AxH	0.0023	1820	post hoc recalibration
+se101	CxD	0.0007	1438	post hoc recalibration
+se101	CxE	0.0065	1424	post hoc recalibration
+se101	CxF	0.0018	2673	post hoc recalibration
+se101	CxG	0.003	2660	post hoc recalibration
+se101	CxH	-0.0003	1770	post hoc recalibration
+se101	DxE	0.0045	1414	post hoc recalibration
+se101	DxF	0.002	2614	post hoc recalibration
+se101	DxG	0.0042	2663	post hoc recalibration
+se101	DxH	0.0046	1791	post hoc recalibration
+se101	ExF	0.001	2625	post hoc recalibration
+se101	ExG	0.0008	2641	post hoc recalibration
+se101	ExH	0.0001	1849	post hoc recalibration
+se101	FxG	0.0026	2736	post hoc recalibration
+se101	FxH	0.0048	2647	post hoc recalibration
+se101	GxH	0.0033	2607	post hoc recalibration

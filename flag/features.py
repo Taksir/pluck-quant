@@ -1,8 +1,8 @@
-"""Design-only per-gene features for the frozen core tier (no sample, no truth, no Salmon).
+"""Design-only per-gene features for the core tier (no sample, no truth, no Salmon).
 usage: features.py 26|76 OUT.tsv.gz
   26 -> probe_em/design.npz (+ out/genome_count.npy), gene probes probes_s26, R = 50  (Keele, 50 bp SE)
   76 -> e5_munger/design/dsn76 (EM set at SP = 76), gene probes probes_s76 (R = 100, Munger) and probes_s77 (R = 101, GSE199702)
-EM set = frozen emg rule (run_emg.py): inB & genome_copies <= max(1, n_genes_containing) & n_genes_containing == 1.
+EM set = the emg rule (run_emg.py): inB & genome_copies <= max(1, n_genes_containing) & n_genes_containing == 1.
 Gene-probe incidence in non-TSL1 transcripts is taken from the 26 nt design (gene probes are constitutive in TSL1 isoforms
 at every spacing, so the per-transcript fraction m_t/m is a property of exon structure)."""
 import sys, json, numpy as np, pandas as pd

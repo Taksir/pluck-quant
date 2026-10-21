@@ -1,0 +1,40 @@
+# file: figS3_idea1_branch.tsv
+# note: Planted cis-eQTL simulation, one seed (20261008). Codes: hybrid = PLUCK, vf = gene probes alone, emg = EM alone, ref = ref-unique probes.
+# note: Added after the main analysis: switch-gene call rate (p < 1e-3, CC) split by the branch PLUCK used for the gene; Salmon-pan values in the matched unit.
+layout	switch	branch	method	tool	n	call_rate
+se50	swM	gene_probe_branch	hybrid	hybrid	174.0	0.0
+se50	swM	gene_probe_branch	vf	gene probes alone	174.0	0.0
+se50	swM	gene_probe_branch	emg	EM alone	173.0	0.0867
+se50	swM	gene_probe_branch	salmon_pan	Salmon-pan	174.0	0.0
+se50	swM	EM_branch	hybrid	hybrid	273.0	0.4835
+se50	swM	EM_branch	vf	gene probes alone	253.0	0.0395
+se50	swM	EM_branch	emg	EM alone	273.0	0.4835
+se50	swM	EM_branch	salmon_pan	Salmon-pan	274.0	0.0036
+se50	swM	share of switch genes on gene-probe branch	hybrid	hybrid		0.387
+se50	swR	gene_probe_branch	hybrid	hybrid	190.0	0.1368
+se50	swR	gene_probe_branch	vf	gene probes alone	190.0	0.1368
+se50	swR	gene_probe_branch	emg	EM alone	190.0	0.0
+se50	swR	gene_probe_branch	salmon_pan	Salmon-pan	190.0	0.0
+se50	swR	EM_branch	hybrid	hybrid	256.0	0.043
+se50	swR	EM_branch	vf	gene probes alone	231.0	0.4069
+se50	swR	EM_branch	emg	EM alone	256.0	0.043
+se50	swR	EM_branch	salmon_pan	Salmon-pan	260.0	0.0038
+se50	swR	share of switch genes on gene-probe branch	hybrid	hybrid		0.422
+se101	swM	gene_probe_branch	hybrid	hybrid	208.0	0.0
+se101	swM	gene_probe_branch	vf	gene probes alone	208.0	0.0
+se101	swM	gene_probe_branch	emg	EM alone	208.0	0.101
+se101	swM	gene_probe_branch	salmon_pan	Salmon-pan	208.0	0.0
+se101	swM	EM_branch	hybrid	hybrid	239.0	0.5481
+se101	swM	EM_branch	vf	gene probes alone	220.0	0.05
+se101	swM	EM_branch	emg	EM alone	239.0	0.5481
+se101	swM	EM_branch	salmon_pan	Salmon-pan	240.0	0.0042
+se101	swM	share of switch genes on gene-probe branch	hybrid	hybrid		0.462
+se101	swR	gene_probe_branch	hybrid	hybrid	224.0	0.1384
+se101	swR	gene_probe_branch	vf	gene probes alone	224.0	0.1384
+se101	swR	gene_probe_branch	emg	EM alone	224.0	0.0
+se101	swR	gene_probe_branch	salmon_pan	Salmon-pan	224.0	0.0
+se101	swR	EM_branch	hybrid	hybrid	223.0	0.0583
+se101	swR	EM_branch	vf	gene probes alone	197.0	0.4873
+se101	swR	EM_branch	emg	EM alone	223.0	0.0583
+se101	swR	EM_branch	salmon_pan	Salmon-pan	226.0	0.0044
+se101	swR	share of switch genes on gene-probe branch	hybrid	hybrid		0.498

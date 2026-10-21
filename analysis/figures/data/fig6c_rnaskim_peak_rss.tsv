@@ -1,0 +1,15 @@
+# file: fig6c_rnaskim_peak_rss.tsv
+# note: Peak resident memory (MB) per sample and method in the RNA-Skim timing runs on the second cluster.
+sample	method	rss_mb
+CC001	hybrid	1486
+CC001	kmerator_counttags	9563
+CC001	rnaskim	12470
+CC001	salmon_ref	1095
+CC021	hybrid	1038
+CC021	kmerator_counttags	9563
+CC021	rnaskim	12471
+CC021	salmon_ref	1075
+LiverCC001F	hybrid	1773
+LiverCC001F	kmerator_counttags	9563
+LiverCC001F	rnaskim	12480
+LiverCC001F	salmon_ref	1038

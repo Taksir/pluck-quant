@@ -1,0 +1,192 @@
+# Supplementary Data 3 (Table S4). Pairwise comparisons of PLUCK with each comparator, all core genes, one row per value (189 rows).
+# Values are on the genes that PLUCK, the ref-unique probes, Salmon-ref, Salmon-pan and the comparator share (RNA-Skim on its own gene set), from the scoring script of Table S3. source = the scoring script (code release) that produced the value.
+comparator	cohort	quantity	value	source
+kallisto-ref	Keele kidney	within-gene Spearman, comparator minus PLUCK	0.0011	fc_gather_score.py
+kallisto-ref	Keele kidney	PLUCK within-gene Spearman	0.9888	fc_gather_score.py
+kallisto-ref	Keele kidney	comparator within-gene Spearman	0.9899	fc_gather_score.py
+kallisto-ref	Keele liver	within-gene Spearman, comparator minus PLUCK	0.0028	fc_gather_score.py
+kallisto-ref	Keele liver	PLUCK within-gene Spearman	0.9814	fc_gather_score.py
+kallisto-ref	Keele liver	comparator within-gene Spearman	0.9842	fc_gather_score.py
+kallisto-ref	Munger founders	within-gene Spearman, comparator minus PLUCK	0.0073	fc_gather_score.py
+kallisto-ref	Munger founders	PLUCK within-gene Spearman	0.978	fc_gather_score.py
+kallisto-ref	Munger founders	comparator within-gene Spearman	0.9853	fc_gather_score.py
+kallisto-pan	Munger founders	within-gene Spearman, comparator minus PLUCK	0.0078	fc_gather_score.py
+kallisto-pan	Munger founders	PLUCK within-gene Spearman	0.978	fc_gather_score.py
+kallisto-pan	Munger founders	comparator within-gene Spearman	0.9858	fc_gather_score.py
+Kmerator+countTags	Keele kidney	within-gene Spearman, comparator minus PLUCK	-0.0059	fc_gather_score.py
+Kmerator+countTags	Keele kidney	PLUCK within-gene Spearman	0.9888	fc_gather_score.py
+Kmerator+countTags	Keele kidney	comparator within-gene Spearman	0.9829	fc_gather_score.py
+Kmerator+countTags	Keele liver	within-gene Spearman, comparator minus PLUCK	-0.0052	fc_gather_score.py
+Kmerator+countTags	Keele liver	PLUCK within-gene Spearman	0.9814	fc_gather_score.py
+Kmerator+countTags	Keele liver	comparator within-gene Spearman	0.9762	fc_gather_score.py
+Kmerator+countTags	Munger founders	within-gene Spearman, comparator minus PLUCK	-0.0344	fc_gather_score.py
+Kmerator+countTags	Munger founders	PLUCK within-gene Spearman	0.978	fc_gather_score.py
+Kmerator+countTags	Munger founders	comparator within-gene Spearman	0.9436	fc_gather_score.py
+STAR+fC	Keele kidney	within-gene Spearman, comparator minus PLUCK	0.0032	fc_gather_score.py
+STAR+fC	Keele kidney	PLUCK within-gene Spearman	0.9888	fc_gather_score.py
+STAR+fC	Keele kidney	comparator within-gene Spearman	0.992	fc_gather_score.py
+STAR+fC	Keele liver	within-gene Spearman, comparator minus PLUCK	0.0047	fc_gather_score.py
+STAR+fC	Keele liver	PLUCK within-gene Spearman	0.9814	fc_gather_score.py
+STAR+fC	Keele liver	comparator within-gene Spearman	0.9861	fc_gather_score.py
+STAR+fC	Munger founders	within-gene Spearman, comparator minus PLUCK	0.0066	fc_gather_score.py
+STAR+fC	Munger founders	PLUCK within-gene Spearman	0.978	fc_gather_score.py
+STAR+fC	Munger founders	comparator within-gene Spearman	0.9846	fc_gather_score.py
+kallisto-ref	Keele kidney	PLUCK spurious rate	0.049	fc_gather_score.py
+kallisto-ref	Keele kidney	comparator spurious rate	0.2051	fc_gather_score.py
+kallisto-ref	Keele kidney	spurious rate, PLUCK over comparator	0.239	fc_gather_score.py
+kallisto-ref	Keele liver	PLUCK spurious rate	0.0408	fc_gather_score.py
+kallisto-ref	Keele liver	comparator spurious rate	0.1763	fc_gather_score.py
+kallisto-ref	Keele liver	spurious rate, PLUCK over comparator	0.231	fc_gather_score.py
+kallisto-ref	Munger founders	PLUCK spurious rate	0.0553	fc_gather_score.py
+kallisto-ref	Munger founders	comparator spurious rate	0.0621	fc_gather_score.py
+kallisto-ref	Munger founders	spurious rate, PLUCK over comparator	0.89	fc_gather_score.py
+kallisto-pan	Munger founders	PLUCK spurious rate	0.0553	fc_gather_score.py
+kallisto-pan	Munger founders	comparator spurious rate	0.045	fc_gather_score.py
+kallisto-pan	Munger founders	spurious rate, PLUCK over comparator	1.229	fc_gather_score.py
+Kmerator+countTags	Keele kidney	PLUCK spurious rate	0.049	fc_gather_score.py
+Kmerator+countTags	Keele kidney	comparator spurious rate	0.4934	fc_gather_score.py
+Kmerator+countTags	Keele kidney	spurious rate, PLUCK over comparator	0.099	fc_gather_score.py
+Kmerator+countTags	Keele liver	PLUCK spurious rate	0.0406	fc_gather_score.py
+Kmerator+countTags	Keele liver	comparator spurious rate	0.4397	fc_gather_score.py
+Kmerator+countTags	Keele liver	spurious rate, PLUCK over comparator	0.092	fc_gather_score.py
+Kmerator+countTags	Munger founders	PLUCK spurious rate	0.0553	fc_gather_score.py
+Kmerator+countTags	Munger founders	comparator spurious rate	0.8731	fc_gather_score.py
+Kmerator+countTags	Munger founders	spurious rate, PLUCK over comparator	0.063	fc_gather_score.py
+STAR+fC	Keele kidney	PLUCK spurious rate	0.049	fc_gather_score.py
+STAR+fC	Keele kidney	comparator spurious rate	0.0732	fc_gather_score.py
+STAR+fC	Keele kidney	spurious rate, PLUCK over comparator	0.669	fc_gather_score.py
+STAR+fC	Keele liver	PLUCK spurious rate	0.0408	fc_gather_score.py
+STAR+fC	Keele liver	comparator spurious rate	0.0661	fc_gather_score.py
+STAR+fC	Keele liver	spurious rate, PLUCK over comparator	0.617	fc_gather_score.py
+STAR+fC	Munger founders	PLUCK spurious rate	0.0553	fc_gather_score.py
+STAR+fC	Munger founders	comparator spurious rate	0.0597	fc_gather_score.py
+STAR+fC	Munger founders	spurious rate, PLUCK over comparator	0.926	fc_gather_score.py
+kallisto-ref	Keele kidney	median founder shift (log2)	-0.0482	fc_gather_score.py
+kallisto-ref	Keele kidney	median founder shift, 95% bootstrap interval	[-0.0503, -0.0467]	fc_gather_score.py
+kallisto-ref	Keele liver	median founder shift (log2)	-0.0457	fc_gather_score.py
+kallisto-ref	Keele liver	median founder shift, 95% bootstrap interval	[-0.0477, -0.0439]	fc_gather_score.py
+kallisto-ref	Munger founders	median founder shift (log2)	0.001	fc_gather_score.py
+kallisto-ref	Munger founders	median founder shift, 95% bootstrap interval	[0.0004, 0.0017]	fc_gather_score.py
+kallisto-pan	Munger founders	median founder shift (log2)	0.0046	fc_gather_score.py
+kallisto-pan	Munger founders	median founder shift, 95% bootstrap interval	[0.0039, 0.0052]	fc_gather_score.py
+Kmerator+countTags	Keele kidney	median founder shift (log2)	-0.114	fc_gather_score.py
+Kmerator+countTags	Keele kidney	median founder shift, 95% bootstrap interval	[-0.1171, -0.1104]	fc_gather_score.py
+Kmerator+countTags	Keele liver	median founder shift (log2)	-0.1044	fc_gather_score.py
+Kmerator+countTags	Keele liver	median founder shift, 95% bootstrap interval	[-0.1076, -0.1015]	fc_gather_score.py
+Kmerator+countTags	Munger founders	median founder shift (log2)	-0.2267	fc_gather_score.py
+Kmerator+countTags	Munger founders	median founder shift, 95% bootstrap interval	[-0.2302, -0.2227]	fc_gather_score.py
+STAR+fC	Keele kidney	median founder shift (log2)	-0.0052	fc_gather_score.py
+STAR+fC	Keele kidney	median founder shift, 95% bootstrap interval	[-0.0059, -0.0042]	fc_gather_score.py
+STAR+fC	Keele liver	median founder shift (log2)	-0.004	fc_gather_score.py
+STAR+fC	Keele liver	median founder shift, 95% bootstrap interval	[-0.0048, -0.0032]	fc_gather_score.py
+STAR+fC	Munger founders	median founder shift (log2)	0.0025	fc_gather_score.py
+STAR+fC	Munger founders	median founder shift, 95% bootstrap interval	[0.0017, 0.0031]	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele kidney	median founder shift (log2)	-0.0584	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele kidney	median founder shift, 95% bootstrap interval	[-0.0624, -0.0545]	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele liver	median founder shift (log2)	-0.0576	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele liver	median founder shift, 95% bootstrap interval	[-0.0624, -0.0518]	fc_gather_score.py
+Salmon-ref, 10% of reads	Munger founders	median founder shift (log2)	-0.0087	fc_gather_score.py
+Salmon-ref, 10% of reads	Munger founders	median founder shift, 95% bootstrap interval	[-0.0131, -0.0052]	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele kidney	median founder shift (log2)	-0.0557	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele kidney	median founder shift, 95% bootstrap interval	[-0.0583, -0.0531]	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele liver	median founder shift (log2)	-0.0522	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele liver	median founder shift, 95% bootstrap interval	[-0.0552, -0.0481]	fc_gather_score.py
+Salmon-ref, 25% of reads	Munger founders	median founder shift (log2)	-0.0044	fc_gather_score.py
+Salmon-ref, 25% of reads	Munger founders	median founder shift, 95% bootstrap interval	[-0.0069, -0.0018]	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele kidney	median founder shift (log2)	0.0029	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele kidney	median founder shift, 95% bootstrap interval	[-0.0003, 0.0061]	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele liver	median founder shift (log2)	0.0015	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele liver	median founder shift, 95% bootstrap interval	[-0.0021, 0.0066]	fc_gather_score.py
+Salmon-pan, 10% of reads	Munger founders	median founder shift (log2)	-0.0019	fc_gather_score.py
+Salmon-pan, 10% of reads	Munger founders	median founder shift, 95% bootstrap interval	[-0.0062, 0.0022]	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele kidney	median founder shift (log2)	0.0019	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele kidney	median founder shift, 95% bootstrap interval	[-0.0009, 0.004]	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele liver	median founder shift (log2)	0.0039	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele liver	median founder shift, 95% bootstrap interval	[0.0014, 0.0066]	fc_gather_score.py
+Salmon-pan, 25% of reads	Munger founders	median founder shift (log2)	0.0033	fc_gather_score.py
+Salmon-pan, 25% of reads	Munger founders	median founder shift, 95% bootstrap interval	[0.0005, 0.0058]	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele kidney	comparator noise SD	0.27	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele kidney	PLUCK noise SD	0.0739	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele kidney	comparator within-gene Spearman	0.9291	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele kidney	PLUCK within-gene Spearman	0.9888	fc_gather_score.py
+Salmon-ref, 10% of reads	Munger founders	comparator noise SD	0.2989	fc_gather_score.py
+Salmon-ref, 10% of reads	Munger founders	PLUCK noise SD	0.0636	fc_gather_score.py
+Salmon-ref, 10% of reads	Munger founders	comparator within-gene Spearman	0.7655	fc_gather_score.py
+Salmon-ref, 10% of reads	Munger founders	PLUCK within-gene Spearman	0.978	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele liver	comparator noise SD	0.2988	fc_gather_score.py
+Salmon-ref, 10% of reads	Keele liver	PLUCK noise SD	0.0786	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele kidney	comparator noise SD	0.1741	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele kidney	PLUCK noise SD	0.0739	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele kidney	comparator within-gene Spearman	0.9649	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele kidney	PLUCK within-gene Spearman	0.9888	fc_gather_score.py
+Salmon-ref, 25% of reads	Munger founders	comparator noise SD	0.1776	fc_gather_score.py
+Salmon-ref, 25% of reads	Munger founders	PLUCK noise SD	0.0636	fc_gather_score.py
+Salmon-ref, 25% of reads	Munger founders	comparator within-gene Spearman	0.8868	fc_gather_score.py
+Salmon-ref, 25% of reads	Munger founders	PLUCK within-gene Spearman	0.978	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele liver	comparator noise SD	0.1915	fc_gather_score.py
+Salmon-ref, 25% of reads	Keele liver	PLUCK noise SD	0.0786	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele kidney	comparator noise SD	0.2608	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele kidney	PLUCK noise SD	0.0739	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele kidney	comparator within-gene Spearman	0.932	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele kidney	PLUCK within-gene Spearman	0.9888	fc_gather_score.py
+Salmon-pan, 10% of reads	Munger founders	comparator noise SD	0.2998	fc_gather_score.py
+Salmon-pan, 10% of reads	Munger founders	PLUCK noise SD	0.0636	fc_gather_score.py
+Salmon-pan, 10% of reads	Munger founders	comparator within-gene Spearman	0.7637	fc_gather_score.py
+Salmon-pan, 10% of reads	Munger founders	PLUCK within-gene Spearman	0.978	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele liver	comparator noise SD	0.2921	fc_gather_score.py
+Salmon-pan, 10% of reads	Keele liver	PLUCK noise SD	0.0786	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele kidney	comparator noise SD	0.1659	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele kidney	PLUCK noise SD	0.0739	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele kidney	comparator within-gene Spearman	0.9674	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele kidney	PLUCK within-gene Spearman	0.9888	fc_gather_score.py
+Salmon-pan, 25% of reads	Munger founders	comparator noise SD	0.178	fc_gather_score.py
+Salmon-pan, 25% of reads	Munger founders	PLUCK noise SD	0.0636	fc_gather_score.py
+Salmon-pan, 25% of reads	Munger founders	comparator within-gene Spearman	0.8866	fc_gather_score.py
+Salmon-pan, 25% of reads	Munger founders	PLUCK within-gene Spearman	0.978	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele liver	comparator noise SD	0.1833	fc_gather_score.py
+Salmon-pan, 25% of reads	Keele liver	PLUCK noise SD	0.0786	fc_gather_score.py
+PLUCK	Keele kidney	PLUCK spurious rate	0.049	fc_gather_score.py
+PLUCK	Keele liver	PLUCK spurious rate	0.0408	fc_gather_score.py
+PLUCK	Munger founders	PLUCK spurious rate	0.0553	fc_gather_score.py
+RNA-Skim	Keele kidney	within-gene Spearman, comparator minus PLUCK	-0.0329	kt_score.py
+RNA-Skim	Keele kidney	PLUCK within-gene Spearman	0.9888	kt_score.py
+RNA-Skim	Keele kidney	comparator within-gene Spearman	0.9559	kt_score.py
+RNA-Skim	Keele liver	within-gene Spearman, comparator minus PLUCK	-0.0402	kt_score.py
+RNA-Skim	Keele liver	PLUCK within-gene Spearman	0.9814	kt_score.py
+RNA-Skim	Keele liver	comparator within-gene Spearman	0.9412	kt_score.py
+RNA-Skim	Munger founders	within-gene Spearman, comparator minus PLUCK	-0.0199	kt_score.py
+RNA-Skim	Munger founders	PLUCK within-gene Spearman	0.978	kt_score.py
+RNA-Skim	Munger founders	comparator within-gene Spearman	0.9581	kt_score.py
+RNA-Skim	Keele kidney	PLUCK spurious rate	0.049	kt_score.py
+RNA-Skim	Keele kidney	comparator spurious rate	0.4634	kt_score.py
+RNA-Skim	Keele kidney	spurious rate, PLUCK over comparator	0.106	kt_score.py
+RNA-Skim	Keele liver	PLUCK spurious rate	0.0408	kt_score.py
+RNA-Skim	Keele liver	comparator spurious rate	0.3846	kt_score.py
+RNA-Skim	Keele liver	spurious rate, PLUCK over comparator	0.106	kt_score.py
+RNA-Skim	Munger founders	PLUCK spurious rate	0.0553	kt_score.py
+RNA-Skim	Munger founders	comparator spurious rate	0.4959	kt_score.py
+RNA-Skim	Munger founders	spurious rate, PLUCK over comparator	0.112	kt_score.py
+RNA-Skim	Keele kidney	median founder shift (log2)	-0.152	kt_score.py
+RNA-Skim	Keele kidney	median founder shift, 95% bootstrap interval	[-0.1571, -0.1453]	kt_score.py
+RNA-Skim	Keele liver	median founder shift (log2)	-0.1421	kt_score.py
+RNA-Skim	Keele liver	median founder shift, 95% bootstrap interval	[-0.1476, -0.1361]	kt_score.py
+RNA-Skim	Munger founders	median founder shift (log2)	-0.1145	kt_score.py
+RNA-Skim	Munger founders	median founder shift, 95% bootstrap interval	[-0.1178, -0.111]	kt_score.py
+RNA-Skim (missing values as 0)	Keele kidney	median founder shift (log2)	-0.152	kt_score.py
+RNA-Skim (missing values as 0)	Keele kidney	median founder shift, 95% bootstrap interval	[-0.1571, -0.1453]	kt_score.py
+RNA-Skim (missing values as 0)	Keele liver	median founder shift (log2)	-0.1421	kt_score.py
+RNA-Skim (missing values as 0)	Keele liver	median founder shift, 95% bootstrap interval	[-0.1476, -0.1361]	kt_score.py
+RNA-Skim (missing values as 0)	Munger founders	median founder shift (log2)	-0.1145	kt_score.py
+RNA-Skim (missing values as 0)	Munger founders	median founder shift, 95% bootstrap interval	[-0.1178, -0.111]	kt_score.py
+Kmerator+countTags	Keele kidney	within-gene Spearman, PLUCK minus comparator	0.0059	kt_score.py
+Kmerator+countTags	Keele kidney	PLUCK noise SD	0.0739030600404735	kt_score.py
+Kmerator+countTags	Keele kidney	comparator noise SD	0.1057920120754727	kt_score.py
+Kmerator+countTags	Munger founders	within-gene Spearman, PLUCK minus comparator	0.0344	kt_score.py
+Kmerator+countTags	Munger founders	PLUCK noise SD	0.06363459978928737	kt_score.py
+Kmerator+countTags	Munger founders	comparator noise SD	0.09239188381433197	kt_score.py
+RNA-Skim	Keele kidney	within-gene Spearman, PLUCK minus comparator	0.0329	kt_score.py
+RNA-Skim	Keele kidney	PLUCK noise SD	0.07391707540684168	kt_score.py
+RNA-Skim	Keele kidney	comparator noise SD	0.1944173876989968	kt_score.py
+RNA-Skim	Munger founders	within-gene Spearman, PLUCK minus comparator	0.0199	kt_score.py
+RNA-Skim	Munger founders	PLUCK noise SD	0.06363459978928737	kt_score.py
+RNA-Skim	Munger founders	comparator noise SD	0.08494561446772	kt_score.py

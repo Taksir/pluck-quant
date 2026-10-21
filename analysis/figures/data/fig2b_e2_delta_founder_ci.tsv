@@ -1,0 +1,130 @@
+# file: fig2b_e2_delta_founder_ci.tsv
+# note: Read simulation, clean condition, expected-count truth. median_delta and n_genes equal fig2b_e2_delta_founder.tsv; ci_lo/ci_hi = gene-bootstrap 95% percentile interval of the median (2,000 resamples, seed 20261015); q25/q75 = interquartile range of per-gene shifts.
+# note: Founders A C D E F G H = A/J, 129S1/SvImJ, NOD/ShiLtJ, NZO/HlLtJ, CAST/EiJ, PWK/PhJ, WSB/EiJ. Codes: vf = gene probes alone, hybrid = PLUCK.
+layout	method	tool	founder	median_delta	ci_lo	ci_hi	q25	q75	n_genes
+se50	hybrid	hybrid	A	0.0021	-0.0042	0.0089	-0.0557	0.0641	1135
+se50	hybrid	hybrid	C	0.0031	-0.0032	0.0077	-0.0661	0.0602	1115
+se50	hybrid	hybrid	D	0.0019	-0.0028	0.0088	-0.0616	0.068	1171
+se50	hybrid	hybrid	E	0.0072	0.0007	0.0128	-0.0544	0.0674	1098
+se50	hybrid	hybrid	F	0.0031	-0.0004	0.0067	-0.0625	0.0668	2291
+se50	hybrid	hybrid	G	0.0024	-0.0016	0.0063	-0.0649	0.066	2178
+se50	hybrid	hybrid	H	-0.0039	-0.008	-0.0	-0.0634	0.0621	1667
+se50	vf	gene probes alone	A	0.0031	-0.0039	0.0089	-0.0562	0.0664	1132
+se50	vf	gene probes alone	C	0.0024	-0.0039	0.008	-0.0718	0.061	1110
+se50	vf	gene probes alone	D	0.0017	-0.0043	0.0079	-0.0652	0.0726	1167
+se50	vf	gene probes alone	E	0.0094	0.0029	0.0159	-0.0566	0.0786	1093
+se50	vf	gene probes alone	F	0.0034	-0.001	0.0061	-0.0649	0.0731	2281
+se50	vf	gene probes alone	G	0.0037	-0.0014	0.0081	-0.0665	0.0687	2170
+se50	vf	gene probes alone	H	-0.0029	-0.0079	0.0009	-0.0652	0.065	1664
+se50	emg	EM alone	A	0.0044	-0.0001	0.0108	-0.0572	0.0686	1135
+se50	emg	EM alone	C	0.0021	-0.0056	0.0061	-0.0658	0.0599	1115
+se50	emg	EM alone	D	0.0019	-0.003	0.0095	-0.0652	0.0614	1171
+se50	emg	EM alone	E	0.0066	0.002	0.0122	-0.0529	0.0694	1098
+se50	emg	EM alone	F	0.0036	0.0004	0.0074	-0.0646	0.0701	2291
+se50	emg	EM alone	G	0.0012	-0.003	0.0054	-0.0656	0.0705	2178
+se50	emg	EM alone	H	-0.0023	-0.0057	0.0039	-0.0672	0.0623	1667
+se50	ref	ref-unique probes	A	-0.0731	-0.0798	-0.065	-0.1816	-0.0026	1135
+se50	ref	ref-unique probes	C	-0.0787	-0.0859	-0.0697	-0.1837	-0.0064	1115
+se50	ref	ref-unique probes	D	-0.0773	-0.0855	-0.0674	-0.185	0.0002	1171
+se50	ref	ref-unique probes	E	-0.0752	-0.0869	-0.0672	-0.1914	0.0042	1098
+se50	ref	ref-unique probes	F	-0.1687	-0.1768	-0.1595	-0.2876	-0.0628	2291
+se50	ref	ref-unique probes	G	-0.174	-0.1845	-0.1656	-0.2981	-0.069	2178
+se50	ref	ref-unique probes	H	-0.082	-0.0904	-0.0746	-0.1801	0.0002	1667
+se50	salmon_ref	Salmon-ref	A	-0.0452	-0.0519	-0.0378	-0.1266	0.0182	1135
+se50	salmon_ref	Salmon-ref	C	-0.0468	-0.0527	-0.0408	-0.1234	0.0095	1115
+se50	salmon_ref	Salmon-ref	D	-0.045	-0.0518	-0.0373	-0.1205	0.0175	1171
+se50	salmon_ref	Salmon-ref	E	-0.046	-0.0553	-0.038	-0.1288	0.0185	1098
+se50	salmon_ref	Salmon-ref	F	-0.1021	-0.1086	-0.0966	-0.1873	-0.028	2291
+se50	salmon_ref	Salmon-ref	G	-0.1051	-0.111	-0.0995	-0.2018	-0.0275	2178
+se50	salmon_ref	Salmon-ref	H	-0.0483	-0.0549	-0.0419	-0.1245	0.0136	1667
+se50	salmon_pan	Salmon-pan	A	0.0012	-0.0035	0.0051	-0.0495	0.0559	1135
+se50	salmon_pan	Salmon-pan	C	-0.0	-0.004	0.0035	-0.0522	0.0482	1115
+se50	salmon_pan	Salmon-pan	D	0.0031	-0.0013	0.008	-0.0454	0.0544	1171
+se50	salmon_pan	Salmon-pan	E	0.0044	-0.0011	0.0082	-0.046	0.0576	1098
+se50	salmon_pan	Salmon-pan	F	0.0029	-0.0007	0.0062	-0.0523	0.0531	2291
+se50	salmon_pan	Salmon-pan	G	0.0025	-0.0016	0.0052	-0.0518	0.053	2178
+se50	salmon_pan	Salmon-pan	H	-0.0027	-0.0064	0.0003	-0.0573	0.0501	1667
+se101	hybrid	hybrid	A	0.0019	-0.0025	0.0066	-0.0487	0.0622	837
+se101	hybrid	hybrid	C	-0.0015	-0.0094	0.0043	-0.0626	0.0581	838
+se101	hybrid	hybrid	D	-0.0006	-0.0063	0.0043	-0.0601	0.0583	838
+se101	hybrid	hybrid	E	0.0051	0.0011	0.0115	-0.0517	0.0629	807
+se101	hybrid	hybrid	F	0.0022	-0.0011	0.0061	-0.0583	0.0614	2008
+se101	hybrid	hybrid	G	0.0027	-0.0005	0.0078	-0.06	0.0596	1949
+se101	hybrid	hybrid	H	-0.0063	-0.0111	0.0004	-0.0636	0.0577	1224
+se101	vf	gene probes alone	A	0.0021	-0.0027	0.0069	-0.0523	0.0654	834
+se101	vf	gene probes alone	C	-0.002	-0.0095	0.0041	-0.0634	0.057	833
+se101	vf	gene probes alone	D	0.0006	-0.0044	0.0059	-0.0586	0.0634	834
+se101	vf	gene probes alone	E	0.0068	0.0017	0.0124	-0.0517	0.0623	802
+se101	vf	gene probes alone	F	0.003	-0.0013	0.0074	-0.0593	0.0661	1999
+se101	vf	gene probes alone	G	0.0033	-0.0008	0.0078	-0.0614	0.0606	1941
+se101	vf	gene probes alone	H	-0.0077	-0.0131	-0.0014	-0.0673	0.0579	1221
+se101	emg	EM alone	A	0.0028	-0.0047	0.0084	-0.0556	0.0694	837
+se101	emg	EM alone	C	-0.0025	-0.0094	0.0018	-0.0662	0.062	838
+se101	emg	EM alone	D	0.0002	-0.0077	0.0067	-0.0646	0.0631	838
+se101	emg	EM alone	E	0.0024	-0.0041	0.0093	-0.0528	0.0678	807
+se101	emg	EM alone	F	0.0021	-0.0014	0.0061	-0.0611	0.0592	2008
+se101	emg	EM alone	G	0.0012	-0.0042	0.006	-0.0639	0.061	1949
+se101	emg	EM alone	H	-0.0044	-0.0118	0.0011	-0.0679	0.0608	1224
+se101	ref	ref-unique probes	A	-0.1038	-0.1154	-0.0952	-0.2436	-0.0172	837
+se101	ref	ref-unique probes	C	-0.1098	-0.1217	-0.0995	-0.234	-0.034	838
+se101	ref	ref-unique probes	D	-0.0994	-0.1097	-0.0879	-0.2316	-0.0221	838
+se101	ref	ref-unique probes	E	-0.0991	-0.1113	-0.0895	-0.2335	-0.0183	807
+se101	ref	ref-unique probes	F	-0.1868	-0.197	-0.1767	-0.3257	-0.077	2008
+se101	ref	ref-unique probes	G	-0.1959	-0.2034	-0.1815	-0.338	-0.0847	1949
+se101	ref	ref-unique probes	H	-0.1059	-0.1148	-0.0982	-0.2261	-0.0206	1224
+se101	salmon_ref	Salmon-ref	A	-0.0049	-0.0092	0.0015	-0.0642	0.0471	837
+se101	salmon_ref	Salmon-ref	C	-0.0072	-0.0128	-0.0008	-0.0575	0.0391	838
+se101	salmon_ref	Salmon-ref	D	-0.0057	-0.0094	0.0002	-0.0634	0.0426	838
+se101	salmon_ref	Salmon-ref	E	-0.0014	-0.0065	0.0025	-0.0621	0.0529	807
+se101	salmon_ref	Salmon-ref	F	-0.0055	-0.0102	-0.0018	-0.0664	0.0431	2008
+se101	salmon_ref	Salmon-ref	G	-0.0082	-0.0126	-0.0042	-0.0677	0.0449	1949
+se101	salmon_ref	Salmon-ref	H	-0.0101	-0.0152	-0.004	-0.0656	0.0428	1224
+se101	salmon_pan	Salmon-pan	A	0.0008	-0.0036	0.0054	-0.0465	0.051	837
+se101	salmon_pan	Salmon-pan	C	-0.0018	-0.0072	0.0018	-0.0479	0.0433	838
+se101	salmon_pan	Salmon-pan	D	0.0009	-0.0055	0.0077	-0.0523	0.048	838
+se101	salmon_pan	Salmon-pan	E	0.0033	-0.0005	0.0088	-0.0485	0.0593	807
+se101	salmon_pan	Salmon-pan	F	0.0018	-0.0008	0.0054	-0.049	0.0508	2008
+se101	salmon_pan	Salmon-pan	G	0.0025	-0.0017	0.0058	-0.0506	0.0517	1949
+se101	salmon_pan	Salmon-pan	H	-0.003	-0.0078	0.001	-0.056	0.0476	1224
+pe	hybrid	hybrid	A	0.0021	-0.0026	0.0079	-0.046	0.0612	837
+pe	hybrid	hybrid	C	-0.0033	-0.0087	0.0028	-0.0579	0.0512	838
+pe	hybrid	hybrid	D	0.0003	-0.0051	0.0055	-0.0545	0.0555	838
+pe	hybrid	hybrid	E	0.0062	0.0008	0.0102	-0.0495	0.0635	807
+pe	hybrid	hybrid	F	0.0023	-0.001	0.0058	-0.0526	0.0576	2008
+pe	hybrid	hybrid	G	0.0018	-0.0023	0.0054	-0.0544	0.0567	1949
+pe	hybrid	hybrid	H	-0.0028	-0.008	0.0018	-0.0606	0.0513	1224
+pe	vf	gene probes alone	A	0.0016	-0.0043	0.0069	-0.0476	0.0604	834
+pe	vf	gene probes alone	C	-0.0038	-0.0086	0.0039	-0.0601	0.0501	833
+pe	vf	gene probes alone	D	0.0013	-0.0032	0.0074	-0.0533	0.0565	834
+pe	vf	gene probes alone	E	0.006	0.0021	0.0111	-0.0494	0.0662	802
+pe	vf	gene probes alone	F	0.0027	-0.0003	0.0067	-0.0547	0.0614	1999
+pe	vf	gene probes alone	G	0.002	-0.0008	0.0061	-0.0558	0.0577	1941
+pe	vf	gene probes alone	H	-0.0039	-0.0097	0.0005	-0.0614	0.0509	1221
+pe	emg	EM alone	A	0.0014	-0.005	0.0069	-0.0558	0.0574	837
+pe	emg	EM alone	C	-0.0038	-0.0097	0.0028	-0.0605	0.0524	838
+pe	emg	EM alone	D	-0.002	-0.0076	0.0043	-0.0576	0.0569	838
+pe	emg	EM alone	E	0.0042	0.0003	0.0095	-0.0529	0.061	807
+pe	emg	EM alone	F	0.001	-0.0032	0.0051	-0.0572	0.0581	2008
+pe	emg	EM alone	G	0.0002	-0.0042	0.004	-0.0552	0.0581	1949
+pe	emg	EM alone	H	-0.0044	-0.0105	-0.0005	-0.0608	0.0507	1224
+pe	ref	ref-unique probes	A	-0.1044	-0.1165	-0.0924	-0.2384	-0.02	837
+pe	ref	ref-unique probes	C	-0.1127	-0.1255	-0.104	-0.2283	-0.0357	838
+pe	ref	ref-unique probes	D	-0.0998	-0.11	-0.0895	-0.2299	-0.0287	838
+pe	ref	ref-unique probes	E	-0.1035	-0.1148	-0.0912	-0.2332	-0.0206	807
+pe	ref	ref-unique probes	F	-0.1849	-0.1964	-0.1764	-0.3194	-0.0839	2008
+pe	ref	ref-unique probes	G	-0.1944	-0.2036	-0.1844	-0.3276	-0.0842	1949
+pe	ref	ref-unique probes	H	-0.1064	-0.1173	-0.0978	-0.2269	-0.0286	1224
+pe	salmon_ref	Salmon-ref	A	-0.0032	-0.0091	0.0025	-0.058	0.0478	837
+pe	salmon_ref	Salmon-ref	C	-0.0059	-0.0102	0.0005	-0.0556	0.0413	838
+pe	salmon_ref	Salmon-ref	D	-0.0045	-0.0084	0.0045	-0.0585	0.0466	838
+pe	salmon_ref	Salmon-ref	E	0.0015	-0.0036	0.0062	-0.0547	0.0557	807
+pe	salmon_ref	Salmon-ref	F	-0.0025	-0.0057	0.0002	-0.0599	0.0474	2008
+pe	salmon_ref	Salmon-ref	G	-0.0034	-0.0077	0.0014	-0.0617	0.0474	1949
+pe	salmon_ref	Salmon-ref	H	-0.007	-0.0116	-0.002	-0.061	0.0449	1224
+pe	salmon_pan	Salmon-pan	A	0.0009	-0.0034	0.0054	-0.0474	0.0491	837
+pe	salmon_pan	Salmon-pan	C	-0.0022	-0.0073	0.0017	-0.0478	0.0431	838
+pe	salmon_pan	Salmon-pan	D	0.0007	-0.0054	0.0079	-0.0513	0.0485	838
+pe	salmon_pan	Salmon-pan	E	0.0036	-0.0005	0.009	-0.0488	0.0586	807
+pe	salmon_pan	Salmon-pan	F	0.0017	-0.0007	0.0055	-0.0493	0.0508	2008
+pe	salmon_pan	Salmon-pan	G	0.0029	-0.0016	0.0061	-0.0499	0.0514	1949
+pe	salmon_pan	Salmon-pan	H	-0.0033	-0.0082	0.0007	-0.0561	0.0476	1224

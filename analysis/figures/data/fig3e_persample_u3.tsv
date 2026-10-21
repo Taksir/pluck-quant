@@ -1,0 +1,1038 @@
+# file: fig3e_persample_u3.tsv
+# note: Per-sample Spearman across genes (a different metric from within-gene Spearman), scoring set A, after the sample-gene filter and calibration of the scoring script.
+# note: Truths are the cohort truths (RSEM on strain genomes), which share reads with full-read methods. hybrid is plotted as PLUCK.
+cohort	srr	n_genes	tool	spearman_vs_truth	rank	n_tools
+keele_kidney	SRR10523477	5586	hybrid	0.835628	4	7
+keele_kidney	SRR10523477	5586	Salmon-pan	0.86531	1	7
+keele_kidney	SRR10523477	5586	Salmon-ref	0.864492	3	7
+keele_kidney	SRR10523477	5586	STAR+fC	0.833023	5	7
+keele_kidney	SRR10523477	5586	kallisto-ref	0.865078	2	7
+keele_kidney	SRR10523477	5586	Kmerator+countTags	0.738017	7	7
+keele_kidney	SRR10523477	5586	ref-unique probes	0.828083	6	7
+keele_kidney	SRR10523480	4636	hybrid	0.859324	4	7
+keele_kidney	SRR10523480	4636	Salmon-pan	0.898847	1	7
+keele_kidney	SRR10523480	4636	Salmon-ref	0.897388	3	7
+keele_kidney	SRR10523480	4636	STAR+fC	0.85383	5	7
+keele_kidney	SRR10523480	4636	kallisto-ref	0.898712	2	7
+keele_kidney	SRR10523480	4636	Kmerator+countTags	0.70973	7	7
+keele_kidney	SRR10523480	4636	ref-unique probes	0.849707	6	7
+keele_kidney	SRR10523483	5642	hybrid	0.832378	4	7
+keele_kidney	SRR10523483	5642	Salmon-pan	0.863725	1	7
+keele_kidney	SRR10523483	5642	Salmon-ref	0.862026	3	7
+keele_kidney	SRR10523483	5642	STAR+fC	0.824132	5	7
+keele_kidney	SRR10523483	5642	kallisto-ref	0.863448	2	7
+keele_kidney	SRR10523483	5642	Kmerator+countTags	0.722115	7	7
+keele_kidney	SRR10523483	5642	ref-unique probes	0.823035	6	7
+keele_kidney	SRR10523486	3249	hybrid	0.847456	4	7
+keele_kidney	SRR10523486	3249	Salmon-pan	0.912329	1	7
+keele_kidney	SRR10523486	3249	Salmon-ref	0.908866	2	7
+keele_kidney	SRR10523486	3249	STAR+fC	0.838492	5	7
+keele_kidney	SRR10523486	3249	kallisto-ref	0.907272	3	7
+keele_kidney	SRR10523486	3249	Kmerator+countTags	0.656584	7	7
+keele_kidney	SRR10523486	3249	ref-unique probes	0.824041	6	7
+keele_kidney	SRR10523489	6144	hybrid	0.777488	4	7
+keele_kidney	SRR10523489	6144	Salmon-pan	0.799961	2	7
+keele_kidney	SRR10523489	6144	Salmon-ref	0.799088	3	7
+keele_kidney	SRR10523489	6144	STAR+fC	0.773144	5	7
+keele_kidney	SRR10523489	6144	kallisto-ref	0.801127	1	7
+keele_kidney	SRR10523489	6144	Kmerator+countTags	0.700541	7	7
+keele_kidney	SRR10523489	6144	ref-unique probes	0.772583	6	7
+keele_kidney	SRR10523492	5357	hybrid	0.837348	4	7
+keele_kidney	SRR10523492	5357	Salmon-pan	0.868733	2	7
+keele_kidney	SRR10523492	5357	Salmon-ref	0.868058	3	7
+keele_kidney	SRR10523492	5357	STAR+fC	0.830904	5	7
+keele_kidney	SRR10523492	5357	kallisto-ref	0.869749	1	7
+keele_kidney	SRR10523492	5357	Kmerator+countTags	0.722354	7	7
+keele_kidney	SRR10523492	5357	ref-unique probes	0.827766	6	7
+keele_kidney	SRR10523495	5660	hybrid	0.829977	4	7
+keele_kidney	SRR10523495	5660	Salmon-pan	0.856075	2	7
+keele_kidney	SRR10523495	5660	Salmon-ref	0.85479	3	7
+keele_kidney	SRR10523495	5660	STAR+fC	0.823448	5	7
+keele_kidney	SRR10523495	5660	kallisto-ref	0.857061	1	7
+keele_kidney	SRR10523495	5660	Kmerator+countTags	0.738557	7	7
+keele_kidney	SRR10523495	5660	ref-unique probes	0.820948	6	7
+keele_kidney	SRR10523498	5295	hybrid	0.837592	4	7
+keele_kidney	SRR10523498	5295	Salmon-pan	0.869008	2	7
+keele_kidney	SRR10523498	5295	Salmon-ref	0.868435	3	7
+keele_kidney	SRR10523498	5295	STAR+fC	0.82985	6	7
+keele_kidney	SRR10523498	5295	kallisto-ref	0.869793	1	7
+keele_kidney	SRR10523498	5295	Kmerator+countTags	0.725355	7	7
+keele_kidney	SRR10523498	5295	ref-unique probes	0.83096	5	7
+keele_kidney	SRR10523501	5017	hybrid	0.85522	4	7
+keele_kidney	SRR10523501	5017	Salmon-pan	0.887321	1	7
+keele_kidney	SRR10523501	5017	Salmon-ref	0.885888	2	7
+keele_kidney	SRR10523501	5017	STAR+fC	0.847205	5	7
+keele_kidney	SRR10523501	5017	kallisto-ref	0.885876	3	7
+keele_kidney	SRR10523501	5017	Kmerator+countTags	0.719596	7	7
+keele_kidney	SRR10523501	5017	ref-unique probes	0.84637	6	7
+keele_kidney	SRR10523504	5774	hybrid	0.824132	4	7
+keele_kidney	SRR10523504	5774	Salmon-pan	0.848934	2	7
+keele_kidney	SRR10523504	5774	Salmon-ref	0.847323	3	7
+keele_kidney	SRR10523504	5774	STAR+fC	0.818201	5	7
+keele_kidney	SRR10523504	5774	kallisto-ref	0.84951	1	7
+keele_kidney	SRR10523504	5774	Kmerator+countTags	0.729379	7	7
+keele_kidney	SRR10523504	5774	ref-unique probes	0.814577	6	7
+keele_kidney	SRR10523507	5371	hybrid	0.835422	4	7
+keele_kidney	SRR10523507	5371	Salmon-pan	0.857478	2	7
+keele_kidney	SRR10523507	5371	Salmon-ref	0.856022	3	7
+keele_kidney	SRR10523507	5371	STAR+fC	0.825859	5	7
+keele_kidney	SRR10523507	5371	kallisto-ref	0.857537	1	7
+keele_kidney	SRR10523507	5371	Kmerator+countTags	0.716586	7	7
+keele_kidney	SRR10523507	5371	ref-unique probes	0.8249	6	7
+keele_kidney	SRR10523510	4945	hybrid	0.842004	4	7
+keele_kidney	SRR10523510	4945	Salmon-pan	0.876984	1	7
+keele_kidney	SRR10523510	4945	Salmon-ref	0.875672	3	7
+keele_kidney	SRR10523510	4945	STAR+fC	0.833006	5	7
+keele_kidney	SRR10523510	4945	kallisto-ref	0.87682	2	7
+keele_kidney	SRR10523510	4945	Kmerator+countTags	0.724518	7	7
+keele_kidney	SRR10523510	4945	ref-unique probes	0.827737	6	7
+keele_kidney	SRR10523513	5410	hybrid	0.837858	4	7
+keele_kidney	SRR10523513	5410	Salmon-pan	0.86867	2	7
+keele_kidney	SRR10523513	5410	Salmon-ref	0.867355	3	7
+keele_kidney	SRR10523513	5410	STAR+fC	0.832417	5	7
+keele_kidney	SRR10523513	5410	kallisto-ref	0.868693	1	7
+keele_kidney	SRR10523513	5410	Kmerator+countTags	0.715411	7	7
+keele_kidney	SRR10523513	5410	ref-unique probes	0.83102	6	7
+keele_kidney	SRR10523516	6708	hybrid	0.761267	4	7
+keele_kidney	SRR10523516	6708	Salmon-pan	0.778291	2	7
+keele_kidney	SRR10523516	6708	Salmon-ref	0.7776	3	7
+keele_kidney	SRR10523516	6708	STAR+fC	0.755811	5	7
+keele_kidney	SRR10523516	6708	kallisto-ref	0.778833	1	7
+keele_kidney	SRR10523516	6708	Kmerator+countTags	0.690174	7	7
+keele_kidney	SRR10523516	6708	ref-unique probes	0.753925	6	7
+keele_kidney	SRR10523519	5412	hybrid	0.834552	4	7
+keele_kidney	SRR10523519	5412	Salmon-pan	0.85916	2	7
+keele_kidney	SRR10523519	5412	Salmon-ref	0.857952	3	7
+keele_kidney	SRR10523519	5412	STAR+fC	0.825513	6	7
+keele_kidney	SRR10523519	5412	kallisto-ref	0.859687	1	7
+keele_kidney	SRR10523519	5412	Kmerator+countTags	0.728886	7	7
+keele_kidney	SRR10523519	5412	ref-unique probes	0.825723	5	7
+keele_kidney	SRR10523522	3602	hybrid	0.864457	4	7
+keele_kidney	SRR10523522	3602	Salmon-pan	0.921504	1	7
+keele_kidney	SRR10523522	3602	Salmon-ref	0.919475	2	7
+keele_kidney	SRR10523522	3602	STAR+fC	0.852002	6	7
+keele_kidney	SRR10523522	3602	kallisto-ref	0.918781	3	7
+keele_kidney	SRR10523522	3602	Kmerator+countTags	0.665302	7	7
+keele_kidney	SRR10523522	3602	ref-unique probes	0.854214	5	7
+keele_kidney	SRR10523525	3885	hybrid	0.856096	4	7
+keele_kidney	SRR10523525	3885	Salmon-pan	0.910611	1	7
+keele_kidney	SRR10523525	3885	Salmon-ref	0.907305	2	7
+keele_kidney	SRR10523525	3885	STAR+fC	0.847719	5	7
+keele_kidney	SRR10523525	3885	kallisto-ref	0.907298	3	7
+keele_kidney	SRR10523525	3885	Kmerator+countTags	0.687396	7	7
+keele_kidney	SRR10523525	3885	ref-unique probes	0.836777	6	7
+keele_kidney	SRR10523528	5111	hybrid	0.832555	4	7
+keele_kidney	SRR10523528	5111	Salmon-pan	0.867486	1	7
+keele_kidney	SRR10523528	5111	Salmon-ref	0.866117	2	7
+keele_kidney	SRR10523528	5111	STAR+fC	0.825548	5	7
+keele_kidney	SRR10523528	5111	kallisto-ref	0.865792	3	7
+keele_kidney	SRR10523528	5111	Kmerator+countTags	0.709973	7	7
+keele_kidney	SRR10523528	5111	ref-unique probes	0.824257	6	7
+keele_kidney	SRR10523532	4965	hybrid	0.847351	4	7
+keele_kidney	SRR10523532	4965	Salmon-pan	0.878704	1	7
+keele_kidney	SRR10523532	4965	Salmon-ref	0.877295	3	7
+keele_kidney	SRR10523532	4965	STAR+fC	0.836442	5	7
+keele_kidney	SRR10523532	4965	kallisto-ref	0.878493	2	7
+keele_kidney	SRR10523532	4965	Kmerator+countTags	0.715008	7	7
+keele_kidney	SRR10523532	4965	ref-unique probes	0.834582	6	7
+keele_kidney	SRR10523535	4133	hybrid	0.849375	4	7
+keele_kidney	SRR10523535	4133	Salmon-pan	0.899149	1	7
+keele_kidney	SRR10523535	4133	Salmon-ref	0.896522	3	7
+keele_kidney	SRR10523535	4133	STAR+fC	0.841569	5	7
+keele_kidney	SRR10523535	4133	kallisto-ref	0.896841	2	7
+keele_kidney	SRR10523535	4133	Kmerator+countTags	0.6967	7	7
+keele_kidney	SRR10523535	4133	ref-unique probes	0.830555	6	7
+keele_kidney	SRR10523538	3289	hybrid	0.856661	4	7
+keele_kidney	SRR10523538	3289	Salmon-pan	0.911988	1	7
+keele_kidney	SRR10523538	3289	Salmon-ref	0.909974	2	7
+keele_kidney	SRR10523538	3289	STAR+fC	0.840315	6	7
+keele_kidney	SRR10523538	3289	kallisto-ref	0.909869	3	7
+keele_kidney	SRR10523538	3289	Kmerator+countTags	0.677386	7	7
+keele_kidney	SRR10523538	3289	ref-unique probes	0.841147	5	7
+keele_kidney	SRR10523541	5454	hybrid	0.840213	4	7
+keele_kidney	SRR10523541	5454	Salmon-pan	0.874612	1	7
+keele_kidney	SRR10523541	5454	Salmon-ref	0.873111	3	7
+keele_kidney	SRR10523541	5454	STAR+fC	0.836653	5	7
+keele_kidney	SRR10523541	5454	kallisto-ref	0.873866	2	7
+keele_kidney	SRR10523541	5454	Kmerator+countTags	0.729911	7	7
+keele_kidney	SRR10523541	5454	ref-unique probes	0.832837	6	7
+keele_kidney	SRR10523544	4314	hybrid	0.857359	4	7
+keele_kidney	SRR10523544	4314	Salmon-pan	0.904627	1	7
+keele_kidney	SRR10523544	4314	Salmon-ref	0.901796	3	7
+keele_kidney	SRR10523544	4314	STAR+fC	0.84795	5	7
+keele_kidney	SRR10523544	4314	kallisto-ref	0.902763	2	7
+keele_kidney	SRR10523544	4314	Kmerator+countTags	0.698643	7	7
+keele_kidney	SRR10523544	4314	ref-unique probes	0.837435	6	7
+keele_kidney	SRR10523548	5822	hybrid	0.839818	4	7
+keele_kidney	SRR10523548	5822	Salmon-pan	0.866474	2	7
+keele_kidney	SRR10523548	5822	Salmon-ref	0.865919	3	7
+keele_kidney	SRR10523548	5822	STAR+fC	0.83168	5	7
+keele_kidney	SRR10523548	5822	kallisto-ref	0.867757	1	7
+keele_kidney	SRR10523548	5822	Kmerator+countTags	0.736601	7	7
+keele_kidney	SRR10523548	5822	ref-unique probes	0.828327	6	7
+keele_kidney	SRR10523551	5062	hybrid	0.856329	4	7
+keele_kidney	SRR10523551	5062	Salmon-pan	0.893635	1	7
+keele_kidney	SRR10523551	5062	Salmon-ref	0.892524	3	7
+keele_kidney	SRR10523551	5062	STAR+fC	0.848866	5	7
+keele_kidney	SRR10523551	5062	kallisto-ref	0.893233	2	7
+keele_kidney	SRR10523551	5062	Kmerator+countTags	0.721032	7	7
+keele_kidney	SRR10523551	5062	ref-unique probes	0.84582	6	7
+keele_kidney	SRR10523554	6016	hybrid	0.832289	4	7
+keele_kidney	SRR10523554	6016	Salmon-pan	0.858969	2	7
+keele_kidney	SRR10523554	6016	Salmon-ref	0.858002	3	7
+keele_kidney	SRR10523554	6016	STAR+fC	0.828031	5	7
+keele_kidney	SRR10523554	6016	kallisto-ref	0.859888	1	7
+keele_kidney	SRR10523554	6016	Kmerator+countTags	0.73379	7	7
+keele_kidney	SRR10523554	6016	ref-unique probes	0.823829	6	7
+keele_kidney	SRR10523557	4318	hybrid	0.860575	4	7
+keele_kidney	SRR10523557	4318	Salmon-pan	0.902816	1	7
+keele_kidney	SRR10523557	4318	Salmon-ref	0.90169	2	7
+keele_kidney	SRR10523557	4318	STAR+fC	0.853276	5	7
+keele_kidney	SRR10523557	4318	kallisto-ref	0.900944	3	7
+keele_kidney	SRR10523557	4318	Kmerator+countTags	0.704103	7	7
+keele_kidney	SRR10523557	4318	ref-unique probes	0.839169	6	7
+keele_kidney	SRR10523560	4558	hybrid	0.853668	4	7
+keele_kidney	SRR10523560	4558	Salmon-pan	0.893972	1	7
+keele_kidney	SRR10523560	4558	Salmon-ref	0.892282	2	7
+keele_kidney	SRR10523560	4558	STAR+fC	0.845304	5	7
+keele_kidney	SRR10523560	4558	kallisto-ref	0.892149	3	7
+keele_kidney	SRR10523560	4558	Kmerator+countTags	0.712911	7	7
+keele_kidney	SRR10523560	4558	ref-unique probes	0.843909	6	7
+keele_kidney	SRR10523563	5564	hybrid	0.832134	4	7
+keele_kidney	SRR10523563	5564	Salmon-pan	0.86042	2	7
+keele_kidney	SRR10523563	5564	Salmon-ref	0.859886	3	7
+keele_kidney	SRR10523563	5564	STAR+fC	0.824981	5	7
+keele_kidney	SRR10523563	5564	kallisto-ref	0.861632	1	7
+keele_kidney	SRR10523563	5564	Kmerator+countTags	0.735687	7	7
+keele_kidney	SRR10523563	5564	ref-unique probes	0.821825	6	7
+keele_kidney	SRR10523566	5376	hybrid	0.841858	4	7
+keele_kidney	SRR10523566	5376	Salmon-pan	0.876254	2	7
+keele_kidney	SRR10523566	5376	Salmon-ref	0.875397	3	7
+keele_kidney	SRR10523566	5376	STAR+fC	0.834858	5	7
+keele_kidney	SRR10523566	5376	kallisto-ref	0.876645	1	7
+keele_kidney	SRR10523566	5376	Kmerator+countTags	0.724702	7	7
+keele_kidney	SRR10523566	5376	ref-unique probes	0.834521	6	7
+keele_kidney	SRR10523569	6572	hybrid	0.769329	4	7
+keele_kidney	SRR10523569	6572	Salmon-pan	0.791088	2	7
+keele_kidney	SRR10523569	6572	Salmon-ref	0.789626	3	7
+keele_kidney	SRR10523569	6572	STAR+fC	0.766714	6	7
+keele_kidney	SRR10523569	6572	kallisto-ref	0.791278	1	7
+keele_kidney	SRR10523569	6572	Kmerator+countTags	0.694246	7	7
+keele_kidney	SRR10523569	6572	ref-unique probes	0.766906	5	7
+keele_kidney	SRR10523572	5425	hybrid	0.83622	4	7
+keele_kidney	SRR10523572	5425	Salmon-pan	0.863602	1	7
+keele_kidney	SRR10523572	5425	Salmon-ref	0.862314	3	7
+keele_kidney	SRR10523572	5425	STAR+fC	0.827919	5	7
+keele_kidney	SRR10523572	5425	kallisto-ref	0.863276	2	7
+keele_kidney	SRR10523572	5425	Kmerator+countTags	0.723574	7	7
+keele_kidney	SRR10523572	5425	ref-unique probes	0.82391	6	7
+keele_kidney	SRR10523575	5011	hybrid	0.864258	4	7
+keele_kidney	SRR10523575	5011	Salmon-pan	0.899125	1	7
+keele_kidney	SRR10523575	5011	Salmon-ref	0.897927	3	7
+keele_kidney	SRR10523575	5011	STAR+fC	0.855038	5	7
+keele_kidney	SRR10523575	5011	kallisto-ref	0.89904	2	7
+keele_kidney	SRR10523575	5011	Kmerator+countTags	0.7383	7	7
+keele_kidney	SRR10523575	5011	ref-unique probes	0.854558	6	7
+keele_kidney	SRR10523579	5042	hybrid	0.848033	4	7
+keele_kidney	SRR10523579	5042	Salmon-pan	0.87871	1	7
+keele_kidney	SRR10523579	5042	Salmon-ref	0.877656	3	7
+keele_kidney	SRR10523579	5042	STAR+fC	0.840628	5	7
+keele_kidney	SRR10523579	5042	kallisto-ref	0.878209	2	7
+keele_kidney	SRR10523579	5042	Kmerator+countTags	0.723427	7	7
+keele_kidney	SRR10523579	5042	ref-unique probes	0.839417	6	7
+keele_kidney	SRR10523582	5969	hybrid	0.801532	4	7
+keele_kidney	SRR10523582	5969	Salmon-pan	0.82546	2	7
+keele_kidney	SRR10523582	5969	Salmon-ref	0.824668	3	7
+keele_kidney	SRR10523582	5969	STAR+fC	0.796667	5	7
+keele_kidney	SRR10523582	5969	kallisto-ref	0.826627	1	7
+keele_kidney	SRR10523582	5969	Kmerator+countTags	0.711424	7	7
+keele_kidney	SRR10523582	5969	ref-unique probes	0.79516	6	7
+keele_kidney	SRR10523585	4558	hybrid	0.862086	4	7
+keele_kidney	SRR10523585	4558	Salmon-pan	0.904947	1	7
+keele_kidney	SRR10523585	4558	Salmon-ref	0.903596	3	7
+keele_kidney	SRR10523585	4558	STAR+fC	0.857979	5	7
+keele_kidney	SRR10523585	4558	kallisto-ref	0.903725	2	7
+keele_kidney	SRR10523585	4558	Kmerator+countTags	0.71147	7	7
+keele_kidney	SRR10523585	4558	ref-unique probes	0.854422	6	7
+keele_kidney	SRR10523588	3779	hybrid	0.850479	4	7
+keele_kidney	SRR10523588	3779	Salmon-pan	0.911042	1	7
+keele_kidney	SRR10523588	3779	Salmon-ref	0.910837	2	7
+keele_kidney	SRR10523588	3779	STAR+fC	0.84383	5	7
+keele_kidney	SRR10523588	3779	kallisto-ref	0.910262	3	7
+keele_kidney	SRR10523588	3779	Kmerator+countTags	0.679793	7	7
+keele_kidney	SRR10523588	3779	ref-unique probes	0.830531	6	7
+keele_kidney	SRR10523591	5341	hybrid	0.84418	4	7
+keele_kidney	SRR10523591	5341	Salmon-pan	0.875737	1	7
+keele_kidney	SRR10523591	5341	Salmon-ref	0.874225	3	7
+keele_kidney	SRR10523591	5341	STAR+fC	0.835119	5	7
+keele_kidney	SRR10523591	5341	kallisto-ref	0.874501	2	7
+keele_kidney	SRR10523591	5341	Kmerator+countTags	0.711809	7	7
+keele_kidney	SRR10523591	5341	ref-unique probes	0.833387	6	7
+keele_kidney	SRR10523594	6505	hybrid	0.776389	4	7
+keele_kidney	SRR10523594	6505	Salmon-pan	0.798285	1	7
+keele_kidney	SRR10523594	6505	Salmon-ref	0.796846	3	7
+keele_kidney	SRR10523594	6505	STAR+fC	0.771586	5	7
+keele_kidney	SRR10523594	6505	kallisto-ref	0.79789	2	7
+keele_kidney	SRR10523594	6505	Kmerator+countTags	0.701599	7	7
+keele_kidney	SRR10523594	6505	ref-unique probes	0.769301	6	7
+keele_kidney	SRR10523598	5122	hybrid	0.861999	4	7
+keele_kidney	SRR10523598	5122	Salmon-pan	0.895511	2	7
+keele_kidney	SRR10523598	5122	Salmon-ref	0.893585	3	7
+keele_kidney	SRR10523598	5122	STAR+fC	0.854589	5	7
+keele_kidney	SRR10523598	5122	kallisto-ref	0.896018	1	7
+keele_kidney	SRR10523598	5122	Kmerator+countTags	0.743713	7	7
+keele_kidney	SRR10523598	5122	ref-unique probes	0.851102	6	7
+keele_kidney	SRR10523601	6712	hybrid	0.76795	4	7
+keele_kidney	SRR10523601	6712	Salmon-pan	0.784357	2	7
+keele_kidney	SRR10523601	6712	Salmon-ref	0.784262	3	7
+keele_kidney	SRR10523601	6712	STAR+fC	0.763645	5	7
+keele_kidney	SRR10523601	6712	kallisto-ref	0.786526	1	7
+keele_kidney	SRR10523601	6712	Kmerator+countTags	0.703569	7	7
+keele_kidney	SRR10523601	6712	ref-unique probes	0.762763	6	7
+keele_kidney	SRR10523604	6027	hybrid	0.791767	4	7
+keele_kidney	SRR10523604	6027	Salmon-pan	0.814186	2	7
+keele_kidney	SRR10523604	6027	Salmon-ref	0.812684	3	7
+keele_kidney	SRR10523604	6027	STAR+fC	0.785912	5	7
+keele_kidney	SRR10523604	6027	kallisto-ref	0.814784	1	7
+keele_kidney	SRR10523604	6027	Kmerator+countTags	0.711771	7	7
+keele_kidney	SRR10523604	6027	ref-unique probes	0.782507	6	7
+keele_kidney	SRR10523607	4840	hybrid	0.844842	4	7
+keele_kidney	SRR10523607	4840	Salmon-pan	0.881176	2	7
+keele_kidney	SRR10523607	4840	Salmon-ref	0.880307	3	7
+keele_kidney	SRR10523607	4840	STAR+fC	0.837154	5	7
+keele_kidney	SRR10523607	4840	kallisto-ref	0.881233	1	7
+keele_kidney	SRR10523607	4840	Kmerator+countTags	0.714588	7	7
+keele_kidney	SRR10523607	4840	ref-unique probes	0.834005	6	7
+keele_kidney	SRR10523610	4715	hybrid	0.859407	4	7
+keele_kidney	SRR10523610	4715	Salmon-pan	0.898048	1	7
+keele_kidney	SRR10523610	4715	Salmon-ref	0.896759	3	7
+keele_kidney	SRR10523610	4715	STAR+fC	0.85119	5	7
+keele_kidney	SRR10523610	4715	kallisto-ref	0.896939	2	7
+keele_kidney	SRR10523610	4715	Kmerator+countTags	0.711552	7	7
+keele_kidney	SRR10523610	4715	ref-unique probes	0.848714	6	7
+keele_kidney	SRR10523613	5726	hybrid	0.81336	5	7
+keele_kidney	SRR10523613	5726	Salmon-pan	0.842756	2	7
+keele_kidney	SRR10523613	5726	Salmon-ref	0.842663	3	7
+keele_kidney	SRR10523613	5726	STAR+fC	0.830719	4	7
+keele_kidney	SRR10523613	5726	kallisto-ref	0.843978	1	7
+keele_kidney	SRR10523613	5726	Kmerator+countTags	0.706887	7	7
+keele_kidney	SRR10523613	5726	ref-unique probes	0.808867	6	7
+keele_kidney	SRR10523616	5523	hybrid	0.817258	4	7
+keele_kidney	SRR10523616	5523	Salmon-pan	0.844928	2	7
+keele_kidney	SRR10523616	5523	Salmon-ref	0.843633	3	7
+keele_kidney	SRR10523616	5523	STAR+fC	0.811883	5	7
+keele_kidney	SRR10523616	5523	kallisto-ref	0.845273	1	7
+keele_kidney	SRR10523616	5523	Kmerator+countTags	0.72761	7	7
+keele_kidney	SRR10523616	5523	ref-unique probes	0.807635	6	7
+keele_kidney	SRR10523619	6594	hybrid	0.753716	4	7
+keele_kidney	SRR10523619	6594	Salmon-pan	0.770802	2	7
+keele_kidney	SRR10523619	6594	Salmon-ref	0.769794	3	7
+keele_kidney	SRR10523619	6594	STAR+fC	0.74671	6	7
+keele_kidney	SRR10523619	6594	kallisto-ref	0.771516	1	7
+keele_kidney	SRR10523619	6594	Kmerator+countTags	0.690527	7	7
+keele_kidney	SRR10523619	6594	ref-unique probes	0.747872	5	7
+keele_liver	SRR10523478	5455	hybrid	0.822275	4	7
+keele_liver	SRR10523478	5455	Salmon-pan	0.851204	1	7
+keele_liver	SRR10523478	5455	Salmon-ref	0.84891	3	7
+keele_liver	SRR10523478	5455	STAR+fC	0.819984	5	7
+keele_liver	SRR10523478	5455	kallisto-ref	0.849328	2	7
+keele_liver	SRR10523478	5455	Kmerator+countTags	0.737874	7	7
+keele_liver	SRR10523478	5455	ref-unique probes	0.817785	6	7
+keele_liver	SRR10523481	4205	hybrid	0.853461	4	7
+keele_liver	SRR10523481	4205	Salmon-pan	0.901479	1	7
+keele_liver	SRR10523481	4205	Salmon-ref	0.900314	2	7
+keele_liver	SRR10523481	4205	STAR+fC	0.851055	5	7
+keele_liver	SRR10523481	4205	kallisto-ref	0.900244	3	7
+keele_liver	SRR10523481	4205	Kmerator+countTags	0.734453	7	7
+keele_liver	SRR10523481	4205	ref-unique probes	0.844647	6	7
+keele_liver	SRR10523484	4368	hybrid	0.841387	4	7
+keele_liver	SRR10523484	4368	Salmon-pan	0.882483	1	7
+keele_liver	SRR10523484	4368	Salmon-ref	0.881389	3	7
+keele_liver	SRR10523484	4368	STAR+fC	0.837398	5	7
+keele_liver	SRR10523484	4368	kallisto-ref	0.882412	2	7
+keele_liver	SRR10523484	4368	Kmerator+countTags	0.722921	7	7
+keele_liver	SRR10523484	4368	ref-unique probes	0.833284	6	7
+keele_liver	SRR10523487	3375	hybrid	0.865068	4	7
+keele_liver	SRR10523487	3375	Salmon-pan	0.918789	1	7
+keele_liver	SRR10523487	3375	Salmon-ref	0.915251	2	7
+keele_liver	SRR10523487	3375	STAR+fC	0.857145	5	7
+keele_liver	SRR10523487	3375	kallisto-ref	0.915128	3	7
+keele_liver	SRR10523487	3375	Kmerator+countTags	0.718999	7	7
+keele_liver	SRR10523487	3375	ref-unique probes	0.845793	6	7
+keele_liver	SRR10523490	4126	hybrid	0.852903	4	7
+keele_liver	SRR10523490	4126	Salmon-pan	0.898146	1	7
+keele_liver	SRR10523490	4126	Salmon-ref	0.896408	3	7
+keele_liver	SRR10523490	4126	STAR+fC	0.844998	6	7
+keele_liver	SRR10523490	4126	kallisto-ref	0.897805	2	7
+keele_liver	SRR10523490	4126	Kmerator+countTags	0.728085	7	7
+keele_liver	SRR10523490	4126	ref-unique probes	0.845072	5	7
+keele_liver	SRR10523493	4471	hybrid	0.844995	4	7
+keele_liver	SRR10523493	4471	Salmon-pan	0.891038	2	7
+keele_liver	SRR10523493	4471	Salmon-ref	0.890246	3	7
+keele_liver	SRR10523493	4471	STAR+fC	0.841194	5	7
+keele_liver	SRR10523493	4471	kallisto-ref	0.891138	1	7
+keele_liver	SRR10523493	4471	Kmerator+countTags	0.722298	7	7
+keele_liver	SRR10523493	4471	ref-unique probes	0.831765	6	7
+keele_liver	SRR10523496	4911	hybrid	0.831848	4	7
+keele_liver	SRR10523496	4911	Salmon-pan	0.865478	1	7
+keele_liver	SRR10523496	4911	Salmon-ref	0.864645	2	7
+keele_liver	SRR10523496	4911	STAR+fC	0.824151	6	7
+keele_liver	SRR10523496	4911	kallisto-ref	0.864549	3	7
+keele_liver	SRR10523496	4911	Kmerator+countTags	0.734931	7	7
+keele_liver	SRR10523496	4911	ref-unique probes	0.825493	5	7
+keele_liver	SRR10523499	6478	hybrid	0.732211	4	7
+keele_liver	SRR10523499	6478	Salmon-pan	0.750962	2	7
+keele_liver	SRR10523499	6478	Salmon-ref	0.749776	3	7
+keele_liver	SRR10523499	6478	STAR+fC	0.728424	5	7
+keele_liver	SRR10523499	6478	kallisto-ref	0.751012	1	7
+keele_liver	SRR10523499	6478	Kmerator+countTags	0.690154	7	7
+keele_liver	SRR10523499	6478	ref-unique probes	0.727841	6	7
+keele_liver	SRR10523502	4734	hybrid	0.847684	4	7
+keele_liver	SRR10523502	4734	Salmon-pan	0.879032	1	7
+keele_liver	SRR10523502	4734	Salmon-ref	0.878206	3	7
+keele_liver	SRR10523502	4734	STAR+fC	0.842113	5	7
+keele_liver	SRR10523502	4734	kallisto-ref	0.878249	2	7
+keele_liver	SRR10523502	4734	Kmerator+countTags	0.736327	7	7
+keele_liver	SRR10523502	4734	ref-unique probes	0.839962	6	7
+keele_liver	SRR10523505	4862	hybrid	0.834438	4	7
+keele_liver	SRR10523505	4862	Salmon-pan	0.86815	1	7
+keele_liver	SRR10523505	4862	Salmon-ref	0.866443	3	7
+keele_liver	SRR10523505	4862	STAR+fC	0.82839	5	7
+keele_liver	SRR10523505	4862	kallisto-ref	0.866997	2	7
+keele_liver	SRR10523505	4862	Kmerator+countTags	0.736553	7	7
+keele_liver	SRR10523505	4862	ref-unique probes	0.82124	6	7
+keele_liver	SRR10523508	4108	hybrid	0.860275	4	7
+keele_liver	SRR10523508	4108	Salmon-pan	0.898012	1	7
+keele_liver	SRR10523508	4108	Salmon-ref	0.896241	2	7
+keele_liver	SRR10523508	4108	STAR+fC	0.852412	5	7
+keele_liver	SRR10523508	4108	kallisto-ref	0.895197	3	7
+keele_liver	SRR10523508	4108	Kmerator+countTags	0.732284	7	7
+keele_liver	SRR10523508	4108	ref-unique probes	0.847782	6	7
+keele_liver	SRR10523511	4396	hybrid	0.844371	4	7
+keele_liver	SRR10523511	4396	Salmon-pan	0.880426	1	7
+keele_liver	SRR10523511	4396	Salmon-ref	0.878943	3	7
+keele_liver	SRR10523511	4396	STAR+fC	0.835202	5	7
+keele_liver	SRR10523511	4396	kallisto-ref	0.879666	2	7
+keele_liver	SRR10523511	4396	Kmerator+countTags	0.733855	7	7
+keele_liver	SRR10523511	4396	ref-unique probes	0.830947	6	7
+keele_liver	SRR10523514	4158	hybrid	0.857491	4	7
+keele_liver	SRR10523514	4158	Salmon-pan	0.906326	1	7
+keele_liver	SRR10523514	4158	Salmon-ref	0.904742	3	7
+keele_liver	SRR10523514	4158	STAR+fC	0.852252	5	7
+keele_liver	SRR10523514	4158	kallisto-ref	0.904862	2	7
+keele_liver	SRR10523514	4158	Kmerator+countTags	0.703587	7	7
+keele_liver	SRR10523514	4158	ref-unique probes	0.849083	6	7
+keele_liver	SRR10523517	4185	hybrid	0.851961	4	7
+keele_liver	SRR10523517	4185	Salmon-pan	0.893453	1	7
+keele_liver	SRR10523517	4185	Salmon-ref	0.891681	2	7
+keele_liver	SRR10523517	4185	STAR+fC	0.844499	5	7
+keele_liver	SRR10523517	4185	kallisto-ref	0.891627	3	7
+keele_liver	SRR10523517	4185	Kmerator+countTags	0.714689	7	7
+keele_liver	SRR10523517	4185	ref-unique probes	0.840076	6	7
+keele_liver	SRR10523520	4497	hybrid	0.845404	4	7
+keele_liver	SRR10523520	4497	Salmon-pan	0.881333	1	7
+keele_liver	SRR10523520	4497	Salmon-ref	0.879693	3	7
+keele_liver	SRR10523520	4497	STAR+fC	0.838038	5	7
+keele_liver	SRR10523520	4497	kallisto-ref	0.879825	2	7
+keele_liver	SRR10523520	4497	Kmerator+countTags	0.730396	7	7
+keele_liver	SRR10523520	4497	ref-unique probes	0.835632	6	7
+keele_liver	SRR10523523	4747	hybrid	0.853205	4	7
+keele_liver	SRR10523523	4747	Salmon-pan	0.885639	2	7
+keele_liver	SRR10523523	4747	Salmon-ref	0.885334	3	7
+keele_liver	SRR10523523	4747	STAR+fC	0.849009	6	7
+keele_liver	SRR10523523	4747	kallisto-ref	0.885841	1	7
+keele_liver	SRR10523523	4747	Kmerator+countTags	0.754279	7	7
+keele_liver	SRR10523523	4747	ref-unique probes	0.84988	5	7
+keele_liver	SRR10523526	4877	hybrid	0.837112	4	7
+keele_liver	SRR10523526	4877	Salmon-pan	0.875493	1	7
+keele_liver	SRR10523526	4877	Salmon-ref	0.874471	3	7
+keele_liver	SRR10523526	4877	STAR+fC	0.831017	5	7
+keele_liver	SRR10523526	4877	kallisto-ref	0.87526	2	7
+keele_liver	SRR10523526	4877	Kmerator+countTags	0.736894	7	7
+keele_liver	SRR10523526	4877	ref-unique probes	0.826792	6	7
+keele_liver	SRR10523530	4835	hybrid	0.835249	4	7
+keele_liver	SRR10523530	4835	Salmon-pan	0.865329	2	7
+keele_liver	SRR10523530	4835	Salmon-ref	0.865126	3	7
+keele_liver	SRR10523530	4835	STAR+fC	0.827329	5	7
+keele_liver	SRR10523530	4835	kallisto-ref	0.865871	1	7
+keele_liver	SRR10523530	4835	Kmerator+countTags	0.726023	7	7
+keele_liver	SRR10523530	4835	ref-unique probes	0.821871	6	7
+keele_liver	SRR10523533	5182	hybrid	0.816288	4	7
+keele_liver	SRR10523533	5182	Salmon-pan	0.842757	1	7
+keele_liver	SRR10523533	5182	Salmon-ref	0.841247	3	7
+keele_liver	SRR10523533	5182	STAR+fC	0.810572	5	7
+keele_liver	SRR10523533	5182	kallisto-ref	0.842487	2	7
+keele_liver	SRR10523533	5182	Kmerator+countTags	0.732602	7	7
+keele_liver	SRR10523533	5182	ref-unique probes	0.800156	6	7
+keele_liver	SRR10523536	5370	hybrid	0.812584	4	7
+keele_liver	SRR10523536	5370	Salmon-pan	0.843533	1	7
+keele_liver	SRR10523536	5370	Salmon-ref	0.842786	3	7
+keele_liver	SRR10523536	5370	STAR+fC	0.808084	5	7
+keele_liver	SRR10523536	5370	kallisto-ref	0.84338	2	7
+keele_liver	SRR10523536	5370	Kmerator+countTags	0.7266	7	7
+keele_liver	SRR10523536	5370	ref-unique probes	0.804382	6	7
+keele_liver	SRR10523539	3873	hybrid	0.845067	4	7
+keele_liver	SRR10523539	3873	Salmon-pan	0.896262	1	7
+keele_liver	SRR10523539	3873	Salmon-ref	0.894926	3	7
+keele_liver	SRR10523539	3873	STAR+fC	0.84044	5	7
+keele_liver	SRR10523539	3873	kallisto-ref	0.895327	2	7
+keele_liver	SRR10523539	3873	Kmerator+countTags	0.718077	7	7
+keele_liver	SRR10523539	3873	ref-unique probes	0.839845	6	7
+keele_liver	SRR10523542	5334	hybrid	0.825333	4	7
+keele_liver	SRR10523542	5334	Salmon-pan	0.856993	1	7
+keele_liver	SRR10523542	5334	Salmon-ref	0.856409	3	7
+keele_liver	SRR10523542	5334	STAR+fC	0.82241	5	7
+keele_liver	SRR10523542	5334	kallisto-ref	0.856553	2	7
+keele_liver	SRR10523542	5334	Kmerator+countTags	0.736085	7	7
+keele_liver	SRR10523542	5334	ref-unique probes	0.820453	6	7
+keele_liver	SRR10523546	2467	hybrid	0.856178	4	7
+keele_liver	SRR10523546	2467	Salmon-pan	0.929888	1	7
+keele_liver	SRR10523546	2467	Salmon-ref	0.924676	2	7
+keele_liver	SRR10523546	2467	STAR+fC	0.838885	5	7
+keele_liver	SRR10523546	2467	kallisto-ref	0.923532	3	7
+keele_liver	SRR10523546	2467	Kmerator+countTags	0.692316	7	7
+keele_liver	SRR10523546	2467	ref-unique probes	0.827542	6	7
+keele_liver	SRR10523549	5418	hybrid	0.823762	4	7
+keele_liver	SRR10523549	5418	Salmon-pan	0.847896	3	7
+keele_liver	SRR10523549	5418	Salmon-ref	0.848564	2	7
+keele_liver	SRR10523549	5418	STAR+fC	0.818515	5	7
+keele_liver	SRR10523549	5418	kallisto-ref	0.849799	1	7
+keele_liver	SRR10523549	5418	Kmerator+countTags	0.733391	7	7
+keele_liver	SRR10523549	5418	ref-unique probes	0.817183	6	7
+keele_liver	SRR10523552	3908	hybrid	0.847995	4	7
+keele_liver	SRR10523552	3908	Salmon-pan	0.906079	1	7
+keele_liver	SRR10523552	3908	Salmon-ref	0.903296	3	7
+keele_liver	SRR10523552	3908	STAR+fC	0.84188	5	7
+keele_liver	SRR10523552	3908	kallisto-ref	0.904042	2	7
+keele_liver	SRR10523552	3908	Kmerator+countTags	0.708691	7	7
+keele_liver	SRR10523552	3908	ref-unique probes	0.831159	6	7
+keele_liver	SRR10523555	5673	hybrid	0.78702	5	7
+keele_liver	SRR10523555	5673	Salmon-pan	0.817898	2	7
+keele_liver	SRR10523555	5673	Salmon-ref	0.817733	3	7
+keele_liver	SRR10523555	5673	STAR+fC	0.792152	4	7
+keele_liver	SRR10523555	5673	kallisto-ref	0.81817	1	7
+keele_liver	SRR10523555	5673	Kmerator+countTags	0.722497	7	7
+keele_liver	SRR10523555	5673	ref-unique probes	0.777537	6	7
+keele_liver	SRR10523558	1025	hybrid	0.857346	4	7
+keele_liver	SRR10523558	1025	Salmon-pan	0.938083	1	7
+keele_liver	SRR10523558	1025	Salmon-ref	0.936516	2	7
+keele_liver	SRR10523558	1025	STAR+fC	0.826402	6	7
+keele_liver	SRR10523558	1025	kallisto-ref	0.926849	3	7
+keele_liver	SRR10523558	1025	Kmerator+countTags	0.691667	7	7
+keele_liver	SRR10523558	1025	ref-unique probes	0.833659	5	7
+keele_liver	SRR10523561	4095	hybrid	0.850175	4	7
+keele_liver	SRR10523561	4095	Salmon-pan	0.893543	1	7
+keele_liver	SRR10523561	4095	Salmon-ref	0.892753	3	7
+keele_liver	SRR10523561	4095	STAR+fC	0.843641	5	7
+keele_liver	SRR10523561	4095	kallisto-ref	0.893465	2	7
+keele_liver	SRR10523561	4095	Kmerator+countTags	0.726681	7	7
+keele_liver	SRR10523561	4095	ref-unique probes	0.840689	6	7
+keele_liver	SRR10523564	2172	hybrid	0.837529	4	7
+keele_liver	SRR10523564	2172	Salmon-pan	0.928597	1	7
+keele_liver	SRR10523564	2172	Salmon-ref	0.927169	2	7
+keele_liver	SRR10523564	2172	STAR+fC	0.830443	5	7
+keele_liver	SRR10523564	2172	kallisto-ref	0.926075	3	7
+keele_liver	SRR10523564	2172	Kmerator+countTags	0.703365	7	7
+keele_liver	SRR10523564	2172	ref-unique probes	0.8218	6	7
+keele_liver	SRR10523567	5424	hybrid	0.81755	4	7
+keele_liver	SRR10523567	5424	Salmon-pan	0.847763	1	7
+keele_liver	SRR10523567	5424	Salmon-ref	0.846934	3	7
+keele_liver	SRR10523567	5424	STAR+fC	0.812775	5	7
+keele_liver	SRR10523567	5424	kallisto-ref	0.84706	2	7
+keele_liver	SRR10523567	5424	Kmerator+countTags	0.733239	7	7
+keele_liver	SRR10523567	5424	ref-unique probes	0.810184	6	7
+keele_liver	SRR10523570	4341	hybrid	0.846593	4	7
+keele_liver	SRR10523570	4341	Salmon-pan	0.891868	1	7
+keele_liver	SRR10523570	4341	Salmon-ref	0.889757	3	7
+keele_liver	SRR10523570	4341	STAR+fC	0.840928	5	7
+keele_liver	SRR10523570	4341	kallisto-ref	0.890309	2	7
+keele_liver	SRR10523570	4341	Kmerator+countTags	0.725483	7	7
+keele_liver	SRR10523570	4341	ref-unique probes	0.83206	6	7
+keele_liver	SRR10523573	3102	hybrid	0.850984	4	7
+keele_liver	SRR10523573	3102	Salmon-pan	0.909719	2	7
+keele_liver	SRR10523573	3102	Salmon-ref	0.909854	1	7
+keele_liver	SRR10523573	3102	STAR+fC	0.837407	5	7
+keele_liver	SRR10523573	3102	kallisto-ref	0.909154	3	7
+keele_liver	SRR10523573	3102	Kmerator+countTags	0.704978	7	7
+keele_liver	SRR10523573	3102	ref-unique probes	0.836628	6	7
+keele_liver	SRR10523577	4085	hybrid	0.851866	4	7
+keele_liver	SRR10523577	4085	Salmon-pan	0.889596	1	7
+keele_liver	SRR10523577	4085	Salmon-ref	0.887817	2	7
+keele_liver	SRR10523577	4085	STAR+fC	0.836984	5	7
+keele_liver	SRR10523577	4085	kallisto-ref	0.887726	3	7
+keele_liver	SRR10523577	4085	Kmerator+countTags	0.716712	7	7
+keele_liver	SRR10523577	4085	ref-unique probes	0.835838	6	7
+keele_liver	SRR10523580	4296	hybrid	0.840611	4	7
+keele_liver	SRR10523580	4296	Salmon-pan	0.879402	1	7
+keele_liver	SRR10523580	4296	Salmon-ref	0.877254	3	7
+keele_liver	SRR10523580	4296	STAR+fC	0.835213	6	7
+keele_liver	SRR10523580	4296	kallisto-ref	0.877741	2	7
+keele_liver	SRR10523580	4296	Kmerator+countTags	0.717963	7	7
+keele_liver	SRR10523580	4296	ref-unique probes	0.83773	5	7
+keele_liver	SRR10523583	5018	hybrid	0.823281	4	7
+keele_liver	SRR10523583	5018	Salmon-pan	0.853585	2	7
+keele_liver	SRR10523583	5018	Salmon-ref	0.85294	3	7
+keele_liver	SRR10523583	5018	STAR+fC	0.818403	5	7
+keele_liver	SRR10523583	5018	kallisto-ref	0.853767	1	7
+keele_liver	SRR10523583	5018	Kmerator+countTags	0.73135	7	7
+keele_liver	SRR10523583	5018	ref-unique probes	0.813647	6	7
+keele_liver	SRR10523586	4341	hybrid	0.843331	4	7
+keele_liver	SRR10523586	4341	Salmon-pan	0.886699	1	7
+keele_liver	SRR10523586	4341	Salmon-ref	0.88531	2	7
+keele_liver	SRR10523586	4341	STAR+fC	0.839586	6	7
+keele_liver	SRR10523586	4341	kallisto-ref	0.884408	3	7
+keele_liver	SRR10523586	4341	Kmerator+countTags	0.731841	7	7
+keele_liver	SRR10523586	4341	ref-unique probes	0.842622	5	7
+keele_liver	SRR10523589	4003	hybrid	0.786421	5	7
+keele_liver	SRR10523589	4003	Salmon-pan	0.842516	1	7
+keele_liver	SRR10523589	4003	Salmon-ref	0.840424	2	7
+keele_liver	SRR10523589	4003	STAR+fC	0.794712	4	7
+keele_liver	SRR10523589	4003	kallisto-ref	0.83988	3	7
+keele_liver	SRR10523589	4003	Kmerator+countTags	0.686409	7	7
+keele_liver	SRR10523589	4003	ref-unique probes	0.757999	6	7
+keele_liver	SRR10523592	3700	hybrid	0.864662	4	7
+keele_liver	SRR10523592	3700	Salmon-pan	0.914427	1	7
+keele_liver	SRR10523592	3700	Salmon-ref	0.913526	2	7
+keele_liver	SRR10523592	3700	STAR+fC	0.852576	5	7
+keele_liver	SRR10523592	3700	kallisto-ref	0.912765	3	7
+keele_liver	SRR10523592	3700	Kmerator+countTags	0.717934	7	7
+keele_liver	SRR10523592	3700	ref-unique probes	0.847174	6	7
+keele_liver	SRR10523595	5651	hybrid	0.814602	4	7
+keele_liver	SRR10523595	5651	Salmon-pan	0.839456	1	7
+keele_liver	SRR10523595	5651	Salmon-ref	0.838118	3	7
+keele_liver	SRR10523595	5651	STAR+fC	0.810895	5	7
+keele_liver	SRR10523595	5651	kallisto-ref	0.83885	2	7
+keele_liver	SRR10523595	5651	Kmerator+countTags	0.734239	7	7
+keele_liver	SRR10523595	5651	ref-unique probes	0.806457	6	7
+keele_liver	SRR10523599	3852	hybrid	0.851212	4	7
+keele_liver	SRR10523599	3852	Salmon-pan	0.902397	1	7
+keele_liver	SRR10523599	3852	Salmon-ref	0.89914	3	7
+keele_liver	SRR10523599	3852	STAR+fC	0.841177	5	7
+keele_liver	SRR10523599	3852	kallisto-ref	0.899454	2	7
+keele_liver	SRR10523599	3852	Kmerator+countTags	0.719053	7	7
+keele_liver	SRR10523599	3852	ref-unique probes	0.836428	6	7
+keele_liver	SRR10523602	5273	hybrid	0.82594	4	7
+keele_liver	SRR10523602	5273	Salmon-pan	0.851981	1	7
+keele_liver	SRR10523602	5273	Salmon-ref	0.850103	3	7
+keele_liver	SRR10523602	5273	STAR+fC	0.82029	5	7
+keele_liver	SRR10523602	5273	kallisto-ref	0.851303	2	7
+keele_liver	SRR10523602	5273	Kmerator+countTags	0.728467	7	7
+keele_liver	SRR10523602	5273	ref-unique probes	0.819002	6	7
+keele_liver	SRR10523605	4626	hybrid	0.847432	4	7
+keele_liver	SRR10523605	4626	Salmon-pan	0.884503	1	7
+keele_liver	SRR10523605	4626	Salmon-ref	0.882691	3	7
+keele_liver	SRR10523605	4626	STAR+fC	0.838319	6	7
+keele_liver	SRR10523605	4626	kallisto-ref	0.88326	2	7
+keele_liver	SRR10523605	4626	Kmerator+countTags	0.732828	7	7
+keele_liver	SRR10523605	4626	ref-unique probes	0.838698	5	7
+keele_liver	SRR10523608	4261	hybrid	0.843638	4	7
+keele_liver	SRR10523608	4261	Salmon-pan	0.888571	1	7
+keele_liver	SRR10523608	4261	Salmon-ref	0.887674	3	7
+keele_liver	SRR10523608	4261	STAR+fC	0.83664	5	7
+keele_liver	SRR10523608	4261	kallisto-ref	0.887818	2	7
+keele_liver	SRR10523608	4261	Kmerator+countTags	0.728626	7	7
+keele_liver	SRR10523608	4261	ref-unique probes	0.832929	6	7
+keele_liver	SRR10523611	4059	hybrid	0.855191	4	7
+keele_liver	SRR10523611	4059	Salmon-pan	0.901316	1	7
+keele_liver	SRR10523611	4059	Salmon-ref	0.90027	3	7
+keele_liver	SRR10523611	4059	STAR+fC	0.850548	5	7
+keele_liver	SRR10523611	4059	kallisto-ref	0.901018	2	7
+keele_liver	SRR10523611	4059	Kmerator+countTags	0.723207	7	7
+keele_liver	SRR10523611	4059	ref-unique probes	0.839074	6	7
+keele_liver	SRR10523614	4826	hybrid	0.841347	4	7
+keele_liver	SRR10523614	4826	Salmon-pan	0.877711	1	7
+keele_liver	SRR10523614	4826	Salmon-ref	0.876311	3	7
+keele_liver	SRR10523614	4826	STAR+fC	0.835498	5	7
+keele_liver	SRR10523614	4826	kallisto-ref	0.877111	2	7
+keele_liver	SRR10523614	4826	Kmerator+countTags	0.727005	7	7
+keele_liver	SRR10523614	4826	ref-unique probes	0.834413	6	7
+keele_liver	SRR10523617	4368	hybrid	0.840015	4	7
+keele_liver	SRR10523617	4368	Salmon-pan	0.882207	1	7
+keele_liver	SRR10523617	4368	Salmon-ref	0.878455	3	7
+keele_liver	SRR10523617	4368	STAR+fC	0.832227	5	7
+keele_liver	SRR10523617	4368	kallisto-ref	0.878617	2	7
+keele_liver	SRR10523617	4368	Kmerator+countTags	0.71433	7	7
+keele_liver	SRR10523617	4368	ref-unique probes	0.826574	6	7
+keele_liver	SRR10523620	5525	hybrid	0.814077	4	7
+keele_liver	SRR10523620	5525	Salmon-pan	0.83891	2	7
+keele_liver	SRR10523620	5525	Salmon-ref	0.838307	3	7
+keele_liver	SRR10523620	5525	STAR+fC	0.809768	5	7
+keele_liver	SRR10523620	5525	kallisto-ref	0.83967	1	7
+keele_liver	SRR10523620	5525	Kmerator+countTags	0.731047	7	7
+keele_liver	SRR10523620	5525	ref-unique probes	0.806169	6	7
+munger	SRR826311	7645	hybrid	0.944385	6	8
+munger	SRR826311	7645	Salmon-pan	0.98783	2	8
+munger	SRR826311	7645	Salmon-ref	0.988029	1	8
+munger	SRR826311	7645	STAR+fC	0.9556	5	8
+munger	SRR826311	7645	kallisto-pan	0.987612	3	8
+munger	SRR826311	7645	kallisto-ref	0.98686	4	8
+munger	SRR826311	7645	Kmerator+countTags	0.81487	8	8
+munger	SRR826311	7645	ref-unique probes	0.931428	7	8
+munger	SRR826309	8170	hybrid	0.948136	6	8
+munger	SRR826309	8170	Salmon-pan	0.988498	1	8
+munger	SRR826309	8170	Salmon-ref	0.988433	2	8
+munger	SRR826309	8170	STAR+fC	0.958587	5	8
+munger	SRR826309	8170	kallisto-pan	0.987845	3	8
+munger	SRR826309	8170	kallisto-ref	0.987199	4	8
+munger	SRR826309	8170	Kmerator+countTags	0.824046	8	8
+munger	SRR826309	8170	ref-unique probes	0.932498	7	8
+munger	SRR826315	8730	hybrid	0.948105	6	8
+munger	SRR826315	8730	Salmon-pan	0.987554	2	8
+munger	SRR826315	8730	Salmon-ref	0.988163	1	8
+munger	SRR826315	8730	STAR+fC	0.95839	5	8
+munger	SRR826315	8730	kallisto-pan	0.986984	3	8
+munger	SRR826315	8730	kallisto-ref	0.986801	4	8
+munger	SRR826315	8730	Kmerator+countTags	0.823094	8	8
+munger	SRR826315	8730	ref-unique probes	0.934688	7	8
+munger	SRR826314	7787	hybrid	0.945112	6	8
+munger	SRR826314	7787	Salmon-pan	0.988065	1	8
+munger	SRR826314	7787	Salmon-ref	0.987959	2	8
+munger	SRR826314	7787	STAR+fC	0.956298	5	8
+munger	SRR826314	7787	kallisto-pan	0.98736	3	8
+munger	SRR826314	7787	kallisto-ref	0.986803	4	8
+munger	SRR826314	7787	Kmerator+countTags	0.812111	8	8
+munger	SRR826314	7787	ref-unique probes	0.928477	7	8
+munger	SRR826310	8375	hybrid	0.948204	6	8
+munger	SRR826310	8375	Salmon-pan	0.988433	1	8
+munger	SRR826310	8375	Salmon-ref	0.988408	2	8
+munger	SRR826310	8375	STAR+fC	0.959751	5	8
+munger	SRR826310	8375	kallisto-pan	0.987664	3	8
+munger	SRR826310	8375	kallisto-ref	0.987114	4	8
+munger	SRR826310	8375	Kmerator+countTags	0.821895	8	8
+munger	SRR826310	8375	ref-unique probes	0.934377	7	8
+munger	SRR826301	7978	hybrid	0.947724	6	8
+munger	SRR826301	7978	Salmon-pan	0.98746	2	8
+munger	SRR826301	7978	Salmon-ref	0.987751	1	8
+munger	SRR826301	7978	STAR+fC	0.956796	5	8
+munger	SRR826301	7978	kallisto-pan	0.986747	3	8
+munger	SRR826301	7978	kallisto-ref	0.9863	4	8
+munger	SRR826301	7978	Kmerator+countTags	0.825933	8	8
+munger	SRR826301	7978	ref-unique probes	0.935227	7	8
+munger	SRR826320	8713	hybrid	0.948852	6	8
+munger	SRR826320	8713	Salmon-pan	0.988998	2	8
+munger	SRR826320	8713	Salmon-ref	0.989349	1	8
+munger	SRR826320	8713	STAR+fC	0.959189	5	8
+munger	SRR826320	8713	kallisto-pan	0.988898	3	8
+munger	SRR826320	8713	kallisto-ref	0.988823	4	8
+munger	SRR826320	8713	Kmerator+countTags	0.825953	8	8
+munger	SRR826320	8713	ref-unique probes	0.943891	7	8
+munger	SRR826328	8754	hybrid	0.945171	6	8
+munger	SRR826328	8754	Salmon-pan	0.987955	2	8
+munger	SRR826328	8754	Salmon-ref	0.988432	1	8
+munger	SRR826328	8754	STAR+fC	0.957407	5	8
+munger	SRR826328	8754	kallisto-pan	0.987677	3	8
+munger	SRR826328	8754	kallisto-ref	0.987502	4	8
+munger	SRR826328	8754	Kmerator+countTags	0.822838	8	8
+munger	SRR826328	8754	ref-unique probes	0.939552	7	8
+munger	SRR826323	7891	hybrid	0.942143	6	8
+munger	SRR826323	7891	Salmon-pan	0.987741	2	8
+munger	SRR826323	7891	Salmon-ref	0.988215	1	8
+munger	SRR826323	7891	STAR+fC	0.956689	5	8
+munger	SRR826323	7891	kallisto-pan	0.987535	3	8
+munger	SRR826323	7891	kallisto-ref	0.987523	4	8
+munger	SRR826323	7891	Kmerator+countTags	0.814423	8	8
+munger	SRR826323	7891	ref-unique probes	0.936988	7	8
+munger	SRR826319	8164	hybrid	0.947184	6	8
+munger	SRR826319	8164	Salmon-pan	0.988567	2	8
+munger	SRR826319	8164	Salmon-ref	0.989072	1	8
+munger	SRR826319	8164	STAR+fC	0.959653	5	8
+munger	SRR826319	8164	kallisto-pan	0.98835	3	8
+munger	SRR826319	8164	kallisto-ref	0.988231	4	8
+munger	SRR826319	8164	Kmerator+countTags	0.823806	8	8
+munger	SRR826319	8164	ref-unique probes	0.943098	7	8
+munger	SRR826330	8300	hybrid	0.946899	6	8
+munger	SRR826330	8300	Salmon-pan	0.988256	2	8
+munger	SRR826330	8300	Salmon-ref	0.988706	1	8
+munger	SRR826330	8300	STAR+fC	0.959682	5	8
+munger	SRR826330	8300	kallisto-pan	0.988098	3	8
+munger	SRR826330	8300	kallisto-ref	0.988054	4	8
+munger	SRR826330	8300	Kmerator+countTags	0.827564	8	8
+munger	SRR826330	8300	ref-unique probes	0.942545	7	8
+munger	SRR826324	8212	hybrid	0.945791	6	8
+munger	SRR826324	8212	Salmon-pan	0.988534	2	8
+munger	SRR826324	8212	Salmon-ref	0.988909	1	8
+munger	SRR826324	8212	STAR+fC	0.960026	5	8
+munger	SRR826324	8212	kallisto-pan	0.988007	3	8
+munger	SRR826324	8212	kallisto-ref	0.987958	4	8
+munger	SRR826324	8212	Kmerator+countTags	0.824465	8	8
+munger	SRR826324	8212	ref-unique probes	0.939228	7	8
+munger	SRR826296	8367	hybrid	0.943495	6	8
+munger	SRR826296	8367	Salmon-pan	0.98695	1	8
+munger	SRR826296	8367	Salmon-ref	0.986932	2	8
+munger	SRR826296	8367	STAR+fC	0.954697	5	8
+munger	SRR826296	8367	kallisto-pan	0.986836	3	8
+munger	SRR826296	8367	kallisto-ref	0.985933	4	8
+munger	SRR826296	8367	Kmerator+countTags	0.82357	8	8
+munger	SRR826296	8367	ref-unique probes	0.932982	7	8
+munger	SRR826284	8295	hybrid	0.946925	6	8
+munger	SRR826284	8295	Salmon-pan	0.987403	2	8
+munger	SRR826284	8295	Salmon-ref	0.987566	1	8
+munger	SRR826284	8295	STAR+fC	0.958146	5	8
+munger	SRR826284	8295	kallisto-pan	0.987181	3	8
+munger	SRR826284	8295	kallisto-ref	0.98643	4	8
+munger	SRR826284	8295	Kmerator+countTags	0.826501	8	8
+munger	SRR826284	8295	ref-unique probes	0.935347	7	8
+munger	SRR826285	8373	hybrid	0.946604	6	8
+munger	SRR826285	8373	Salmon-pan	0.987185	2	8
+munger	SRR826285	8373	Salmon-ref	0.987458	1	8
+munger	SRR826285	8373	STAR+fC	0.958202	5	8
+munger	SRR826285	8373	kallisto-pan	0.986759	3	8
+munger	SRR826285	8373	kallisto-ref	0.986154	4	8
+munger	SRR826285	8373	Kmerator+countTags	0.827311	8	8
+munger	SRR826285	8373	ref-unique probes	0.935921	7	8
+munger	SRR826297	8145	hybrid	0.942796	6	8
+munger	SRR826297	8145	Salmon-pan	0.987459	2	8
+munger	SRR826297	8145	Salmon-ref	0.987657	1	8
+munger	SRR826297	8145	STAR+fC	0.955577	5	8
+munger	SRR826297	8145	kallisto-pan	0.987003	3	8
+munger	SRR826297	8145	kallisto-ref	0.986471	4	8
+munger	SRR826297	8145	Kmerator+countTags	0.814112	8	8
+munger	SRR826297	8145	ref-unique probes	0.934342	7	8
+munger	SRR826295	8089	hybrid	0.942015	6	8
+munger	SRR826295	8089	Salmon-pan	0.986803	2	8
+munger	SRR826295	8089	Salmon-ref	0.987156	1	8
+munger	SRR826295	8089	STAR+fC	0.954547	5	8
+munger	SRR826295	8089	kallisto-pan	0.986422	3	8
+munger	SRR826295	8089	kallisto-ref	0.985863	4	8
+munger	SRR826295	8089	Kmerator+countTags	0.811701	8	8
+munger	SRR826295	8089	ref-unique probes	0.930624	7	8
+munger	SRR826293	8340	hybrid	0.946978	6	8
+munger	SRR826293	8340	Salmon-pan	0.988395	2	8
+munger	SRR826293	8340	Salmon-ref	0.988744	1	8
+munger	SRR826293	8340	STAR+fC	0.95703	5	8
+munger	SRR826293	8340	kallisto-pan	0.987971	3	8
+munger	SRR826293	8340	kallisto-ref	0.987296	4	8
+munger	SRR826293	8340	Kmerator+countTags	0.828393	8	8
+munger	SRR826293	8340	ref-unique probes	0.937064	7	8
+munger	SRR826352	8073	hybrid	0.944388	6	8
+munger	SRR826352	8073	Salmon-pan	0.986918	2	8
+munger	SRR826352	8073	Salmon-ref	0.987681	1	8
+munger	SRR826352	8073	STAR+fC	0.957098	5	8
+munger	SRR826352	8073	kallisto-pan	0.985895	4	8
+munger	SRR826352	8073	kallisto-ref	0.986063	3	8
+munger	SRR826352	8073	Kmerator+countTags	0.817593	8	8
+munger	SRR826352	8073	ref-unique probes	0.932939	7	8
+munger	SRR826360	7975	hybrid	0.943619	6	8
+munger	SRR826360	7975	Salmon-pan	0.986542	2	8
+munger	SRR826360	7975	Salmon-ref	0.986899	1	8
+munger	SRR826360	7975	STAR+fC	0.955456	5	8
+munger	SRR826360	7975	kallisto-pan	0.986309	3	8
+munger	SRR826360	7975	kallisto-ref	0.986114	4	8
+munger	SRR826360	7975	Kmerator+countTags	0.813891	8	8
+munger	SRR826360	7975	ref-unique probes	0.929794	7	8
+munger	SRR826354	7783	hybrid	0.944913	6	8
+munger	SRR826354	7783	Salmon-pan	0.987006	2	8
+munger	SRR826354	7783	Salmon-ref	0.987408	1	8
+munger	SRR826354	7783	STAR+fC	0.955934	5	8
+munger	SRR826354	7783	kallisto-pan	0.98677	3	8
+munger	SRR826354	7783	kallisto-ref	0.986322	4	8
+munger	SRR826354	7783	Kmerator+countTags	0.814649	8	8
+munger	SRR826354	7783	ref-unique probes	0.932575	7	8
+munger	SRR826349	8741	hybrid	0.947791	6	8
+munger	SRR826349	8741	Salmon-pan	0.987103	2	8
+munger	SRR826349	8741	Salmon-ref	0.988134	1	8
+munger	SRR826349	8741	STAR+fC	0.959511	5	8
+munger	SRR826349	8741	kallisto-pan	0.986174	4	8
+munger	SRR826349	8741	kallisto-ref	0.986737	3	8
+munger	SRR826349	8741	Kmerator+countTags	0.829058	8	8
+munger	SRR826349	8741	ref-unique probes	0.936315	7	8
+munger	SRR826361	8166	hybrid	0.945256	6	8
+munger	SRR826361	8166	Salmon-pan	0.986719	2	8
+munger	SRR826361	8166	Salmon-ref	0.987457	1	8
+munger	SRR826361	8166	STAR+fC	0.95538	5	8
+munger	SRR826361	8166	kallisto-pan	0.986653	3	8
+munger	SRR826361	8166	kallisto-ref	0.986383	4	8
+munger	SRR826361	8166	Kmerator+countTags	0.819716	8	8
+munger	SRR826361	8166	ref-unique probes	0.927337	7	8
+munger	SRR826351	8252	hybrid	0.94456	6	8
+munger	SRR826351	8252	Salmon-pan	0.987022	2	8
+munger	SRR826351	8252	Salmon-ref	0.988061	1	8
+munger	SRR826351	8252	STAR+fC	0.958089	5	8
+munger	SRR826351	8252	kallisto-pan	0.985743	4	8
+munger	SRR826351	8252	kallisto-ref	0.986425	3	8
+munger	SRR826351	8252	Kmerator+countTags	0.817608	8	8
+munger	SRR826351	8252	ref-unique probes	0.931944	7	8
+munger	SRR826373	7510	hybrid	0.943066	6	8
+munger	SRR826373	7510	Salmon-pan	0.987991	1	8
+munger	SRR826373	7510	Salmon-ref	0.987387	3	8
+munger	SRR826373	7510	STAR+fC	0.956491	5	8
+munger	SRR826373	7510	kallisto-pan	0.987595	2	8
+munger	SRR826373	7510	kallisto-ref	0.98651	4	8
+munger	SRR826373	7510	Kmerator+countTags	0.817778	8	8
+munger	SRR826373	7510	ref-unique probes	0.931283	7	8
+munger	SRR826375	8512	hybrid	0.945036	6	8
+munger	SRR826375	8512	Salmon-pan	0.98777	1	8
+munger	SRR826375	8512	Salmon-ref	0.987081	2	8
+munger	SRR826375	8512	STAR+fC	0.957907	5	8
+munger	SRR826375	8512	kallisto-pan	0.986276	3	8
+munger	SRR826375	8512	kallisto-ref	0.985512	4	8
+munger	SRR826375	8512	Kmerator+countTags	0.816969	8	8
+munger	SRR826375	8512	ref-unique probes	0.93156	7	8
+munger	SRR826367	7994	hybrid	0.944248	6	8
+munger	SRR826367	7994	Salmon-pan	0.988242	1	8
+munger	SRR826367	7994	Salmon-ref	0.98737	2	8
+munger	SRR826367	7994	STAR+fC	0.95629	5	8
+munger	SRR826367	7994	kallisto-pan	0.987199	3	8
+munger	SRR826367	7994	kallisto-ref	0.986027	4	8
+munger	SRR826367	7994	Kmerator+countTags	0.813519	8	8
+munger	SRR826367	7994	ref-unique probes	0.932024	7	8
+munger	SRR826366	7529	hybrid	0.940371	6	8
+munger	SRR826366	7529	Salmon-pan	0.988064	1	8
+munger	SRR826366	7529	Salmon-ref	0.98746	2	8
+munger	SRR826366	7529	STAR+fC	0.954626	5	8
+munger	SRR826366	7529	kallisto-pan	0.987121	3	8
+munger	SRR826366	7529	kallisto-ref	0.986224	4	8
+munger	SRR826366	7529	Kmerator+countTags	0.808539	8	8
+munger	SRR826366	7529	ref-unique probes	0.927807	7	8
+munger	SRR826370	7538	hybrid	0.941687	6	8
+munger	SRR826370	7538	Salmon-pan	0.987922	1	8
+munger	SRR826370	7538	Salmon-ref	0.987205	2	8
+munger	SRR826370	7538	STAR+fC	0.954555	5	8
+munger	SRR826370	7538	kallisto-pan	0.9869	3	8
+munger	SRR826370	7538	kallisto-ref	0.985767	4	8
+munger	SRR826370	7538	Kmerator+countTags	0.80493	8	8
+munger	SRR826370	7538	ref-unique probes	0.92808	7	8
+munger	SRR826379	8002	hybrid	0.941524	6	8
+munger	SRR826379	8002	Salmon-pan	0.987706	1	8
+munger	SRR826379	8002	Salmon-ref	0.986881	3	8
+munger	SRR826379	8002	STAR+fC	0.955141	5	8
+munger	SRR826379	8002	kallisto-pan	0.987142	2	8
+munger	SRR826379	8002	kallisto-ref	0.986148	4	8
+munger	SRR826379	8002	Kmerator+countTags	0.801091	8	8
+munger	SRR826379	8002	ref-unique probes	0.929387	7	8
+munger	SRR826340	7171	hybrid	0.928486	6	8
+munger	SRR826340	7171	Salmon-pan	0.971575	2	8
+munger	SRR826340	7171	Salmon-ref	0.972359	1	8
+munger	SRR826340	7171	STAR+fC	0.938297	5	8
+munger	SRR826340	7171	kallisto-pan	0.971463	3	8
+munger	SRR826340	7171	kallisto-ref	0.971195	4	8
+munger	SRR826340	7171	Kmerator+countTags	0.790604	8	8
+munger	SRR826340	7171	ref-unique probes	0.90484	7	8
+munger	SRR826333	8173	hybrid	0.932205	6	8
+munger	SRR826333	8173	Salmon-pan	0.971669	4	8
+munger	SRR826333	8173	Salmon-ref	0.972803	1	8
+munger	SRR826333	8173	STAR+fC	0.940107	5	8
+munger	SRR826333	8173	kallisto-pan	0.971714	3	8
+munger	SRR826333	8173	kallisto-ref	0.971806	2	8
+munger	SRR826333	8173	Kmerator+countTags	0.798408	8	8
+munger	SRR826333	8173	ref-unique probes	0.905534	7	8
+munger	SRR826345	8334	hybrid	0.930358	6	8
+munger	SRR826345	8334	Salmon-pan	0.971931	2	8
+munger	SRR826345	8334	Salmon-ref	0.97296	1	8
+munger	SRR826345	8334	STAR+fC	0.939586	5	8
+munger	SRR826345	8334	kallisto-pan	0.971799	4	8
+munger	SRR826345	8334	kallisto-ref	0.971844	3	8
+munger	SRR826345	8334	Kmerator+countTags	0.798949	8	8
+munger	SRR826345	8334	ref-unique probes	0.9053	7	8
+munger	SRR826337	7373	hybrid	0.914689	6	8
+munger	SRR826337	7373	Salmon-pan	0.969712	4	8
+munger	SRR826337	7373	Salmon-ref	0.971014	1	8
+munger	SRR826337	7373	STAR+fC	0.926385	5	8
+munger	SRR826337	7373	kallisto-pan	0.970026	3	8
+munger	SRR826337	7373	kallisto-ref	0.970137	2	8
+munger	SRR826337	7373	Kmerator+countTags	0.801213	8	8
+munger	SRR826337	7373	ref-unique probes	0.850313	7	8
+munger	SRR826342	8000	hybrid	0.932548	6	8
+munger	SRR826342	8000	Salmon-pan	0.971557	3	8
+munger	SRR826342	8000	Salmon-ref	0.972729	1	8
+munger	SRR826342	8000	STAR+fC	0.940551	5	8
+munger	SRR826342	8000	kallisto-pan	0.971459	4	8
+munger	SRR826342	8000	kallisto-ref	0.972326	2	8
+munger	SRR826342	8000	Kmerator+countTags	0.800967	8	8
+munger	SRR826342	8000	ref-unique probes	0.909192	7	8
+munger	SRR826383	7747	hybrid	0.939811	6	8
+munger	SRR826383	7747	Salmon-pan	0.98602	1	8
+munger	SRR826383	7747	Salmon-ref	0.985853	2	8
+munger	SRR826383	7747	STAR+fC	0.952884	5	8
+munger	SRR826383	7747	kallisto-pan	0.985366	3	8
+munger	SRR826383	7747	kallisto-ref	0.984406	4	8
+munger	SRR826383	7747	Kmerator+countTags	0.807831	8	8
+munger	SRR826383	7747	ref-unique probes	0.912473	7	8
+munger	SRR826394	8111	hybrid	0.941397	6	8
+munger	SRR826394	8111	Salmon-pan	0.986515	1	8
+munger	SRR826394	8111	Salmon-ref	0.986151	2	8
+munger	SRR826394	8111	STAR+fC	0.952101	5	8
+munger	SRR826394	8111	kallisto-pan	0.985702	3	8
+munger	SRR826394	8111	kallisto-ref	0.984265	4	8
+munger	SRR826394	8111	Kmerator+countTags	0.801679	8	8
+munger	SRR826394	8111	ref-unique probes	0.913861	7	8
+munger	SRR826389	8343	hybrid	0.940694	6	8
+munger	SRR826389	8343	Salmon-pan	0.985177	2	8
+munger	SRR826389	8343	Salmon-ref	0.985476	1	8
+munger	SRR826389	8343	STAR+fC	0.951557	5	8
+munger	SRR826389	8343	kallisto-pan	0.984503	3	8
+munger	SRR826389	8343	kallisto-ref	0.983785	4	8
+munger	SRR826389	8343	Kmerator+countTags	0.80306	8	8
+munger	SRR826389	8343	ref-unique probes	0.910934	7	8
+munger	SRR826386	7704	hybrid	0.937535	6	8
+munger	SRR826386	7704	Salmon-pan	0.984618	1	8
+munger	SRR826386	7704	Salmon-ref	0.984364	2	8
+munger	SRR826386	7704	STAR+fC	0.949931	5	8
+munger	SRR826386	7704	kallisto-pan	0.983655	3	8
+munger	SRR826386	7704	kallisto-ref	0.982517	4	8
+munger	SRR826386	7704	Kmerator+countTags	0.791276	8	8
+munger	SRR826386	7704	ref-unique probes	0.911055	7	8
+munger	SRR826382	7549	hybrid	0.9335	6	8
+munger	SRR826382	7549	Salmon-pan	0.982695	1	8
+munger	SRR826382	7549	Salmon-ref	0.98238	2	8
+munger	SRR826382	7549	STAR+fC	0.945337	5	8
+munger	SRR826382	7549	kallisto-pan	0.981322	3	8
+munger	SRR826382	7549	kallisto-ref	0.980566	4	8
+munger	SRR826382	7549	Kmerator+countTags	0.779115	8	8
+munger	SRR826382	7549	ref-unique probes	0.899345	7	8
+munger	SRR826391	8010	hybrid	0.938279	6	8
+munger	SRR826391	8010	Salmon-pan	0.985335	2	8
+munger	SRR826391	8010	Salmon-ref	0.985446	1	8
+munger	SRR826391	8010	STAR+fC	0.950576	5	8
+munger	SRR826391	8010	kallisto-pan	0.984193	3	8
+munger	SRR826391	8010	kallisto-ref	0.983269	4	8
+munger	SRR826391	8010	Kmerator+countTags	0.792321	8	8
+munger	SRR826391	8010	ref-unique probes	0.908948	7	8
+munger	SRR826404	7604	hybrid	0.941909	6	8
+munger	SRR826404	7604	Salmon-pan	0.987441	2	8
+munger	SRR826404	7604	Salmon-ref	0.98813	1	8
+munger	SRR826404	7604	STAR+fC	0.955416	5	8
+munger	SRR826404	7604	kallisto-pan	0.986884	4	8
+munger	SRR826404	7604	kallisto-ref	0.986901	3	8
+munger	SRR826404	7604	Kmerator+countTags	0.803523	8	8
+munger	SRR826404	7604	ref-unique probes	0.923563	7	8
+munger	SRR826409	7780	hybrid	0.940434	6	8
+munger	SRR826409	7780	Salmon-pan	0.985553	2	8
+munger	SRR826409	7780	Salmon-ref	0.986139	1	8
+munger	SRR826409	7780	STAR+fC	0.953513	5	8
+munger	SRR826409	7780	kallisto-pan	0.984948	3	8
+munger	SRR826409	7780	kallisto-ref	0.984809	4	8
+munger	SRR826409	7780	Kmerator+countTags	0.799372	8	8
+munger	SRR826409	7780	ref-unique probes	0.916583	7	8
+munger	SRR826411	7416	hybrid	0.938789	6	8
+munger	SRR826411	7416	Salmon-pan	0.986869	2	8
+munger	SRR826411	7416	Salmon-ref	0.987341	1	8
+munger	SRR826411	7416	STAR+fC	0.954435	5	8
+munger	SRR826411	7416	kallisto-pan	0.985968	3	8
+munger	SRR826411	7416	kallisto-ref	0.985795	4	8
+munger	SRR826411	7416	Kmerator+countTags	0.796766	8	8
+munger	SRR826411	7416	ref-unique probes	0.91984	7	8
+munger	SRR826401	7899	hybrid	0.941884	6	8
+munger	SRR826401	7899	Salmon-pan	0.987285	2	8
+munger	SRR826401	7899	Salmon-ref	0.987491	1	8
+munger	SRR826401	7899	STAR+fC	0.956598	5	8
+munger	SRR826401	7899	kallisto-pan	0.986606	3	8
+munger	SRR826401	7899	kallisto-ref	0.986383	4	8
+munger	SRR826401	7899	Kmerator+countTags	0.814209	8	8
+munger	SRR826401	7899	ref-unique probes	0.924047	7	8
+munger	SRR826402	7718	hybrid	0.943002	6	8
+munger	SRR826402	7718	Salmon-pan	0.987418	2	8
+munger	SRR826402	7718	Salmon-ref	0.988193	1	8
+munger	SRR826402	7718	STAR+fC	0.957385	5	8
+munger	SRR826402	7718	kallisto-pan	0.986296	4	8
+munger	SRR826402	7718	kallisto-ref	0.986409	3	8
+munger	SRR826402	7718	Kmerator+countTags	0.815948	8	8
+munger	SRR826402	7718	ref-unique probes	0.929966	7	8
+munger	SRR826400	8125	hybrid	0.947602	6	8
+munger	SRR826400	8125	Salmon-pan	0.988216	2	8
+munger	SRR826400	8125	Salmon-ref	0.988996	1	8
+munger	SRR826400	8125	STAR+fC	0.961785	5	8
+munger	SRR826400	8125	kallisto-pan	0.987112	4	8
+munger	SRR826400	8125	kallisto-ref	0.987113	3	8
+munger	SRR826400	8125	Kmerator+countTags	0.830305	8	8
+munger	SRR826400	8125	ref-unique probes	0.934642	7	8

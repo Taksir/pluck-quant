@@ -1,0 +1,6 @@
+# file: fig4c_do_paired_hybrid_minus_refunique.tsv
+# note: 48 DO animals, liver, 100 bp SE. Per-gene delta_hybrid - delta_ref, summarized per class: how much the ref-unique probes under-count relative to PLUCK in genes with a divergent allele (no truth needed).
+# note: D2 = homozygous divergent, D1 = heterozygote-like.
+class	n_genes	median_diff	q25	q75
+D2	3727	0.1232	0.06215	0.21035
+D1	6915	0.0609	0.0232	0.1138

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pluck-quant"
-version = "1.0.0"
+version = "1.0.1"
 description = "PLUCK: gene-level expression from exact counts of fixed 25-mer probes (Collaborative Cross / Diversity Outbred mice)"
 readme = "README.md"
 requires-python = ">=3.12"

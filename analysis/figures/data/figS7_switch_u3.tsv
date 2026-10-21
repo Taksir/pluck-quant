@@ -1,0 +1,12 @@
+# file: figS7_switch_u3.tsv
+# note: Scoring set A, all genes. variant primary = --switch cohort (scored); A = --switch sample; B = --switch sample-scaled (the setting of the timed runs).
+cohort	variant	hybrid_spearman	salmon_pan_spearman	gap_to_salmon_pan	hybrid_noise_sd	salmon_pan_noise_sd	noise_ratio_vs_salmon_pan	hybrid_spurious	salmon_pan_spurious	hybrid_median_delta
+keele_kidney	primary	0.9888	0.993	0.0042	0.0739	0.0493	1.499	0.049	0.0504	0.0024
+keele_kidney	A	0.988	0.993	0.005	0.0751	0.0493	1.5233	0.0497	0.0504	0.0023
+keele_kidney	B	0.9862	0.993	0.0068	0.0803	0.0493	1.6288	0.0502	0.0504	0.0027
+keele_liver	primary	0.9814	0.9876	0.0062	0.0786	0.0511	1.5382	0.0406	0.0437	0.0043
+keele_liver	A	0.9803	0.9876	0.0073	0.0796	0.0511	1.5577	0.0414	0.0437	0.0041
+keele_liver	B	0.9779	0.9876	0.0097	0.0854	0.0511	1.6712	0.0422	0.0437	0.0044
+munger	primary	0.978	0.9884	0.0104	0.0636	0.0416	1.5288	0.0553	0.0411	0.0046
+munger	A	0.9773	0.9884	0.0111	0.0643	0.0416	1.5457	0.0547	0.0411	0.0038
+munger	B	0.9713	0.9884	0.0171	0.0717	0.0416	1.7236	0.0574	0.0411	0.005

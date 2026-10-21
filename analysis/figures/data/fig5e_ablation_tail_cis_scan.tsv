@@ -1,0 +1,8 @@
+# file: fig5e_ablation_tail_cis_scan.tsv
+# note: det_ = cis-eQTL detections, resvar_med_ = median residual variance, gt2pct_/gt4pct_ = tail percentages at 2x and 4x, per tool or arm; arms as in fig5e_ablation_arms.tsv.
+tissue	arm	n_genes	det_hybrid	det_salmon_pan	det_arm1	resvar_med_hybrid	resvar_med_salmon_pan	resvar_med_arm1	gt2pct_hybrid	gt2pct_salmon_pan	gt2pct_arm1	gt4pct_hybrid	gt4pct_salmon_pan	gt4pct_arm1	det_arm2_T1_S1_P	resvar_med_arm2_T1_S1_P	gt2pct_arm2_T1_S1_P	gt4pct_arm2_T1_S1_P	det_arm2_TA_S1_P	resvar_med_arm2_TA_S1_P	gt2pct_arm2_TA_S1_P	gt4pct_arm2_TA_S1_P	det_arm2_T1_S2_P	resvar_med_arm2_T1_S2_P	gt2pct_arm2_T1_S2_P	gt4pct_arm2_T1_S2_P
+keele_liver	arm1	7810	2155	2345	1897	1.107	1	1.182	9.18	0	19.9	4.55	0	10.9												
+keele_liver	arm2_T1_S1_P	7832	2156	2352		1.108	1		9.4	0		4.75	0		2090	1.116	10.98	5.57								
+keele_liver	arm2_TA_S1_P	7849	2154	2361		1.108	1		9.58	0		4.92	0						2126	1.094	9.56	4.69				
+keele_liver	arm2_T1_S2_P	7840	2156	2356		1.108	1		9.46	0		4.81	0										2107	1.108	9.06	4.34
+keele_kidney	arm1	9337	3393	3591	3058	1.116	1	1.204	6.99	0	17.83	2.63	0	7.28												

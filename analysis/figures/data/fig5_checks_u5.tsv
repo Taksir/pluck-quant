@@ -1,0 +1,109 @@
+# file: fig5_checks_u5.tsv
+# note: Every recomputed value next to its stored source value; ok says whether they agree.
+item	recomputed	stored	ok
+AUC U keele_kidney	0.9012	0.9012	True
+AUC compact keele_kidney	0.9205	0.9205	True
+AUC postcount keele_kidney	0.9332	0.9332	True
+AUC B1 keele_kidney	0.6974	0.6974	True
+AUC B2 keele_kidney	0.8531	0.8531	True
+AUC U keele_liver	0.8381	0.8381	True
+AUC compact keele_liver	0.8526	0.8526	True
+AUC postcount keele_liver	0.897	0.897	True
+AUC B1 keele_liver	0.6973	0.6973	True
+AUC B2 keele_liver	0.8146	0.8146	True
+AUC U munger	0.9026	0.9026	True
+AUC compact munger	0.9214	0.9214	True
+AUC postcount munger	0.9177	0.9177	True
+AUC B1 munger	0.6444	0.6444	True
+AUC B2 munger	0.7794	0.7794	True
+AUC U gse199702_liver	0.8709	0.8709	True
+AUC compact gse199702_liver	0.8837	0.8837	True
+AUC postcount gse199702_liver	0.8681	0.8681	True
+AUC B1 gse199702_liver	0.617	0.617	True
+AUC B2 gse199702_liver	0.749	0.749	True
+AUC U gse199702_heart	0.8642	0.8642	True
+AUC compact gse199702_heart	0.8695	0.8695	True
+AUC postcount gse199702_heart	0.8443	0.8443	True
+AUC B1 gse199702_heart	0.6103	0.6103	True
+AUC B2 gse199702_heart	0.7403	0.7403	True
+AUC U gse199702_kidney	0.8241	0.8241	True
+AUC compact gse199702_kidney	0.8252	0.8252	True
+AUC postcount gse199702_kidney	0.7913	0.7913	True
+AUC B1 gse199702_kidney	0.5642	0.5642	True
+AUC B2 gse199702_kidney	0.7032	0.7032	True
+recall u<0.6 keele_kidney	0.6976	0.6976	True
+tail_unflagged u<0.6 keele_kidney	0.026	0.026	True
+recall u<0.6 keele_liver	0.5931	0.5931	True
+tail_unflagged u<0.6 keele_liver	0.044	0.044	True
+recall u<0.6 munger	0.8562	0.8562	True
+tail_unflagged u<0.6 munger	0.0065	0.0065	True
+recall u<0.6 gse199702_liver	0.7995	0.7995	True
+tail_unflagged u<0.6 gse199702_liver	0.0106	0.0106	True
+recall u<0.6 gse199702_heart	0.7561	0.7561	True
+tail_unflagged u<0.6 gse199702_heart	0.0121	0.0121	True
+recall u<0.6 gse199702_kidney	0.668	0.668	True
+tail_unflagged u<0.6 gse199702_kidney	0.0197	0.0197	True
+E2 pooled ratio hybrid se50 all	1.815	1.815	True
+E2 pooled ratio salmon_ref se50 all	1.463	1.463	True
+E2 n se50 all	5657	5657	True
+E2 pooled ratio hybrid se50 unflagged	1.33	1.33	True
+E2 pooled ratio salmon_ref se50 unflagged	1.33	1.33	True
+E2 n se50 unflagged	4720	4720	True
+E2 pooled ratio hybrid se50 flagged	6.648	6.648	True
+E2 pooled ratio salmon_ref se50 flagged	3.083	3.083	True
+E2 n se50 flagged	937	937	True
+E2 pooled ratio hybrid se101 all	1.653	1.653	True
+E2 pooled ratio salmon_ref se101 all	1.089	1.089	True
+E2 n se101 all	5657	5657	True
+E2 pooled ratio hybrid se101 unflagged	1.232	1.232	True
+E2 pooled ratio salmon_ref se101 unflagged	1.015	1.015	True
+E2 n se101 unflagged	4376	4376	True
+E2 pooled ratio hybrid se101 flagged	4.517	4.517	True
+E2 pooled ratio salmon_ref se101 flagged	1.585	1.585	True
+E2 n se101 flagged	1281	1281	True
+E2 pooled ratio hybrid pe all	1.426	1.426	True
+E2 pooled ratio salmon_ref pe all	1.067	1.067	True
+E2 n pe all	5657	5657	True
+E2 pooled ratio hybrid pe unflagged	1.137	1.137	True
+E2 pooled ratio salmon_ref pe unflagged	1.006	1.006	True
+E2 n pe unflagged	4376	4376	True
+E2 pooled ratio hybrid pe flagged	3.427	3.427	True
+E2 pooled ratio salmon_ref pe flagged	1.399	1.399	True
+E2 n pe flagged	1281	1281	True
+SV-risk genes (>=25%)	567	567	True
+core flag rate 50bp	0.149	0.149	True
+core flag rate 100bp	0.196	0.196	True
+Table S8 keele_kidney as scored n_delta_genes: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_kidney as scored median_delta: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_kidney as scored delta_ci95: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_kidney as scored spurious_rate: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_kidney as scored within_gene_spearman: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_kidney as scored noise_sd: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_kidney flagged all-gene hybrid delta, spurious	0.0031, 0.1176	0.0031, 0.1176	True
+Table S8 keele_kidney flagged all-gene salmon_pan delta, spurious	0.0015, 0.1392	0.0015, 0.1392	True
+Table S8 keele_kidney flagged all-gene salmon_ref delta, spurious	-0.0557, 0.2798	-0.0557, 0.2798	True
+Table S8 keele_kidney flagged all-gene star_fc delta, spurious	-0.0472, 0.2826	-0.0472, 0.2826	True
+Table S8 keele_liver as scored n_delta_genes: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_liver as scored median_delta: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_liver as scored delta_ci95: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_liver as scored spurious_rate: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_liver as scored within_gene_spearman: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_liver as scored noise_sd: rows differing from locked frame A (of 21)	0	0	True
+Table S8 keele_liver flagged all-gene hybrid delta, spurious	0.0041, 0.1017	0.0041, 0.1017	True
+Table S8 keele_liver flagged all-gene salmon_pan delta, spurious	0.0054, 0.1294	0.0054, 0.1294	True
+Table S8 keele_liver flagged all-gene salmon_ref delta, spurious	-0.0515, 0.2928	-0.0515, 0.2928	True
+Table S8 keele_liver flagged all-gene star_fc delta, spurious	-0.0448, 0.2619	-0.0448, 0.2619	True
+Table S8 munger as scored n_delta_genes: rows differing from locked frame A (of 24)	0	0	True
+Table S8 munger as scored median_delta: rows differing from locked frame A (of 24)	0	0	True
+Table S8 munger as scored delta_ci95: rows differing from locked frame A (of 24)	0	0	True
+Table S8 munger as scored spurious_rate: rows differing from locked frame A (of 24)	0	0	True
+Table S8 munger as scored within_gene_spearman: rows differing from locked frame A (of 24)	0	0	True
+Table S8 munger as scored noise_sd: rows differing from locked frame A (of 24)	0	0	True
+Table S8 munger flagged all-gene hybrid delta, spurious	0.0161, 0.13	0.0161, 0.13	True
+Table S8 munger flagged all-gene salmon_pan delta, spurious	0.0063, 0.123	0.0063, 0.123	True
+Table S8 munger flagged all-gene salmon_ref delta, spurious	-0.0029, 0.1477	-0.0029, 0.1477	True
+Table S8 munger flagged all-gene star_fc delta, spurious	-0.0078, 0.1788	-0.0078, 0.1788	True
+arm4 SR/A4 median SRR10523477	2.09	2.09	True
+arm4 SR/A4 median SRR10523526	1.73	1.73	True
+arm4 SR/A4 median SRR826311	1.16	1.16	True
+arm4 SR/A4 median SRR826340	1.25	1.25	True

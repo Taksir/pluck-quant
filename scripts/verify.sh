@@ -7,7 +7,7 @@ PY=${PY:-python3}
 $PY -m venv .venv_verify
 . .venv_verify/bin/activate
 pip install -q -e ".[dev]" build twine
-echo "== 1. unit and end-to-end tests (compare with outputs of the frozen v2 code)"
+echo "== 1. unit and end-to-end tests (compare with outputs of the original analysis code)"
 python -m pytest -q
 echo "== 2. build sdist and wheel, check metadata"
 rm -rf dist && python -m build -q && twine check dist/*

@@ -1,0 +1,51 @@
+part	pipeline	cohort	within_gene_spearman	noise_sd	median_delta	delta_ci95	spurious_rate	n_delta_genes	frame	status	sample	machine	wall_median_s	ratio_median	ratio_min	ratio_max	cpu_ratio_median	rss_mb_median	n_reps	pluck_wall_median_s_same_block
+A	PLUCK	Keele kidney, 50 bp	0.9888	0.0739	0.0024	[0.0009, 0.0036]	0.049	5713.0	A											
+A	Salmon-pan	Keele kidney, 50 bp	0.993	0.0493	0.0006	[-0.0001, 0.0014]	0.0504	5713.0	A											
+A	Salmon-ref	Keele kidney, 50 bp	0.9904	0.0617	-0.0473	[-0.0489, -0.0456]	0.1939	5713.0	A											
+A	STAR+fC	Keele kidney, 50 bp	0.992	0.0527	-0.0052	[-0.0059, -0.0042]	0.0732	5713.0	A											
+A	kallisto-pan	Keele kidney, 50 bp								not run										
+A	kallisto-ref	Keele kidney, 50 bp	0.9899	0.0653	-0.0482	[-0.0503, -0.0467]	0.205	5713.0	A											
+A	Kmerator+countTags	Keele kidney, 50 bp	0.9829	0.1058	-0.114	[-0.117, -0.1102]	0.4934	5713.0	A											
+A	RNA-Skim	Keele kidney, 50 bp	0.9559	0.1944	-0.152	[-0.1571, -0.1453]	0.4634	5714.0	P_rnaskim											
+A	ref-unique probes	Keele kidney, 50 bp	0.9823	0.0925	-0.0842	[-0.0872, -0.0811]	0.3672	5713.0	A											
+A	PLUCK	Keele liver, 50 bp†	0.9814	0.0786	0.0043	[0.0028, 0.0055]	0.0406	4853.0	A											
+A	Salmon-pan	Keele liver, 50 bp†	0.9876	0.0511	0.0014	[0.0005, 0.0022]	0.0437	4853.0	A											
+A	Salmon-ref	Keele liver, 50 bp†	0.9849	0.0639	-0.0451	[-0.0467, -0.0434]	0.1721	4853.0	A											
+A	STAR+fC	Keele liver, 50 bp†	0.9861	0.0569	-0.004	[-0.0048, -0.0032]	0.0659	4853.0	A											
+A	kallisto-pan	Keele liver, 50 bp†								not run										
+A	kallisto-ref	Keele liver, 50 bp†	0.9842	0.067	-0.0457	[-0.0475, -0.0438]	0.176	4853.0	A											
+A	Kmerator+countTags	Keele liver, 50 bp†	0.9762	0.0983	-0.1044	[-0.1077, -0.1017]	0.4397	4853.0	A											
+A	RNA-Skim	Keele liver, 50 bp†	0.9412	0.2068	-0.1421	[-0.1476, -0.1361]	0.3846	4855.0	P_rnaskim											
+A	ref-unique probes	Keele liver, 50 bp†	0.975	0.0949	-0.0802	[-0.0833, -0.0771]	0.3287	4853.0	A											
+A	PLUCK	Munger founders, 100 bp	0.978	0.0636	0.0046	[0.0035, 0.0056]	0.0553	7282.0	A											
+A	Salmon-pan	Munger founders, 100 bp	0.9884	0.0416	-0.0015	[-0.0023, -0.0007]	0.0411	7282.0	A											
+A	Salmon-ref	Munger founders, 100 bp	0.9886	0.0417	-0.0057	[-0.0064, -0.0051]	0.0459	7282.0	A											
+A	STAR+fC	Munger founders, 100 bp	0.9846	0.0504	0.0025	[0.0017, 0.0032]	0.0597	7282.0	A											
+A	kallisto-pan	Munger founders, 100 bp	0.9858	0.0476	0.0046	[0.0039, 0.0053]	0.045	7282.0	A											
+A	kallisto-ref	Munger founders, 100 bp	0.9853	0.0486	0.001	[0.0004, 0.0017]	0.0621	7282.0	A											
+A	Kmerator+countTags	Munger founders, 100 bp	0.9436	0.0924	-0.2267	[-0.2302, -0.2229]	0.8731	7282.0	A											
+A	RNA-Skim	Munger founders, 100 bp	0.9581	0.0849	-0.1145	[-0.1178, -0.111]	0.4959	7282.0	P_rnaskim											
+A	ref-unique probes	Munger founders, 100 bp	0.9507	0.0918	-0.1097	[-0.1123, -0.106]	0.4434	7282.0	A											
+B	PLUCK										Keele liver CC021, 50 bp	compute node	6.51	1.0	1.0	1.0	1.0	1042.0	3.0	
+B	PLUCK										Keele liver CC001, 50 bp	compute node	9.14	1.0	1.0	1.0	1.0	1539.0	3.0	
+B	PLUCK										GSE199702 liver CC001 F, 101 bp	compute node	11.43	1.0	1.0	1.0	1.0	1827.0	3.0	
+B	Salmon-pan										Keele liver CC021, 50 bp	compute node	734.03	81.004	63.078	120.53	98.673	2419.0	3.0	
+B	Salmon-pan										Keele liver CC001, 50 bp	compute node	616.57	73.752	58.437	93.811	68.62	2490.0	3.0	
+B	Salmon-pan										GSE199702 liver CC001 F, 101 bp	compute node	991.7	81.86	57.213	86.763	63.103	2229.0	3.0	
+B	Salmon-ref										Keele liver CC021, 50 bp	compute node	104.99	16.235	11.063	32.237	22.192	1088.0	3.0	
+B	Salmon-ref										Keele liver CC001, 50 bp	compute node	163.01	17.835	17.205	45.428	20.895	1081.0	3.0	
+B	Salmon-ref										GSE199702 liver CC001 F, 101 bp	compute node	221.61	19.491	13.085	23.202	23.934	1026.0	3.0	
+B	STAR+fC										Keele liver CC021, 50 bp	compute node	141.64	21.757	16.985	22.452	29.521	26119.0	3.0	
+B	STAR+fC										Keele liver CC001, 50 bp	compute node	293.93	32.159	29.974	38.398	34.956	26113.0	3.0	
+B	STAR+fC										GSE199702 liver CC001 F, 101 bp	compute node	294.87	25.934	23.997	35.378	27.103	26199.0	3.0	
+B	kallisto-pan										GSE199702 liver CC001 F, 101 bp	compute node	767.82	67.176	66.751	82.485	62.406	3366.0	3.0	
+B	kallisto-ref										Keele liver CC021, 50 bp	compute node	82.39	12.531	8.682	13.708	14.77	1302.0	3.0	
+B	kallisto-ref										Keele liver CC001, 50 bp	compute node	147.96	17.367	16.188	17.761	16.719	1292.0	3.0	
+B	kallisto-ref										GSE199702 liver CC001 F, 101 bp	compute node	130.86	11.002	9.088	12.826	12.007	1277.0	3.0	
+B	Kmerator+countTags										Keele liver CC021, 50 bp	compute node	337.82	51.892	35.527	58.128	24.689	9564.0	3.0	
+B	Kmerator+countTags										Keele liver CC001, 50 bp	compute node	396.07	44.542	40.565	47.377	15.89	9564.0	3.0	
+B	Kmerator+countTags										GSE199702 liver CC001 F, 101 bp	compute node	743.71	63.498	51.647	76.254	25.707	9564.0	3.0	
+B	RNA-Skim										Keele liver CC021, 50 bp	second compute cluster	802.4	172.41	100.55	193.24			3.0	4.69
+B	RNA-Skim										Keele liver CC001, 50 bp	second compute cluster	399.9	55.31	55.04	57.17			3.0	7.23
+B	RNA-Skim										GSE199702 liver CC001 F, 101 bp	second compute cluster	610.1	63.48	62.14	64.61			3.0	9.61
+B	GBRS										Keele liver CC021, 50 bp	compute node	2585.7	391.773				11043.0	1.0	

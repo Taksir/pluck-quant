@@ -1,0 +1,9 @@
+# file: fig6c_timing_e3_rule.tsv
+# note: Speed rule (>= 10x Salmon-ref, >= 25x Salmon-pan at 4 threads) applied to the cluster timing.
+layout	sample	method	n_reps	ratio_median	ratio_min	ratio_max	threshold	pass	pass_all_reps
+50	CC001	salmon_pan	3	73.75	58.44	93.81	25	True	True
+50	CC001	salmon_ref	3	17.83	17.2	45.43	10	True	True
+50	CC021	salmon_pan	3	81	63.08	120.53	25	True	True
+50	CC021	salmon_ref	3	16.23	11.06	32.24	10	True	True
+101	LiverCC001F	salmon_pan	3	81.86	57.21	86.76	25	True	True
+101	LiverCC001F	salmon_ref	3	19.49	13.09	23.2	10	True	True

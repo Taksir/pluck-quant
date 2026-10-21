@@ -1,0 +1,43 @@
+# file: tableS8_calib_munger_u5.tsv
+# note: Scoring set A methods, scored with the scoring script. as scored = per-sample constants fitted inside the subset; all-gene = constants of the all-gene score; the as-scored values are computed before the script swaps in the all-gene calibration.
+cohort	subset	calibration	method	n_delta_genes	median_delta	delta_ci95	spurious_rate	within_gene_spearman	n_genes_spearman	noise_sd	n_genes_noise
+munger	all	as scored	ref	7282	-0.1097	[-0.1123, -0.106]	0.4434	0.9507	8733	0.0918	8736
+munger	all	as scored	vf	7282	0.0046	[0.0035, 0.0056]	0.0553	0.978	8732	0.0636	8736
+munger	all	as scored	salmon_ref	7282	-0.0057	[-0.0064, -0.0051]	0.0459	0.9886	8736	0.0417	8736
+munger	all	as scored	salmon_pan	7282	-0.0015	[-0.0023, -0.0007]	0.0411	0.9884	8736	0.0416	8736
+munger	all	as scored	kallisto_ref	7282	0.001	[0.0004, 0.0017]	0.0621	0.9853	8736	0.0486	8736
+munger	all	as scored	kallisto_pan	7282	0.0046	[0.0039, 0.0053]	0.045	0.9858	8736	0.0476	8736
+munger	all	as scored	kmerator	7282	-0.2267	[-0.2302, -0.2229]	0.8731	0.9436	8734	0.0924	8736
+munger	all	as scored	star_fc	7282	0.0025	[0.0017, 0.0032]	0.0597	0.9846	8731	0.0504	8736
+munger	unflagged	as scored	ref	5867	-0.106	[-0.1096, -0.1028]	0.4435	0.9556	7002	0.0871	7003
+munger	unflagged	as scored	vf	5867	-0.0025	[-0.0037, -0.0016]	0.0355	0.9812	7003	0.059	7003
+munger	unflagged	as scored	salmon_ref	5867	-0.006	[-0.0065, -0.0053]	0.0213	0.9897	7003	0.04	7003
+munger	unflagged	as scored	salmon_pan	5867	-0.0019	[-0.0026, -0.0011]	0.0213	0.9895	7003	0.0401	7003
+munger	unflagged	as scored	kallisto_ref	5867	0.001	[0.0003, 0.0018]	0.0309	0.9868	7003	0.0466	7003
+munger	unflagged	as scored	kallisto_pan	5867	0.0041	[0.0034, 0.0049]	0.0269	0.987	7003	0.0459	7003
+munger	unflagged	as scored	kmerator	5867	-0.2741	[-0.2792, -0.2696]	0.9051	0.9284	7003	0.0949	7003
+munger	unflagged	as scored	star_fc	5867	-0.0011	[-0.0019, -0.0002]	0.0303	0.9865	7001	0.0475	7003
+munger	unflagged	all-gene	ref	5867	-0.1047	[-0.1087, -0.1017]	0.4358	0.9559	7002	0.0871	7003
+munger	unflagged	all-gene	vf	5867	0.0027	[0.0017, 0.0038]	0.0373	0.9812	7003	0.059	7003
+munger	unflagged	all-gene	salmon_ref	5867	-0.0063	[-0.0069, -0.0055]	0.0213	0.9897	7003	0.0401	7003
+munger	unflagged	all-gene	salmon_pan	5867	-0.0029	[-0.0037, -0.0022]	0.0213	0.9896	7003	0.0402	7003
+munger	unflagged	all-gene	kallisto_ref	5867	0.0019	[0.0011, 0.0028]	0.0305	0.9868	7003	0.0465	7003
+munger	unflagged	all-gene	kallisto_pan	5867	0.0036	[0.0029, 0.0044]	0.0264	0.987	7003	0.0461	7003
+munger	unflagged	all-gene	kmerator	5867	-0.2224	[-0.2266, -0.2187]	0.8861	0.9476	7003	0.0881	7003
+munger	unflagged	all-gene	star_fc	5867	0.0037	[0.003, 0.0044]	0.031	0.9866	7001	0.0475	7003
+munger	flagged	as scored	ref	1415	-0.1188	[-0.1282, -0.1108]	0.4431	0.924	1731	0.1194	1733
+munger	flagged	as scored	vf	1415	0.0578	[0.0533, 0.0624]	0.2042	0.9442	1729	0.0992	1733
+munger	flagged	as scored	salmon_ref	1415	-0.0038	[-0.0056, -0.0018]	0.1505	0.9816	1733	0.0495	1733
+munger	flagged	as scored	salmon_pan	1415	0.0011	[-0.0011, 0.0042]	0.1208	0.9815	1733	0.0506	1733
+munger	flagged	as scored	kallisto_ref	1415	-0.0031	[-0.0065, -0.0006]	0.1922	0.9748	1733	0.0591	1733
+munger	flagged	as scored	kallisto_pan	1415	0.0085	[0.0062, 0.0108]	0.1216	0.978	1733	0.0564	1733
+munger	flagged	as scored	kmerator	1415	-0.0998	[-0.1078, -0.0897]	0.424	0.9325	1731	0.1072	1733
+munger	flagged	as scored	star_fc	1415	0.0588	[0.0534, 0.0686]	0.4028	0.9429	1730	0.0853	1733
+munger	flagged	all-gene	ref	1415	-0.1321	[-0.1436, -0.1231]	0.4749	0.9222	1731	0.1211	1733
+munger	flagged	all-gene	vf	1415	0.0161	[0.0129, 0.02]	0.13	0.9497	1729	0.095	1733
+munger	flagged	all-gene	salmon_ref	1415	-0.0029	[-0.0048, -0.0012]	0.1477	0.9817	1733	0.0496	1733
+munger	flagged	all-gene	salmon_pan	1415	0.0063	[0.0039, 0.009]	0.123	0.9812	1733	0.0507	1733
+munger	flagged	all-gene	kallisto_ref	1415	-0.0071	[-0.0097, -0.0042]	0.1929	0.9749	1733	0.0587	1733
+munger	flagged	all-gene	kallisto_pan	1415	0.0104	[0.0079, 0.0127]	0.1223	0.9782	1733	0.0564	1733
+munger	flagged	all-gene	kmerator	1415	-0.2491	[-0.2611, -0.2395]	0.8191	0.918	1731	0.1208	1733
+munger	flagged	all-gene	star_fc	1415	-0.0078	[-0.0111, -0.0049]	0.1788	0.9696	1730	0.0683	1733

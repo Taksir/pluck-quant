@@ -1,0 +1,16 @@
+# file: figS5_e4b_tissue_metrics_u3.tsv
+# note: GSE199702, 101 bp SE, GBRS/EMASE truth (shares reads with full-read methods). Scored subsets: liver 53, heart 30, kidney 30 samples (Salmon-pan available).
+# note: No noise ratio is taken from these files: the GBRS truth shares reads, and PLUCK sits below its independent Poisson floor.
+tissue	read_length_bp	method	tool	n_samples	n_delta_genes	median_delta	delta_ci95	spurious_rate	within_gene_spearman	n_genes_spearman	delta_wild	delta_domestic	pooled_B6_med_log2
+liver	101	ref	ref-unique probes	53	7990	-0.1077	[-0.1109, -0.1041]	0.4829	0.9472	10179	-0.1274	-0.0867	-0.0005
+liver	101	vf	hybrid	53	7990	0.0041	[0.0036, 0.0046]	0.0513	0.9821	10175	0.005	0.0032	-0.0002
+liver	101	salmon_pan	Salmon-pan	53	7990	0.0016	[0.0013, 0.0019]	0.0338	0.9951	10187	0.0021	0.0013	-0.0
+liver	101	salmon_ref	Salmon-ref	53	7990	-0.0016	[-0.0018, -0.0013]	0.0453	0.9951	10187	-0.0017	-0.0011	-0.0
+heart	101	ref	ref-unique probes	30	6324	-0.1054	[-0.1084, -0.102]	0.445	0.9402	10458	-0.1279	-0.0856	-0.0006
+heart	101	vf	hybrid	30	6324	0.0047	[0.0039, 0.0057]	0.0424	0.9785	10458	0.0056	0.0047	-0.0003
+heart	101	salmon_pan	Salmon-pan	30	6324	0.0022	[0.0019, 0.0026]	0.03	0.9929	10465	0.0026	0.0016	-0.0
+heart	101	salmon_ref	Salmon-ref	30	6324	-0.0013	[-0.0017, -0.0009]	0.0386	0.9927	10465	-0.0016	-0.0009	-0.0
+kidney	101	ref	ref-unique probes	30	6952	-0.1035	[-0.1059, -0.1004]	0.459	0.9515	11067	-0.1273	-0.0885	-0.0004
+kidney	101	vf	hybrid	30	6952	0.0051	[0.0043, 0.0058]	0.0479	0.984	11066	0.0063	0.0037	-0.0002
+kidney	101	salmon_pan	Salmon-pan	30	6952	0.0026	[0.0022, 0.0029]	0.0342	0.9942	11074	0.0031	0.0019	-0.0
+kidney	101	salmon_ref	Salmon-ref	30	6952	-0.0012	[-0.0015, -0.0008]	0.041	0.9941	11074	-0.0014	-0.0008	-0.0

@@ -1,0 +1,10 @@
+# file: fig6a_e6_extra_animals.tsv
+# note: Power model: extra animals PLUCK needs to match Salmon-pan. Munger has no subsampling, so no detection-matched extra-n; its extra-n equivalent is the noncentrality ratio (1.039).
+# note: For Munger, noncentrality_ratio_strong_genes is filled from the stored key extra_n_factor_median_strong.
+cohort	tissue	read_length_bp	test	n_samples	detections_hybrid	detections_salmon_pan	extra_n_detection_matched	noncentrality_ratio_strong_genes	median_residual_variance_ratio
+Keele liver	liver	50	cis-eQTL	47	2150	2346	1.085	1.042	1.108
+Keele kidney	kidney	50	cis-eQTL	47	3400	3618	1.073	1.064	1.117
+GSE199702 liver	liver	101	cis-eQTL	53	4091	4252	1.064	1.034	1.052
+GSE199702 heart	heart	101	cis-eQTL	30	1998	2136	1.056	1.049	1.049
+GSE199702 kidney	kidney	101	cis-eQTL	30	2756	2907	1.049	1.046	1.057
+Munger founders	liver	100	strain ANOVA	47	5264	5527		1.039	1.043

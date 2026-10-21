@@ -1,0 +1,1870 @@
+# file: fig1a_gene_positions.tsv
+# note: Slc25a47 (ENSMUSG00000048856), reference transcript ENSMUST00000221080 (longest TSL1 isoform, 1890 nt), design R = 101, spacing 77; one row per 25-mer start; status = the first design rule the k-mer does not meet, in code order.
+# note: genome_copies is filled only for k-mers that meet the first three rules; founders = founder letters whose variants the 25-mer overlaps (A A/J, C 129S1/SvImJ, D NOD/ShiLtJ, E NZO/HlLtJ, F CAST/EiJ, G PWK/PhJ, H WSB/EiJ; B = C57BL/6J = reference).
+pos	status	founder_mask	founders	genome_copies	ref_unique_probe	pluck_probe
+0	end margin	0		0	0	0
+1	end margin	0		0	0	0
+2	end margin	0		0	0	0
+3	end margin	0		0	0	0
+4	end margin	0		0	0	0
+5	end margin	0		0	0	0
+6	end margin	0		0	0	0
+7	end margin	0		0	0	0
+8	end margin	0		0	0	0
+9	end margin	0		0	0	0
+10	end margin	0		0	0	0
+11	end margin	0		0	0	0
+12	end margin	0		0	0	0
+13	end margin	0		0	0	0
+14	end margin	0		0	0	0
+15	end margin	0		0	0	0
+16	end margin	0		0	0	0
+17	end margin	0		0	0	0
+18	end margin	0		0	0	0
+19	end margin	0		0	0	0
+20	end margin	0		0	0	0
+21	end margin	0		0	0	0
+22	end margin	0		0	0	0
+23	end margin	0		0	0	0
+24	end margin	0		0	0	0
+25	end margin	0		0	0	0
+26	end margin	0		0	0	0
+27	end margin	0		0	0	0
+28	end margin	0		0	0	0
+29	end margin	0		0	0	0
+30	end margin	0		0	0	0
+31	end margin	0		0	0	0
+32	end margin	0		0	0	0
+33	end margin	0		0	0	0
+34	end margin	0		0	0	0
+35	end margin	0		0	0	0
+36	end margin	0		0	0	0
+37	end margin	0		0	0	0
+38	end margin	0		0	0	0
+39	end margin	0		0	0	0
+40	end margin	0		0	0	0
+41	end margin	0		0	0	0
+42	end margin	0		0	0	0
+43	end margin	0		0	0	0
+44	end margin	0		0	0	0
+45	end margin	0		0	0	0
+46	end margin	0		0	0	0
+47	end margin	0		0	0	0
+48	end margin	0		0	0	0
+49	end margin	0		0	0	0
+50	end margin	0		0	0	0
+51	end margin	0		0	0	0
+52	end margin	0		0	0	0
+53	end margin	0		0	0	0
+54	end margin	0		0	0	0
+55	end margin	0		0	0	0
+56	end margin	0		0	0	0
+57	end margin	0		0	0	0
+58	end margin	0		0	0	0
+59	end margin	0		0	0	0
+60	end margin	0		0	0	0
+61	end margin	0		0	0	0
+62	end margin	0		0	0	0
+63	end margin	0		0	0	0
+64	end margin	0		0	0	0
+65	end margin	0		0	0	0
+66	end margin	0		0	0	0
+67	end margin	0		0	0	0
+68	end margin	0		0	0	0
+69	end margin	0		0	0	0
+70	end margin	0		0	0	0
+71	end margin	0		0	0	0
+72	end margin	0		0	0	0
+73	end margin	0		0	0	0
+74	end margin	0		0	0	0
+75	end margin	0		0	0	0
+76	end margin	0		0	0	0
+77	end margin	0		0	0	0
+78	end margin	0		0	0	0
+79	end margin	0		0	0	0
+80	end margin	0		0	0	0
+81	end margin	0		0	0	0
+82	end margin	0		0	0	0
+83	end margin	0		0	0	0
+84	end margin	0		0	0	0
+85	end margin	0		0	0	0
+86	end margin	0		0	0	0
+87	end margin	0		0	0	0
+88	end margin	0		0	0	0
+89	end margin	0		0	0	0
+90	end margin	0		0	0	0
+91	end margin	0		0	0	0
+92	end margin	0		0	0	0
+93	end margin	0		0	0	0
+94	end margin	0		0	0	0
+95	end margin	0		0	0	0
+96	end margin	0		0	0	0
+97	end margin	0		0	0	0
+98	end margin	0		0	0	0
+99	end margin	0		0	0	0
+100	eligible	0		0	1	1
+101	eligible	0		0	0	0
+102	eligible	0		0	0	0
+103	eligible	0		0	0	0
+104	eligible	0		0	0	0
+105	eligible	0		0	0	0
+106	eligible	0		0	0	0
+107	eligible	0		0	0	0
+108	eligible	0		0	0	0
+109	eligible	0		0	0	0
+110	eligible	0		0	0	0
+111	eligible	0		1	0	0
+112	eligible	0		1	0	0
+113	eligible	0		1	0	0
+114	eligible	0		1	0	0
+115	eligible	0		1	0	0
+116	eligible	0		1	0	0
+117	eligible	0		1	0	0
+118	eligible	0		1	0	0
+119	eligible	0		1	0	0
+120	eligible	0		1	0	0
+121	eligible	0		1	0	0
+122	eligible	0		1	0	0
+123	eligible	0		1	0	0
+124	eligible	0		1	0	0
+125	eligible	0		1	0	0
+126	eligible	0		1	0	0
+127	eligible	0		1	0	0
+128	eligible	0		1	0	0
+129	eligible	0		1	0	0
+130	eligible	0		1	0	0
+131	eligible	0		1	0	0
+132	eligible	0		1	0	0
+133	eligible	0		1	0	0
+134	eligible	0		1	0	0
+135	eligible	0		1	0	0
+136	eligible	0		1	0	0
+137	eligible	0		1	0	0
+138	eligible	0		1	0	0
+139	eligible	0		1	0	0
+140	eligible	0		1	0	0
+141	eligible	0		1	0	0
+142	eligible	0		1	0	0
+143	eligible	0		1	0	0
+144	eligible	0		1	0	0
+145	eligible	0		1	0	0
+146	eligible	0		1	0	0
+147	eligible	0		1	0	0
+148	eligible	0		1	0	0
+149	eligible	0		1	0	0
+150	eligible	0		1	0	0
+151	eligible	0		1	0	0
+152	eligible	0		1	0	0
+153	eligible	0		1	0	0
+154	eligible	0		1	0	0
+155	eligible	0		1	0	0
+156	eligible	0		1	0	0
+157	eligible	0		1	0	0
+158	eligible	0		1	0	0
+159	eligible	0		1	0	0
+160	eligible	0		1	0	0
+161	eligible	0		1	0	0
+162	eligible	0		1	0	0
+163	eligible	0		0	0	0
+164	eligible	0		0	0	0
+165	eligible	0		0	0	0
+166	eligible	0		0	0	0
+167	eligible	0		0	0	0
+168	eligible	0		0	0	0
+169	eligible	0		0	0	0
+170	eligible	0		0	0	0
+171	eligible	0		0	0	0
+172	eligible	0		0	0	0
+173	eligible	0		0	0	0
+174	eligible	0		0	0	0
+175	eligible	0		0	0	0
+176	eligible	0		0	0	0
+177	eligible	0		0	1	1
+178	eligible	0		0	0	0
+179	eligible	0		0	0	0
+180	eligible	0		0	0	0
+181	eligible	0		0	0	0
+182	eligible	0		0	0	0
+183	eligible	0		0	0	0
+184	eligible	0		1	0	0
+185	eligible	0		1	0	0
+186	eligible	0		1	0	0
+187	eligible	0		1	0	0
+188	eligible	0		1	0	0
+189	eligible	0		1	0	0
+190	eligible	0		1	0	0
+191	overlaps a founder variant	1	A	1	0	0
+192	overlaps a founder variant	1	A	1	0	0
+193	overlaps a founder variant	1	A	1	0	0
+194	overlaps a founder variant	1	A	1	0	0
+195	overlaps a founder variant	1	A	1	0	0
+196	overlaps a founder variant	1	A	1	0	0
+197	overlaps a founder variant	1	A	1	0	0
+198	overlaps a founder variant	1	A	1	0	0
+199	overlaps a founder variant	1	A	1	0	0
+200	overlaps a founder variant	1	A	1	0	0
+201	overlaps a founder variant	1	A	1	0	0
+202	overlaps a founder variant	1	A	1	0	0
+203	overlaps a founder variant	1	A	1	0	0
+204	overlaps a founder variant	1	A	1	0	0
+205	overlaps a founder variant	1	A	1	0	0
+206	overlaps a founder variant	1	A	1	0	0
+207	overlaps a founder variant	1	A	1	0	0
+208	overlaps a founder variant	1	A	1	0	0
+209	overlaps a founder variant	1	A	1	0	0
+210	overlaps a founder variant	1	A	1	0	0
+211	overlaps a founder variant	1	A	1	0	0
+212	overlaps a founder variant	1	A	1	0	0
+213	overlaps a founder variant	1	A	1	0	0
+214	overlaps a founder variant	37	ADG	1	0	0
+215	overlaps a founder variant	37	ADG	1	0	0
+216	overlaps a founder variant	36	DG	1	0	0
+217	overlaps a founder variant	36	DG	1	0	0
+218	overlaps a founder variant	36	DG	1	0	0
+219	overlaps a founder variant	36	DG	1	0	0
+220	overlaps a founder variant	36	DG	1	0	0
+221	overlaps a founder variant	36	DG	1	0	0
+222	overlaps a founder variant	36	DG	1	0	0
+223	overlaps a founder variant	36	DG	1	0	0
+224	overlaps a founder variant	36	DG	1	0	0
+225	overlaps a founder variant	36	DG	1	0	0
+226	overlaps a founder variant	36	DG	1	0	0
+227	overlaps a founder variant	36	DG	1	0	0
+228	overlaps a founder variant	36	DG	1	0	0
+229	overlaps a founder variant	36	DG	1	0	0
+230	overlaps a founder variant	36	DG	1	0	0
+231	overlaps a founder variant	36	DG	1	0	0
+232	overlaps a founder variant	36	DG	1	0	0
+233	overlaps a founder variant	36	DG	1	0	0
+234	overlaps a founder variant	36	DG	1	0	0
+235	overlaps a founder variant	36	DG	1	0	0
+236	overlaps a founder variant	36	DG	1	0	0
+237	overlaps a founder variant	36	DG	1	0	0
+238	overlaps a founder variant	36	DG	1	0	0
+239	overlaps a founder variant	36	DG	1	0	0
+240	overlaps a founder variant	36	DG	1	0	0
+241	overlaps a founder variant	36	DG	1	0	0
+242	eligible	0		1	0	0
+243	eligible	0		1	0	0
+244	eligible	0		1	0	0
+245	eligible	0		1	0	0
+246	eligible	0		1	0	0
+247	eligible	0		1	0	0
+248	eligible	0		1	0	0
+249	eligible	0		1	0	0
+250	eligible	0		1	0	0
+251	eligible	0		1	0	0
+252	eligible	0		1	0	0
+253	eligible	0		1	0	0
+254	eligible	0		1	1	1
+255	eligible	0		1	0	0
+256	eligible	0		1	0	0
+257	eligible	0		1	0	0
+258	eligible	0		1	0	0
+259	eligible	0		1	0	0
+260	eligible	0		1	0	0
+261	eligible	0		1	0	0
+262	eligible	0		1	0	0
+263	eligible	0		1	0	0
+264	eligible	0		1	0	0
+265	eligible	0		1	0	0
+266	eligible	0		1	0	0
+267	eligible	0		1	0	0
+268	eligible	0		1	0	0
+269	eligible	0		1	0	0
+270	eligible	0		1	0	0
+271	eligible	0		1	0	0
+272	eligible	0		1	0	0
+273	eligible	0		1	0	0
+274	eligible	0		1	0	0
+275	eligible	0		1	0	0
+276	eligible	0		1	0	0
+277	eligible	0		1	0	0
+278	eligible	0		1	0	0
+279	eligible	0		1	0	0
+280	eligible	0		1	0	0
+281	eligible	0		1	0	0
+282	eligible	0		1	0	0
+283	eligible	0		1	0	0
+284	eligible	0		1	0	0
+285	eligible	0		1	0	0
+286	eligible	0		1	0	0
+287	eligible	0		1	0	0
+288	eligible	0		1	0	0
+289	eligible	0		1	0	0
+290	eligible	0		1	0	0
+291	eligible	0		1	0	0
+292	eligible	0		1	0	0
+293	eligible	0		1	0	0
+294	eligible	0		1	0	0
+295	eligible	0		1	0	0
+296	eligible	0		1	0	0
+297	eligible	0		1	0	0
+298	eligible	0		1	0	0
+299	eligible	0		1	0	0
+300	eligible	0		1	0	0
+301	eligible	0		1	0	0
+302	eligible	0		1	0	0
+303	eligible	0		1	0	0
+304	eligible	0		1	0	0
+305	eligible	0		1	0	0
+306	eligible	0		1	0	0
+307	eligible	0		1	0	0
+308	eligible	0		1	0	0
+309	eligible	0		1	0	0
+310	eligible	0		1	0	0
+311	eligible	0		1	0	0
+312	eligible	0		1	0	0
+313	eligible	0		1	0	0
+314	eligible	0		1	0	0
+315	eligible	0		1	0	0
+316	eligible	0		1	0	0
+317	eligible	0		1	0	0
+318	eligible	0		1	0	0
+319	eligible	0		1	0	0
+320	eligible	0		1	0	0
+321	eligible	0		1	0	0
+322	eligible	0		1	0	0
+323	eligible	0		1	0	0
+324	eligible	0		1	0	0
+325	eligible	0		1	0	0
+326	eligible	0		1	0	0
+327	eligible	0		1	0	0
+328	eligible	0		1	0	0
+329	eligible	0		1	0	0
+330	eligible	0		1	0	0
+331	eligible	0		1	1	1
+332	eligible	0		1	0	0
+333	eligible	0		1	0	0
+334	eligible	0		1	0	0
+335	eligible	0		1	0	0
+336	eligible	0		1	0	0
+337	eligible	0		1	0	0
+338	eligible	0		1	0	0
+339	eligible	0		1	0	0
+340	eligible	0		1	0	0
+341	eligible	0		1	0	0
+342	eligible	0		1	0	0
+343	eligible	0		1	0	0
+344	eligible	0		1	0	0
+345	eligible	0		1	0	0
+346	eligible	0		1	0	0
+347	eligible	0		0	0	0
+348	eligible	0		0	0	0
+349	eligible	0		0	0	0
+350	eligible	0		0	0	0
+351	eligible	0		0	0	0
+352	eligible	0		0	0	0
+353	eligible	0		0	0	0
+354	eligible	0		0	0	0
+355	eligible	0		0	0	0
+356	eligible	0		0	0	0
+357	eligible	0		0	0	0
+358	eligible	0		0	0	0
+359	eligible	0		0	0	0
+360	eligible	0		0	0	0
+361	eligible	0		0	0	0
+362	eligible	0		0	0	0
+363	eligible	0		0	0	0
+364	eligible	0		0	0	0
+365	eligible	0		0	0	0
+366	eligible	0		0	0	0
+367	eligible	0		1	0	0
+368	eligible	0		1	0	0
+369	eligible	0		1	0	0
+370	eligible	0		1	0	0
+371	eligible	0		1	0	0
+372	eligible	0		1	0	0
+373	eligible	0		1	0	0
+374	eligible	0		1	0	0
+375	eligible	0		1	0	0
+376	eligible	0		1	0	0
+377	eligible	0		1	0	0
+378	eligible	0		1	0	0
+379	eligible	0		1	0	0
+380	eligible	0		1	0	0
+381	eligible	0		1	0	0
+382	eligible	0		1	0	0
+383	eligible	0		1	0	0
+384	eligible	0		1	0	0
+385	eligible	0		1	0	0
+386	eligible	0		1	0	0
+387	eligible	0		1	0	0
+388	eligible	0		1	0	0
+389	eligible	0		1	0	0
+390	eligible	0		1	0	0
+391	eligible	0		1	0	0
+392	eligible	0		1	0	0
+393	eligible	0		1	0	0
+394	eligible	0		1	0	0
+395	overlaps a founder variant	65	AH	1	0	0
+396	overlaps a founder variant	65	AH	1	0	0
+397	overlaps a founder variant	65	AH	1	0	0
+398	overlaps a founder variant	65	AH	1	0	0
+399	overlaps a founder variant	65	AH	1	0	0
+400	overlaps a founder variant	65	AH	1	0	0
+401	overlaps a founder variant	65	AH	1	0	0
+402	overlaps a founder variant	65	AH	1	0	0
+403	overlaps a founder variant	65	AH	1	0	0
+404	overlaps a founder variant	65	AH	1	0	0
+405	overlaps a founder variant	65	AH	1	0	0
+406	overlaps a founder variant	65	AH	1	0	0
+407	overlaps a founder variant	65	AH	1	0	0
+408	overlaps a founder variant	65	AH	1	1	0
+409	overlaps a founder variant	65	AH	1	0	0
+410	overlaps a founder variant	65	AH	1	0	0
+411	overlaps a founder variant	65	AH	1	0	0
+412	overlaps a founder variant	65	AH	1	0	0
+413	overlaps a founder variant	65	AH	1	0	0
+414	overlaps a founder variant	65	AH	1	0	0
+415	overlaps a founder variant	65	AH	1	0	0
+416	overlaps a founder variant	65	AH	1	0	0
+417	overlaps a founder variant	65	AH	1	0	0
+418	overlaps a founder variant	65	AH	1	0	0
+419	overlaps a founder variant	65	AH	1	0	0
+420	eligible	0		1	0	1
+421	eligible	0		1	0	0
+422	eligible	0		1	0	0
+423	eligible	0		1	0	0
+424	eligible	0		1	0	0
+425	eligible	0		1	0	0
+426	eligible	0		1	0	0
+427	eligible	0		1	0	0
+428	eligible	0		1	0	0
+429	eligible	0		1	0	0
+430	eligible	0		1	0	0
+431	eligible	0		1	0	0
+432	eligible	0		1	0	0
+433	eligible	0		1	0	0
+434	eligible	0		1	0	0
+435	eligible	0		1	0	0
+436	eligible	0		1	0	0
+437	eligible	0		1	0	0
+438	eligible	0		1	0	0
+439	eligible	0		1	0	0
+440	eligible	0		1	0	0
+441	eligible	0		1	0	0
+442	eligible	0		1	0	0
+443	eligible	0		1	0	0
+444	eligible	0		1	0	0
+445	eligible	0		1	0	0
+446	eligible	0		1	0	0
+447	eligible	0		1	0	0
+448	eligible	0		1	0	0
+449	eligible	0		1	0	0
+450	eligible	0		1	0	0
+451	eligible	0		1	0	0
+452	eligible	0		1	0	0
+453	eligible	0		1	0	0
+454	eligible	0		1	0	0
+455	eligible	0		1	0	0
+456	eligible	0		1	0	0
+457	eligible	0		1	0	0
+458	eligible	0		1	0	0
+459	eligible	0		1	0	0
+460	eligible	0		1	0	0
+461	eligible	0		1	0	0
+462	eligible	0		1	0	0
+463	eligible	0		1	0	0
+464	eligible	0		1	0	0
+465	eligible	0		1	0	0
+466	eligible	0		1	0	0
+467	eligible	0		1	0	0
+468	eligible	0		1	0	0
+469	eligible	0		1	0	0
+470	eligible	0		1	0	0
+471	eligible	0		1	0	0
+472	eligible	0		1	0	0
+473	eligible	0		1	0	0
+474	eligible	0		1	0	0
+475	eligible	0		1	0	0
+476	eligible	0		1	0	0
+477	eligible	0		1	0	0
+478	eligible	0		1	0	0
+479	eligible	0		1	0	0
+480	eligible	0		1	0	0
+481	eligible	0		1	0	0
+482	eligible	0		1	0	0
+483	eligible	0		1	0	0
+484	eligible	0		1	0	0
+485	eligible	0		1	1	0
+486	eligible	0		1	0	0
+487	eligible	0		1	0	0
+488	eligible	0		1	0	0
+489	eligible	0		1	0	0
+490	eligible	0		1	0	0
+491	eligible	0		1	0	0
+492	eligible	0		1	0	0
+493	eligible	0		1	0	0
+494	eligible	0		1	0	0
+495	eligible	0		1	0	0
+496	eligible	0		1	0	0
+497	eligible	0		1	0	1
+498	eligible	0		1	0	0
+499	eligible	0		1	0	0
+500	eligible	0		1	0	0
+501	eligible	0		1	0	0
+502	eligible	0		1	0	0
+503	eligible	0		1	0	0
+504	eligible	0		1	0	0
+505	eligible	0		1	0	0
+506	eligible	0		1	0	0
+507	eligible	0		1	0	0
+508	overlaps a founder variant	117	ADFGH	1	0	0
+509	overlaps a founder variant	117	ADFGH	1	0	0
+510	overlaps a founder variant	117	ADFGH	1	0	0
+511	overlaps a founder variant	117	ADFGH	1	0	0
+512	overlaps a founder variant	117	ADFGH	1	0	0
+513	overlaps a founder variant	117	ADFGH	1	0	0
+514	overlaps a founder variant	117	ADFGH	1	0	0
+515	overlaps a founder variant	117	ADFGH	1	0	0
+516	overlaps a founder variant	117	ADFGH	1	0	0
+517	overlaps a founder variant	117	ADFGH	1	0	0
+518	overlaps a founder variant	117	ADFGH	1	0	0
+519	overlaps a founder variant	117	ADFGH	1	0	0
+520	overlaps a founder variant	117	ADFGH	1	0	0
+521	overlaps a founder variant	117	ADFGH	1	0	0
+522	overlaps a founder variant	117	ADFGH	1	0	0
+523	overlaps a founder variant	117	ADFGH	1	0	0
+524	overlaps a founder variant	117	ADFGH	1	0	0
+525	overlaps a founder variant	117	ADFGH	1	0	0
+526	overlaps a founder variant	117	ADFGH	1	0	0
+527	overlaps a founder variant	117	ADFGH	1	0	0
+528	overlaps a founder variant	117	ADFGH	1	0	0
+529	overlaps a founder variant	117	ADFGH	1	0	0
+530	overlaps a founder variant	117	ADFGH	1	0	0
+531	overlaps a founder variant	117	ADFGH	1	0	0
+532	overlaps a founder variant	117	ADFGH	1	0	0
+533	eligible	0		1	0	0
+534	eligible	0		1	0	0
+535	eligible	0		1	0	0
+536	eligible	0		1	0	0
+537	eligible	0		1	0	0
+538	eligible	0		1	0	0
+539	eligible	0		1	0	0
+540	eligible	0		1	0	0
+541	eligible	0		1	0	0
+542	eligible	0		1	0	0
+543	eligible	0		1	0	0
+544	eligible	0		1	0	0
+545	eligible	0		1	0	0
+546	eligible	0		1	0	0
+547	eligible	0		1	0	0
+548	eligible	0		1	0	0
+549	eligible	0		1	0	0
+550	eligible	0		1	0	0
+551	eligible	0		1	0	0
+552	eligible	0		1	0	0
+553	eligible	0		1	0	0
+554	eligible	0		1	0	0
+555	eligible	0		1	0	0
+556	eligible	0		1	0	0
+557	eligible	0		1	0	0
+558	eligible	0		1	0	0
+559	eligible	0		1	0	0
+560	eligible	0		1	0	0
+561	eligible	0		1	0	0
+562	eligible	0		1	1	0
+563	eligible	0		1	0	0
+564	eligible	0		1	0	0
+565	eligible	0		1	0	0
+566	eligible	0		1	0	0
+567	eligible	0		1	0	0
+568	eligible	0		1	0	0
+569	eligible	0		1	0	0
+570	eligible	0		1	0	0
+571	eligible	0		1	0	0
+572	eligible	0		1	0	0
+573	eligible	0		1	0	0
+574	eligible	0		1	0	1
+575	eligible	0		1	0	0
+576	eligible	0		1	0	0
+577	eligible	0		1	0	0
+578	eligible	0		1	0	0
+579	eligible	0		1	0	0
+580	eligible	0		1	0	0
+581	eligible	0		1	0	0
+582	eligible	0		1	0	0
+583	eligible	0		1	0	0
+584	eligible	0		1	0	0
+585	eligible	0		1	0	0
+586	eligible	0		1	0	0
+587	eligible	0		1	0	0
+588	eligible	0		1	0	0
+589	eligible	0		1	0	0
+590	eligible	0		1	0	0
+591	eligible	0		1	0	0
+592	eligible	0		1	0	0
+593	eligible	0		1	0	0
+594	eligible	0		1	0	0
+595	eligible	0		1	0	0
+596	eligible	0		1	0	0
+597	eligible	0		1	0	0
+598	eligible	0		1	0	0
+599	eligible	0		1	0	0
+600	eligible	0		1	0	0
+601	eligible	0		1	0	0
+602	eligible	0		1	0	0
+603	eligible	0		1	0	0
+604	eligible	0		1	0	0
+605	eligible	0		1	0	0
+606	eligible	0		1	0	0
+607	eligible	0		1	0	0
+608	eligible	0		1	0	0
+609	eligible	0		1	0	0
+610	eligible	0		1	0	0
+611	eligible	0		1	0	0
+612	eligible	0		1	0	0
+613	eligible	0		1	0	0
+614	eligible	0		1	0	0
+615	eligible	0		1	0	0
+616	eligible	0		1	0	0
+617	eligible	0		1	0	0
+618	eligible	0		1	0	0
+619	eligible	0		1	0	0
+620	eligible	0		1	0	0
+621	eligible	0		1	0	0
+622	eligible	0		1	0	0
+623	eligible	0		1	0	0
+624	eligible	0		1	0	0
+625	eligible	0		1	0	0
+626	eligible	0		1	0	0
+627	eligible	0		1	0	0
+628	eligible	0		1	0	0
+629	eligible	0		1	0	0
+630	eligible	0		1	0	0
+631	eligible	0		1	0	0
+632	eligible	0		1	0	0
+633	eligible	0		1	0	0
+634	eligible	0		1	0	0
+635	eligible	0		1	0	0
+636	eligible	0		1	0	0
+637	eligible	0		1	0	0
+638	eligible	0		1	0	0
+639	eligible	0		1	1	0
+640	eligible	0		1	0	0
+641	eligible	0		1	0	0
+642	eligible	0		1	0	0
+643	eligible	0		1	0	0
+644	eligible	0		1	0	0
+645	eligible	0		1	0	0
+646	eligible	0		1	0	0
+647	eligible	0		1	0	0
+648	eligible	0		1	0	0
+649	eligible	0		1	0	0
+650	eligible	0		1	0	0
+651	eligible	0		1	0	1
+652	eligible	0		1	0	0
+653	eligible	0		1	0	0
+654	eligible	0		1	0	0
+655	eligible	0		1	0	0
+656	eligible	0		1	0	0
+657	eligible	0		1	0	0
+658	eligible	0		1	0	0
+659	eligible	0		1	0	0
+660	eligible	0		1	0	0
+661	eligible	0		1	0	0
+662	eligible	0		1	0	0
+663	eligible	0		1	0	0
+664	eligible	0		1	0	0
+665	eligible	0		1	0	0
+666	eligible	0		1	0	0
+667	eligible	0		1	0	0
+668	eligible	0		1	0	0
+669	not in every isoform	0		0	0	0
+670	not in every isoform	0		0	0	0
+671	not in every isoform	0		0	0	0
+672	not in every isoform	0		0	0	0
+673	not in every isoform	0		0	0	0
+674	not in every isoform	0		0	0	0
+675	not in every isoform	0		0	0	0
+676	not in every isoform	0		0	0	0
+677	not in every isoform	0		0	0	0
+678	not in every isoform	117	ADFGH	0	0	0
+679	not in every isoform	117	ADFGH	0	0	0
+680	not in every isoform	117	ADFGH	0	0	0
+681	not in every isoform	117	ADFGH	0	0	0
+682	not in every isoform	117	ADFGH	0	0	0
+683	not in every isoform	117	ADFGH	0	0	0
+684	not in every isoform	117	ADFGH	0	0	0
+685	not in every isoform	117	ADFGH	0	0	0
+686	not in every isoform	117	ADFGH	0	0	0
+687	not in every isoform	117	ADFGH	0	0	0
+688	not in every isoform	117	ADFGH	0	0	0
+689	not in every isoform	117	ADFGH	0	0	0
+690	not in every isoform	117	ADFGH	0	0	0
+691	not in every isoform	117	ADFGH	0	0	0
+692	not in every isoform	117	ADFGH	0	0	0
+693	not in every isoform	117	ADFGH	0	0	0
+694	not in every isoform	117	ADFGH	0	0	0
+695	not in every isoform	117	ADFGH	0	0	0
+696	not in every isoform	117	ADFGH	0	0	0
+697	not in every isoform	117	ADFGH	0	0	0
+698	not in every isoform	117	ADFGH	0	0	0
+699	not in every isoform	117	ADFGH	0	0	0
+700	not in every isoform	117	ADFGH	0	0	0
+701	not in every isoform	117	ADFGH	0	0	0
+702	not in every isoform	117	ADFGH	0	0	0
+703	not in every isoform	117	ADFGH	0	0	0
+704	not in every isoform	0		0	0	0
+705	not in every isoform	0		0	0	0
+706	not in every isoform	0		0	0	0
+707	not in every isoform	0		0	0	0
+708	not in every isoform	0		0	0	0
+709	not in every isoform	0		0	0	0
+710	not in every isoform	0		0	0	0
+711	not in every isoform	0		0	0	0
+712	not in every isoform	0		0	0	0
+713	not in every isoform	0		0	0	0
+714	not in every isoform	0		0	0	0
+715	not in every isoform	0		0	0	0
+716	not in every isoform	0		0	0	0
+717	not in every isoform	0		0	0	0
+718	not in every isoform	0		0	0	0
+719	not in every isoform	0		0	0	0
+720	not in every isoform	0		0	0	0
+721	not in every isoform	0		0	0	0
+722	not in every isoform	0		0	0	0
+723	not in every isoform	0		0	0	0
+724	not in every isoform	0		0	0	0
+725	not in every isoform	0		0	0	0
+726	not in every isoform	0		0	0	0
+727	not in every isoform	0		0	0	0
+728	not in every isoform	0		0	0	0
+729	not in every isoform	0		0	0	0
+730	not in every isoform	0		0	0	0
+731	not in every isoform	0		0	0	0
+732	not in every isoform	0		0	0	0
+733	not in every isoform	0		0	0	0
+734	not in every isoform	0		0	0	0
+735	not in every isoform	0		0	0	0
+736	not in every isoform	0		0	0	0
+737	not in every isoform	0		0	0	0
+738	not in every isoform	0		0	0	0
+739	not in every isoform	0		0	0	0
+740	not in every isoform	0		0	0	0
+741	not in every isoform	0		0	0	0
+742	not in every isoform	0		0	0	0
+743	not in every isoform	0		0	0	0
+744	not in every isoform	0		0	0	0
+745	not in every isoform	0		0	0	0
+746	not in every isoform	0		0	0	0
+747	not in every isoform	0		0	0	0
+748	not in every isoform	0		0	0	0
+749	not in every isoform	0		0	0	0
+750	not in every isoform	0		0	0	0
+751	not in every isoform	0		0	0	0
+752	not in every isoform	0		0	0	0
+753	not in every isoform	0		0	0	0
+754	not in every isoform	0		0	0	0
+755	not in every isoform	0		0	0	0
+756	not in every isoform	0		0	0	0
+757	not in every isoform	0		0	0	0
+758	not in every isoform	16	F	0	0	0
+759	not in every isoform	16	F	0	0	0
+760	not in every isoform	16	F	0	0	0
+761	not in every isoform	16	F	0	0	0
+762	not in every isoform	16	F	0	0	0
+763	not in every isoform	16	F	0	0	0
+764	not in every isoform	16	F	0	0	0
+765	not in every isoform	16	F	0	0	0
+766	not in every isoform	16	F	0	0	0
+767	not in every isoform	16	F	0	0	0
+768	not in every isoform	16	F	0	0	0
+769	not in every isoform	16	F	0	0	0
+770	not in every isoform	16	F	0	0	0
+771	not in every isoform	16	F	0	0	0
+772	not in every isoform	16	F	0	0	0
+773	not in every isoform	16	F	0	0	0
+774	not in every isoform	16	F	0	0	0
+775	not in every isoform	16	F	0	0	0
+776	not in every isoform	16	F	0	0	0
+777	not in every isoform	16	F	0	0	0
+778	not in every isoform	16	F	0	0	0
+779	not in every isoform	16	F	0	0	0
+780	not in every isoform	16	F	0	0	0
+781	not in every isoform	16	F	0	0	0
+782	not in every isoform	16	F	0	0	0
+783	not in every isoform	0		0	0	0
+784	not in every isoform	0		0	0	0
+785	not in every isoform	0		0	0	0
+786	not in every isoform	0		0	0	0
+787	not in every isoform	0		0	0	0
+788	not in every isoform	0		0	0	0
+789	not in every isoform	0		0	0	0
+790	not in every isoform	0		0	0	0
+791	not in every isoform	0		0	0	0
+792	not in every isoform	0		0	0	0
+793	not in every isoform	0		0	0	0
+794	not in every isoform	0		0	0	0
+795	not in every isoform	0		0	0	0
+796	not in every isoform	0		0	0	0
+797	not in every isoform	0		0	0	0
+798	not in every isoform	0		0	0	0
+799	not in every isoform	0		0	0	0
+800	not in every isoform	0		0	0	0
+801	not in every isoform	0		0	0	0
+802	not in every isoform	0		0	0	0
+803	not in every isoform	0		0	0	0
+804	not in every isoform	0		0	0	0
+805	not in every isoform	0		0	0	0
+806	not in every isoform	0		0	0	0
+807	not in every isoform	0		0	0	0
+808	not in every isoform	0		0	0	0
+809	not in every isoform	0		0	0	0
+810	not in every isoform	0		0	0	0
+811	not in every isoform	0		0	0	0
+812	not in every isoform	0		0	0	0
+813	not in every isoform	0		0	0	0
+814	not in every isoform	0		0	0	0
+815	not in every isoform	0		0	0	0
+816	not in every isoform	0		0	0	0
+817	not in every isoform	0		0	0	0
+818	not in every isoform	0		0	0	0
+819	not in every isoform	0		0	0	0
+820	not in every isoform	0		0	0	0
+821	not in every isoform	0		0	0	0
+822	not in every isoform	0		0	0	0
+823	not in every isoform	0		0	0	0
+824	not in every isoform	0		0	0	0
+825	not in every isoform	0		0	0	0
+826	not in every isoform	0		0	0	0
+827	not in every isoform	0		0	0	0
+828	not in every isoform	0		0	0	0
+829	not in every isoform	0		0	0	0
+830	not in every isoform	0		0	0	0
+831	not in every isoform	0		0	0	0
+832	not in every isoform	0		0	0	0
+833	not in every isoform	0		0	0	0
+834	not in every isoform	0		0	0	0
+835	not in every isoform	0		0	0	0
+836	not in every isoform	0		0	0	0
+837	not in every isoform	0		0	0	0
+838	not in every isoform	0		0	0	0
+839	not in every isoform	0		0	0	0
+840	not in every isoform	0		0	0	0
+841	not in every isoform	0		0	0	0
+842	not in every isoform	0		0	0	0
+843	not in every isoform	0		0	0	0
+844	not in every isoform	0		0	0	0
+845	not in every isoform	0		0	0	0
+846	not in every isoform	0		0	0	0
+847	not in every isoform	0		0	0	0
+848	not in every isoform	0		0	0	0
+849	not in every isoform	0		0	0	0
+850	not in every isoform	0		0	0	0
+851	not in every isoform	0		0	0	0
+852	not in every isoform	0		0	0	0
+853	not in every isoform	0		0	0	0
+854	not in every isoform	0		0	0	0
+855	not in every isoform	0		0	0	0
+856	not in every isoform	0		0	0	0
+857	not in every isoform	0		0	0	0
+858	not in every isoform	0		0	0	0
+859	not in every isoform	0		0	0	0
+860	not in every isoform	0		0	0	0
+861	not in every isoform	0		0	0	0
+862	not in every isoform	0		0	0	0
+863	not in every isoform	0		0	0	0
+864	not in every isoform	0		0	0	0
+865	not in every isoform	0		0	0	0
+866	not in every isoform	0		0	0	0
+867	not in every isoform	0		0	0	0
+868	not in every isoform	0		0	0	0
+869	not in every isoform	0		0	0	0
+870	not in every isoform	0		0	0	0
+871	not in every isoform	0		0	0	0
+872	not in every isoform	0		0	0	0
+873	not in every isoform	0		0	0	0
+874	not in every isoform	0		0	0	0
+875	not in every isoform	0		0	0	0
+876	not in every isoform	0		0	0	0
+877	not in every isoform	0		0	0	0
+878	not in every isoform	0		0	0	0
+879	not in every isoform	0		0	0	0
+880	not in every isoform	0		0	0	0
+881	not in every isoform	0		0	0	0
+882	not in every isoform	0		0	0	0
+883	not in every isoform	0		0	0	0
+884	not in every isoform	0		0	0	0
+885	not in every isoform	0		0	0	0
+886	not in every isoform	0		0	0	0
+887	not in every isoform	0		0	0	0
+888	not in every isoform	0		0	0	0
+889	not in every isoform	0		0	0	0
+890	not in every isoform	0		0	0	0
+891	not in every isoform	0		0	0	0
+892	not in every isoform	0		0	0	0
+893	not in every isoform	0		0	0	0
+894	not in every isoform	0		0	0	0
+895	not in every isoform	0		0	0	0
+896	not in every isoform	0		0	0	0
+897	not in every isoform	0		0	0	0
+898	not in every isoform	0		0	0	0
+899	not in every isoform	0		0	0	0
+900	not in every isoform	0		0	0	0
+901	not in every isoform	0		0	0	0
+902	not in every isoform	0		0	0	0
+903	not in every isoform	0		0	0	0
+904	not in every isoform	0		0	0	0
+905	not in every isoform	0		0	0	0
+906	not in every isoform	0		0	0	0
+907	not in every isoform	0		0	0	0
+908	not in every isoform	0		0	0	0
+909	not in every isoform	0		0	0	0
+910	not in every isoform	0		0	0	0
+911	not in every isoform	0		0	0	0
+912	not in every isoform	0		0	0	0
+913	not in every isoform	0		0	0	0
+914	not in every isoform	0		0	0	0
+915	not in every isoform	0		0	0	0
+916	not in every isoform	0		0	0	0
+917	not in every isoform	0		0	0	0
+918	not in every isoform	0		0	0	0
+919	not in every isoform	0		0	0	0
+920	not in every isoform	0		0	0	0
+921	not in every isoform	0		0	0	0
+922	not in every isoform	0		0	0	0
+923	not in every isoform	0		0	0	0
+924	not in every isoform	0		0	0	0
+925	not in every isoform	0		0	0	0
+926	not in every isoform	0		0	0	0
+927	not in every isoform	0		0	0	0
+928	not in every isoform	0		0	0	0
+929	not in every isoform	0		0	0	0
+930	not in every isoform	0		0	0	0
+931	not in every isoform	0		0	0	0
+932	not in every isoform	0		0	0	0
+933	not in every isoform	0		0	0	0
+934	not in every isoform	0		0	0	0
+935	not in every isoform	0		0	0	0
+936	not in every isoform	0		0	0	0
+937	not in every isoform	0		0	0	0
+938	not in every isoform	0		0	0	0
+939	not in every isoform	0		0	0	0
+940	not in every isoform	0		0	0	0
+941	not in every isoform	0		0	0	0
+942	not in every isoform	0		0	0	0
+943	not in every isoform	0		0	0	0
+944	not in every isoform	0		0	0	0
+945	not in every isoform	0		0	0	0
+946	not in every isoform	0		0	0	0
+947	not in every isoform	0		0	0	0
+948	not in every isoform	0		0	0	0
+949	not in every isoform	0		0	0	0
+950	not in every isoform	0		0	0	0
+951	not in every isoform	0		0	0	0
+952	not in every isoform	0		0	0	0
+953	not in every isoform	0		0	0	0
+954	not in every isoform	0		0	0	0
+955	not in every isoform	0		0	0	0
+956	not in every isoform	0		0	0	0
+957	not in every isoform	0		0	0	0
+958	not in every isoform	0		0	0	0
+959	not in every isoform	0		0	0	0
+960	not in every isoform	0		0	0	0
+961	not in every isoform	0		0	0	0
+962	not in every isoform	0		0	0	0
+963	not in every isoform	0		0	0	0
+964	not in every isoform	0		0	0	0
+965	not in every isoform	0		0	0	0
+966	not in every isoform	0		0	0	0
+967	not in every isoform	0		0	0	0
+968	not in every isoform	0		0	0	0
+969	not in every isoform	0		0	0	0
+970	not in every isoform	0		0	0	0
+971	not in every isoform	0		0	0	0
+972	not in every isoform	0		0	0	0
+973	not in every isoform	0		0	0	0
+974	not in every isoform	0		0	0	0
+975	not in every isoform	0		0	0	0
+976	not in every isoform	0		0	0	0
+977	not in every isoform	0		0	0	0
+978	not in every isoform	0		0	0	0
+979	not in every isoform	0		0	0	0
+980	not in every isoform	0		0	0	0
+981	not in every isoform	0		0	0	0
+982	not in every isoform	0		0	0	0
+983	not in every isoform	0		0	0	0
+984	not in every isoform	0		0	0	0
+985	not in every isoform	0		0	0	0
+986	not in every isoform	0		0	0	0
+987	not in every isoform	0		0	0	0
+988	not in every isoform	0		0	0	0
+989	not in every isoform	0		0	0	0
+990	not in every isoform	0		0	0	0
+991	not in every isoform	0		0	0	0
+992	not in every isoform	0		0	0	0
+993	not in every isoform	0		0	0	0
+994	not in every isoform	0		0	0	0
+995	not in every isoform	0		0	0	0
+996	not in every isoform	0		0	0	0
+997	not in every isoform	0		0	0	0
+998	not in every isoform	0		0	0	0
+999	not in every isoform	0		0	0	0
+1000	not in every isoform	0		0	0	0
+1001	not in every isoform	0		0	0	0
+1002	not in every isoform	0		0	0	0
+1003	not in every isoform	0		0	0	0
+1004	not in every isoform	0		0	0	0
+1005	not in every isoform	0		0	0	0
+1006	not in every isoform	0		0	0	0
+1007	not in every isoform	0		0	0	0
+1008	not in every isoform	0		0	0	0
+1009	not in every isoform	0		0	0	0
+1010	eligible	0		1	1	1
+1011	eligible	0		1	0	0
+1012	eligible	0		1	0	0
+1013	eligible	0		1	0	0
+1014	eligible	0		1	0	0
+1015	eligible	0		1	0	0
+1016	eligible	0		1	0	0
+1017	eligible	0		1	0	0
+1018	eligible	0		1	0	0
+1019	eligible	0		1	0	0
+1020	overlaps a founder variant	16	F	1	0	0
+1021	overlaps a founder variant	16	F	1	0	0
+1022	overlaps a founder variant	16	F	1	0	0
+1023	overlaps a founder variant	16	F	1	0	0
+1024	overlaps a founder variant	16	F	1	0	0
+1025	overlaps a founder variant	16	F	1	0	0
+1026	overlaps a founder variant	16	F	1	0	0
+1027	overlaps a founder variant	16	F	1	0	0
+1028	overlaps a founder variant	16	F	1	0	0
+1029	overlaps a founder variant	16	F	1	0	0
+1030	overlaps a founder variant	16	F	1	0	0
+1031	overlaps a founder variant	16	F	1	0	0
+1032	overlaps a founder variant	16	F	1	0	0
+1033	overlaps a founder variant	16	F	1	0	0
+1034	overlaps a founder variant	16	F	1	0	0
+1035	overlaps a founder variant	16	F	1	0	0
+1036	overlaps a founder variant	16	F	1	0	0
+1037	overlaps a founder variant	16	F	1	0	0
+1038	overlaps a founder variant	16	F	1	0	0
+1039	overlaps a founder variant	16	F	1	0	0
+1040	overlaps a founder variant	16	F	1	0	0
+1041	overlaps a founder variant	16	F	1	0	0
+1042	overlaps a founder variant	16	F	1	0	0
+1043	overlaps a founder variant	16	F	1	0	0
+1044	overlaps a founder variant	16	F	1	0	0
+1045	eligible	0		1	0	0
+1046	eligible	0		1	0	0
+1047	eligible	0		1	0	0
+1048	eligible	0		1	0	0
+1049	eligible	0		1	0	0
+1050	eligible	0		1	0	0
+1051	eligible	0		1	0	0
+1052	eligible	0		1	0	0
+1053	eligible	0		1	0	0
+1054	eligible	0		1	0	0
+1055	eligible	0		1	0	0
+1056	eligible	0		1	0	0
+1057	eligible	0		1	0	0
+1058	eligible	0		1	0	0
+1059	eligible	0		1	0	0
+1060	eligible	0		1	0	0
+1061	eligible	0		1	0	0
+1062	eligible	0		1	0	0
+1063	eligible	0		1	0	0
+1064	eligible	0		1	0	0
+1065	eligible	0		1	0	0
+1066	eligible	0		1	0	0
+1067	eligible	0		1	0	0
+1068	eligible	0		1	0	0
+1069	eligible	0		1	0	0
+1070	eligible	0		1	0	0
+1071	eligible	0		1	0	0
+1072	eligible	0		1	0	0
+1073	eligible	0		1	0	0
+1074	eligible	0		1	0	0
+1075	eligible	0		1	0	0
+1076	eligible	0		1	0	0
+1077	eligible	0		1	0	0
+1078	eligible	0		1	0	0
+1079	eligible	0		1	0	0
+1080	eligible	0		1	0	0
+1081	eligible	0		1	0	0
+1082	eligible	0		1	0	0
+1083	eligible	0		1	0	0
+1084	eligible	0		1	0	0
+1085	eligible	0		1	0	0
+1086	eligible	0		1	0	0
+1087	eligible	0		1	1	1
+1088	eligible	0		1	0	0
+1089	overlaps a founder variant	16	F	1	0	0
+1090	overlaps a founder variant	16	F	1	0	0
+1091	overlaps a founder variant	16	F	1	0	0
+1092	overlaps a founder variant	16	F	1	0	0
+1093	overlaps a founder variant	16	F	1	0	0
+1094	overlaps a founder variant	16	F	1	0	0
+1095	overlaps a founder variant	16	F	1	0	0
+1096	overlaps a founder variant	16	F	1	0	0
+1097	overlaps a founder variant	16	F	1	0	0
+1098	overlaps a founder variant	16	F	1	0	0
+1099	overlaps a founder variant	16	F	1	0	0
+1100	overlaps a founder variant	16	F	1	0	0
+1101	overlaps a founder variant	52	DFG	1	0	0
+1102	overlaps a founder variant	52	DFG	1	0	0
+1103	overlaps a founder variant	52	DFG	1	0	0
+1104	overlaps a founder variant	52	DFG	1	0	0
+1105	overlaps a founder variant	52	DFG	1	0	0
+1106	overlaps a founder variant	52	DFG	1	0	0
+1107	overlaps a founder variant	52	DFG	1	0	0
+1108	overlaps a founder variant	52	DFG	1	0	0
+1109	overlaps a founder variant	52	DFG	1	0	0
+1110	overlaps a founder variant	52	DFG	1	0	0
+1111	overlaps a founder variant	52	DFG	1	0	0
+1112	overlaps a founder variant	52	DFG	1	0	0
+1113	overlaps a founder variant	52	DFG	1	0	0
+1114	overlaps a founder variant	52	DFG	1	0	0
+1115	overlaps a founder variant	52	DFG	1	0	0
+1116	overlaps a founder variant	52	DFG	1	0	0
+1117	overlaps a founder variant	52	DFG	1	0	0
+1118	overlaps a founder variant	52	DFG	1	0	0
+1119	overlaps a founder variant	52	DFG	1	0	0
+1120	overlaps a founder variant	52	DFG	1	0	0
+1121	overlaps a founder variant	52	DFG	1	0	0
+1122	overlaps a founder variant	52	DFG	1	0	0
+1123	overlaps a founder variant	52	DFG	1	0	0
+1124	overlaps a founder variant	52	DFG	1	0	0
+1125	overlaps a founder variant	52	DFG	1	0	0
+1126	overlaps a founder variant	16	F	1	0	0
+1127	overlaps a founder variant	16	F	1	0	0
+1128	overlaps a founder variant	16	F	1	0	0
+1129	overlaps a founder variant	16	F	1	0	0
+1130	overlaps a founder variant	16	F	1	0	0
+1131	overlaps a founder variant	16	F	1	0	0
+1132	overlaps a founder variant	16	F	1	0	0
+1133	overlaps a founder variant	16	F	1	0	0
+1134	overlaps a founder variant	16	F	1	0	0
+1135	overlaps a founder variant	16	F	1	0	0
+1136	overlaps a founder variant	16	F	1	0	0
+1137	overlaps a founder variant	16	F	1	0	0
+1138	overlaps a founder variant	16	F	1	0	0
+1139	overlaps a founder variant	16	F	1	0	0
+1140	overlaps a founder variant	16	F	1	0	0
+1141	overlaps a founder variant	16	F	1	0	0
+1142	overlaps a founder variant	16	F	1	0	0
+1143	overlaps a founder variant	16	F	1	0	0
+1144	overlaps a founder variant	16	F	1	0	0
+1145	overlaps a founder variant	16	F	1	0	0
+1146	overlaps a founder variant	16	F	1	0	0
+1147	overlaps a founder variant	16	F	1	0	0
+1148	overlaps a founder variant	16	F	1	0	0
+1149	overlaps a founder variant	16	F	1	0	0
+1150	overlaps a founder variant	16	F	1	0	0
+1151	overlaps a founder variant	16	F	1	0	0
+1152	overlaps a founder variant	16	F	1	0	0
+1153	overlaps a founder variant	16	F	1	0	0
+1154	overlaps a founder variant	16	F	1	0	0
+1155	overlaps a founder variant	16	F	1	0	0
+1156	overlaps a founder variant	16	F	1	0	0
+1157	overlaps a founder variant	16	F	1	0	0
+1158	overlaps a founder variant	16	F	1	0	0
+1159	overlaps a founder variant	16	F	1	0	0
+1160	overlaps a founder variant	16	F	1	0	0
+1161	overlaps a founder variant	16	F	1	0	0
+1162	overlaps a founder variant	16	F	1	0	0
+1163	overlaps a founder variant	16	F	1	0	0
+1164	overlaps a founder variant	16	F	1	1	0
+1165	eligible	0		1	0	1
+1166	eligible	0		1	0	0
+1167	eligible	0		1	0	0
+1168	eligible	0		1	0	0
+1169	eligible	0		1	0	0
+1170	eligible	0		1	0	0
+1171	eligible	0		1	0	0
+1172	eligible	0		1	0	0
+1173	eligible	0		1	0	0
+1174	eligible	0		1	0	0
+1175	eligible	0		1	0	0
+1176	eligible	0		1	0	0
+1177	eligible	0		1	0	0
+1178	eligible	0		1	0	0
+1179	overlaps a founder variant	16	F	1	0	0
+1180	overlaps a founder variant	16	F	1	0	0
+1181	overlaps a founder variant	16	F	1	0	0
+1182	overlaps a founder variant	16	F	1	0	0
+1183	overlaps a founder variant	16	F	1	0	0
+1184	overlaps a founder variant	16	F	1	0	0
+1185	overlaps a founder variant	16	F	1	0	0
+1186	overlaps a founder variant	16	F	1	0	0
+1187	overlaps a founder variant	16	F	1	0	0
+1188	overlaps a founder variant	16	F	1	0	0
+1189	overlaps a founder variant	16	F	1	0	0
+1190	overlaps a founder variant	16	F	1	0	0
+1191	overlaps a founder variant	16	F	1	0	0
+1192	overlaps a founder variant	16	F	1	0	0
+1193	overlaps a founder variant	16	F	1	0	0
+1194	overlaps a founder variant	16	F	1	0	0
+1195	overlaps a founder variant	16	F	1	0	0
+1196	overlaps a founder variant	16	F	1	0	0
+1197	overlaps a founder variant	16	F	1	0	0
+1198	overlaps a founder variant	16	F	1	0	0
+1199	overlaps a founder variant	16	F	1	0	0
+1200	overlaps a founder variant	16	F	1	0	0
+1201	overlaps a founder variant	16	F	1	0	0
+1202	overlaps a founder variant	16	F	1	0	0
+1203	overlaps a founder variant	16	F	1	0	0
+1204	eligible	0		1	0	0
+1205	eligible	0		1	0	0
+1206	eligible	0		1	0	0
+1207	eligible	0		1	0	0
+1208	eligible	0		1	0	0
+1209	eligible	0		1	0	0
+1210	eligible	0		1	0	0
+1211	eligible	0		1	0	0
+1212	eligible	0		1	0	0
+1213	eligible	0		1	0	0
+1214	eligible	0		1	0	0
+1215	eligible	0		1	0	0
+1216	eligible	0		1	0	0
+1217	eligible	0		1	0	0
+1218	eligible	0		1	0	0
+1219	eligible	0		1	0	0
+1220	eligible	0		1	0	0
+1221	eligible	0		1	0	0
+1222	eligible	0		1	0	0
+1223	eligible	0		1	0	0
+1224	eligible	0		1	0	0
+1225	eligible	0		1	0	0
+1226	eligible	0		1	0	0
+1227	overlaps a founder variant	36	DG	1	0	0
+1228	overlaps a founder variant	36	DG	1	0	0
+1229	overlaps a founder variant	36	DG	1	0	0
+1230	overlaps a founder variant	36	DG	1	0	0
+1231	overlaps a founder variant	36	DG	1	0	0
+1232	overlaps a founder variant	36	DG	1	0	0
+1233	overlaps a founder variant	36	DG	1	0	0
+1234	overlaps a founder variant	36	DG	1	0	0
+1235	overlaps a founder variant	36	DG	1	0	0
+1236	overlaps a founder variant	36	DG	1	0	0
+1237	overlaps a founder variant	36	DG	1	0	0
+1238	overlaps a founder variant	36	DG	1	0	0
+1239	overlaps a founder variant	36	DG	1	0	0
+1240	overlaps a founder variant	36	DG	1	0	0
+1241	overlaps a founder variant	36	DG	1	1	0
+1242	overlaps a founder variant	36	DG	1	0	0
+1243	overlaps a founder variant	36	DG	1	0	0
+1244	overlaps a founder variant	36	DG	1	0	0
+1245	overlaps a founder variant	36	DG	1	0	0
+1246	overlaps a founder variant	36	DG	1	0	0
+1247	overlaps a founder variant	36	DG	1	0	0
+1248	overlaps a founder variant	36	DG	1	0	0
+1249	overlaps a founder variant	36	DG	1	0	0
+1250	overlaps a founder variant	36	DG	1	0	0
+1251	overlaps a founder variant	52	DFG	1	0	0
+1252	overlaps a founder variant	16	F	1	0	0
+1253	overlaps a founder variant	16	F	1	0	0
+1254	overlaps a founder variant	16	F	1	0	0
+1255	overlaps a founder variant	16	F	1	0	0
+1256	overlaps a founder variant	16	F	1	0	0
+1257	overlaps a founder variant	16	F	1	0	0
+1258	overlaps a founder variant	16	F	1	0	0
+1259	overlaps a founder variant	16	F	1	0	0
+1260	overlaps a founder variant	16	F	1	0	0
+1261	overlaps a founder variant	16	F	1	0	0
+1262	overlaps a founder variant	16	F	1	0	0
+1263	overlaps a founder variant	16	F	1	0	0
+1264	overlaps a founder variant	16	F	1	0	0
+1265	overlaps a founder variant	16	F	1	0	0
+1266	overlaps a founder variant	16	F	1	0	0
+1267	overlaps a founder variant	16	F	1	0	0
+1268	overlaps a founder variant	16	F	1	0	0
+1269	overlaps a founder variant	16	F	1	0	0
+1270	overlaps a founder variant	16	F	1	0	0
+1271	overlaps a founder variant	16	F	1	0	0
+1272	overlaps a founder variant	16	F	1	0	0
+1273	overlaps a founder variant	16	F	1	0	0
+1274	overlaps a founder variant	16	F	1	0	0
+1275	overlaps a founder variant	16	F	1	0	0
+1276	eligible	0		1	0	1
+1277	eligible	0		1	0	0
+1278	eligible	0		1	0	0
+1279	eligible	0		1	0	0
+1280	eligible	0		1	0	0
+1281	eligible	0		1	0	0
+1282	eligible	0		1	0	0
+1283	eligible	0		1	0	0
+1284	eligible	0		1	0	0
+1285	eligible	0		1	0	0
+1286	eligible	0		1	0	0
+1287	eligible	0		1	0	0
+1288	eligible	0		1	0	0
+1289	eligible	0		1	0	0
+1290	eligible	0		1	0	0
+1291	eligible	0		1	0	0
+1292	eligible	0		1	0	0
+1293	eligible	0		1	0	0
+1294	eligible	0		1	0	0
+1295	eligible	0		1	0	0
+1296	eligible	0		1	0	0
+1297	eligible	0		1	0	0
+1298	eligible	0		1	0	0
+1299	eligible	0		1	0	0
+1300	eligible	0		1	0	0
+1301	eligible	0		1	0	0
+1302	eligible	0		1	0	0
+1303	eligible	0		1	0	0
+1304	eligible	0		1	0	0
+1305	eligible	0		1	0	0
+1306	eligible	0		1	0	0
+1307	eligible	0		1	0	0
+1308	eligible	0		1	0	0
+1309	eligible	0		1	0	0
+1310	eligible	0		1	0	0
+1311	eligible	0		1	0	0
+1312	eligible	0		1	0	0
+1313	eligible	0		1	0	0
+1314	eligible	0		1	0	0
+1315	eligible	0		1	0	0
+1316	eligible	0		1	0	0
+1317	eligible	0		1	0	0
+1318	eligible	0		1	1	0
+1319	eligible	0		1	0	0
+1320	eligible	0		1	0	0
+1321	eligible	0		1	0	0
+1322	eligible	0		1	0	0
+1323	eligible	0		1	0	0
+1324	eligible	0		1	0	0
+1325	eligible	0		1	0	0
+1326	eligible	0		1	0	0
+1327	eligible	0		1	0	0
+1328	eligible	0		1	0	0
+1329	eligible	0		1	0	0
+1330	eligible	0		1	0	0
+1331	eligible	0		1	0	0
+1332	eligible	0		1	0	0
+1333	eligible	0		1	0	0
+1334	eligible	0		1	0	0
+1335	eligible	0		1	0	0
+1336	eligible	0		1	0	0
+1337	eligible	0		1	0	0
+1338	eligible	0		1	0	0
+1339	eligible	0		1	0	0
+1340	eligible	0		1	0	0
+1341	eligible	0		1	0	0
+1342	eligible	0		1	0	0
+1343	eligible	0		1	0	0
+1344	eligible	0		1	0	0
+1345	eligible	0		1	0	0
+1346	eligible	0		1	0	0
+1347	eligible	0		1	0	0
+1348	eligible	0		1	0	0
+1349	eligible	0		1	0	0
+1350	eligible	0		1	0	0
+1351	eligible	0		1	0	0
+1352	eligible	0		1	0	0
+1353	eligible	0		1	0	1
+1354	eligible	0		1	0	0
+1355	eligible	0		1	0	0
+1356	eligible	0		1	0	0
+1357	eligible	0		1	0	0
+1358	eligible	0		1	0	0
+1359	eligible	0		1	0	0
+1360	eligible	0		1	0	0
+1361	eligible	0		1	0	0
+1362	eligible	0		1	0	0
+1363	eligible	0		1	0	0
+1364	eligible	0		1	0	0
+1365	eligible	0		1	0	0
+1366	eligible	0		1	0	0
+1367	eligible	0		1	0	0
+1368	eligible	0		1	0	0
+1369	eligible	0		1	0	0
+1370	eligible	0		1	0	0
+1371	eligible	0		1	0	0
+1372	eligible	0		1	0	0
+1373	eligible	0		1	0	0
+1374	eligible	0		1	0	0
+1375	eligible	0		1	0	0
+1376	eligible	0		1	0	0
+1377	eligible	0		1	0	0
+1378	eligible	0		1	0	0
+1379	eligible	0		1	0	0
+1380	eligible	0		1	0	0
+1381	eligible	0		1	0	0
+1382	eligible	0		1	0	0
+1383	eligible	0		1	0	0
+1384	eligible	0		1	0	0
+1385	eligible	0		1	0	0
+1386	eligible	0		1	0	0
+1387	eligible	0		1	0	0
+1388	eligible	0		1	0	0
+1389	eligible	0		1	0	0
+1390	eligible	0		1	0	0
+1391	eligible	0		1	0	0
+1392	eligible	0		1	0	0
+1393	eligible	0		1	0	0
+1394	eligible	0		1	0	0
+1395	eligible	0		1	1	0
+1396	eligible	0		1	0	0
+1397	eligible	0		1	0	0
+1398	eligible	0		1	0	0
+1399	eligible	0		1	0	0
+1400	eligible	0		1	0	0
+1401	eligible	0		1	0	0
+1402	eligible	0		1	0	0
+1403	eligible	0		1	0	0
+1404	eligible	0		1	0	0
+1405	eligible	0		1	0	0
+1406	eligible	0		1	0	0
+1407	eligible	0		1	0	0
+1408	eligible	0		1	0	0
+1409	eligible	0		1	0	0
+1410	eligible	0		1	0	0
+1411	eligible	0		1	0	0
+1412	eligible	0		1	0	0
+1413	eligible	0		1	0	0
+1414	eligible	0		1	0	0
+1415	eligible	0		1	0	0
+1416	eligible	0		1	0	0
+1417	eligible	0		1	0	0
+1418	eligible	0		1	0	0
+1419	eligible	0		1	0	0
+1420	eligible	0		1	0	0
+1421	eligible	0		1	0	0
+1422	eligible	0		1	0	0
+1423	eligible	0		1	0	0
+1424	eligible	0		1	0	0
+1425	eligible	0		1	0	0
+1426	eligible	0		1	0	0
+1427	eligible	0		1	0	0
+1428	eligible	0		1	0	0
+1429	eligible	0		1	0	0
+1430	eligible	0		1	0	1
+1431	eligible	0		1	0	0
+1432	eligible	0		1	0	0
+1433	eligible	0		1	0	0
+1434	eligible	0		1	0	0
+1435	eligible	0		1	0	0
+1436	eligible	0		1	0	0
+1437	eligible	0		1	0	0
+1438	eligible	0		1	0	0
+1439	eligible	0		1	0	0
+1440	eligible	0		1	0	0
+1441	eligible	0		1	0	0
+1442	eligible	0		1	0	0
+1443	eligible	0		1	0	0
+1444	eligible	0		1	0	0
+1445	eligible	0		1	0	0
+1446	eligible	0		1	0	0
+1447	eligible	0		1	0	0
+1448	eligible	0		1	0	0
+1449	eligible	0		1	0	0
+1450	eligible	0		1	0	0
+1451	eligible	0		1	0	0
+1452	eligible	0		1	0	0
+1453	eligible	0		1	0	0
+1454	eligible	0		1	0	0
+1455	eligible	0		1	0	0
+1456	eligible	0		1	0	0
+1457	eligible	0		1	0	0
+1458	eligible	0		1	0	0
+1459	eligible	0		1	0	0
+1460	eligible	0		1	0	0
+1461	eligible	0		1	0	0
+1462	eligible	0		1	0	0
+1463	eligible	0		1	0	0
+1464	eligible	0		1	0	0
+1465	eligible	0		1	0	0
+1466	eligible	0		1	0	0
+1467	eligible	0		1	0	0
+1468	eligible	0		1	0	0
+1469	eligible	0		1	0	0
+1470	eligible	0		1	0	0
+1471	eligible	0		1	0	0
+1472	eligible	0		1	1	0
+1473	eligible	0		1	0	0
+1474	eligible	0		1	0	0
+1475	eligible	0		1	0	0
+1476	eligible	0		1	0	0
+1477	eligible	0		1	0	0
+1478	eligible	0		1	0	0
+1479	eligible	0		1	0	0
+1480	eligible	0		1	0	0
+1481	eligible	0		1	0	0
+1482	eligible	0		1	0	0
+1483	eligible	0		1	0	0
+1484	eligible	0		1	0	0
+1485	eligible	0		1	0	0
+1486	eligible	0		1	0	0
+1487	eligible	0		1	0	0
+1488	eligible	0		1	0	0
+1489	eligible	0		1	0	0
+1490	eligible	0		1	0	0
+1491	eligible	0		1	0	0
+1492	eligible	0		1	0	0
+1493	eligible	0		1	0	0
+1494	eligible	0		1	0	0
+1495	eligible	0		1	0	0
+1496	eligible	0		1	0	0
+1497	eligible	0		1	0	0
+1498	eligible	0		1	0	0
+1499	eligible	0		1	0	0
+1500	eligible	0		1	0	0
+1501	eligible	0		1	0	0
+1502	eligible	0		1	0	0
+1503	eligible	0		1	0	0
+1504	eligible	0		1	0	0
+1505	eligible	0		1	0	0
+1506	eligible	0		1	0	0
+1507	eligible	0		1	0	1
+1508	eligible	0		1	0	0
+1509	eligible	0		1	0	0
+1510	eligible	0		1	0	0
+1511	eligible	0		1	0	0
+1512	eligible	0		1	0	0
+1513	eligible	0		1	0	0
+1514	eligible	0		1	0	0
+1515	eligible	0		1	0	0
+1516	eligible	0		1	0	0
+1517	eligible	0		1	0	0
+1518	eligible	0		1	0	0
+1519	eligible	0		1	0	0
+1520	eligible	0		1	0	0
+1521	eligible	0		1	0	0
+1522	eligible	0		1	0	0
+1523	overlaps a founder variant	36	DG	1	0	0
+1524	overlaps a founder variant	36	DG	1	0	0
+1525	overlaps a founder variant	36	DG	1	0	0
+1526	overlaps a founder variant	36	DG	1	0	0
+1527	overlaps a founder variant	36	DG	1	0	0
+1528	overlaps a founder variant	36	DG	1	0	0
+1529	overlaps a founder variant	36	DG	1	0	0
+1530	overlaps a founder variant	36	DG	1	0	0
+1531	overlaps a founder variant	36	DG	1	0	0
+1532	overlaps a founder variant	36	DG	1	0	0
+1533	overlaps a founder variant	36	DG	1	0	0
+1534	overlaps a founder variant	36	DG	1	0	0
+1535	overlaps a founder variant	36	DG	1	0	0
+1536	overlaps a founder variant	36	DG	1	0	0
+1537	overlaps a founder variant	36	DG	1	0	0
+1538	overlaps a founder variant	36	DG	1	0	0
+1539	overlaps a founder variant	36	DG	1	0	0
+1540	overlaps a founder variant	36	DG	1	0	0
+1541	overlaps a founder variant	36	DG	1	0	0
+1542	overlaps a founder variant	36	DG	1	0	0
+1543	overlaps a founder variant	36	DG	1	0	0
+1544	overlaps a founder variant	36	DG	1	0	0
+1545	overlaps a founder variant	36	DG	1	0	0
+1546	overlaps a founder variant	36	DG	1	0	0
+1547	overlaps a founder variant	36	DG	1	0	0
+1548	overlaps a founder variant	36	DG	1	0	0
+1549	overlaps a founder variant	36	DG	1	1	0
+1550	overlaps a founder variant	36	DG	1	0	0
+1551	overlaps a founder variant	36	DG	1	0	0
+1552	overlaps a founder variant	36	DG	1	0	0
+1553	overlaps a founder variant	36	DG	1	0	0
+1554	overlaps a founder variant	36	DG	1	0	0
+1555	overlaps a founder variant	36	DG	1	0	0
+1556	overlaps a founder variant	36	DG	1	0	0
+1557	eligible	0		1	0	0
+1558	eligible	0		1	0	0
+1559	eligible	0		1	0	0
+1560	eligible	0		1	0	0
+1561	eligible	0		1	0	0
+1562	eligible	0		1	0	0
+1563	eligible	0		1	0	0
+1564	eligible	0		1	0	0
+1565	eligible	0		1	0	0
+1566	eligible	0		1	0	0
+1567	eligible	0		1	0	0
+1568	eligible	0		1	0	0
+1569	eligible	0		1	0	0
+1570	eligible	0		1	0	0
+1571	eligible	0		1	0	0
+1572	eligible	0		1	0	0
+1573	eligible	0		1	0	0
+1574	eligible	0		1	0	0
+1575	eligible	0		1	0	0
+1576	eligible	0		1	0	0
+1577	eligible	0		1	0	0
+1578	eligible	0		1	0	0
+1579	eligible	0		1	0	0
+1580	eligible	0		1	0	0
+1581	eligible	0		1	0	0
+1582	eligible	0		1	0	0
+1583	eligible	0		1	0	0
+1584	eligible	0		1	0	1
+1585	eligible	0		1	0	0
+1586	eligible	0		1	0	0
+1587	eligible	0		1	0	0
+1588	eligible	0		1	0	0
+1589	eligible	0		1	0	0
+1590	eligible	0		1	0	0
+1591	eligible	0		1	0	0
+1592	eligible	0		1	0	0
+1593	eligible	0		1	0	0
+1594	eligible	0		1	0	0
+1595	eligible	0		1	0	0
+1596	eligible	0		1	0	0
+1597	eligible	0		1	0	0
+1598	eligible	0		1	0	0
+1599	eligible	0		1	0	0
+1600	eligible	0		1	0	0
+1601	eligible	0		1	0	0
+1602	eligible	0		1	0	0
+1603	eligible	0		1	0	0
+1604	eligible	0		1	0	0
+1605	eligible	0		1	0	0
+1606	eligible	0		1	0	0
+1607	eligible	0		1	0	0
+1608	eligible	0		1	0	0
+1609	eligible	0		1	0	0
+1610	overlaps a founder variant	52	DFG	1	0	0
+1611	overlaps a founder variant	52	DFG	1	0	0
+1612	overlaps a founder variant	52	DFG	1	0	0
+1613	overlaps a founder variant	52	DFG	1	0	0
+1614	overlaps a founder variant	52	DFG	1	0	0
+1615	overlaps a founder variant	52	DFG	1	0	0
+1616	overlaps a founder variant	117	ADFGH	1	0	0
+1617	overlaps a founder variant	117	ADFGH	1	0	0
+1618	overlaps a founder variant	117	ADFGH	1	0	0
+1619	overlaps a founder variant	117	ADFGH	1	0	0
+1620	overlaps a founder variant	117	ADFGH	1	0	0
+1621	overlaps a founder variant	117	ADFGH	1	0	0
+1622	overlaps a founder variant	117	ADFGH	1	0	0
+1623	overlaps a founder variant	117	ADFGH	1	0	0
+1624	overlaps a founder variant	117	ADFGH	1	0	0
+1625	overlaps a founder variant	117	ADFGH	1	0	0
+1626	overlaps a founder variant	117	ADFGH	1	1	0
+1627	overlaps a founder variant	117	ADFGH	1	0	0
+1628	overlaps a founder variant	117	ADFGH	1	0	0
+1629	overlaps a founder variant	117	ADFGH	1	0	0
+1630	overlaps a founder variant	117	ADFGH	1	0	0
+1631	overlaps a founder variant	117	ADFGH	1	0	0
+1632	overlaps a founder variant	117	ADFGH	1	0	0
+1633	overlaps a founder variant	117	ADFGH	1	0	0
+1634	overlaps a founder variant	117	ADFGH	1	0	0
+1635	overlaps a founder variant	117	ADFGH	1	0	0
+1636	overlaps a founder variant	117	ADFGH	1	0	0
+1637	overlaps a founder variant	117	ADFGH	1	0	0
+1638	overlaps a founder variant	117	ADFGH	1	0	0
+1639	overlaps a founder variant	117	ADFGH	1	0	0
+1640	overlaps a founder variant	117	ADFGH	1	0	0
+1641	eligible	0		1	0	0
+1642	eligible	0		1	0	0
+1643	eligible	0		1	0	0
+1644	eligible	0		1	0	0
+1645	eligible	0		1	0	0
+1646	eligible	0		1	0	0
+1647	eligible	0		1	0	0
+1648	eligible	0		1	0	0
+1649	eligible	0		1	0	0
+1650	eligible	0		1	0	0
+1651	eligible	0		1	0	0
+1652	eligible	0		1	0	0
+1653	eligible	0		1	0	0
+1654	eligible	0		1	0	0
+1655	eligible	0		1	0	0
+1656	eligible	0		1	0	0
+1657	eligible	0		1	0	0
+1658	eligible	0		1	0	0
+1659	eligible	0		1	0	0
+1660	eligible	0		1	0	0
+1661	eligible	0		1	0	1
+1662	eligible	0		1	0	0
+1663	eligible	0		1	0	0
+1664	eligible	0		1	0	0
+1665	eligible	0		1	0	0
+1666	eligible	0		1	0	0
+1667	eligible	0		1	0	0
+1668	eligible	0		1	0	0
+1669	eligible	0		1	0	0
+1670	eligible	0		1	0	0
+1671	eligible	0		1	0	0
+1672	eligible	0		1	0	0
+1673	eligible	0		1	0	0
+1674	eligible	0		1	0	0
+1675	eligible	0		1	0	0
+1676	eligible	0		1	0	0
+1677	eligible	0		1	0	0
+1678	eligible	0		1	0	0
+1679	eligible	0		1	0	0
+1680	eligible	0		1	0	0
+1681	eligible	0		1	0	0
+1682	eligible	0		1	0	0
+1683	eligible	0		1	0	0
+1684	eligible	0		1	0	0
+1685	eligible	0		1	0	0
+1686	eligible	0		1	0	0
+1687	eligible	0		1	0	0
+1688	eligible	0		1	0	0
+1689	eligible	0		1	0	0
+1690	eligible	0		1	0	0
+1691	eligible	0		1	0	0
+1692	eligible	0		1	0	0
+1693	eligible	0		1	0	0
+1694	eligible	0		1	0	0
+1695	eligible	0		1	0	0
+1696	eligible	0		1	0	0
+1697	eligible	0		1	0	0
+1698	eligible	0		1	0	0
+1699	eligible	0		1	0	0
+1700	eligible	0		1	0	0
+1701	overlaps a founder variant	52	DFG	1	0	0
+1702	overlaps a founder variant	52	DFG	1	0	0
+1703	overlaps a founder variant	52	DFG	1	1	0
+1704	overlaps a founder variant	52	DFG	1	0	0
+1705	overlaps a founder variant	52	DFG	1	0	0
+1706	overlaps a founder variant	52	DFG	1	0	0
+1707	overlaps a founder variant	52	DFG	1	0	0
+1708	overlaps a founder variant	52	DFG	1	0	0
+1709	overlaps a founder variant	52	DFG	1	0	0
+1710	overlaps a founder variant	52	DFG	1	0	0
+1711	overlaps a founder variant	52	DFG	1	0	0
+1712	overlaps a founder variant	52	DFG	1	0	0
+1713	overlaps a founder variant	52	DFG	1	0	0
+1714	overlaps a founder variant	52	DFG	1	0	0
+1715	overlaps a founder variant	52	DFG	1	0	0
+1716	overlaps a founder variant	52	DFG	1	0	0
+1717	overlaps a founder variant	53	ADFG	1	0	0
+1718	overlaps a founder variant	53	ADFG	1	0	0
+1719	overlaps a founder variant	53	ADFG	1	0	0
+1720	overlaps a founder variant	53	ADFG	1	0	0
+1721	overlaps a founder variant	53	ADFG	1	0	0
+1722	overlaps a founder variant	53	ADFG	1	0	0
+1723	overlaps a founder variant	53	ADFG	1	0	0
+1724	overlaps a founder variant	53	ADFG	1	0	0
+1725	overlaps a founder variant	53	ADFG	1	0	0
+1726	overlaps a founder variant	1	A	1	0	0
+1727	overlaps a founder variant	1	A	1	0	0
+1728	overlaps a founder variant	1	A	1	0	0
+1729	overlaps a founder variant	1	A	1	0	0
+1730	overlaps a founder variant	117	ADFGH	1	0	0
+1731	overlaps a founder variant	117	ADFGH	1	0	0
+1732	overlaps a founder variant	117	ADFGH	1	0	0
+1733	overlaps a founder variant	117	ADFGH	1	0	0
+1734	overlaps a founder variant	117	ADFGH	1	0	0
+1735	overlaps a founder variant	117	ADFGH	1	0	0
+1736	overlaps a founder variant	117	ADFGH	1	0	0
+1737	overlaps a founder variant	117	ADFGH	1	0	0
+1738	overlaps a founder variant	117	ADFGH	1	0	0
+1739	overlaps a founder variant	117	ADFGH	1	0	0
+1740	overlaps a founder variant	117	ADFGH	1	0	0
+1741	overlaps a founder variant	117	ADFGH	1	0	0
+1742	overlaps a founder variant	117	ADFGH	1	0	0
+1743	overlaps a founder variant	117	ADFGH	1	0	0
+1744	overlaps a founder variant	117	ADFGH	1	0	0
+1745	overlaps a founder variant	117	ADFGH	1	0	0
+1746	overlaps a founder variant	117	ADFGH	1	0	0
+1747	overlaps a founder variant	117	ADFGH	1	0	0
+1748	overlaps a founder variant	117	ADFGH	1	0	0
+1749	overlaps a founder variant	117	ADFGH	1	0	0
+1750	overlaps a founder variant	117	ADFGH	1	0	0
+1751	overlaps a founder variant	117	ADFGH	1	0	0
+1752	overlaps a founder variant	117	ADFGH	1	0	0
+1753	overlaps a founder variant	117	ADFGH	1	0	0
+1754	overlaps a founder variant	117	ADFGH	1	0	0
+1755	eligible	0		1	0	1
+1756	eligible	0		1	0	0
+1757	eligible	0		1	0	0
+1758	eligible	0		1	0	0
+1759	eligible	0		1	0	0
+1760	eligible	0		1	0	0
+1761	eligible	0		1	0	0
+1762	eligible	0		1	0	0
+1763	eligible	0		1	0	0
+1764	eligible	0		1	0	0
+1765	eligible	0		1	0	0
+1766	end margin	0		0	0	0
+1767	end margin	0		0	0	0
+1768	end margin	36	DG	0	0	0
+1769	end margin	36	DG	0	0	0
+1770	end margin	36	DG	0	0	0
+1771	end margin	36	DG	0	0	0
+1772	end margin	36	DG	0	0	0
+1773	end margin	36	DG	0	0	0
+1774	end margin	36	DG	0	0	0
+1775	end margin	36	DG	0	0	0
+1776	end margin	36	DG	0	0	0
+1777	end margin	36	DG	0	0	0
+1778	end margin	36	DG	0	0	0
+1779	end margin	36	DG	0	0	0
+1780	end margin	36	DG	0	0	0
+1781	end margin	36	DG	0	0	0
+1782	end margin	117	ADFGH	0	0	0
+1783	end margin	117	ADFGH	0	0	0
+1784	end margin	117	ADFGH	0	0	0
+1785	end margin	117	ADFGH	0	0	0
+1786	end margin	117	ADFGH	0	0	0
+1787	end margin	117	ADFGH	0	0	0
+1788	end margin	117	ADFGH	0	0	0
+1789	end margin	117	ADFGH	0	0	0
+1790	end margin	117	ADFGH	0	0	0
+1791	end margin	117	ADFGH	0	0	0
+1792	end margin	117	ADFGH	0	0	0
+1793	end margin	117	ADFGH	0	0	0
+1794	end margin	117	ADFGH	0	0	0
+1795	end margin	117	ADFGH	0	0	0
+1796	end margin	117	ADFGH	0	0	0
+1797	end margin	117	ADFGH	0	0	0
+1798	end margin	117	ADFGH	0	0	0
+1799	end margin	117	ADFGH	0	0	0
+1800	end margin	117	ADFGH	0	0	0
+1801	end margin	117	ADFGH	0	0	0
+1802	end margin	117	ADFGH	0	0	0
+1803	end margin	117	ADFGH	0	0	0
+1804	end margin	117	ADFGH	0	0	0
+1805	end margin	117	ADFGH	0	0	0
+1806	end margin	117	ADFGH	0	0	0
+1807	end margin	36	DG	0	0	0
+1808	end margin	36	DG	0	0	0
+1809	end margin	36	DG	0	0	0
+1810	end margin	36	DG	0	0	0
+1811	end margin	36	DG	0	0	0
+1812	end margin	36	DG	0	0	0
+1813	end margin	36	DG	0	0	0
+1814	end margin	36	DG	0	0	0
+1815	end margin	36	DG	0	0	0
+1816	end margin	36	DG	0	0	0
+1817	end margin	36	DG	0	0	0
+1818	end margin	36	DG	0	0	0
+1819	end margin	36	DG	0	0	0
+1820	end margin	36	DG	0	0	0
+1821	end margin	36	DG	0	0	0
+1822	end margin	36	DG	0	0	0
+1823	end margin	36	DG	0	0	0
+1824	end margin	36	DG	0	0	0
+1825	end margin	36	DG	0	0	0
+1826	end margin	36	DG	0	0	0
+1827	end margin	0		0	0	0
+1828	end margin	0		0	0	0
+1829	end margin	0		0	0	0
+1830	end margin	0		0	0	0
+1831	end margin	0		0	0	0
+1832	end margin	0		0	0	0
+1833	end margin	0		0	0	0
+1834	end margin	0		0	0	0
+1835	end margin	0		0	0	0
+1836	end margin	0		0	0	0
+1837	end margin	0		0	0	0
+1838	end margin	0		0	0	0
+1839	end margin	0		0	0	0
+1840	end margin	0		0	0	0
+1841	end margin	0		0	0	0
+1842	end margin	0		0	0	0
+1843	end margin	0		0	0	0
+1844	end margin	0		0	0	0
+1845	end margin	0		0	0	0
+1846	end margin	0		0	0	0
+1847	end margin	0		0	0	0
+1848	end margin	0		0	0	0
+1849	end margin	0		0	0	0
+1850	end margin	0		0	0	0
+1851	end margin	0		0	0	0
+1852	end margin	0		0	0	0
+1853	end margin	0		0	0	0
+1854	end margin	0		0	0	0
+1855	end margin	0		0	0	0
+1856	end margin	0		0	0	0
+1857	end margin	0		0	0	0
+1858	end margin	0		0	0	0
+1859	end margin	0		0	0	0
+1860	end margin	0		0	0	0
+1861	end margin	0		0	0	0
+1862	end margin	0		0	0	0
+1863	end margin	0		0	0	0
+1864	end margin	0		0	0	0
+1865	end margin	0		0	0	0

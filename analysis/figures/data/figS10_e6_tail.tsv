@@ -1,0 +1,9 @@
+# file: figS10_e6_tail.tsv
+# note: Per-gene residual-variance ratio to Salmon-pan in the truth-free scan; frac_gt2 / frac_gt4 = share of genes above 2x / 4x; q50 / q95 = quantiles of the ratio.
+cohort	read_length_bp	n_genes	pluck_frac_gt2	pluck_frac_gt4	pluck_q50	pluck_q95	salmon_ref_frac_gt2	salmon_ref_q50
+Keele kidney	50	9382	0.0734	0.029	1.117	2.494	0.0021	1.005
+Keele liver	50	7810	0.0928	0.0461	1.108	3.558	0.005	1.002
+Munger founders	100	8088	0.0361	0.0162	1.043	1.703	0.0009	1.0
+GSE199702 liver	101	9917	0.0423	0.0163	1.052	1.838	0.0016	1.0
+GSE199702 heart	101	10183	0.0403	0.0137	1.049	1.804	0.0012	1.0
+GSE199702 kidney	101	10676	0.0482	0.0151	1.057	1.959	0.0021	1.0

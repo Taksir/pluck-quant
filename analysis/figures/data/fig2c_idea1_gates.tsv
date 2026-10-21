@@ -1,0 +1,72 @@
+# file: fig2c_idea1_gates.tsv
+# note: Planted cis-eQTL simulation, one seed (20261008). Rows G1-G5 compare PLUCK (hybrid) with Salmon-pan against fixed thresholds; G5 compares them in the matched unit for each switch type.
+# note: Negative-control rows give the false-cis rate on the CC set for ref-unique probes, Salmon-ref, Salmon-pan and PLUCK, as stored.
+layout	gate	quantity	hybrid	salmon_pan	ratio	ci_lo	ci_hi	threshold	passed
+se50	G1a_fpr_cc	false-cis rate ratio hybrid/Salmon-pan	0.0131418	0.011828935395814377	1.103	0.886	1.36	1.25	True
+se50	G1a_fpr_do	false-cis rate ratio hybrid/Salmon-pan	0.00243977	0.003327283726557774	0.488	0.183	0.854	1.25	True
+se50	G1b_fdp_cc	FDP at BH 5%	0.0308908	0.027639971651311126	1.1176134689065724			0.05	True
+se50	G1b_fdp_do	FDP at BH 5%	0.0243161	0.03125	0.7781155015197568			0.05	True
+se50	G2_power_cc	detections hybrid/Salmon-pan	1349	1366	0.988			0.9	True
+se50	G2_power_cc	power at |beta|=0.25	0.142276	0.13883299798792756	1.0248026393307412				
+se50	G2_power_cc	power at |beta|=0.5	0.669355	0.6895161290322581	0.9707602339181285				
+se50	G2_power_cc	power at |beta|=0.75	0.939394	0.9497991967871486	0.9890447818566211				
+se50	G2_power_cc	power at |beta|=1	0.987705	0.9938900203665988	0.9937768744961032				
+se50	G3_effect_bias_cc	median effect-size shift at |beta|=0.25	-0.0004					0.05	True
+se50	G3_effect_bias_cc	median effect-size shift at |beta|=0.5	-0.0025					0.05	True
+se50	G3_effect_bias_cc	median effect-size shift at |beta|=0.75	0.0013					0.05	True
+se50	G3_effect_bias_cc	median effect-size shift at |beta|=1	0.0031					0.05	True
+se50	G4a_founder_median_cc	founder A median shift	0.0026					0.02	True
+se50	G4a_founder_median_cc	founder C median shift	-0.0006					0.02	True
+se50	G4a_founder_median_cc	founder D median shift	0.0006					0.02	True
+se50	G4a_founder_median_cc	founder E median shift	0.002					0.02	True
+se50	G4a_founder_median_cc	founder F median shift	0.0016					0.02	True
+se50	G4a_founder_median_cc	founder G median shift	0					0.02	True
+se50	G4a_founder_median_cc	founder H median shift	0.0001					0.02	True
+se50	G4b_founder_q90_bound_cc	founder A share beyond 0.05 log2	0.0193					0.1	True
+se50	G4b_founder_q90_bound_cc	founder C share beyond 0.05 log2	0.013					0.1	True
+se50	G4b_founder_q90_bound_cc	founder D share beyond 0.05 log2	0.0149					0.1	True
+se50	G4b_founder_q90_bound_cc	founder E share beyond 0.05 log2	0.019					0.1	True
+se50	G4b_founder_q90_bound_cc	founder F share beyond 0.05 log2	0.0156					0.1	True
+se50	G4b_founder_q90_bound_cc	founder G share beyond 0.05 log2	0.0199					0.1	True
+se50	G4b_founder_q90_bound_cc	founder H share beyond 0.05 log2	0.0173					0.1	True
+se50	G4c_pair_median_do	max |median| over 28 pairs	0.0056					0.02	True
+se50	G5_swM	switch-gene call rate hybrid / Salmon-pan (oracle unit)	0.2953	0.0022				1.25 x max(pan, 0.01)	False
+se50	G5_swR	switch-gene call rate hybrid / Salmon-pan (oracle unit)	0.083	0.0022				1.25 x max(pan, 0.01)	False
+se50	negative_control_cc	false-cis rate, ref-unique probes	0.156202		13.21				
+se50	negative_control_cc	false-cis rate, Salmon-ref	0.0606612		5.13				
+se50	negative_control_cc	false-cis rate, Salmon-pan	0.0118289		1.0				
+se50	negative_control_cc	false-cis rate, hybrid	0.0131418		1.11				
+se101	G1a_fpr_cc	false-cis rate ratio hybrid/Salmon-pan	0.0125267	0.012738853503184714	0.976	0.808	1.171	1.25	True
+se101	G1a_fpr_do	false-cis rate ratio hybrid/Salmon-pan	0.00243828	0.003327283726557774	0.488	0.183	0.792	1.25	True
+se101	G1b_fdp_cc	FDP at BH 5%	0.0294329	0.029535864978902954	0.9965131781355758			0.05	True
+se101	G1b_fdp_do	FDP at BH 5%	0.0239521	0.030726256983240222	0.779531845400109			0.05	True
+se101	G2_power_cc	detections hybrid/Salmon-pan	1352	1374	0.984			0.9	True
+se101	G2_power_cc	power at |beta|=0.25	0.143434	0.14084507042253522	1.0183838383838384				
+se101	G2_power_cc	power at |beta|=0.5	0.676768	0.6995967741935484	0.9673682065612902				
+se101	G2_power_cc	power at |beta|=0.75	0.935354	0.9538152610441767	0.9806443381180224				
+se101	G2_power_cc	power at |beta|=1	0.989754	0.9938900203665988	0.9958386522440205				
+se101	G3_effect_bias_cc	median effect-size shift at |beta|=0.25	-0.0001					0.05	True
+se101	G3_effect_bias_cc	median effect-size shift at |beta|=0.5	-0.0034					0.05	True
+se101	G3_effect_bias_cc	median effect-size shift at |beta|=0.75	0.0008					0.05	True
+se101	G3_effect_bias_cc	median effect-size shift at |beta|=1	0.0026					0.05	True
+se101	G4a_founder_median_cc	founder A median shift	0.003					0.02	True
+se101	G4a_founder_median_cc	founder C median shift	-0.0005					0.02	True
+se101	G4a_founder_median_cc	founder D median shift	0.0012					0.02	True
+se101	G4a_founder_median_cc	founder E median shift	0.0017					0.02	True
+se101	G4a_founder_median_cc	founder F median shift	0.0017					0.02	True
+se101	G4a_founder_median_cc	founder G median shift	-0.0002					0.02	True
+se101	G4a_founder_median_cc	founder H median shift	0.0011					0.02	True
+se101	G4b_founder_q90_bound_cc	founder A share beyond 0.05 log2	0.0165					0.1	True
+se101	G4b_founder_q90_bound_cc	founder C share beyond 0.05 log2	0.0161					0.1	True
+se101	G4b_founder_q90_bound_cc	founder D share beyond 0.05 log2	0.0143					0.1	True
+se101	G4b_founder_q90_bound_cc	founder E share beyond 0.05 log2	0.0144					0.1	True
+se101	G4b_founder_q90_bound_cc	founder F share beyond 0.05 log2	0.0111					0.1	True
+se101	G4b_founder_q90_bound_cc	founder G share beyond 0.05 log2	0.0203					0.1	True
+se101	G4b_founder_q90_bound_cc	founder H share beyond 0.05 log2	0.0198					0.1	True
+se101	G4c_pair_median_do	max |median| over 28 pairs	0.0048					0.02	True
+se101	G5_swM	switch-gene call rate hybrid / Salmon-pan (oracle unit)	0.2931	0.0022				1.25 x max(pan, 0.01)	False
+se101	G5_swR	switch-gene call rate hybrid / Salmon-pan (oracle unit)	0.0984	0.0022				1.25 x max(pan, 0.01)	False
+se101	negative_control_cc	false-cis rate, ref-unique probes	0.192153		15.08				
+se101	negative_control_cc	false-cis rate, Salmon-ref	0.0251744		1.98				
+se101	negative_control_cc	false-cis rate, Salmon-pan	0.0127389		1.0				
+se101	negative_control_cc	false-cis rate, hybrid	0.0125267		0.98				

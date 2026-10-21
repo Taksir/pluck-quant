@@ -1,0 +1,71 @@
+Section	Quantity	Values
+3.1	Gene probes in the 50 bp and 101 bp designs	1,215,204 and 454,764 (medians 58 and 22 per gene)
+3.1	Core genes with no gene probe (EM branch only)	390
+3.1	*Slc25a47*: ref-unique probes that overlap a founder variant; PLUCK probes placed	6 of 18; 18
+3.1	Read starts per probe window at 50 bp and 101 bp	26 and 77
+3.1	Core genes on the gene-probe branch, known-truth simulation	68% (50 bp); 76% (101 bp)
+3.1	Genes in the capture check of Fig. 1d	6,069 (Keele kidney; gene-probe branch 67%); 9,673 (GSE199702 liver)
+3.1	Median ratio of realized to nominal capture	1.09 (Keele kidney, 50 bp); 1.01 (GSE199702 liver, 101 bp)
+3.1	Theil–Sen slope of realized on nominal capture [95% interval]	0.99 [0.98, 1.01] (Keele kidney); 1.04 [1.02, 1.05] (GSE199702 liver)
+3.1	Spearman correlation of realized and nominal capture over genes	0.707 (Keele kidney); 0.819 (GSE199702 liver)
+3.2	Median absolute log2 error, PLUCK over Salmon-pan	1.55 (50 bp SE); 1.46 (101 bp SE); 1.39 (101 bp PE)
+3.2	Within-gene r² over the eight samples	PLUCK 0.9498, 0.9542, 0.9579; Salmon-pan 0.9644 to 0.9657 (same layouts)
+3.2	Genes with spurious strain effects, PLUCK and Salmon-pan	11 and 3 of 340 (3.2% and 0.9%) at 50 bp; 6 and 3 of 224 at 101 bp
+3.2	Median founder shift Δ over non-B6 founders and layouts	PLUCK −0.0063 to +0.0072 log2; Salmon-pan −0.0033 to +0.0044
+3.2	Salmon-ref median founder shift at 50 bp, over founders	−0.045 to −0.105 log2
+3.2	Drop in within-gene r² with 15% unspliced fragments	PLUCK 0.003; Salmon-pan 0.0035
+3.2	Planted cis-eQTL found by PLUCK, relative to Salmon-pan (CC)	0.988 (50 bp); 0.984 (101 bp)
+3.2	Power at |β| = 0.5 log2 (CC, 50 and 101 bp)	PLUCK 0.67 and 0.68; Salmon-pan 0.69 and 0.70
+3.2	False-cis rate ratio, PLUCK over Salmon-pan (CC) [95% interval]	1.10 [0.89, 1.36] (50 bp); 0.98 [0.81, 1.17] (101 bp)
+3.2	Planted cis-eQTL found by PLUCK, relative to Salmon-pan (DO-like)	0.947 (50 bp); 0.945 (101 bp)
+3.2	False-cis rate ratio, PLUCK over Salmon-pan (DO-like) [95% interval]	0.73 [0.38, 1.25] (50 bp); 0.73 [0.40, 1.20] (101 bp); from 8 and 11 null calls (Table S7h)
+3.2	Largest error in PLUCK's median founder shift, planted-eQTL simulation	0.0030 log2
+3.3	Gap in within-gene Spearman, PLUCK below Salmon-pan [95% interval]	0.0042 [0.0039, 0.0046] (Keele kidney); 0.0062 (Keele liver); 0.0104 [0.0099, 0.0111] (Munger founders)
+3.3	Gap in within-gene Spearman, PLUCK below STAR+fC	0.0032 to 0.0066
+3.3	Lead of the full-read pipelines over PLUCK in within-gene Spearman	0.0011 (kallisto-ref, Keele kidney) to 0.0106 (Salmon-ref, Munger founders)
+3.3	Genes with within-gene Spearman below 0.90 (Keele kidney, Keele liver, Munger founders)	PLUCK 8.9%, 13.8%, 15.5%; Salmon-pan 6.2%, 9.4%, 8.2%
+3.3	Noise SD ratio, PLUCK over Salmon-pan (same cohorts)	1.50, 1.54, 1.53 (all genes); 1.47, 1.52, 1.47 (unflagged genes)
+3.3	Noise SD ratio with the scaled per-sample switch	1.63 to 1.72
+3.3	Spurious rate ratio to Salmon-pan [95% interval]	0.97 [0.87, 1.10] (Keele kidney); 1.35 [1.19, 1.51] (Munger founders)
+3.3	Spurious rate on unflagged genes, Munger founders	PLUCK 3.55% (subset calibration), 3.73% (all-gene calibration); Salmon-pan 2.13% under both
+3.3	Median founder shift on unflagged genes	−0.0025 to +0.0036 (subset calibration); +0.0023 to +0.0043 (all-gene calibration)
+3.3	Median per-sample Spearman across genes (Keele kidney, Keele liver, Munger founders)	PLUCK 0.840, 0.844, 0.943; Salmon-pan 0.869, 0.882, 0.987
+3.3	Samples in which PLUCK ranked fourth of seven (Keele) or sixth of eight (Munger founders)	46 and 45 of 47 (Keele kidney, liver); 47 of 47 (Munger founders)
+3.3	GSE199702: PLUCK within-gene Spearman; gap to Salmon-pan	0.979 to 0.984; 0.013 (liver), 0.014 (heart), 0.010 (kidney)
+3.3	GSE199702: PLUCK spurious rate; ratio to Salmon-pan [95% interval]	4.2% to 5.1%; 1.52 [1.34, 1.70] (liver), 1.41 [1.22, 1.64] (heart), 1.40 [1.24, 1.57] (kidney)
+3.3	GSE199702: median founder shift	PLUCK +0.004 to +0.005; Salmon-ref −0.001 to −0.002
+3.4	Munger founders, per-founder median shift	PLUCK +0.001 to +0.007; ref-unique probes −0.076 (NOD) to −0.147 (PWK); Kmerator+countTags −0.1285 (NZO) to −0.3040 (CAST)
+3.4	Median founder shift at 100 bp, Kmerator+countTags and RNA-Skim	−0.227 and −0.115 log2 (Table 2)
+3.4	Spurious rates of the reference-index tools, Keele (50 bp)	Salmon-ref and kallisto-ref 17.2% to 20.5%
+3.4	Spurious rates of the k-mer-set tools	Kmerator+countTags 44% to 49% (Keele), 87% (Munger founders); RNA-Skim 38.5% to 49.6%; PLUCK 4.1% to 4.9% (Keele)
+3.4	Within-gene Spearman lead of PLUCK over Kmerator+countTags; over RNA-Skim	0.005 to 0.034; 0.020 to 0.040
+3.4	DO dose classes: genes	6,915 (D1); 3,727 (D2)
+3.4	DO: genes in which the ref-unique probes were lower than PLUCK	87% (D1); 93% (D2)
+3.4	DO: PLUCK shift relative to the individualized truth	+0.159 (D1); +0.123 (D2); per founder +0.20 (CAST, PWK), +0.09 to +0.11 (others)
+3.5	AUC lead of the flag over the baseline with the multi-copy fraction	0.05 to 0.12
+3.5	Genes in the error tail: all scored genes; unflagged genes	3.6% to 7.5%; 0.65% to 2.6%
+3.5	Known-truth split	5,657 core genes; Salmon-ref error-variance ratio on unflagged genes at 50 bp 1.33
+3.5	Flagged Munger genes, median founder shift (subset; all-gene calibration)	PLUCK +0.058, +0.016; STAR+fC +0.059, −0.008; Salmon-pan +0.001, +0.006
+3.5	Noise reduction by the EM branch	10% to 14% (genes both branches cover); 5% to 12% (flagged genes)
+3.5	Genes in the error tail, gene probes alone and PLUCK	Keele liver 19.9% and 9.2%; Keele kidney 17.8% and 7.0%
+3.5	Flagged genes: noise ratio to Salmon-pan	1.8 to 2.0 (subset calibration); 1.9 to 2.2 (all-gene calibration)
+3.6	Extra animals, cis-eQTL scan	1.073 (Keele kidney); 1.085 (Keele liver); 1.049 to 1.064 (GSE199702); finer grid 1.078 and 1.097 (Keele)
+3.6	Extra animals in the flag scan	1.026 to 1.069 (unflagged genes); 1.039 to 1.084 (all genes)
+3.6	Salmon-pan on a read subsample: strains relative to PLUCK	25%: 1.30 to 1.45 (kidney), 1.37 to 1.65 (liver); 10%: at least 1.82 and 1.89
+3.6	Reduced-read Salmon-pan time relative to PLUCK at four threads (compute node)	28.1 to 29.5 (25%); 14.6 to 17.9 (10%)
+3.7	Speed ratios at four threads, compute node	STAR+fC 22 to 32; kallisto-ref 11 to 17; kallisto-pan 67 (101 bp only); Kmerator+countTags (one thread) 44.5 to 63.5; GBRS 392 (at eight threads, 390 and 587)
+3.7	GBRS wall time	43 min for the 50 bp CC021 library at four threads
+3.7	Salmon-pan wall time	617 to 992 s (compute node); 692 to 920 s (cloud virtual machine)
+3.7	CPU-time ratios	four threads: Salmon-ref 21 to 24, Salmon-pan 63 to 99; over 1, 4 and 8 threads: Salmon-ref 12.5 to 24.9, Salmon-pan 36 to 111
+3.7	PLUCK wall time on CC021	6.5 s (four threads); 4.8 s (eight threads)
+3.7	Extended tier, 101 bp library on the cloud virtual machine	Salmon-ref 9.2 and Salmon-pan 24.0 times PLUCK's time
+3.7	PLUCK speed lead over Salmon-ref, cloud virtual machine, same session	9.3 and 9.8 (two Munger libraries, 100 bp, 10.9 M reads each); 12.9 and 13.7 (two Keele libraries, 50 bp)
+3.7	Index and design preparation, cloud virtual machine	preparation shared by all read lengths 6,332 s and 7.8 GB; Salmon-ref index 130 s; Salmon-pan index 552 s plus 300 s of founder transcripts; 101 bp EM set 3,278 s, of which 2,046 s and 1,230 s in its two main steps (slower virtual machine)
+3.7	Per-sample saving at four threads, cloud virtual machine	490 to 900 s (Salmon-pan); 150 to 260 s (Salmon-ref)
+3.7	Samples after which the shared preparation is repaid	6 to 11 (Salmon-pan); 24 to 42 (Salmon-ref)
+3.7	101 bp EM set in the break-even	adds 4 to 7 samples (Salmon-pan) and 13 to 22 samples (Salmon-ref)
+4	Core-hours to quantify 1,000 animals once at four threads (four cores × wall time, both machines)	PLUCK 7 to 29; Salmon-pan 685 to 1,102; GBRS 2,900 (one run, compute node); Salmon-ref 117 to 321
+4	Time with no reads, extrapolated, relative to PLUCK's whole run	Salmon-pan 6 to 12; Salmon-ref 3 to 4.5
+4	msBWT example panel	36,218 probes over 9,100 genes
+4	Coverage of 90% intervals, negative-binomial probe-level model	89% to 96% (gene-probe branch); 73% to 88% (EM branch)
+4	Genes with at least 25% of probes lost to structural variants	567 of 16,675 auditable core genes (3.4%); flagged 75.1% (50 bp) and 78.1% (100/101 bp)

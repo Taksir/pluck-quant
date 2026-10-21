@@ -1,0 +1,6 @@
+# file: fig1d_model_check_summary.tsv
+# note: median_ratio = median over used genes of realized/nominal capture; theil_sen_slope of log10 realized on log10 nominal capture (slope_lo, slope_hi = 95% interval); iqr_log2_ratio = IQR of log2(realized/nominal); iqr_log2_ratio_over_median = the same divided by median_ratio.
+# note: Genes with zero probe sum are left out of the slope and the ratio (count in genes_zero_obs).
+cohort	genes	genes_zero_obs	median_ratio	theil_sen_slope	slope_lo	slope_hi	spearman	n_gene probes	share_gene probes	median_q_gene probes	iqr_log2_ratio_gene probes	iqr_log2_ratio_over_median_gene probes	n_EM	share_EM	median_q_EM	iqr_log2_ratio_EM	iqr_log2_ratio_over_median_EM	mixed
+Keele kidney, 50 bp	6075	6	1.09	0.9942	0.9759	1.012	0.7072	4063	0.6695	0.808	0.079 to 0.231	-0.046 to 0.107	2006	0.3305	0.391	-0.422 to 0.423	-0.546 to 0.299	0
+GSE199702 liver, 101 bp	9678	5	1.0099	1.0352	1.024	1.0463	0.8193	7153	0.7395	0.889	-0.022 to 0.087	-0.036 to 0.073	2520	0.2605	0.406	-0.667 to 0.007	-0.681 to -0.007	0

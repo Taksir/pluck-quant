@@ -1,0 +1,12 @@
+# file: fig1a_gene_isoforms.tsv
+# note: Ensembl 102 TSL1 protein-coding isoforms of the example gene; start/end are 0-based [start, end) positions on the reference transcript.
+# note: segment rows = the part of the reference transcript the isoform contains; exon rows = reference transcript exon boundaries.
+transcript	length	start	end
+ENSMUST00000221080	1890	0	1890
+ENSMUST00000057026	1580	0	693
+ENSMUST00000057026	1580	1013	1890
+exon:ENSMUST00000221080	1890	0	69
+exon:ENSMUST00000221080	1890	69	113
+exon:ENSMUST00000221080	1890	113	185
+exon:ENSMUST00000221080	1890	185	368
+exon:ENSMUST00000221080	1890	368	1890

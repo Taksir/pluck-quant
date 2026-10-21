@@ -37,7 +37,7 @@ def sha256_file(p, bufsize=1 << 24):
 
 
 def verify_design(layout, design_dir):
-    """Compare design.npz (array contents), gc.npy and genome_count.npy of DESIGN_DIR with the locked values
+    """Compare design.npz (array contents), gc.npy and genome_count.npy of DESIGN_DIR with the reference values
     for layout 50 (50 bp reads, spacing 26), 100 (100 bp reads, spacing 76) or 101 (101 bp reads, spacing 77). Returns (ok, lines)."""
     ref = resources.files("pluck_quant") / "_design"
     lines, bad = [], 0
@@ -50,8 +50,8 @@ def verify_design(layout, design_dir):
         ok = got.get(key) == h
         bad += not ok
         if not ok:
-            lines.append(f"FAIL design.npz {key} got {(got.get(key) or 'missing')[:12]} want {h[:12]}")
-    lines.append(f"design.npz arrays: {len(want)} compared, " + ("all PASS" if not bad else f"{bad} FAIL"))
+            lines.append(f"DIFFERS design.npz {key} got {(got.get(key) or 'missing')[:12]} want {h[:12]}")
+    lines.append(f"design.npz arrays: {len(want)} compared, " + ("all match" if not bad else f"{bad} differ"))
     for l in (ref / f"expected_files_design{layout}.sha256").read_text().splitlines():
         if not l.strip():
             continue
@@ -59,7 +59,7 @@ def verify_design(layout, design_dir):
         g = sha256_file(Path(design_dir) / name)
         ok = g == h
         bad += not ok
-        lines.append(f"{'PASS' if ok else 'FAIL'} {name} {g[:16]} want {h[:16]}")
+        lines.append(f"{'match' if ok else 'DIFFERS'} {name} {g[:16]} want {h[:16]}")
     return bad == 0, lines
 
 
@@ -78,11 +78,11 @@ def compile_panel(design_dir, probes_npz, genes_json, read_length, out_dir, stra
 
     strand: 'reverse' (read 1 antisense to the mRNA: dUTP libraries; the panel holds the reverse complement of each probe),
             'forward' (read 1 is the mRNA strand; sense strings), 'unstranded' (sense strings then antisense strings,
-            the two counts of a probe are added). Same arithmetic as the locked compile step for 'reverse'."""
+            the two counts of a probe are added). Same arithmetic as the original compile step for 'reverse'."""
     if strand not in STRANDS:
         raise ValueError(f"strand must be one of {STRANDS}")
     os.environ.setdefault("NUMBA_CACHE_DIR", str(Path.home() / ".cache" / "pluck-quant" / "numba"))
-    from ._frozen import em, e9rs  # noqa: E402 (lazy: numba)
+    from ._core import em, e9rs  # noqa: E402 (lazy: numba)
     t0 = time.time()
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
@@ -165,7 +165,7 @@ _LAYOUTS = {50: (26, "dsn26", "probes_s26.npz"), 100: (76, "dsn76", "probes_s76.
 
 def fetch_design(layout, base_url, dest):
     """Download design.npz, gc.npy, genome_count.npy, the gene-probe file and genes.json from BASE_URL (files in BASE_URL/<layout>/, in BASE_URL, or named design_<layout>.npz, gc_<layout>.npy, genome_count_<layout>.npy) and check them
-    against the locked hashes. BASE_URL is where the release assets were put."""
+    against the reference hashes. BASE_URL is where the release assets were put."""
     import urllib.error
     import urllib.request
     layout = int(layout)
@@ -196,10 +196,10 @@ def fetch_design(layout, base_url, dest):
                     if e.code != 404 or i == len(cands) - 1:
                         raise
         if h and sha256_file(target) != h:
-            raise RuntimeError(f"{n}: sha256 does not match the locked value")
+            raise RuntimeError(f"{n}: sha256 does not match the reference value")
     ok, lines = verify_design(layout, dest)
     if not ok:
-        raise RuntimeError("design.npz does not match the locked arrays:\n" + "\n".join(lines))
+        raise RuntimeError("design.npz does not match the reference arrays:\n" + "\n".join(lines))
     return dest
 
 
@@ -209,7 +209,7 @@ _STAGES = ("prep", "design", "gc", "gscan", "gfix", "verify")
 
 def build_design(layout, work, threads=None, log=print, stages=_STAGES):
     """Rebuild a design from Ensembl 102 and the Mouse Genomes Project REL-1505 (needs internet, ~8 GB disk, a few hours,
-    about 15 GB RAM) with the same stages and edits as the Longleaf rebuild, then check the locked hashes.
+    about 15 GB RAM) with the same stages and edits as the original rebuild, then check the reference hashes.
     layout 50 -> SP 26 (50 bp reads); 100 -> SP 76 (100 bp reads); 101 -> SP 77 (101 bp reads). Writes
     WORK/design/dsn{26,76,77}/{design.npz,gc.npy,genome_count.npy} and WORK/ref/probes_s{26,76,77}.npz, WORK/ref/genes.json.
     The reference download and the probe selection (stage prep) are shared: running a second layout in the same WORK folder
@@ -227,8 +227,8 @@ def build_design(layout, work, threads=None, log=print, stages=_STAGES):
         log(f"  done in {time.time() - t:.0f} s")
 
     if "prep" in stages:
-        shutil.copy(src / "_frozen" / "e9rs.py", w / "e9rs.py")
-        # the frozen prep, unchanged, with the list of probe spacings set to the three the paper uses (76 = 100 bp reads);
+        shutil.copy(src / "_core" / "e9rs.py", w / "e9rs.py")
+        # the original prep, unchanged, with the list of probe spacings set to the three the paper uses (76 = 100 bp reads);
         # probes_s26 and probes_s77 come out identical to the files of the default list
         (w / "prep_run.py").write_text("import sys\nsys.path.insert(0, '.')\nimport e9rs\ne9rs.SPACINGS = [26, 76, 77]\n"
                                        "sys.argv = ['e9rs.py', 'prep'] + sys.argv[1:]\ne9rs.main()\n")
@@ -249,7 +249,7 @@ def build_design(layout, work, threads=None, log=print, stages=_STAGES):
         if (d / "w" / "ref").is_symlink():
             (d / "w" / "ref").unlink()
         (d / "w" / "ref").symlink_to(w / "ref")
-        shutil.copy(src / "_frozen" / "e9rs.py", d / "e9rs.py")
+        shutil.copy(src / "_core" / "e9rs.py", d / "e9rs.py")
         text = (src / "_design" / "design.py").read_text()
         text = text.replace("SP = 26", f"SP = {sp}", 1)
         text = text.replace("/mnt/project-files/revision/respacing/probes/probes_s26.npz", str(w / "ref" / "probes_s26.npz"))
@@ -263,7 +263,7 @@ def build_design(layout, work, threads=None, log=print, stages=_STAGES):
     if "gscan" in stages:
         sh([py, "gscan.py"], d)
     if "gfix" in stages:
-        # gscan sorts with an unstable argsort; gfix puts each tie group's total on the member the locked design recorded
+        # gscan sorts with an unstable argsort; gfix puts each tie group's total on the member the paper's design recorded
         for lay in (50, 100, 101):
             (d / f"carriers{lay}.b64").write_bytes((src / "_design" / f"carriers{lay}.b64").read_bytes())
         shutil.copy(src / "_design" / "gfix.py", d / "gfix.py")

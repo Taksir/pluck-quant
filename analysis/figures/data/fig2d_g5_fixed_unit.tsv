@@ -1,0 +1,46 @@
+# file: fig2d_g5_fixed_unit.tsv
+# note: Planted cis-eQTL simulation: comparison in a fixed unit, added after the main analysis. tool_code: hybrid = PLUCK, vf = gene probes alone, emg = EM alone, ref = ref-unique probes, salmon_*; truth = expected reads.
+# note: unit: reads = NumReads summed to gene; tpm = Salmon TPM summed to gene.
+layout	analysis	unit	tool_code	swM_call_rate	swR_call_rate	calls	FDP_null_plus_switch	FDP_null_only	note
+se50	call rate (p<1e-3, CC)	reads	hybrid	0.2953	0.083				
+se50	call rate (p<1e-3, CC)	reads	vf	0.0234	0.285				
+se50	call rate (p<1e-3, CC)	reads	emg	0.3296	0.0247				
+se50	call rate (p<1e-3, CC)	reads	ref	0.0468	0.3349				
+se50	call rate (p<1e-3, CC)	reads	salmon_ref	0.3438	0.0267				
+se50	call rate (p<1e-3, CC)	reads	salmon_pan	0.3326	0.0022				
+se50	call rate (p<1e-3, CC)	tpm	salmon_ref	0.0223	0.34				
+se50	call rate (p<1e-3, CC)	tpm	salmon_pan	0.0022	0.3111				
+se50	call rate (p<1e-3, CC)	reads	truth	0.3371	0.0044				
+se50	BH 5% over null+eQTL+switch	reads	hybrid			1610	0.1634	0.0267	
+se50	BH 5% over null+eQTL+switch	reads	vf			1577	0.1452	0.0266	
+se50	BH 5% over null+eQTL+switch	reads	emg			1590	0.1547	0.0264	
+se50	BH 5% over null+eQTL+switch	reads	salmon_pan			1600	0.1437	0.0244	
+se50	BH 5% over null+eQTL+switch	tpm	salmon_pan			1562	0.1453	0.0282	
+se50	BH 5% over null+eQTL+switch	reads	salmon_ref			1896	0.2252	0.1034	
+se50	BH 5% over null+eQTL+switch	reads	truth			1661	0.1517	0.0325	
+se50	BH 5% over null+eQTL+switch	oracle	salmon_pan			1400	0.0321	0.025	oracle unit (locked post hoc)
+se50	ratio-test flag rate p<1e-3 (post hoc): null / eQTL / swM / swR		hybrid ratio test						0.0016 / 0.0030 / 0.5734 / 0.5629
+se50	after excluding vf/emg-ratio-flagged genes (post hoc)	reads	hybrid			1416	0.0565	0.0282	post hoc
+se50	after excluding vf/emg-ratio-flagged genes (post hoc)	reads	salmon_pan			1433	0.0509	0.0265	post hoc
+se50	after excluding vf/emg-ratio-flagged genes (post hoc)	tpm	salmon_pan			1400	0.0536	0.0307	post hoc
+se101	call rate (p<1e-3, CC)	reads	hybrid	0.2931	0.0984				
+se101	call rate (p<1e-3, CC)	reads	vf	0.0257	0.3017				
+se101	call rate (p<1e-3, CC)	reads	emg	0.34	0.0291				
+se101	call rate (p<1e-3, CC)	reads	ref	0.0932	0.3482				
+se101	call rate (p<1e-3, CC)	reads	salmon_ref	0.3348	0.0133				
+se101	call rate (p<1e-3, CC)	reads	salmon_pan	0.3348	0.0022				
+se101	call rate (p<1e-3, CC)	tpm	salmon_ref	0.0134	0.34				
+se101	call rate (p<1e-3, CC)	tpm	salmon_pan	0.0022	0.3222				
+se101	call rate (p<1e-3, CC)	reads	truth	0.3371	0.0044				
+se101	BH 5% over null+eQTL+switch	reads	hybrid			1618	0.1644	0.0253	
+se101	BH 5% over null+eQTL+switch	reads	vf			1580	0.143	0.0259	
+se101	BH 5% over null+eQTL+switch	reads	emg			1594	0.1568	0.0257	
+se101	BH 5% over null+eQTL+switch	reads	salmon_pan			1605	0.1452	0.0255	
+se101	BH 5% over null+eQTL+switch	tpm	salmon_pan			1586	0.1475	0.0265	
+se101	BH 5% over null+eQTL+switch	reads	salmon_ref			1671	0.1706	0.0485	
+se101	BH 5% over null+eQTL+switch	reads	truth			1661	0.1517	0.0325	
+se101	BH 5% over null+eQTL+switch	oracle	salmon_pan			1408	0.0362	0.027	oracle unit (locked post hoc)
+se101	ratio-test flag rate p<1e-3 (post hoc): null / eQTL / swM / swR		hybrid ratio test						0.0022 / 0.0041 / 0.5991 / 0.5843
+se101	after excluding vf/emg-ratio-flagged genes (post hoc)	reads	hybrid			1416	0.0544	0.0275	post hoc
+se101	after excluding vf/emg-ratio-flagged genes (post hoc)	reads	salmon_pan			1430	0.0497	0.028	post hoc
+se101	after excluding vf/emg-ratio-flagged genes (post hoc)	tpm	salmon_pan			1415	0.053	0.0283	post hoc

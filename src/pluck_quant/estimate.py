@@ -1,7 +1,7 @@
 """Per-sample estimation (gene-probe estimate N_g, EM estimate) and the hybrid switch.
 
-Arithmetic is that of the frozen v2 code (run_sample2_frozenf.py for the per-sample rule, build_variants.py variant C0 for the
-cohort rule), so that outputs are numerically identical to the paper's pipeline."""
+Arithmetic is that of the original analysis code (the per-sample rules `sample` and `sample-scaled`, and the cohort rule), so that
+outputs are numerically identical to the paper's pipeline."""
 import json
 import subprocess
 import tempfile
@@ -90,9 +90,9 @@ def sample_estimates(panel: Panel, c_sel, em_exe=None):
 
 
 def hybrid_sample(res, tau=TAU, scaled=False):
-    """Per-sample switch. Default (version A, the released rule): f = S_g / EM_g within the sample, gene-probe estimate if f >= tau.
-    scaled=True (version B, the rule of the timed pipeline, run_sample2.py of the frozen runs): f = N_g / EM_g with the
-    length-scaled gene-probe estimate N_g in the numerator."""
+    """Per-sample switch. Default (`--switch sample`): f = S_g / EM_g within the sample, gene-probe estimate if f >= tau.
+    scaled=True (`--switch sample-scaled`, the rule of the timed runs): f = N_g / EM_g with the length-scaled gene-probe
+    estimate N_g in the numerator."""
     num = res["Ng"] if scaled else res["Sg"]
     with np.errstate(invalid="ignore", divide="ignore"):
         f = np.where(res["em"] > 0, num / res["em"], np.nan)

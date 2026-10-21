@@ -1,0 +1,8 @@
+# file: figS12b_arm4_timing_u5.tsv
+# note: Wall seconds on one 4-vCPU cloud VM, median and range of 3 shuffled repetitions per arm. H = PLUCK alone, A4 = arm 4 whole pipeline, SR = Salmon-ref.
+# note: Speed rule: SR/A4 >= 10 at 4 threads. Samples meeting it: 0 of 4 (1.2 to 2.1x).
+cohort	srr	wall_H	wall_A4	wall_SR	ratio_SR_over_A4	ratio_SR_over_A4_min	ratio_SR_over_A4_max	ratio_SR_over_H	sample
+keele_kidney	SRR10523477	10.238	66.256	138.431	2.089	2.055	2.127	13.671	Keele kidney CC001
+keele_liver	SRR10523526	8.435	62.199	107.613	1.73	1.693	1.782	12.904	Keele liver CC021
+munger	SRR826311	9.26	74.239	85.931	1.157	1.128	1.183	9.28	Munger A/J
+munger	SRR826340	8.739	70.656	88.648	1.255	1.199	1.337	9.837	Munger CAST

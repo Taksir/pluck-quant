@@ -1,0 +1,11 @@
+# file: figS7_switch_claims_u3.tsv
+# note: kallisto-pan Munger R1/R2 rows. primary column = --switch cohort; per_sample column = --switch sample (variant A) or --switch sample-scaled (variant B). R2 limit 1.25; R1 limit 0.02.
+variant	claim	primary	per_sample	changed
+A	R1/kallisto_pan/per_cohort/munger/gap_M_minus_hybrid	0.0078	0.0085	True
+A	R1/kallisto_pan/per_cohort/munger/passes	true	true	False
+A	R2/kallisto_pan/per_cohort/munger/ratio_hybrid_over_M	1.229	1.216	True
+A	R2/kallisto_pan/per_cohort/munger/passes	true	true	False
+B	R1/kallisto_pan/per_cohort/munger/gap_M_minus_hybrid	0.0078	0.0145	True
+B	R1/kallisto_pan/per_cohort/munger/passes	true	true	False
+B	R2/kallisto_pan/per_cohort/munger/ratio_hybrid_over_M	1.229	1.276	True
+B	R2/kallisto_pan/per_cohort/munger/passes	true	false	True

@@ -1,0 +1,13 @@
+# file: fig6a_r7_sensitivity_excl13.tsv
+# note: Strain-subsampling scan repeated without the 13 libraries with low mapping rates (sensitivity only).
+tissue	N	arm	detections	pan_equiv_n	extra_n_vs_full_salmon_pan	ratio_to_hybrid_proportional
+keele_liver	41	hybrid	1919	37	1.108	1
+keele_liver	41	pan_p25	1278	28.19	1.454	1.312
+keele_liver	41	pan_p10	720	20.82	1.97	1.778
+keele_liver	41	ref_p25	1445	30.47	1.346	1.215
+keele_liver	41	ref_p10	839	22.34	1.835	1.656
+keele_kidney	40	hybrid	3068	37.19	1.076	1
+keele_kidney	40	pan_p25	2387	29.13	1.373	1.276
+keele_kidney	40	pan_p10	1556	21.76	1.839	1.709
+keele_kidney	40	ref_p25	2675	32.24	1.241	1.153
+keele_kidney	40	ref_p10	1696	22.93	1.745	1.622

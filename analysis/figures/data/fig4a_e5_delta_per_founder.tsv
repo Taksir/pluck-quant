@@ -1,0 +1,32 @@
+# file: fig4a_e5_delta_per_founder.tsv
+# note: Munger founder mice: median founder shift per founder and method, core genes. Founders A C D E F G H = A/J 129S1 NOD NZO CAST PWK WSB.
+# note: Domestic: A C D E; wild-derived: F G H (CAST, PWK, WSB), as in score_e9.py.
+cohort	read_length_bp	founder	method	tool	median_delta	n_genes	spurious_rate
+Munger founders	100	A	ref	ref-unique probes	-0.0787	2387	0.3452
+Munger founders	100	A	vf	hybrid	0.004	2387	0.054
+Munger founders	100	A	salmon_ref	Salmon-ref	-0.0032	2387	0.0515
+Munger founders	100	A	salmon_pan	Salmon-pan	0.0019	2387	0.0536
+Munger founders	100	C	ref	ref-unique probes	-0.0838	2471	0.3654
+Munger founders	100	C	vf	hybrid	0.0022	2471	0.0498
+Munger founders	100	C	salmon_ref	Salmon-ref	-0.004	2471	0.049
+Munger founders	100	C	salmon_pan	Salmon-pan	0.0009	2471	0.0482
+Munger founders	100	D	ref	ref-unique probes	-0.0759	2464	0.3588
+Munger founders	100	D	vf	hybrid	0.0053	2464	0.0597
+Munger founders	100	D	salmon_ref	Salmon-ref	-0.0047	2464	0.0552
+Munger founders	100	D	salmon_pan	Salmon-pan	0.0004	2464	0.0548
+Munger founders	100	E	ref	ref-unique probes	-0.0761	2274	0.3676
+Munger founders	100	E	vf	hybrid	0.0055	2274	0.0506
+Munger founders	100	E	salmon_ref	Salmon-ref	-0.0011	2274	0.0536
+Munger founders	100	E	salmon_pan	Salmon-pan	0.0043	2274	0.0515
+Munger founders	100	F	ref	ref-unique probes	-0.1407	5243	0.5007
+Munger founders	100	F	vf	hybrid	0.0014	5243	0.1158
+Munger founders	100	F	salmon_ref	Salmon-ref	-0.0165	5243	0.1141
+Munger founders	100	F	salmon_pan	Salmon-pan	-0.0127	5243	0.1133
+Munger founders	100	G	ref	ref-unique probes	-0.1466	5741	0.5767
+Munger founders	100	G	vf	hybrid	0.0065	5741	0.0739
+Munger founders	100	G	salmon_ref	Salmon-ref	-0.0072	5741	0.0681
+Munger founders	100	G	salmon_pan	Salmon-pan	-0.0041	5741	0.0625
+Munger founders	100	H	ref	ref-unique probes	-0.0776	3410	0.3396
+Munger founders	100	H	vf	hybrid	0.0019	3410	0.0504
+Munger founders	100	H	salmon_ref	Salmon-ref	-0.0014	3410	0.0545
+Munger founders	100	H	salmon_pan	Salmon-pan	0.0025	3410	0.051

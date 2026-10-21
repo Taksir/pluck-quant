@@ -1,0 +1,12 @@
+# file: fig5c_e2_flag_check.tsv
+# note: Independent truth (read simulation, expected counts); core genes with >= 50 reads per sample (5,657).
+layout	subset	n_genes	error_variance_ratio_hybrid_over_salmon_pan	frac_genes_ratio_gt2	excess_delta_median	error_variance_ratio_salmon_ref_over_salmon_pan
+50 bp SE	all	5657	1.815	0.2312	0.66	1.463
+50 bp SE	unflagged	4720	1.33	0.1477	0.507	1.33
+50 bp SE	flagged	937	6.648	0.6521	4.385	3.083
+101 bp SE	all	5657	1.653	0.1748	0.456	1.089
+101 bp SE	unflagged	4376	1.232	0.096	0.352	1.015
+101 bp SE	flagged	1281	4.517	0.4442	1.449	1.585
+101 bp PE	all	5657	1.426	0.1094	0.247	1.067
+101 bp PE	unflagged	4376	1.137	0.04	0.189	1.006
+101 bp PE	flagged	1281	3.427	0.3466	0.889	1.399

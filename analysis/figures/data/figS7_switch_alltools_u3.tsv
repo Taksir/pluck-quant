@@ -1,0 +1,48 @@
+# file: figS7_switch_alltools_u3.tsv
+# note: Scoring set A, all genes. variant A = --switch sample, B = --switch sample-scaled.
+# note: Only the PLUCK (hybrid) values differ between variants; other tools are listed to show they are unchanged.
+cohort	variant	method	tool	within_gene_spearman	noise_sd	spurious_rate	median_delta
+keele_kidney	A	ref	ref-unique probes	0.9823	0.0925	0.3672	-0.0842
+keele_kidney	A	vf	hybrid	0.988	0.0751	0.0497	0.0023
+keele_kidney	A	salmon_ref	Salmon-ref	0.9904	0.0617	0.1939	-0.0473
+keele_kidney	A	salmon_pan	Salmon-pan	0.993	0.0493	0.0504	0.0006
+keele_kidney	A	kallisto_ref	kallisto-ref	0.9899	0.0653	0.205	-0.0482
+keele_kidney	A	kmerator	Kmerator+countTags	0.9829	0.1058	0.4934	-0.114
+keele_kidney	A	star_fc	STAR+fC	0.992	0.0527	0.0732	-0.0052
+keele_liver	A	ref	ref-unique probes	0.975	0.0949	0.3287	-0.0802
+keele_liver	A	vf	hybrid	0.9803	0.0796	0.0414	0.0041
+keele_liver	A	salmon_ref	Salmon-ref	0.9849	0.0639	0.1721	-0.0451
+keele_liver	A	salmon_pan	Salmon-pan	0.9876	0.0511	0.0437	0.0014
+keele_liver	A	kallisto_ref	kallisto-ref	0.9842	0.067	0.176	-0.0457
+keele_liver	A	kmerator	Kmerator+countTags	0.9762	0.0983	0.4397	-0.1044
+keele_liver	A	star_fc	STAR+fC	0.9861	0.0569	0.0659	-0.004
+munger	A	ref	ref-unique probes	0.9507	0.0918	0.4434	-0.1097
+munger	A	vf	hybrid	0.9773	0.0643	0.0547	0.0038
+munger	A	salmon_ref	Salmon-ref	0.9886	0.0417	0.0459	-0.0057
+munger	A	salmon_pan	Salmon-pan	0.9884	0.0416	0.0411	-0.0015
+munger	A	kallisto_ref	kallisto-ref	0.9853	0.0486	0.0621	0.001
+munger	A	kallisto_pan	kallisto-pan	0.9858	0.0476	0.045	0.0046
+munger	A	kmerator	Kmerator+countTags	0.9436	0.0924	0.8731	-0.2267
+munger	A	star_fc	STAR+fC	0.9846	0.0504	0.0597	0.0025
+keele_kidney	B	ref	ref-unique probes	0.9823	0.0925	0.3672	-0.0842
+keele_kidney	B	vf	hybrid	0.9862	0.0803	0.0502	0.0027
+keele_kidney	B	salmon_ref	Salmon-ref	0.9904	0.0617	0.1939	-0.0473
+keele_kidney	B	salmon_pan	Salmon-pan	0.993	0.0493	0.0504	0.0006
+keele_kidney	B	kallisto_ref	kallisto-ref	0.9899	0.0653	0.205	-0.0482
+keele_kidney	B	kmerator	Kmerator+countTags	0.9829	0.1058	0.4934	-0.114
+keele_kidney	B	star_fc	STAR+fC	0.992	0.0527	0.0732	-0.0052
+keele_liver	B	ref	ref-unique probes	0.975	0.0949	0.3287	-0.0802
+keele_liver	B	vf	hybrid	0.9779	0.0854	0.0422	0.0044
+keele_liver	B	salmon_ref	Salmon-ref	0.9849	0.0639	0.1721	-0.0451
+keele_liver	B	salmon_pan	Salmon-pan	0.9876	0.0511	0.0437	0.0014
+keele_liver	B	kallisto_ref	kallisto-ref	0.9842	0.067	0.176	-0.0457
+keele_liver	B	kmerator	Kmerator+countTags	0.9762	0.0983	0.4397	-0.1044
+keele_liver	B	star_fc	STAR+fC	0.9861	0.0569	0.0659	-0.004
+munger	B	ref	ref-unique probes	0.9507	0.0918	0.4434	-0.1097
+munger	B	vf	hybrid	0.9713	0.0717	0.0574	0.005
+munger	B	salmon_ref	Salmon-ref	0.9886	0.0417	0.0459	-0.0057
+munger	B	salmon_pan	Salmon-pan	0.9884	0.0416	0.0411	-0.0015
+munger	B	kallisto_ref	kallisto-ref	0.9853	0.0486	0.0621	0.001
+munger	B	kallisto_pan	kallisto-pan	0.9858	0.0476	0.045	0.0046
+munger	B	kmerator	Kmerator+countTags	0.9436	0.0924	0.8731	-0.2267
+munger	B	star_fc	STAR+fC	0.9846	0.0504	0.0597	0.0025

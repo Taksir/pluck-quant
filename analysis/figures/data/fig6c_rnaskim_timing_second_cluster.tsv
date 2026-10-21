@@ -1,0 +1,13 @@
+# file: fig6c_rnaskim_timing_second_cluster.tsv
+# note: Second cluster (AMD EPYC, batch partition), 4 threads only. Ratios are valid only within each paired block; do not set them against the main timing.
+# note: countTags was timed with a two-line patched build.
+layout	sample	other	n_reps	median_ratio_rnaskim_over_other	min_ratio	max_ratio	median_wall_rnaskim_s	median_wall_other_s
+50	CC001	hybrid	3	55.31	55.04	57.17	399.9	7.23
+50	CC021	hybrid	3	172.41	100.55	193.24	802.4	4.69
+101	LiverCC001F	hybrid	3	63.48	62.14	64.61	610.1	9.61
+50	CC001	salmon_ref	3	3.24	3.06	3.25	399.9	123.5
+50	CC021	salmon_ref	3	9.78	9.7	11.1	802.4	81.63
+101	LiverCC001F	salmon_ref	3	4.17	4.12	4.2	610.1	146.17
+50	CC001	kmerator_counttags	3	0.92	0.91	0.95	399.9	434.14
+50	CC021	kmerator_counttags	3	2.24	2.22	2.53	802.4	357.71
+101	LiverCC001F	kmerator_counttags	3	1.04	0.82	1.05	610.1	588.35

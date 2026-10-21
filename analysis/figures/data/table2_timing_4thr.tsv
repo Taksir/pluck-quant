@@ -1,0 +1,35 @@
+# file: table2_timing_4thr.tsv
+# note: 4 threads, kind=regular. Timing exists for three samples only: layout 50 (CC021, CC001; Keele liver, 50 bp SE) and layout 101 (Liver CC001 F; GSE199702, 101 bp SE).
+# note: No Munger (100 bp unstranded) timing exists; a table built from this file needs to say which timed layout stands in for which cohort.
+layout	sample	tool	n_reps	wall_median_s	ratio_median	ratio_min	ratio_max	cpu_ratio_median	rss_mb_median
+50	CC001	hybrid	3	9.14	1	1	1	1	1539
+50	CC001	kallisto-ref	3	147.96	17.367	16.188	17.761	16.719	1292
+50	CC001	Kmerator+countTags	3	396.07	44.542	40.565	47.377	15.89	9564
+50	CC001	Salmon-pan	3	616.57	73.752	58.437	93.811	68.62	2490
+50	CC001	Salmon-pan 10%	3	149.3	17.859	11.348	24.474	11.764	2104
+50	CC001	Salmon-pan 25%	3	273.32	28.148	24.022	44.38	25.675	2253
+50	CC001	Salmon-ref	3	163.01	17.835	17.205	45.428	20.895	1081
+50	CC001	Salmon-ref 10%	3	44.23	4.728	4.555	5.352	3.458	978
+50	CC001	Salmon-ref 25%	3	84.76	9.274	8.858	9.72	8.134	998
+50	CC001	STAR+fC	3	293.93	32.159	29.974	38.398	34.956	26113
+50	CC021	hybrid	3	6.51	1	1	1	1	1042
+50	CC021	kallisto-ref	3	82.39	12.531	8.682	13.708	14.77	1302
+50	CC021	Kmerator+countTags	3	337.82	51.892	35.527	58.128	24.689	9564
+50	CC021	Salmon-pan	3	734.03	81.004	63.078	120.53	98.673	2419
+50	CC021	Salmon-pan 10%	3	88.87	14.593	9.347	36.607	16.001	2088
+50	CC021	Salmon-pan 25%	3	191.89	29.476	20.082	37.844	32.303	2159
+50	CC021	Salmon-ref	3	104.99	16.235	11.063	32.237	22.192	1088
+50	CC021	Salmon-ref 10%	3	27.08	4.156	3.026	4.16	4.057	971
+50	CC021	Salmon-ref 25%	3	48.91	7.259	5.198	7.513	8.168	995
+50	CC021	STAR+fC	3	141.64	21.757	16.985	22.452	29.521	26119
+101	LiverCC001F	hybrid	3	11.43	1	1	1	1	1827
+101	LiverCC001F	kallisto-pan	3	767.82	67.176	66.751	82.485	62.406	3366
+101	LiverCC001F	kallisto-ref	3	130.86	11.002	9.088	12.826	12.007	1277
+101	LiverCC001F	Kmerator+countTags	3	743.71	63.498	51.647	76.254	25.707	9564
+101	LiverCC001F	Salmon-pan	3	991.7	81.86	57.213	86.763	63.103	2229
+101	LiverCC001F	Salmon-pan 10%	3	187.49	15.208	13.02	22.964	13.177	2046
+101	LiverCC001F	Salmon-pan 25%	3	258.01	22.573	20.325	33.316	21.55	2150
+101	LiverCC001F	Salmon-ref	3	221.61	19.491	13.085	23.202	23.934	1026
+101	LiverCC001F	Salmon-ref 10%	3	54.66	4.807	3.462	5.21	3.966	1002
+101	LiverCC001F	Salmon-ref 25%	3	92.91	7.262	6.452	8.237	6.44	1020
+101	LiverCC001F	STAR+fC	3	294.87	25.934	23.997	35.378	27.103	26199

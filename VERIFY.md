@@ -1,6 +1,6 @@
 # Checking this release
 
-Everything below was run on release `v1.0-submission` in a cloud container (Ubuntu 24.04, 4 cores, 15 GB RAM, Python 3.12, 3.13 and 3.14, gcc 13.3, isa-l 2.31). The commands let you repeat each check on your own machine.
+The checks below were first run on release `v1.0-submission` and repeated on `v1.0.1-submission` (same package code, same design files) in a cloud container (Ubuntu 24.04, 4 cores, 15 GB RAM, Python 3.12, 3.13 and 3.14, gcc 13.3, isa-l 2.31). The commands let you repeat each check on your own machine.
 
 ## 1. Tests and a clean install (about 3 minutes)
 
@@ -10,7 +10,7 @@ sudo apt-get install -y gcc libisal-dev      # libisal-dev is optional (faster g
 bash scripts/verify.sh                       # last line: VERIFY OK
 ```
 
-`verify.sh` runs the test suite, builds the wheel and source archive, installs the wheel into a clean environment, and runs `pluck` on 500,000 public reads (ENA SRR10523526, Keele CC021 liver). It compares with the outputs of the original analysis code (`frozen_v2_snapshot/`):
+`verify.sh` runs the test suite, builds the wheel and source archive, installs the wheel into a clean environment, and runs `pluck` on 500,000 public reads (ENA SRR10523526, Keele CC021 liver). It compares with the outputs of the original analysis code (`reference_code/`):
 
 - the compiled panel, the counts (byte for byte, any thread count) and the 300 test-gene estimates are identical;
 - the three switches (`sample`, `sample-scaled`, `cohort`) reproduce the stored outputs of the paper's pipeline;
@@ -43,4 +43,4 @@ The genome-copy scan sorts k-mer codes with an unstable sort, so the copy count 
 
 ## 4. Downloads
 
-The prebuilt design files are release assets: `design-v1` (50 bp) and `v1.0-submission` (100 and 101 bp). `pluck design fetch` checks them against the hashes above, so a download can be compared with a rebuild.
+The prebuilt design files for all three layouts are assets of release `v1.0.1-submission`. `pluck design fetch` checks them against the hashes above, so a download can be compared with a rebuild.

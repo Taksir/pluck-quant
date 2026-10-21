@@ -1,0 +1,5 @@
+# file: figS9c_sv_flag_overlap_u5.tsv
+# note: How many SV-risk genes (tableS14_sv_risk_genes_u5.tsv) the design-only reliability flag also marks; descriptive, added after scoring.
+set	n	flagged_50bp	flagged_50bp_frac	flagged_100bp	flagged_100bp_frac
+SV-risk genes (>= 25%)	567	426	0.7513	443	0.7813
+all core genes	16885	2512	0.1488	3308	0.1959

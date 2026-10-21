@@ -1,0 +1,38 @@
+# file: tableS8_calib_keele_liver_u5.tsv
+# note: Scoring set A methods, scored with the scoring script. as scored = per-sample constants fitted inside the subset; all-gene = constants of the all-gene score; the as-scored values are computed before the script swaps in the all-gene calibration.
+cohort	subset	calibration	method	n_delta_genes	median_delta	delta_ci95	spurious_rate	within_gene_spearman	n_genes_spearman	noise_sd	n_genes_noise
+keele_liver	all	as scored	ref	4853	-0.0802	[-0.0833, -0.0771]	0.3287	0.975	5946	0.0949	5951
+keele_liver	all	as scored	vf	4853	0.0043	[0.0028, 0.0055]	0.0406	0.9814	5949	0.0786	5951
+keele_liver	all	as scored	salmon_ref	4853	-0.0451	[-0.0467, -0.0434]	0.1721	0.9849	5951	0.0639	5951
+keele_liver	all	as scored	salmon_pan	4853	0.0014	[0.0005, 0.0022]	0.0437	0.9876	5951	0.0511	5951
+keele_liver	all	as scored	kallisto_ref	4853	-0.0457	[-0.0475, -0.0438]	0.176	0.9842	5951	0.067	5951
+keele_liver	all	as scored	kmerator	4853	-0.1044	[-0.1077, -0.1017]	0.4397	0.9762	5951	0.0983	5951
+keele_liver	all	as scored	star_fc	4853	-0.004	[-0.0048, -0.0032]	0.0659	0.9861	5951	0.0569	5951
+keele_liver	unflagged	as scored	ref	4204	-0.0769	[-0.0806, -0.0736]	0.3126	0.9776	5093	0.0862	5094
+keele_liver	unflagged	as scored	vf	4204	0.0036	[0.0025, 0.005]	0.0307	0.9835	5094	0.0722	5094
+keele_liver	unflagged	as scored	salmon_ref	4204	-0.0438	[-0.0458, -0.0422]	0.152	0.9858	5094	0.0597	5094
+keele_liver	unflagged	as scored	salmon_pan	4204	0.001	[0.0003, 0.0017]	0.0312	0.9883	5094	0.0475	5094
+keele_liver	unflagged	as scored	kallisto_ref	4204	-0.0444	[-0.0463, -0.0423]	0.1546	0.9854	5094	0.0634	5094
+keele_liver	unflagged	as scored	kmerator	4204	-0.1003	[-0.1039, -0.0965]	0.4263	0.9782	5094	0.0939	5094
+keele_liver	unflagged	as scored	star_fc	4204	-0.0027	[-0.0035, -0.0018]	0.0357	0.9877	5094	0.0516	5094
+keele_liver	unflagged	all-gene	ref	4204	-0.0771	[-0.0803, -0.0735]	0.3135	0.9776	5093	0.0861	5094
+keele_liver	unflagged	all-gene	vf	4204	0.0043	[0.0028, 0.0055]	0.0312	0.9835	5094	0.0722	5094
+keele_liver	unflagged	all-gene	salmon_ref	4204	-0.0444	[-0.0462, -0.0427]	0.1534	0.9858	5094	0.0606	5094
+keele_liver	unflagged	all-gene	salmon_pan	4204	0.0009	[0.0002, 0.0018]	0.0304	0.9883	5094	0.0484	5094
+keele_liver	unflagged	all-gene	kallisto_ref	4204	-0.0445	[-0.0464, -0.0429]	0.1544	0.9854	5094	0.0637	5094
+keele_liver	unflagged	all-gene	kmerator	4204	-0.101	[-0.1039, -0.0965]	0.4332	0.9786	5094	0.0923	5094
+keele_liver	unflagged	all-gene	star_fc	4204	-0.0022	[-0.0032, -0.0013]	0.0357	0.9877	5094	0.0517	5094
+keele_liver	flagged	as scored	ref	649	-0.1253	[-0.1466, -0.1034]	0.4237	0.9426	853	0.1834	857
+keele_liver	flagged	as scored	vf	649	0.0112	[0.0043, 0.0209]	0.1048	0.9484	855	0.1873	857
+keele_liver	flagged	as scored	salmon_ref	649	-0.0506	[-0.0599, -0.0426]	0.2804	0.9758	857	0.1033	857
+keele_liver	flagged	as scored	salmon_pan	649	0.0087	[0.0048, 0.0132]	0.1186	0.9809	857	0.0916	857
+keele_liver	flagged	as scored	kallisto_ref	649	-0.061	[-0.0691, -0.0534]	0.3128	0.9743	857	0.107	857
+keele_liver	flagged	as scored	kmerator	649	-0.16	[-0.1772, -0.1385]	0.49	0.9429	857	0.1876	857
+keele_liver	flagged	as scored	star_fc	649	-0.0446	[-0.0547, -0.0337]	0.2357	0.9593	857	0.1523	857
+keele_liver	flagged	all-gene	ref	649	-0.1214	[-0.1495, -0.1084]	0.4268	0.9435	853	0.1771	857
+keele_liver	flagged	all-gene	vf	649	0.0041	[-0.0015, 0.0128]	0.1017	0.9515	855	0.1812	857
+keele_liver	flagged	all-gene	salmon_ref	649	-0.0515	[-0.0596, -0.0445]	0.2928	0.977	857	0.0927	857
+keele_liver	flagged	all-gene	salmon_pan	649	0.0054	[0.0029, 0.0091]	0.1294	0.982	857	0.0818	857
+keele_liver	flagged	all-gene	kallisto_ref	649	-0.0593	[-0.0647, -0.051]	0.3159	0.9759	857	0.0977	857
+keele_liver	flagged	all-gene	kmerator	649	-0.1535	[-0.1729, -0.1363]	0.4823	0.9471	857	0.1651	857
+keele_liver	flagged	all-gene	star_fc	649	-0.0448	[-0.06, -0.0328]	0.2619	0.9671	857	0.1175	857

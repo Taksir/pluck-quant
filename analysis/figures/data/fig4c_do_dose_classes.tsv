@@ -1,0 +1,16 @@
+# file: fig4c_do_dose_classes.tsv
+# note: Real DO animals (48 of 277; liver; 100 bp SE; GEO individualized-genome RSEM truth). A +0.12/+0.16 shift is common to all read-based tools and to GEO reference RSEM; its cause is unexplained.
+# note: The spurious rates here (39%/63%) come from that common shift and say nothing about PLUCK (hybrid). Do not quote a noise ratio from this dataset.
+class	class_label	method	tool	median_delta	ci_lo	ci_hi	n_genes	spurious_rate
+D2	D2 homozygous divergent	ref	ref-unique probes	0.0037	-0.0003	0.0088	3727	0.1825
+D2	D2 homozygous divergent	hybrid	hybrid	0.1227	0.1178	0.1281	3727	0.3885
+D2	D2 homozygous divergent	salmon_ref	Salmon-ref	0.1122	0.1079	0.1167	3727	0.3536
+D2	D2 homozygous divergent	salmon_pan	Salmon-pan	0.1213	0.1166	0.1261	3727	0.3885
+D2	D2 homozygous divergent	rsem_ref	GEO reference RSEM	0.0698	0.0645	0.0749	3727	0.1411
+D1	D1 heterozygote-like	ref	ref-unique probes	0.0948	0.092	0.0973	6915	0.4016
+D1	D1 heterozygote-like	hybrid	hybrid	0.159	0.1548	0.1628	6915	0.6331
+D1	D1 heterozygote-like	salmon_ref	Salmon-ref	0.1524	0.1487	0.1568	6915	0.6295
+D1	D1 heterozygote-like	salmon_pan	Salmon-pan	0.1567	0.1535	0.1611	6915	0.6369
+D1	D1 heterozygote-like	rsem_ref	GEO reference RSEM	0.1352	0.1323	0.1389	6915	0.5764
+placebo	random split of D0 (negative control)	ref	ref-unique probes	0.0002	-0.0011	0.0016	5842	0.0224
+placebo	random split of D0 (negative control)	hybrid	hybrid	-0.0002	-0.0016	0.001	5842	0.018

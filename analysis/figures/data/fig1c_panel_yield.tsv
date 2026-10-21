@@ -1,0 +1,26 @@
+# file: fig1c_panel_yield.tsv
+# note: Panel counts for Fig. 1c, one value per row; source_detail says where each value comes from.
+# note: Probes are 25 nt long; 26 nt is the probe spacing of the 50 bp design.
+group	item	value	unit	source_detail
+panel	genes in tier: extended	26258	genes	frozen_v2/gene_tiers.tsv
+panel	genes in tier: core	16885	genes	frozen_v2/gene_tiers.tsv
+panel	core genes (flag table rows)	16885	genes	reliability_flag/out/flag_table.tsv
+flag	flagged core genes, 50 bp (26 nt spacing)	2512	genes	flag_table.tsv
+flag	flagged share of core genes, 50 bp (26 nt spacing)	0.1488	fraction	flag_table.tsv (derived)
+flag	flagged core genes, 100/101 bp (76/77 nt spacing)	3308	genes	flag_table.tsv
+flag	flagged share of core genes, 100/101 bp (76/77 nt spacing)	0.1959	fraction	flag_table.tsv (derived)
+probes	core genes with no gene probe, 50 bp	390	genes	flag_table.tsv (derived)
+probes	gene probes per gene, median [Q1, Q3], 50 bp	58 [28, 99]	probes	flag_table.tsv (derived)
+probes	core genes with no gene probe, 101 bp	390	genes	flag_table.tsv (derived)
+probes	gene probes per gene, median [Q1, Q3], 101 bp	22 [11, 37]	probes	flag_table.tsv (derived)
+probes	EM probes per gene, median [Q1, Q3], 50 bp	141 [80, 230]	probes	flag_table.tsv (derived)
+branch	share of simulated core genes on gene-probe branch, 50 bp (E2)	0.68	fraction	e2_sim/results.md:20 (text)
+branch	share of simulated core genes on gene-probe branch, 101 bp (E2)	0.76	fraction	e2_sim/results.md:20 (text)
+branch	Keele kidney genes on gene-probe branch (capture computed over 47 samples)	9692	genes	e4_kidney/results.md:37 (text)
+branch	Munger-DO genes on gene-probe branch (idea 2)	10893	genes	idea2_do/RESULTS.md:11 (text)
+geometry	probe length	25	nt	audit_desk/results.md:19-24 (probes are 25-mers)
+geometry	probe spacing R-k+1 at 50 bp	26	nt	audit_desk/results.md:21
+geometry	probe spacing R-k+1 at 100 bp (Munger)	76	nt	audit_desk/results.md:23
+geometry	probe spacing R-k+1 at 101 bp	77	nt	audit_desk/results.md:22
+flag_rule	flag threshold u_g < 	0.6	unique fraction	reliability_flag/results.md:10
+sv	core genes losing >=25% of probes in some founder (SV/CNV audit)	567 of 16675 (3.4%)		audit_desk/results.md:59 (text)

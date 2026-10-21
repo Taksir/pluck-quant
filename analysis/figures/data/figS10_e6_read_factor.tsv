@@ -1,0 +1,13 @@
+# file: figS10_e6_read_factor.tsv
+# note: Read factor = how many times the reads of Salmon-pan PLUCK needs to match its per-gene noise; a multiplier on reads, not an SD ratio.
+# note: delta/gamma come from the excess fits; the simulation row uses the read-simulation delta.
+source	layout	delta_median	gamma_median	read_factor_text	read_factor_low	read_factor_high	basis
+E2 simulation	50 bp SE	1.11	0.0	1.51	1.514	1.514	independent truth; model.json depth_factor_sim
+E2 simulation	101 bp SE	0.8	0.0	1.38	1.383	1.383	independent truth; model.json depth_factor_sim
+E2 simulation	101 bp PE	0.57	0.0	1.27	1.274	1.274	independent truth; model.json depth_factor_sim
+Munger founders	100 bp SE	0.787	0.00011	1.38-1.45	1.38	1.45	truth-free strain ANOVA
+GSE199702 liver	101 bp SE	1.197	0.00079	1.57	1.57	1.57	truth-free cis-eQTL scan
+GSE199702 heart	101 bp SE	1.27	6e-05	1.61	1.61	1.61	truth-free cis-eQTL scan
+GSE199702 kidney	101 bp SE	0.932	0.00043	1.45	1.45	1.45	truth-free cis-eQTL scan
+Keele kidney	50 bp SE	1.776	2e-05	1.82	1.82	1.82	truth-free cis-eQTL scan
+Keele liver	50 bp SE	1.715	0.00098	1.8-2.1 (T <= 300)	1.8	2.1	truth-free cis-eQTL scan; floor gamma > 0 so the factor rises with T
